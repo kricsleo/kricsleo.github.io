@@ -1,25 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>krics</title>
+  <title>kricsleo</title>
   
-  <subtitle>Kevin&#39;s Home</subtitle>
+  <subtitle>kricsleo&#39;s blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://keyin.me/"/>
-  <updated>2018-08-22T04:42:02.000Z</updated>
-  <id>http://keyin.me/</id>
+  <link href="http://kricsleo.github.io/"/>
+  <updated>2018-08-22T07:41:34.000Z</updated>
+  <id>http://kricsleo.github.io/</id>
   
   <author>
-    <name>Kevin Tan</name>
+    <name>kricsleo</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>git-workflow</title>
+    <link href="http://kricsleo.github.io/2018/08/22/git-workflow/"/>
+    <id>http://kricsleo.github.io/2018/08/22/git-workflow/</id>
+    <published>2018-08-22T07:01:31.000Z</published>
+    <updated>2018-08-22T07:41:34.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;http://www
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://kricsleo.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>readme</title>
-    <link href="http://keyin.me/2018/08/22/readme/"/>
-    <id>http://keyin.me/2018/08/22/readme/</id>
+    <link href="http://kricsleo.github.io/2018/08/22/readme/"/>
+    <id>http://kricsleo.github.io/2018/08/22/readme/</id>
     <published>2018-08-22T04:41:11.000Z</published>
     <updated>2018-08-22T04:42:02.000Z</updated>
     
@@ -37,8 +58,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://keyin.me/2018/08/22/hello-world/"/>
-    <id>http://keyin.me/2018/08/22/hello-world/</id>
+    <link href="http://kricsleo.github.io/2018/08/22/hello-world/"/>
+    <id>http://kricsleo.github.io/2018/08/22/hello-world/</id>
     <published>2018-08-22T02:40:45.000Z</published>
     <updated>2018-08-22T02:40:45.000Z</updated>
     

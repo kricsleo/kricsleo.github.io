@@ -4,25 +4,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Archives: 2018/8 | krics</title>
-  <meta name="description" content="A blog of Kevin Tan" />
-  <meta name="keywords" content="blog,stkevintan,IT,Web Front End,Kevin Tan,kevinsfork" />
+  <title>Archives: 2018/8 | kricsleo</title>
+  <meta name="description" content="It&#39;s my personal blog." />
+  <meta name="keywords" content="blog,kricsleo,IT,Web Front End" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="alternate" href="/atom.xml" title="krics">
+  <link rel="alternate" href="/atom.xml" title="kricsleo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A blog of Kevin Tan">
-<meta name="keywords" content="blog,stkevintan,IT,Web Front End,Kevin Tan,kevinsfork">
+  <meta name="description" content="It&apos;s my personal blog.">
+<meta name="keywords" content="blog,kricsleo,IT,Web Front End">
 <meta property="og:type" content="website">
-<meta property="og:title" content="krics">
-<meta property="og:url" content="http://keyin.me/archives/2018/08/index.html">
-<meta property="og:site_name" content="krics">
-<meta property="og:description" content="A blog of Kevin Tan">
+<meta property="og:title" content="kricsleo">
+<meta property="og:url" content="http://kricsleo.github.io/archives/2018/08/index.html">
+<meta property="og:site_name" content="kricsleo">
+<meta property="og:description" content="It&apos;s my personal blog.">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="krics">
-<meta name="twitter:description" content="A blog of Kevin Tan">
+<meta name="twitter:title" content="kricsleo">
+<meta name="twitter:description" content="It&apos;s my personal blog.">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -46,7 +46,7 @@
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
 			<a class="logo flat-box" href='/' >
-				krics
+				kricsleo
 			</a>
 			<div class='menu'>
 				<ul class='h-list'>
@@ -64,13 +64,13 @@
 						</li>
 					
 						<li>
-							<a class='flat-box nav-gallery' href='https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN'>
+							<a class='flat-box nav-gallery' href='/'>
 								Gallery
 							</a>
 						</li>
 					
 						<li>
-							<a class='flat-box nav-about' href='/about'>
+							<a class='flat-box nav-about' href='https://github.com/kricsleo'>
 								About
 							</a>
 						</li>
@@ -118,11 +118,11 @@
 				Archives
 			</a>
 		
-			<a href="https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN" class="nav-gallery nav">
+			<a href="/" class="nav-gallery nav">
 				Gallery
 			</a>
 		
-			<a href="/about" class="nav-about nav">
+			<a href="https://github.com/kricsleo" class="nav-about nav">
 				About
 			</a>
 		
@@ -141,6 +141,45 @@
 
 <section class="post-list">
 	
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2018/08/22/git-workflow/">
+        git-workflow
+      </a>
+    </h2>
+    
+    <time>
+      8月 22, 2018
+    </time>
+		
+  </section>
+  <section class="article typo">
+	  <h3 id="git的日常使用流程记录"><a href="#git的日常使用流程记录" class="headerlink" title="git的日常使用流程记录"></a>git的日常使用流程记录</h3><p>内容参考于阮一峰老师的<a href="http://www.ruanyifeng.com/blog/2015/08/git-use-process.html" target="_blank" rel="noopener">Git使用规范流程</a>，记录一下git的日常使用流程。<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png" alt="常用流程图"></p>
+<h4 id="1-新建分支"><a href="#1-新建分支" class="headerlink" title="1. 新建分支"></a>1. 新建分支</h4><p>开发新功能时都应该新建一个分支，在分支上开发，当功能开发完成时再合并到主分支，并销毁新建的分支。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> git checkout——检出，是我们的常用命令。最为常用的两种情形是创建分支和切换分支</span><br><span class="line"><span class="meta">#</span> 先切换到主分支，获取最新代码</span><br><span class="line">git checkout master</span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 然后新建分支，在这个分支上进行新功能开发</span><br><span class="line">git checkout -b myfeature</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-提交分支"><a href="#2-提交分支" class="headerlink" title="2. 提交分支"></a>2. 提交分支</h4><p>新功能开发完成以后提交代码<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 默认保存所有改动 --all</span><br><span class="line">git add</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 查看发生改动的地方</span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 提交改动，也可以跟上 --verbose，然后就可以列出diff比较的结果，并且附上本次提交信息</span><br><span class="line">git commit</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-同步代码"><a href="#3-同步代码" class="headerlink" title="3. 同步代码"></a>3. 同步代码</h4><p>开发过程中可以经常同步主分支的最新代码，保证一直在最新的基础上进行开发<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> git fetch 表示取回最新代码</span><br><span class="line">git fetch origin</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 将有更新的代码与当前分支合并</span><br><span class="line"><span class="meta">#</span> 所取回的更新，在本地主机上要用"远程主机名/分支名"的形式读取。比如origin主机的master，就要用origin/master读取。</span><br><span class="line"><span class="meta">#</span> 或者使用： git merge origin/master</span><br><span class="line">git rebase origin/master</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-合并多个commit"><a href="#4-合并多个commit" class="headerlink" title="4. 合并多个commit"></a>4. 合并多个commit</h4><p>新功能开发过程中一般会多次commit，但是在功能开发完成以后需要合并到主干时，一般把之前的commit合并成一个或几个关键的commit<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> git rebase命令的i参数表示互动（interactive），具体如何合并请参见原文</span><br><span class="line">git rebase -i origin/master</span><br></pre></td></tr></table></figure></p>
+<h4 id="5-推送到远程仓库"><a href="#5-推送到远程仓库" class="headerlink" title="5. 推送到远程仓库"></a>5. 推送到远程仓库</h4><p>多个commit经过合理的处理以后就可以把当前分支推送到远程仓库了<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> git push命令要加上force参数，因为rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能要强行推送</span><br><span class="line">git push --force master myfeature</span><br></pre></td></tr></table></figure></p>
+<h4 id="6-发出Pull-Request"><a href="#6-发出Pull-Request" class="headerlink" title="6. 发出Pull Request"></a>6. 发出Pull Request</h4><p>提交到远程仓库以后，就可以发出 Pull Request 到master分支，然后请求别人进行代码review，确认可以合并到master。</p>
+<p>(end)</p>
+
+
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/git/">git</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
     <div class='post-wrapper'>
       <article class="post reveal">
   <section class="meta">
@@ -211,7 +250,7 @@
 
 <img class='avatar waves-image' src='/images/avatar.jpg' />
 
-<div class='header'>Kevin Tan</div>
+<div class='header'>kricsleo</div>
 <div class='content'>
 <div class='desc'>Tempora mutantur, nos et mutamur in illis ...</div>
 </div>
@@ -222,20 +261,12 @@
 <div class='content'>
     <ul class="entry">
     
-        <li><a class="flat-box" target="_blank" href="https://ccoooss.com">
-            <div class='name'>ClassicOldSong</div>
+        <li><a class="flat-box" target="_blank" href="http://www.ruanyifeng.com/blog/">
+            <div class='name'>阮一峰的博客</div>
         </a></li>
     
-        <li><a class="flat-box" target="_blank" href="https://frantic1048.logdown.com/">
-            <div class='name'>Frantic1048</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://hclmaster.github.io/">
-            <div class='name'>Hclmaster</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://whst.github.io/">
-            <div class='name'>WANG Hsü-Tung</div>
+        <li><a class="flat-box" target="_blank" href="https://www.easy-mock.com/">
+            <div class='name'>实用的api mock</div>
         </a></li>
     
     </ul>
@@ -250,6 +281,13 @@
 </section>
 
   
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class='content'>
+        <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a>
+    </div>
+</div>
+
 
 
       </aside>
@@ -261,14 +299,14 @@
 	<div class="social-wrapper">
   	
       
-        <a href="https://github.com/stkevintan" class="social github"
+        <a href="https://github.com/kricsleo" class="social github"
           target="_blank" rel="external">
           <span class="icon icon-github"></span>
         </a>
       
-        <a href="https://twitter.com/kevinsfork" class="social twitter"
+        <a href="https://segmentfault.com/u/kricsleo" class="social segmentfault"
           target="_blank" rel="external">
-          <span class="icon icon-twitter"></span>
+          <span class="icon icon-segmentfault"></span>
         </a>
       
         <a href="/atom.xml" class="social rss"
@@ -287,7 +325,7 @@
   <script>setLoadingBarProgress(80);</script>
   
 <script>
-  var disqus_shortname = 'kevinhome';
+  var disqus_shortname = 'kricsleo';
   
   (function(){
     var dsq = document.createElement('script');
