@@ -12,19 +12,19 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。 1. 新建分支开发新功能时都应该新建一个分支，在分支上开发，当功能开发完成时再合并到主分支，并销毁新建的分支。1234567# git checkout——检出，是我们的常用命令。最为常用的两种情形是创建分支和切换分支# 先切换到主分支，获取最新代码git checkout mastergit pul">
+  <meta name="description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git-workflow">
 <meta property="og:url" content="https://kricsleo.github.io/2018/08/22/git-workflow/index.html">
 <meta property="og:site_name" content="kricsleo">
-<meta property="og:description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。 1. 新建分支开发新功能时都应该新建一个分支，在分支上开发，当功能开发完成时再合并到主分支，并销毁新建的分支。1234567# git checkout——检出，是我们的常用命令。最为常用的两种情形是创建分支和切换分支# 先切换到主分支，获取最新代码git checkout mastergit pul">
+<meta property="og:description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png">
-<meta property="og:updated_time" content="2018-08-22T14:52:26.000Z">
+<meta property="og:updated_time" content="2018-08-24T06:23:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-workflow">
-<meta name="twitter:description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。 1. 新建分支开发新功能时都应该新建一个分支，在分支上开发，当功能开发完成时再合并到主分支，并销毁新建的分支。1234567# git checkout——检出，是我们的常用命令。最为常用的两种情形是创建分支和切换分支# 先切换到主分支，获取最新代码git checkout mastergit pul">
+<meta name="twitter:description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。">
 <meta name="twitter:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
@@ -160,7 +160,7 @@
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	<h3 id="git的日常使用流程记录"><a href="#git的日常使用流程记录" class="headerlink" title="git的日常使用流程记录"></a>git的日常使用流程记录</h3><p>内容参考于阮一峰老师的<a href="http://www.ruanyifeng.com/blog/2015/08/git-use-process.html" target="_blank" rel="noopener">Git使用规范流程</a>，记录一下git的日常使用流程。<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png" alt="常用流程图"></p>
+    	<h3 id="git的日常使用流程记录"><a href="#git的日常使用流程记录" class="headerlink" title="git的日常使用流程记录"></a>git的日常使用流程记录</h3><p>内容参考于阮一峰老师的<a href="http://www.ruanyifeng.com/blog/2015/08/git-use-process.html" target="_blank" rel="noopener">Git使用规范流程</a>，记录一下git的日常使用流程。<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png" alt="常用流程图"><br><a id="more"></a></p>
 <h4 id="1-新建分支"><a href="#1-新建分支" class="headerlink" title="1. 新建分支"></a>1. 新建分支</h4><p>开发新功能时都应该新建一个分支，在分支上开发，当功能开发完成时再合并到主分支，并销毁新建的分支。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git checkout——检出，是我们的常用命令。最为常用的两种情形是创建分支和切换分支</span></span><br><span class="line"><span class="comment"># 先切换到主分支，获取最新代码</span></span><br><span class="line">git checkout master</span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line"><span class="comment"># 然后新建分支，在这个分支上进行新功能开发</span></span><br><span class="line">git checkout -b myfeature</span><br></pre></td></tr></table></figure></p>
 <h4 id="2-提交分支"><a href="#2-提交分支" class="headerlink" title="2. 提交分支"></a>2. 提交分支</h4><p>新功能开发完成以后提交代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认保存所有改动 --all</span></span><br><span class="line">git add</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看发生改动的地方</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交改动，也可以跟上 --verbose，然后就可以列出diff比较的结果，并且附上本次提交信息</span></span><br><span class="line">git commit</span><br></pre></td></tr></table></figure></p>
 <h4 id="3-同步代码"><a href="#3-同步代码" class="headerlink" title="3. 同步代码"></a>3. 同步代码</h4><p>开发过程中可以经常同步主分支的最新代码，保证一直在最新的基础上进行开发<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git fetch 表示取回最新代码</span></span><br><span class="line">git fetch origin</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将有更新的代码与当前分支合并</span></span><br><span class="line"><span class="comment"># 所取回的更新，在本地主机上要用"远程主机名/分支名"的形式读取。比如origin主机的master，就要用origin/master读取。</span></span><br><span class="line"><span class="comment"># 或者使用： git merge origin/master</span></span><br><span class="line">git rebase origin/master</span><br></pre></td></tr></table></figure></p>
@@ -185,10 +185,6 @@
 						markdown 
 					</a></span>
 				
-				
-					<span class="art-item-right">next：<a href="/2018/08/22/hello-world/" rel="next"  title="Hello World">
-						Hello World
-					</a><i class="icon icon-chevron-thin-right"></i></span>
 				
 		</div>
 	

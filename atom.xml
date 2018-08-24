@@ -41,14 +41,11 @@
     <link href="https://kricsleo.github.io/2018/08/22/git-workflow/"/>
     <id>https://kricsleo.github.io/2018/08/22/git-workflow/</id>
     <published>2018-08-22T07:01:31.000Z</published>
-    <updated>2018-08-22T14:52:26.000Z</updated>
+    <updated>2018-08-24T06:23:29.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;http://www
-      
+      &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/08/git-use-process.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git使用规范流程&lt;/a&gt;，记录一下git的日常使用流程。&lt;br&gt;&lt;img src=&quot;http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png&quot; alt=&quot;常用流程图&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -56,25 +53,6 @@
     
     
       <category term="git" scheme="https://kricsleo.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://kricsleo.github.io/2018/08/22/hello-world/"/>
-    <id>https://kricsleo.github.io/2018/08/22/hello-world/</id>
-    <published>2018-08-22T02:40:45.000Z</published>
-    <updated>2018-08-22T14:39:03.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   
