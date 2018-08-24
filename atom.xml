@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-08-22T14:52:26.000Z</updated>
+  <updated>2018-08-24T05:43:18.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdown</title>
+    <link href="https://kricsleo.github.io/2018/08/23/markdown/"/>
+    <id>https://kricsleo.github.io/2018/08/23/markdown/</id>
+    <published>2018-08-23T01:09:00.000Z</published>
+    <updated>2018-08-24T05:43:18.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;markdown语法整理&quot;&gt;&lt;a href=&quot;#markdown语法整理&quot; class=&quot;headerlink&quot; title=&quot;markdown语法整理&quot;&gt;&lt;/a&gt;markdown语法整理&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; cl
+      
+    
+    </summary>
+    
+      <category term="Tools" scheme="https://kricsleo.github.io/categories/Tools/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>git-workflow</title>
