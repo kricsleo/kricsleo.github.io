@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>ssh-git.md | kricsleo</title>
+  <title>ssh-git | kricsleo</title>
   <meta name="description" content="It&#39;s my personal blog." />
   <meta name="keywords" content="blog,kricsleo,IT,Web Front End" />
   <meta name="HandheldFriendly" content="True" />
@@ -15,14 +15,14 @@
   <meta name="description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
 <meta name="keywords" content="ssh,github">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ssh-git.md">
+<meta property="og:title" content="ssh-git">
 <meta property="og:url" content="https://kricsleo.github.io/2018/08/30/ssh-git/index.html">
 <meta property="og:site_name" content="kricsleo">
 <meta property="og:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-30T07:09:06.000Z">
+<meta property="og:updated_time" content="2018-08-30T07:14:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ssh-git.md">
+<meta name="twitter:title" content="ssh-git">
 <meta name="twitter:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
@@ -140,7 +140,7 @@
 	<section class='meta'>
 	<h2 class="title">
   	<a href="/2018/08/30/ssh-git/">
-    	ssh-git.md
+    	ssh-git
     </a>
   </h2>
 	<time>
@@ -154,12 +154,12 @@
 
 	</section>
 	
-		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github的https和ssh连接方式探究"><span class="toc-number">1.</span> <span class="toc-text">github的https和ssh连接方式探究</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.1.</span> <span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择使用https"><span class="toc-number">1.1.1.</span> <span class="toc-text">选择使用https</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#选择使用ssh"><span class="toc-number">1.1.2.</span> <span class="toc-text">选择使用ssh</span></a></li></ol></li></ol></li></ol></section>
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github的https和ssh连接方式探究"><span class="toc-number">1.</span> <span class="toc-text">github的https和ssh连接方式探究</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#两种方式"><span class="toc-number">1.1.</span> <span class="toc-text">两种方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择使用https"><span class="toc-number">1.1.1.</span> <span class="toc-text">选择使用https</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#选择使用ssh"><span class="toc-number">1.1.2.</span> <span class="toc-text">选择使用ssh</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#备注"><span class="toc-number">1.2.</span> <span class="toc-text">备注</span></a></li></ol></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
     	<h1 id="github的https和ssh连接方式探究"><a href="#github的https和ssh连接方式探究" class="headerlink" title="github的https和ssh连接方式探究"></a>github的https和ssh连接方式探究</h1><p>在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。<br><a id="more"></a></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<h2 id="两种方式"><a href="#两种方式" class="headerlink" title="两种方式"></a>两种方式</h2><ol>
 <li>首先在本机下载安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>，一路点next默认安装即可;</li>
 <li>clone一个github上的项目到本地</li>
 </ol>
@@ -215,6 +215,13 @@
 <li>配置个人信息<br>使用git提交更改的时候会为本次提交附上提交人的一些信息，比如提交人的用户名及邮箱信息，我们可以使用git提供的配置功能来提前配置好这些信息，使用如下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"John Doe"</span></span><br><span class="line">git config --global user.email johndoe@example.com</span><br><span class="line"></span><br><span class="line"><span class="comment"># 之后我们可以使用如下命令来查看我们配置的信息</span></span><br><span class="line"><span class="comment">#git config user.name</span></span><br><span class="line"><span class="comment">#git config user.email</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>这篇文章里面给我自己埋了些坑要填</p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 比如完全使用https协议该如何用git来开发项目，</li>
+<li style="list-style: none"><input type="checkbox"> 另外关于ssh其实自己看了挺多，但是这篇文章里面基本没怎么写，之后可能填上这个坑，</li>
+<li style="list-style: none"><input type="checkbox"> 如果文章内容出现错误或者有更多想要了解的可以在下方留言，我会改进的</li>
+</ul>
+<p>(end)</p>
 
   	</div>
 	  
@@ -246,7 +253,7 @@
 </article>
 <script>
 	window.subData = {
-		title: 'ssh-git.md',
+		title: 'ssh-git',
 		tools: true
 	}
 </script>
