@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-08-24T06:11:09.000Z</updated>
+  <updated>2018-08-30T07:05:56.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh-git.md</title>
+    <link href="https://kricsleo.github.io/2018/08/30/ssh-git/"/>
+    <id>https://kricsleo.github.io/2018/08/30/ssh-git/</id>
+    <published>2018-08-30T01:56:01.000Z</published>
+    <updated>2018-08-30T07:05:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;github的https和ssh连接方式探究&quot;&gt;&lt;a href=&quot;#github的https和ssh连接方式探究&quot; class=&quot;headerlink&quot; title=&quot;github的https和ssh连接方式探究&quot;&gt;&lt;/a&gt;github的https和ssh连接方式探究&lt;/h1&gt;&lt;p&gt;在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="-ssh -github" scheme="https://kricsleo.github.io/tags/ssh-github/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown</title>
@@ -41,11 +59,11 @@
     <link href="https://kricsleo.github.io/2018/08/22/git-workflow/"/>
     <id>https://kricsleo.github.io/2018/08/22/git-workflow/</id>
     <published>2018-08-22T07:01:31.000Z</published>
-    <updated>2018-08-24T06:23:29.000Z</updated>
+    <updated>2018-08-30T02:01:44.000Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/08/git-use-process.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git使用规范流程&lt;/a&gt;，记录一下git的日常使用流程。&lt;br&gt;&lt;img src=&quot;http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png&quot; alt=&quot;常用流程图&quot;&gt;&lt;br&gt;
+      &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/08/git-use-process.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git使用规范流程&lt;/a&gt;，记录一下git的日常使用流程。&lt;br&gt;
     
     </summary>
     
