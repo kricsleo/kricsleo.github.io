@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="kricsleo">
 <meta property="og:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-31T06:12:49.000Z">
+<meta property="og:updated_time" content="2018-08-31T10:46:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh-git">
 <meta name="twitter:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
@@ -179,7 +179,7 @@
 <blockquote>
 <p>Generating public/private rsa key pair.<br>Enter file in which to save the key (C:/Users/xxxxx/.ssh/id_rsa):</p>
 </blockquote>
-<p>意思是让你输入这个密钥文件的文件名，一般情况保存默认就可以，直接回车确认。<br><em>（如果你有多个git的账号需要配置，比如你自己在github上有账号需要提交代码，同时自己在公司也有git的账号，有时候需要提交代码到公司的仓库里，那么这时候你就需要额外的配置来保证提交的时候不会冲突，<a href="#多git配置">详见下面</a>）</em><br>然后会出现下一个提示内容：</p>
+<p>意思是让你输入这个密钥文件的文件名，一般情况保存默认就可以，直接回车确认。<br><em>（如果你有多个git的账号需要配置，比如你自己在github上有账号需要提交代码，同时自己在公司也有git的账号，有时候需要提交代码到公司的仓库里，那么这时候你就需要额外的配置来保证提交的时候不会冲突，<a href="#多git账户配置">详见下面</a>）</em><br>然后会出现下一个提示内容：</p>
 <blockquote>
 <p>Enter passphrase (empty for no passphrase):</p>
 </blockquote>
