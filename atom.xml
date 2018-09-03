@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-03T07:45:54.000Z</updated>
+  <updated>2018-09-03T07:47:59.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://kricsleo.github.io/2018/09/02/IIFE/"/>
     <id>https://kricsleo.github.io/2018/09/02/IIFE/</id>
     <published>2018-09-02T01:44:02.000Z</published>
-    <updated>2018-09-03T07:45:54.000Z</updated>
+    <updated>2018-09-03T07:47:59.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;转-译-JavaScript：立即执行函数表达式（IIFE）&quot;&gt;&lt;a href=&quot;#转-译-JavaScript：立即执行函数表达式（IIFE）&quot; class=&quot;headerlink&quot; title=&quot;[转][译]JavaScript：立即执行函数表达式（IIFE）&quot;&gt;&lt;/a&gt;[转][译]JavaScript：立即执行函数表达式（IIFE）&lt;/h1&gt;&lt;blockquote&gt;
+      &lt;h1 id=&quot;增-转-译-JavaScript：立即执行函数表达式（IIFE）&quot;&gt;&lt;a href=&quot;#增-转-译-JavaScript：立即执行函数表达式（IIFE）&quot; class=&quot;headerlink&quot; title=&quot;[增][转][译]JavaScript：立即执行函数表达式（IIFE）&quot;&gt;&lt;/a&gt;[增][转][译]JavaScript：立即执行函数表达式（IIFE）&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;原文: &lt;a href=&quot;http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife&lt;/a&gt;&lt;br&gt;译文: &lt;a href=&quot;https://segmentfault.com/a/1190000003985390&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://segmentfault.com/a/1190000003985390&lt;/a&gt; by Murphywuwu&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
