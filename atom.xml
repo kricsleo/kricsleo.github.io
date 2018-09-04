@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-03T07:47:59.000Z</updated>
+  <updated>2018-09-04T05:36:14.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Base64-md5</title>
+    <link href="https://kricsleo.github.io/2018/09/04/base64-md5/"/>
+    <id>https://kricsleo.github.io/2018/09/04/base64-md5/</id>
+    <published>2018-09-04T01:11:03.000Z</published>
+    <updated>2018-09-04T05:36:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Base64编码与md5摘要算法探究及日常应用&quot;&gt;&lt;a href=&quot;#Base64编码与md5摘要算法探究及日常应用&quot; class=&quot;headerlink&quot; title=&quot;Base64编码与md5摘要算法探究及日常应用&quot;&gt;&lt;/a&gt;Base64编码与md5摘要算法探究及日常应用&lt;/h1&gt;&lt;p&gt;Base64编码和md5摘要算法我们经常听到,本文主要对着两者算法做一个简单的了解探究&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="编码" scheme="https://kricsleo.github.io/tags/%E7%BC%96%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title>IIFE</title>
