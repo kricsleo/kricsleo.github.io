@@ -21,7 +21,7 @@
 <meta property="og:description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png">
-<meta property="og:updated_time" content="2018-08-30T02:01:44.000Z">
+<meta property="og:updated_time" content="2018-09-04T10:22:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-workflow">
 <meta name="twitter:description" content="git的日常使用流程记录内容参考于阮一峰老师的Git使用规范流程，记录一下git的日常使用流程。">
@@ -167,6 +167,7 @@
 <h4 id="4-合并多个commit"><a href="#4-合并多个commit" class="headerlink" title="4. 合并多个commit"></a>4. 合并多个commit</h4><p>新功能开发过程中一般会多次commit，但是在功能开发完成以后需要合并到主干时，一般把之前的commit合并成一个或几个关键的commit<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git rebase命令的i参数表示互动（interactive），具体如何合并请参见原文</span></span><br><span class="line">git rebase -i origin/master</span><br></pre></td></tr></table></figure></p>
 <h4 id="5-推送到远程仓库"><a href="#5-推送到远程仓库" class="headerlink" title="5. 推送到远程仓库"></a>5. 推送到远程仓库</h4><p>多个commit经过合理的处理以后就可以把当前分支推送到远程仓库了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git push命令要加上force参数，因为rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能要强行推送</span></span><br><span class="line">git push --force master myfeature</span><br></pre></td></tr></table></figure></p>
 <h4 id="6-发出Pull-Request"><a href="#6-发出Pull-Request" class="headerlink" title="6. 发出Pull Request"></a>6. 发出Pull Request</h4><p>提交到远程仓库以后，就可以发出 Pull Request 到master分支，然后请求别人进行代码review，确认可以合并到master。</p>
+<p>参考文档: <a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a></p>
 <p>(end)</p>
 
   	</div>
