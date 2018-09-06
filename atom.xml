@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-06T06:49:35.000Z</updated>
+  <updated>2018-09-06T10:36:06.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mini-Program</title>
+    <link href="https://kricsleo.github.io/2018/09/06/Mini-Program/"/>
+    <id>https://kricsleo.github.io/2018/09/06/Mini-Program/</id>
+    <published>2018-09-06T07:10:23.000Z</published>
+    <updated>2018-09-06T10:36:06.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;微信小程序跳坑记录&quot;&gt;&lt;a href=&quot;#微信小程序跳坑记录&quot; class=&quot;headerlink&quot; title=&quot;微信小程序跳坑记录&quot;&gt;&lt;/a&gt;微信小程序跳坑记录&lt;/h1&gt;&lt;p&gt;开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Mini Program" scheme="https://kricsleo.github.io/tags/Mini-Program/"/>
+    
+  </entry>
   
   <entry>
     <title>ASCII-Unicode-UTF8</title>
@@ -57,7 +77,7 @@
     <link href="https://kricsleo.github.io/2018/09/04/base64-md5/"/>
     <id>https://kricsleo.github.io/2018/09/04/base64-md5/</id>
     <published>2018-09-04T01:11:03.000Z</published>
-    <updated>2018-09-04T05:36:14.000Z</updated>
+    <updated>2018-09-06T10:39:55.000Z</updated>
     
     <summary type="html">
     
@@ -66,7 +86,7 @@
     </summary>
     
     
-      <category term="编码" scheme="https://kricsleo.github.io/tags/%E7%BC%96%E7%A0%81/"/>
+      <category term="encrypt" scheme="https://kricsleo.github.io/tags/encrypt/"/>
     
   </entry>
   
