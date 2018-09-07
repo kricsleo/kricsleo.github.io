@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-06T10:36:06.000Z</updated>
+  <updated>2018-09-07T10:25:51.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Practical-Function-In-Javascript</title>
+    <link href="https://kricsleo.github.io/2018/09/07/practical-function-in-javascript/"/>
+    <id>https://kricsleo.github.io/2018/09/07/practical-function-in-javascript/</id>
+    <published>2018-09-07T01:07:17.000Z</published>
+    <updated>2018-09-07T10:25:51.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;JavaScript中的常用函数&quot;&gt;&lt;a href=&quot;#JavaScript中的常用函数&quot; class=&quot;headerlink&quot; title=&quot;JavaScript中的常用函数&quot;&gt;&lt;/a&gt;JavaScript中的常用函数&lt;/h1&gt;&lt;p&gt;本文主要整理了平时JavaScript中常用的函数, 持续更新.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="funtion" scheme="https://kricsleo.github.io/tags/funtion/"/>
+    
+  </entry>
   
   <entry>
     <title>Mini-Program</title>
@@ -41,7 +61,7 @@
     <link href="https://kricsleo.github.io/2018/09/05/unicode-utf8/"/>
     <id>https://kricsleo.github.io/2018/09/05/unicode-utf8/</id>
     <published>2018-09-05T09:33:51.000Z</published>
-    <updated>2018-09-06T06:49:35.000Z</updated>
+    <updated>2018-09-07T10:28:12.000Z</updated>
     
     <summary type="html">
     
@@ -50,7 +70,7 @@
     </summary>
     
     
-      <category term="编码" scheme="https://kricsleo.github.io/tags/%E7%BC%96%E7%A0%81/"/>
+      <category term="encrypt" scheme="https://kricsleo.github.io/tags/encrypt/"/>
     
   </entry>
   
