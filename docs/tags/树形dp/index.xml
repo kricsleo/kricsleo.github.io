@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>树形dp on World of Forks</title>
+    <link>https://keyin.me/tags/%E6%A0%91%E5%BD%A2dp/</link>
+    <description>Recent content in 树形dp on World of Forks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 31 Jul 2014 03:50:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://keyin.me/tags/%E6%A0%91%E5%BD%A2dp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HDU4005 The war</title>
+      <link>https://keyin.me/posts/hdu4005-the-war/</link>
+      <pubDate>Thu, 31 Jul 2014 03:50:40 +0800</pubDate>
+      
+      <guid>https://keyin.me/posts/hdu4005-the-war/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;2000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65768&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65768&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
+Total Submission(s): 1992    Accepted Submission(s): 440&lt;br /&gt;
+&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;panel_title&#34; align=&#34;left&#34;&gt;Problem Description&lt;/div&gt;
+
+&lt;div class=&#34;panel_content&#34;&gt;In the war, the intelligence about the enemy is very important. Now, our troop has mastered the situation of the enemy&#39;s war zones, and known that these war zones can communicate to each other directly or indirectly through the network. We also know the enemy is going to build a new communication line to strengthen their communication network. Our task is to destroy their communication network, so that some of their war zones can&#39;t communicate. Each line has its &#34;cost of destroy&#34;. If we want to destroy a line, we must spend the &#34;cost of destroy&#34; of this line. We want to finish this task using the least cost, but our enemy is very clever. Now, we know the network they have already built, but we know nothing about the new line which our enemy is going to build. In this condition, your task is to find the minimum cost that no matter where our enemy builds the new line, you can destroy it using the fixed money. Please give the minimum cost. For efficiency, we can only destroy one communication line.&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
