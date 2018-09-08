@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="UTF-8"><title>Airbnb-JavaScript-Style-Guide | World of Forks</title><meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1"><link rel="canonical" href="https://kricsleo.github.io/docs/posts/airbnb-javascript-style-guide/"><link href="https://fonts.cat.net/icon?family=Material+Icons" rel="stylesheet"><link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/ocean.min.css" rel="stylesheet"><link rel="stylesheet" href="https://kricsleo.github.io/docs/css/index-38f2e5a4cb.css"><link href="https://kricsleo.github.io/docs/index.xml" rel="alternate" type="application/rss+xml" title="World of Forks"><link href="https://kricsleo.github.io/docs/index.xml" rel="feed" type="application/rss+xml" title="World of Forks"><link href="https://kricsleo.github.io/docs/favicon.ico" rel="shortcut icon"><script>window.baseURL = 'https:\/\/kricsleo.github.io\/docs';</script></head><body><div class="navbar-fixed"><nav class="navbar"><div class="nav-container container"><div class="nav-wrapper inner"><a href="javascript:void(0)" data-activates="sidebar" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i> </a><a href="https://kricsleo.github.io/docs" class="brand-logo"><i class="material-icons hide-on-med-and-down">restaurant_menu</i> World of Forks</a><ul class="nav-menu tabs tabs-transparent hide-on-med-and-down"><li class="tab"><a href="https://kricsleo.github.io/docs/docs/" class="">Home</a></li><li class="tab"><a href="https://kricsleo.github.io/docs/docs/archive/" class="">Archive</a></li><li class="tab"><a href="https://kricsleo.github.io/docs/docs/about/" class="">About</a></li></ul><form class="nav-form hide-on-small-and-down"><div class="form-group"><i class="material-icons">search</i> <input type="text" placeholder="输入搜索关键字"></div><div class="form-popout"><div class="search-result"><label>暂无搜索结果</label><ul></ul></div></div></form><ul class="nav-menu apps"><li><a class="search-btn hide-on-med-and-up" href="#search-panel"><i class="material-icons">search</i></a></li><li><a class="term-btn hide-on-small-and-down" href="#term-panel"><i class="material-icons">apps</i></a></li><li><a class="rss-btn hide-on-small-and-down" href="https://kricsleo.github.io/docs/index.xml" target="_blank"><i class="material-icons">rss_feed</i></a></li></ul></div></div></nav></div><div class="mobile-search hide-on-med-and-up"><div class="header"><i class="material-icons">search</i> <input type="text" placeholder="输入搜索关键字"> <i class="material-icons mobile-search-close">cancel</i></div><div class="content"><label>暂无搜索结果</label><ul></ul></div></div><div class="taxonomy"><div class="container"><div class="inner"><div class="taxonomy-panel"><div class="group"><label>Category</label><ul><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/categories/tools">tools <span class="badge">3</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/categories/%E5%89%8D%E7%AB%AF">前端 <span class="badge">3</span></a></li></ul></div><div class="group"><label>Tag</label><ul><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/encrypt">encrypt <span class="badge">2</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/codestyle">codestyle <span class="badge">1</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/funtion">funtion <span class="badge">1</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/git">git <span class="badge">1</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/github">github <span class="badge">1</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/javascript">javascript <span class="badge">1</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/markdown">markdown <span class="badge">1</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/mini-program">mini-program <span class="badge">1</span></a></li><li><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/ssh">ssh <span class="badge">1</span></a></li></ul></div></div></div></div></div><ul class="side-nav" id="sidebar"><li><a href="https://kricsleo.github.io/docs/docs/" class="">Home</a></li><li><a href="https://kricsleo.github.io/docs/docs/archive/" class="">Archive</a></li><li><a href="https://kricsleo.github.io/docs/docs/about/" class="">About</a></li><li><a class="term-btn-mobile hide-on-med-only" href="https://kricsleo.github.io/docs/categories/">Categories</a></li><li><a class="term-btn-mobile hide-on-med-only" href="https://kricsleo.github.io/docs/tags/">Tags</a></li><li><a class="rss-btn-mobile hide-on-med-only" href="https://kricsleo.github.io/docs/index.xml" target="_blank">Rss</a></li></ul><main id="single" role="main" class="main-panel"><div class="page-content"><div class="container container-ex"><div class="inner"><section class="post-wrapper"><div class="toc-panel"><nav id="TableOfContents"><ul><li><a href="#airbnb-javascript-style-guide-阅读笔记">Airbnb JavaScript Style Guide 阅读笔记</a><ul><li><a href="#对象">对象</a></li><li><a href="#数组">数组</a></li><li><a href="#解构">解构</a></li><li><a href="#函数">函数</a></li><li><a href="#构造器">构造器</a></li><li><a href="#比较运算符和等号">比较运算符和等号</a></li><li><a href="#注释">注释</a></li><li><a href="#类型转换">类型转换</a></li><li><a href="#命名规则">命名规则</a></li><li><a href="#事件">事件</a></li></ul></li></ul></nav></div><div class="post reveal"><div class="card"><section class="breadcrumb-root"><div class="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation"><a class="breadcrumb" href="https://kricsleo.github.io/docs"><i class="material-icons">location_on</i>Home</a> <span class="breadcrumb">Airbnb-JavaScript-Style-Guide</span></div></section><div class="card-header postinfo"><span class="card-title">Airbnb-JavaScript-Style-Guide</span></div><div class="card-header date"><div class="group"><i class="material-icons">flag</i> <time>创建：2018年09月 5日</time></div></div><div class="card-content"><article class="article"><h1 id="airbnb-javascript-style-guide-阅读笔记">Airbnb JavaScript Style Guide 阅读笔记</h1><p>Airbnb的JavaScript代码风格是世界上最流行的JavaScript代码风格之一, 在阅读的时候结合我自己的使用经验记录如下重点, 日后多次阅读应该会持续更新.<br>在线阅读地址: <a href="https://github.com/airbnb/javascript">https://github.com/airbnb/javascript</a><br>(中文翻译版: <a href="https://github.com/yuche/javascript">https://github.com/yuche/javascript</a>)</p><!-- more --><h2 id="对象">对象</h2><ol><li>使用字面值创建对象<br>```javascript<br>// bad<br>const item = new Object();<br><br></li></ol><p>// good<br>const item = {};</p><pre><code>2. 使用对象方法的简写
+```javascript
+// bad
+const atom = {
+  value: 1,
+
+  addValue: function (value) {
+    return atom.value + value;
+  },
+};
+
+// good
+const atom = {
+  value: 1,
+
+  addValue(value) {
+    return atom.value + value;
+  },
+};
+</code></pre><h2 id="数组">数组</h2><ol><li>使用字面值创建数组<br>```javascript<br>// bad<br>const items = new Array();<br><br></li></ol><p>// good<br>const items = [];</p><pre><code>2. 使用扩展运算符`...`复制数组
+```JavaScript
+// bad
+const len = items.length;
+const itemsCopy = [];
+let i;
+
+for (i = 0; i &lt; len; i++) {
+  itemsCopy[i] = items[i];
+}
+
+// good
+const itemsCopy = [...items];
+</code></pre><ol><li><p>使用Array#from把类数组对象转为数组</p><pre><code class="language-JavaScript">const foo = document.querySelectorAll('.foo');
+const nodes = Array.from(foo);
+</code></pre><h2 id="解构">解构</h2></li><li><p>使用解构存取和使用多属性对象<br>```JavaScript<br>// bad<br>function getFullName(user) {<br>const firstName = user.firstName;<br>const lastName = user.lastName;</p></li></ol><p>return <code>${firstName} ${lastName}</code>;<br>}</p><p>// good<br>function getFullName(obj) {<br>const { firstName, lastName } = obj;<br>return <code>${firstName} ${lastName}</code>;<br>}</p><p>// best<br>function getFullName({ firstName, lastName }) {<br>return <code>${firstName} ${lastName}</code>;<br>}</p><pre><code>2. 对数组使用解构赋值
+```JavaScript
+const arr = [1, 2, 3, 4];
+
+// bad
+const first = arr[0];
+const second = arr[1];
+
+// good
+const [first, second] = arr;
+</code></pre><ol><li>回传对个对象时, 使用对象解构, 而不是数组解构<br>&gt; 为什么？增加属性或者改变排序不会改变调用时的位置。<br>```JavaScript<br>// bad<br>function processInput(input) {<br>// then a miracle occurs<br>return [left, right, top, bottom];<br>}<br><br></li></ol><p>// 调用时需要考虑回调数据的顺序。<br>const [left, __, top] = processInput(input);</p><p>// good<br>function processInput(input) {<br>// then a miracle occurs<br>return { left, right, top, bottom };<br>}</p><p>// 调用时只选择需要的数据<br>const { left, right } = processInput(input);</p><pre><code>## 字符串
+1. 程序化生成字符串时使用模板字符串代替字符串连接
+&gt; 模板字符串更简洁, 根据可读性
+```JavaScript
+// bad
+function sayHi(name) {
+  return 'How are you, ' + name + '?';
+}
+
+// bad
+function sayHi(name) {
+  return ['How are you, ', name, '?'].join();
+}
+
+// good
+function sayHi(name) {
+  return `How are you, ${name}?`;
+</code></pre><h2 id="函数">函数</h2><ol><li>使用函数声明代替函数表达式<br>&gt; 因为函数声明是可命名的, 所以他们在调用栈中更容易被识别.<br>&gt; 此外函数声明会把整个函数提升(hoisted), 而函数表达式只会把函数的引用变量名提升. 这条规则是的箭头函数可以取代函数表达式.<br>```JavaScript<br>// bad<br>const foo = function () {<br>};<br><br></li></ol><p>// good<br>function foo() {<br>}</p><pre><code>2. 函数表达式
+```JavaScript
+// 立即调用的函数表达式(IIFE)
+(() =&gt; {
+    console.log('welcome!')
+})()
+</code></pre><ol><li>不要使用<code>arguments</code>。可以选择<code>rest</code>语法<code>...</code>替代<br>```JavaScript<br>// bad<br>function concatenateAll() {<br>const args = Array.prototype.slice.call(arguments);<br>return args.join(&ldquo;);<br>}<br><br></li></ol><p>// good<br>function concatenateAll(&hellip;args) {<br>return args.join(&ldquo;);<br>}</p><pre><code>4. 直接给函数的参数指定默认值，不要使用一个变化的函数参数。
+```JavaScript
+// really bad
+function handleThings(opts) {
+  // 不！我们不应该改变函数参数。
+  // 更加糟糕: 如果参数 opts 是 false 的话，它就会被设定为一个对象。
+  // 但这样的写法会造成一些 Bugs。
+  //（译注：例如当 opts 被赋值为空字符串，opts 仍然会被下一行代码设定为一个空对象。）
+  opts = opts || {};
+  // ...
+}
+
+// still bad
+function handleThings(opts) {
+  if (opts === void 0) {
+    opts = {};
+  }
+  // ...
+}
+
+// good
+function handleThings(opts = {}) {
+  // ...
+}
+</code></pre><h2 id="构造器">构造器</h2><ol><li>总是使用<code>class</code>, 避免使用<code>prototype</code><br>&gt; 因为<code>class</code>语法更易读<br>```JavaScript<br>// bad<br>function Queen(contents = []) {<br>this._quene = [&hellip;contents];<br>}<br>Quene.prototype.pop = function() {<br>const value = this._quene[0];<br>this._quene.splice(0, 1);<br>return value;<br>}<br><br></li></ol><p>// good<br>class Queen {</p><pre><code>constructor(contents = []) {
+    this._quene = [...contents];
+}
+pop() {
+    const value = this._quene[0];
+    this._quene.splice(0, 1);
+    return value;
+}
+</code></pre><p>}</p><pre><code>## Iterators and Generators
+1. 不要使用`iterators`, 使用高阶函数如`map`或者`reduce`来代替`for-of`
+```JavaScript
+const numbers = [1, 2, 3, 4, 5];
+
+// bad
+let sum = 0;
+for (let num of numbers) {
+  sum += num;
+}
+
+sum === 15;
+
+// good
+let sum = 0;
+numbers.forEach((num) =&gt; sum += num);
+sum === 15
+
+// best (use the functional force)
+const sum = numbers.reduce((total, num) =&gt; total += num, 0)
+sum === 15
+</code></pre><h2 id="比较运算符和等号">比较运算符和等号</h2><p>条件表达式例如 if 语句通过抽象方法<code>ToBoolean</code>强制计算它们的表达式并且总是遵守下面的规则：</p><ul><li>对象 被计算为 true<br></li><li>Undefined 被计算为 false<br></li><li>Null 被计算为 false<br></li><li>布尔值 被计算为 布尔的值<br></li><li>数字 如果是 +0、-0、或 NaN 被计算为 false, 否则为 true<br></li><li><p>字符串 如果是空字符串 &ldquo; 被计算为 false，否则为 true</p><h2 id="注释">注释</h2></li><li><p>给注释增加 FIXME 或 TODO 的前缀可以帮助其他开发者快速了解这是一个需要复查的问题，或是给需要实现的功能提供一个解决方式。这将有别于常见的注释，因为它们是可操作的。使用 FIXME &ndash; need to figure this out 或者 TODO &ndash; need to implement。<br>```JavaScript<br>class Calculator {<br>constructor() {<br>// FIXME: shouldn&rsquo;t use a global here<br>total = 0;<br>}<br>}</p></li></ul><p>class Calculator {<br>constructor() {</p><pre><code>// TODO: total should be configurable by an options param
+this.total = 0;
+</code></pre><p>}<br>}</p><pre><code>## 空白
+1. 使用2个空格作为缩进。
+2. 在文件末尾插入一个空行。
+## 逗号
+1. 增加结尾的逗号: 需要。
+&gt; `JavaScript`支持这种做法,并且会自动处理结尾多余的逗号, 好处是会让git diff更干净, 新增字段更方便.
+&gt; 另外，像 babel 这样的转译器会移除结尾多余的逗号，也就是说你不必担心老旧浏览器的尾逗号问题。
+```JavaScript
+// bad - git diff without trailing comma
+const hero = {
+     firstName: 'Florence',
+-    lastName: 'Nightingale'
++    lastName: 'Nightingale',
++    inventorOf: ['coxcomb graph', 'modern nursing']
+}
+
+// good - git diff with trailing comma
+const hero = {
+     firstName: 'Florence',
+     lastName: 'Nightingale',
++    inventorOf: ['coxcomb chart', 'modern nursing'],
+}
+
+// bad
+const hero = {
+  firstName: 'Dana',
+  lastName: 'Scully'
+};
+
+const heroes = [
+  'Batman',
+  'Superman'
+];
+
+// good
+const hero = {
+  firstName: 'Dana',
+  lastName: 'Scully',
+};
+
+const heroes = [
+  'Batman',
+  'Superman',
+];
+</code></pre><h2 id="类型转换">类型转换</h2><ol><li>字符串<br>```JavaScript<br>// =&gt; this.reviewScore = 9;<br><br></li></ol><p>// bad<br>const totalScore = this.reviewScore + &ldquo;;</p><p>// good<br>const totalScore = String(this.reviewScore);</p><pre><code>2. 如果因为某些原因 parseInt 成为你所做的事的瓶颈而需要使用位操作解决性能问题时，留个注释说清楚原因和你的目的。
+```JavaScript
+// good
+/**
+ * 使用 parseInt 导致我的程序变慢，
+ * 改成使用位操作转换数字快多了。
+ */
+const val = inputValue &gt;&gt; 0;
+</code></pre><h2 id="命名规则">命名规则</h2><ol><li>别保存<code>this</code>的引用。使用箭头函数或<code>Function#bind</code>。<br>```JavaScript<br>// bad<br>function foo() {<br>const self = this;<br>return function() {<br>console.log(self);<br>};<br>}<br><br></li></ol><p>// bad<br>function foo() {<br>const that = this;<br>return function() {</p><pre><code>console.log(that);
+</code></pre><p>};<br>}</p><p>// good<br>function foo() {<br>return () =&gt; {</p><pre><code>console.log(this);
+</code></pre><p>};<br>}</p><pre><code>2. 如果你的文件只输出一个类，那你的文件名必须和类名完全保持一致。
+```JavaScript
+// file contents
+class CheckBox {
+  // ...
+}
+export default CheckBox;
+
+// in some other file
+// bad
+import CheckBox from './checkBox';
+
+// bad
+import CheckBox from './check_box';
+
+// good
+import CheckBox from './CheckBox';
+</code></pre><ol><li>当你导出默认的函数时使用驼峰式命名。你的文件名必须和函数名完全保持一致。<br>```JavaScript<br>function makeStyleGuide() {<br>}<br><br></li></ol><p>export default makeStyleGuide;</p><pre><code>4. 当你导出单例、函数库、空对象时使用帕斯卡式命名。
+```JavaScript
+const AirbnbStyleGuide = {
+  es6: {
+  }
+};
+
+export default AirbnbStyleGuide;
+</code></pre><h2 id="事件">事件</h2><ol><li>当给事件附加数据时（无论是 DOM 事件还是私有事件），传入一个哈希而不是原始值。这样可以让后面的贡献者增加更多数据到事件数据而无需找出并更新事件的每一个处理器。<br>```JavaScript<br>// bad<br>$(this).trigger(&lsquo;listingUpdated&rsquo;, listing.id);<br><br></li></ol><p>&hellip;</p><p>$(this).on(&lsquo;listingUpdated&rsquo;, function(e, listingId) {<br>// do something with listingId<br>});</p><p>// good<br>$(this).trigger(&lsquo;listingUpdated&rsquo;, { listingId : listing.id });</p><p>&hellip;</p><p>$(this).on(&lsquo;listingUpdated&rsquo;, function(e, data) {<br>// do something with data.listingId<br>});<br>```</p></article></div><div class="card-action card-action-links"><a class="btn btn-secondary" href="https://kricsleo.github.io/docs/tags/codestyle">codeStyle</a></div><div class="card-action"><div id="comment"></div><style>.v .vwrap .vheader .vinput:focus {
+    border-bottom-color: #607d8b;
+  }</style><script>window.VALINECONFIG = {
+    el: '#comment',
+    notify: false,
+    verify: false,
+    appId: 'drenIDLMO3yTwiuCl7Hva9nq-gzGzoHsz',
+    appKey: 'rfotKaw6cevwHhOR8FvhwPAp',
+    placeholder: '写点什么吧...',
+    path: window.location.pathname,
+    avatar: 'retro'
+  }</script></div><div class="pagination-single"><span class="pagination-item previous"><i class="material-icons">navigate_before</i> <a href="https://kricsleo.github.io/docs/posts/unicode-utf8/" rel="prev">ASCII-Unicode-UTF8</a> </span><span class="pagination-item next"><a href="https://kricsleo.github.io/docs/posts/base64-md5/" rel="next">Base64-md5</a> <i class="material-icons">navigate_next</i></span></div></div></div></section></div></div></div><footer class="page-footer"><div class="container"><div class="inner"><div class="wrapper"><div class="group group-slink"><h5>World of Forks</h5><p>Theme <a href="https://github.com/stkevintan/canoe" target="_blank">canoe</a> designed by <a href="https://github.com/stkevintan" target="_blank">Kevin Tan</a> with ❤</p><ul class="slink"><li><a href="https://github.com/stkevintan" target="_blank" title="Github"><svg class="svg-icons svg-icons-github"><use xlink:href="#svg-icons-github"></use></svg></a></li><li><a href="https://twitter.com/kevinsfork" target="_blank" title="Twitter"><svg class="svg-icons svg-icons-twitter"><use xlink:href="#svg-icons-twitter"></use></svg></a></li><li><a href="http://weibo.com/kevinclasky" target="_blank" title="Weibo"><svg class="svg-icons svg-icons-sina-weibo"><use xlink:href="#svg-icons-sina-weibo"></use></svg></a></li></ul></div><div class="group group-flink"><h5>My Friends</h5><ul><li><a href="https://frantic1048.logdown.com/" target="_blank">Frantic1048</a></li><li><a href="https://hclmaster.github.io/" target="_blank">HclMaster</a></li><li><a href="https://whst.github.io/" target="_blank">WANG Hsü-Tung</a></li></ul></div></div></div></div><div class="footer-copyright"><div class="container"><div class="inner">Copyleft@Kevin Tan</div></div></div></footer></main><script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script><script type="text/javascript" src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script><script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/go.min.js"></script><script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/typescript.min.js"></script><script>hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.registerLanguage("graphql", function (e) { return { aliases: ["gql"], k: { keyword: "query mutation subscription|10 type interface union scalar fragment|10 enum on ...", literal: "true false null" }, c: [e.HCM, e.QSM, e.NM, { cN: "type", b: "[^\\w][A-Z][a-z]", e: "\\W", eE: !0 }, { cN: "literal", b: "[^\\w][A-Z][A-Z]", e: "\\W", eE: !0 }, { cN: "variable", b: "\\$", e: "\\W", eE: !0 }, { cN: "keyword", b: "[.]{2}", e: "\\." }, { cN: "meta", b: "@", e: "\\W", eE: !0 }], i: /([;<']|BEGIN)/ } });
+  hljs.initHighlightingOnLoad();</script><script type="text/javascript" src="https://kricsleo.github.io/docs/js/polyfill-7b0f9ccd98.js"></script><script type="text/javascript" src="https://kricsleo.github.io/docs/js/index-e16d25bc2c.js"></script><script src="/service-worker.js"></script><script>if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(reg) {
+      reg.onupdatefound = function() {
+        var installingWorker = reg.installing;
+        installingWorker.onstatechange = function() {
+          switch (installingWorker.state) {
+            case 'installed':
+              if (navigator.serviceWorker.controller) {
+                console.log('New or updated content is available.');
+              } else {
+                console.log('Content is now available offline!');
+              }
+              break;
+            case 'redundant':
+              console.error('The installing service worker became redundant.');
+              break;
+          }
+        };
+      };
+    }).catch(function(e) {
+      console.error('Error during service worker registration:', e);
+    });
+  });
+}</script></body></html>
