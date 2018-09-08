@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Openstack on World of Forks</title>
-    <link>https://keyin.me/tags/openstack/</link>
+    <link>https://kricsleo.github.io/docs/tags/openstack/</link>
     <description>Recent content in Openstack on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 28 Oct 2016 22:52:02 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>neutron源码分析</title>
-      <link>https://keyin.me/posts/neutron-code/</link>
+      <link>https://kricsleo.github.io/docs/posts/neutron-code/</link>
       <pubDate>Fri, 28 Oct 2016 22:52:02 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/neutron-code/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/neutron-code/</guid>
       <description>&lt;h2 id=&#34;消息总线&#34;&gt;消息总线&lt;/h2&gt;
 
 &lt;p&gt;Openstack各项目之间通过RESTful API进行通信；而项目内部不同服务进程则需要通过消息总线通信。关于消息总线的实现，包含在Openstack.oslo.messaging库中。&lt;/p&gt;

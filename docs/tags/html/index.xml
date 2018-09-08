@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html on World of Forks</title>
-    <link>https://keyin.me/tags/html/</link>
+    <link>https://kricsleo.github.io/docs/tags/html/</link>
     <description>Recent content in Html on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 03 Nov 2016 05:07:21 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/html/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JS DOM API分析</title>
-      <link>https://keyin.me/posts/dom-compatibility-note/</link>
+      <link>https://kricsleo.github.io/docs/posts/dom-compatibility-note/</link>
       <pubDate>Thu, 03 Nov 2016 05:07:21 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/dom-compatibility-note/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/dom-compatibility-note/</guid>
       <description>&lt;h2 id=&#34;element-classlist&#34;&gt;Element.classList&lt;/h2&gt;
 
 &lt;p&gt;返回DOMTokenList,IE version&amp;gt;=10不完全支持。&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Hexo折腾笔记（二）博客优化与定制</title>
-      <link>https://keyin.me/posts/hexo-lightum-enhance/</link>
+      <link>https://kricsleo.github.io/docs/posts/hexo-lightum-enhance/</link>
       <pubDate>Thu, 26 Feb 2015 06:57:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hexo-lightum-enhance/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hexo-lightum-enhance/</guid>
       <description>&lt;p&gt;首先我使用的是由&lt;a href=&#34;http://zipperary.com/&#34;&gt;zippera&lt;/a&gt;基于官方&lt;a href=&#34;https://github.com/hexojs/hexo-theme-light&#34;&gt;Light&lt;/a&gt;主题改进而来的&lt;a href=&#34;https://github.com/zippera/lightum&#34;&gt;Lightum&lt;/a&gt;主题,其他主题可能稍有出入。&lt;br /&gt;
 ##速度优化&lt;br /&gt;
 参考之前的文章：&lt;a href=&#34;http://kevinsfork.info/2015/02/25/hexo-speedup-instantclick/&#34;&gt;静态页面优化&lt;/a&gt;。然后使用了&lt;a href=&#34;https://github.com/gyk001/hexo-qiniu-sync&#34;&gt;hexo-qiniu-sync&lt;/a&gt;这个项目，将静态的图片以及css、js同步到了七牛云。（PS：主题模板中包含了两个不同版本的jquery，分别在head.ejs与after-footer.ejs中，随便删除一个。）&lt;/p&gt;
@@ -63,10 +63,10 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.56);
     
     <item>
       <title>Hexo折腾笔记（一）博客加速以及instantclick的兼容</title>
-      <link>https://keyin.me/posts/hexo-speedup-instantclick/</link>
+      <link>https://kricsleo.github.io/docs/posts/hexo-speedup-instantclick/</link>
       <pubDate>Thu, 26 Feb 2015 04:18:23 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hexo-speedup-instantclick/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hexo-speedup-instantclick/</guid>
       <description>&lt;p&gt;&lt;del&gt;首先，Gitcafe的国内速度已经够快了，加不加速其实没多大区别,只不过是闲的蛋疼而已。&lt;/del&gt;&lt;br /&gt;
 Gitcafe无故page不更新，所以又换回了github。&lt;/p&gt;
 
@@ -87,10 +87,10 @@ Gitcafe无故page不更新，所以又换回了github。&lt;/p&gt;
     
     <item>
       <title>用Sublime Text 3 dev 做网页开发的配置</title>
-      <link>https://keyin.me/posts/sublime-config-web/</link>
+      <link>https://kricsleo.github.io/docs/posts/sublime-config-web/</link>
       <pubDate>Wed, 17 Sep 2014 00:45:07 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/sublime-config-web/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/sublime-config-web/</guid>
       <description>文件：click here</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>科学上网 on World of Forks</title>
-    <link>https://keyin.me/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+    <link>https://kricsleo.github.io/docs/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
     <description>Recent content in 科学上网 on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 07 Feb 2017 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pandorabox之透明代理</title>
-      <link>https://keyin.me/posts/pandorabox-transparent-proxy/</link>
+      <link>https://kricsleo.github.io/docs/posts/pandorabox-transparent-proxy/</link>
       <pubDate>Tue, 07 Feb 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/pandorabox-transparent-proxy/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/pandorabox-transparent-proxy/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://ol1kreips.qnssl.com/PandoraBox.png&#34; alt=&#34;enter description here&#34; title=&#34;PandoraBox.png&#34; /&gt;&lt;br /&gt;
 先修改Lan接口，避免在无线中继的时候发生本地Lan接口与wwan接口发生冲突导致无法登陆路由器。&lt;/p&gt;
 

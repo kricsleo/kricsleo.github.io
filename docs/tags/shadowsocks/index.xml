@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shadowsocks on World of Forks</title>
-    <link>https://keyin.me/tags/shadowsocks/</link>
+    <link>https://kricsleo.github.io/docs/tags/shadowsocks/</link>
     <description>Recent content in Shadowsocks on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 07 Feb 2017 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/shadowsocks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/shadowsocks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pandorabox之透明代理</title>
-      <link>https://keyin.me/posts/pandorabox-transparent-proxy/</link>
+      <link>https://kricsleo.github.io/docs/posts/pandorabox-transparent-proxy/</link>
       <pubDate>Tue, 07 Feb 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/pandorabox-transparent-proxy/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/pandorabox-transparent-proxy/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://ol1kreips.qnssl.com/PandoraBox.png&#34; alt=&#34;enter description here&#34; title=&#34;PandoraBox.png&#34; /&gt;&lt;br /&gt;
 先修改Lan接口，避免在无线中继的时候发生本地Lan接口与wwan接口发生冲突导致无法登陆路由器。&lt;/p&gt;
 
@@ -36,10 +36,10 @@ opkg install shadowsocks-libev luci-app-shadowsocks ChinaDNS luci-app-chinadns -
     
     <item>
       <title>Shadowsocks免费账号网址集</title>
-      <link>https://keyin.me/posts/shadowsocks-account/</link>
+      <link>https://kricsleo.github.io/docs/posts/shadowsocks-account/</link>
       <pubDate>Wed, 25 Feb 2015 00:26:42 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/shadowsocks-account/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/shadowsocks-account/</guid>
       <description>G+圈子很多这样的网站，大部分是由ss-panel这个开源项目建成。不知道他们是乐于分享还是另有目的。下面是列表： Shadow X(ss-panel作者</description>
     </item>
     

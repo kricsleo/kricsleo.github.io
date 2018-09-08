@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lcs on World of Forks</title>
-    <link>https://keyin.me/tags/lcs/</link>
+    <link>https://kricsleo.github.io/docs/tags/lcs/</link>
     <description>Recent content in Lcs on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 18 Oct 2017 09:26:50 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/lcs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/lcs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>今日头条笔试解题报告(10.17)</title>
-      <link>https://keyin.me/posts/toutiao-test/</link>
+      <link>https://kricsleo.github.io/docs/posts/toutiao-test/</link>
       <pubDate>Wed, 18 Oct 2017 09:26:50 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/toutiao-test/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/toutiao-test/</guid>
       <description>&lt;p&gt;之前随便投了一下今日头条竟然过了,虽然不是很想去,但是已经给了我笔试邀约好歹也就做一下,锻炼锻炼脑子,说句实话还是挺喜欢头条的题目的,做起来很有以前ACM刷题的感觉,不像其他公司总感觉&amp;rdquo;工程化&amp;rdquo;比较多。&lt;/p&gt;
 
 &lt;h2 id=&#34;推箱子&#34;&gt;推箱子&lt;/h2&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>网易互娱2018年校招笔试解题报告</title>
-      <link>https://keyin.me/posts/online-exam-of-netease-game/</link>
+      <link>https://kricsleo.github.io/docs/posts/online-exam-of-netease-game/</link>
       <pubDate>Sun, 27 Aug 2017 00:03:05 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/online-exam-of-netease-game/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/online-exam-of-netease-game/</guid>
       <description>&lt;p&gt;今天做了一下网易互娱测开的校招笔试，感觉题目挺简单的，比隔壁不招人的阿里笔试正常不少，可惜我多年不写代码正确率和手速明显跟不上了, ToT&amp;hellip;.&lt;/p&gt;</description>
     </item>
     

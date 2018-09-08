@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gnome on World of Forks</title>
-    <link>https://keyin.me/tags/gnome/</link>
+    <link>https://kricsleo.github.io/docs/tags/gnome/</link>
     <description>Recent content in Gnome on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/gnome/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/gnome/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>体验I3之美</title>
-      <link>https://keyin.me/posts/beautifull-i3/</link>
+      <link>https://kricsleo.github.io/docs/posts/beautifull-i3/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/beautifull-i3/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/beautifull-i3/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://ol1kreips.qnssl.com/%E6%88%AA%E5%9B%BE_2017-03-13_18-50-11.png&#34; alt=&#34;enter description here&#34; title=&#34;截图_2017-03-13_18-50-11&#34; /&gt;&lt;br /&gt;
 先晒张日常桌面图。Gnome3用了半年了一直被其蹩脚的交互和层出不穷的Bug所折磨。虽然Gnome3很漂亮，很简洁，但是毕竟漂亮不能当饭吃。套餐这种东西虽然简单省事，但是终究不是为你所量身定制的，总有其中一样不合你口味。因此，我决定再次抛弃“开箱即用”的DE(Desktop Environment)，在WM(Window Manager)的基础上自己打造一套适合自己的桌面环境。&lt;br /&gt;
 &lt;/p&gt;</description>

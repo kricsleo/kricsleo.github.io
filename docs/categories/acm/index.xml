@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Acm on World of Forks</title>
-    <link>https://keyin.me/categories/acm/</link>
+    <link>https://kricsleo.github.io/docs/categories/acm/</link>
     <description>Recent content in Acm on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 18 Oct 2017 09:26:50 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/categories/acm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/categories/acm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>今日头条笔试解题报告(10.17)</title>
-      <link>https://keyin.me/posts/toutiao-test/</link>
+      <link>https://kricsleo.github.io/docs/posts/toutiao-test/</link>
       <pubDate>Wed, 18 Oct 2017 09:26:50 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/toutiao-test/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/toutiao-test/</guid>
       <description>&lt;p&gt;之前随便投了一下今日头条竟然过了,虽然不是很想去,但是已经给了我笔试邀约好歹也就做一下,锻炼锻炼脑子,说句实话还是挺喜欢头条的题目的,做起来很有以前ACM刷题的感觉,不像其他公司总感觉&amp;rdquo;工程化&amp;rdquo;比较多。&lt;/p&gt;
 
 &lt;h2 id=&#34;推箱子&#34;&gt;推箱子&lt;/h2&gt;
@@ -28,19 +28,19 @@
     
     <item>
       <title>网易互娱2018年校招笔试解题报告</title>
-      <link>https://keyin.me/posts/online-exam-of-netease-game/</link>
+      <link>https://kricsleo.github.io/docs/posts/online-exam-of-netease-game/</link>
       <pubDate>Sun, 27 Aug 2017 00:03:05 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/online-exam-of-netease-game/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/online-exam-of-netease-game/</guid>
       <description>&lt;p&gt;今天做了一下网易互娱测开的校招笔试，感觉题目挺简单的，比隔壁不招人的阿里笔试正常不少，可惜我多年不写代码正确率和手速明显跟不上了, ToT&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>斐波那契堆之Go实现</title>
-      <link>https://keyin.me/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://kricsleo.github.io/docs/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</guid>
       <description>&lt;p&gt;一个比二叉堆更高效的数据结构，但是实现起来非常复杂。本科的时候看《算法导论》的时候曾经研究过，不是很明白。今天终于对它有了一个比较清晰的了解。&lt;br /&gt;
 &lt;img src=&#34;https://ol1kreips.qnssl.com/image.png&#34; alt=&#34;enter description here&#34; title=&#34;image.png&#34; /&gt;&lt;br /&gt;
 &lt;/p&gt;</description>
@@ -48,10 +48,10 @@
     
     <item>
       <title>Basic Algorithms in Go</title>
-      <link>https://keyin.me/posts/basic-algorithms-in-go/</link>
+      <link>https://kricsleo.github.io/docs/posts/basic-algorithms-in-go/</link>
       <pubDate>Tue, 10 Jan 2017 08:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/basic-algorithms-in-go/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/basic-algorithms-in-go/</guid>
       <description>&lt;p&gt;最近学Go，感觉挺不错的。闲来无事用它写了几种常用的基础算法。&lt;/p&gt;
 
 &lt;h2 id=&#34;快排&#34;&gt;快排&lt;/h2&gt;
@@ -83,10 +83,10 @@ func QuickSort(arr []int) {
     
     <item>
       <title>ZOJ month contest D.Determinant and Matrix</title>
-      <link>https://keyin.me/posts/zoj-month-contest-d-determinant-and-matrix/</link>
+      <link>https://kricsleo.github.io/docs/posts/zoj-month-contest-d-determinant-and-matrix/</link>
       <pubDate>Sat, 08 Nov 2014 02:32:21 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zoj-month-contest-d-determinant-and-matrix/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zoj-month-contest-d-determinant-and-matrix/</guid>
       <description>&lt;hr /&gt;
 
 &lt;p&gt;&lt;center style=&#34;color: #000000;&#34;&gt;&lt;span style=&#34;color: green;&#34;&gt;Time Limit: &lt;/span&gt;2 Seconds      &lt;span style=&#34;color: green;&#34;&gt;Memory Limit: &lt;/span&gt;65536 KB&lt;/center&gt;&lt;/p&gt;
@@ -102,10 +102,10 @@ Recently, LBH is learning the curse linear algebra. Thus he is very interested i
     
     <item>
       <title>FFT求快速卷积的思考</title>
-      <link>https://keyin.me/posts/fft-thoughts/</link>
+      <link>https://kricsleo.github.io/docs/posts/fft-thoughts/</link>
       <pubDate>Fri, 07 Nov 2014 04:15:54 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/fft-thoughts/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/fft-thoughts/</guid>
       <description>&lt;p&gt;离散型卷积的定义是：$$y(n)=\sum_{m=0}^{n} x(m)h(n-m)$$&lt;/p&gt;
 
 &lt;p&gt;注意，h函数是反转的。&lt;/p&gt;
@@ -124,10 +124,10 @@ Recently, LBH is learning the curse linear algebra. Thus he is very interested i
     
     <item>
       <title>baylor 6622 Absurdistan Roads（ NWERC Contest）</title>
-      <link>https://keyin.me/posts/baylor6622-absurdistan-roads/</link>
+      <link>https://kricsleo.github.io/docs/posts/baylor6622-absurdistan-roads/</link>
       <pubDate>Fri, 07 Nov 2014 01:05:34 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/baylor6622-absurdistan-roads/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/baylor6622-absurdistan-roads/</guid>
       <description>&lt;p&gt;原题pdf：&lt;a href=&#34;https://icpcarchive.ecs.baylor.edu/external/66/6622.pdf&#34;&gt;click here&lt;/a&gt;&lt;br /&gt;
 ##Description&lt;br /&gt;
 The people of Absurdistan discovered how to build roads only last year. After the discovery, every city&lt;br /&gt;
@@ -141,10 +141,10 @@ city using the newly built roads.&lt;/p&gt;</description>
     
     <item>
       <title>Timus 1996 Cipher Message 3 KMP&#43;FFT求卷积</title>
-      <link>https://keyin.me/posts/timus-1996-cipher-message-3-kmpfft/</link>
+      <link>https://kricsleo.github.io/docs/posts/timus-1996-cipher-message-3-kmpfft/</link>
       <pubDate>Thu, 06 Nov 2014 06:13:15 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/timus-1996-cipher-message-3-kmpfft/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/timus-1996-cipher-message-3-kmpfft/</guid>
       <description>&lt;p&gt;题目链接：&lt;a href=&#34;http://acm.timus.ru/problem.aspx?space=1&amp;amp;amp;num=1996&#34;&gt;click here&lt;/a&gt;&lt;br /&gt;
 ##description&lt;br /&gt;
 Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has been the head of the Empire Armed Forces. However, the Rebel movement is strong like it never used to be. One of the rebel leaders, Princess Leia from Alderaan, managed to get hold of secret blueprints of the Death Star, the imperial war station.&lt;/p&gt;
@@ -154,19 +154,19 @@ Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has be
     
     <item>
       <title>（转）关于卷积的一个血腥的讲解，看完给跪了</title>
-      <link>https://keyin.me/posts/intro-of-fft/</link>
+      <link>https://kricsleo.github.io/docs/posts/intro-of-fft/</link>
       <pubDate>Thu, 06 Nov 2014 04:40:10 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/intro-of-fft/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/intro-of-fft/</guid>
       <description>比如说你的老板命令你干活，你却到楼下打台球去了，后来被老板发现，他非常气愤，扇了你一巴掌（注意，这就是输入信号，脉冲），于是你的脸上会渐渐地</description>
     </item>
     
     <item>
       <title>ACM International Collegiate Programming Contest Asia Regional Contest, Tokyo Problem D Space Golf</title>
-      <link>https://keyin.me/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</link>
+      <link>https://kricsleo.github.io/docs/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</link>
       <pubDate>Mon, 20 Oct 2014 05:20:03 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</guid>
       <description>&lt;p&gt;原题 pdf：&lt;a href=&#34;http://judge.u-aizu.ac.jp/onlinejudge/contest/ICPCOOC2014/D.pdf&#34;&gt;click here&lt;/a&gt;&lt;br /&gt;
 &lt;br/&gt;&lt;/p&gt;
 
@@ -183,10 +183,10 @@ Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has be
     
     <item>
       <title>HDU 4965 Fast Matrix Calculation</title>
-      <link>https://keyin.me/posts/hdu-4965-fast-matrix-calculation/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-4965-fast-matrix-calculation/</link>
       <pubDate>Wed, 20 Aug 2014 04:37:28 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-4965-fast-matrix-calculation/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-4965-fast-matrix-calculation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;2000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;131072&lt;/sup&gt;&amp;frasl;&lt;sub&gt;131072&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 206    Accepted Submission(s): 116&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -215,10 +215,10 @@ Bob just made this problem for kidding but he sees Alice taking it serious, so h
     
     <item>
       <title>HDU 4952 Number Transformation</title>
-      <link>https://keyin.me/posts/hdu-4952-number-transformation/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-4952-number-transformation/</link>
       <pubDate>Sat, 16 Aug 2014 01:22:13 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-4952-number-transformation/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-4952-number-transformation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;2000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65536&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65536&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 612    Accepted Submission(s): 310&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -236,10 +236,10 @@ He wants to know what is the number x now.&lt;/div&gt;
     
     <item>
       <title>HDU 4945 2048</title>
-      <link>https://keyin.me/posts/hdu-4945-2048/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-4945-2048/</link>
       <pubDate>Sat, 16 Aug 2014 00:56:19 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-4945-2048/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-4945-2048/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;3000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1500&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65536&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65536&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 590    Accepted Submission(s): 136&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -267,10 +267,10 @@ The number can be very large, just output the number modulo 998244353.
     
     <item>
       <title>HDU 2874 Connections between cities</title>
-      <link>https://keyin.me/posts/hdu-2874-connections-between-cities/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-2874-connections-between-cities/</link>
       <pubDate>Thu, 14 Aug 2014 06:00:34 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-2874-connections-between-cities/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-2874-connections-between-cities/</guid>
       <description>&lt;h1 id=&#34;connections-between-cities&#34;&gt;Connections between cities&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;10000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;32768&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32768&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
@@ -287,10 +287,10 @@ Now, your task comes. After giving you the condition of the roads, we want to kn
     
     <item>
       <title>内网 2085马农</title>
-      <link>https://keyin.me/posts/zjnu2085/</link>
+      <link>https://kricsleo.github.io/docs/posts/zjnu2085/</link>
       <pubDate>Thu, 14 Aug 2014 05:09:40 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zjnu2085/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zjnu2085/</guid>
       <description>&lt;p&gt;##Description&lt;br /&gt;
  在观看完战马检阅之后，来自大草原的两兄弟决心成为超级“马农”，专门饲养战马。&lt;/p&gt;
 
@@ -305,10 +305,10 @@ Now, your task comes. After giving you the condition of the roads, we want to kn
     
     <item>
       <title>内网2082 字母</title>
-      <link>https://keyin.me/posts/zjnu2082/</link>
+      <link>https://kricsleo.github.io/docs/posts/zjnu2082/</link>
       <pubDate>Wed, 13 Aug 2014 06:10:46 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zjnu2082/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zjnu2082/</guid>
       <description>&lt;p&gt;##Description&lt;/p&gt;
 
 &lt;p&gt;乐乐开始学习英文字母了，小C为他准备了很多字母牌，每张牌有一个英文字母。有天乐乐把所有的牌排成一行，这些字母竟然形成了一个回文串。小C想知道，乐乐在排字母的时候，有多少种情况，最后的字母形成回文串。&lt;/p&gt;
@@ -327,10 +327,10 @@ AAAAB AABB CD&lt;/p&gt;</description>
     
     <item>
       <title>HDU4944 FSF’s game</title>
-      <link>https://keyin.me/posts/hdu4944-fsfs-game/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4944-fsfs-game/</link>
       <pubDate>Wed, 13 Aug 2014 04:59:32 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4944-fsfs-game/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4944-fsfs-game/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;9000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4500&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;131072&lt;/sup&gt;&amp;frasl;&lt;sub&gt;131072&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 166    Accepted Submission(s): 76&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -361,10 +361,10 @@ We want to know what the variable will be.
     
     <item>
       <title>内网2073 城主GeassCode</title>
-      <link>https://keyin.me/posts/zjnu2073-geasscode/</link>
+      <link>https://kricsleo.github.io/docs/posts/zjnu2073-geasscode/</link>
       <pubDate>Sat, 02 Aug 2014 04:18:37 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zjnu2073-geasscode/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zjnu2073-geasscode/</guid>
       <description>&lt;p&gt;##Description&lt;/p&gt;
 
 &lt;p&gt;GeassCode凭借自己在topcoder上的超凡表现，赢得了国王的喜爱，国王赏赐他一座城池。这座城池里有n个 村子，m条路连接这些村子。坐上城主的GeassCode决定要修路，他打算用最少的代价把所以的村子连在一起。据探子回报，有些村子之间虽然原来没有路 径，但是可以强行的去建一条路。GeassCode想知道，如果强行在某两个村子之间建一条路，最后的总花费是多少？&lt;/p&gt;
@@ -374,10 +374,10 @@ We want to know what the variable will be.
     
     <item>
       <title>POJ1989 Distance Queries</title>
-      <link>https://keyin.me/posts/poj1989-distance-queries/</link>
+      <link>https://kricsleo.github.io/docs/posts/poj1989-distance-queries/</link>
       <pubDate>Fri, 01 Aug 2014 22:30:11 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/poj1989-distance-queries/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/poj1989-distance-queries/</guid>
       <description>&lt;p&gt;##Description&lt;/p&gt;
 
 &lt;p&gt;Farmer John&amp;rsquo;s cows refused to run in his marathon since he chose a path much too long for their leisurely lifestyle. He therefore wants to find a path of a more reasonable length. The input to this problem consists of the same input as in &amp;ldquo;Navigation Nightmare&amp;rdquo;,followed by a line containing a single integer K, followed by K &amp;ldquo;distance queries&amp;rdquo;. Each distance query is a line of input containing two integers, giving the numbers of two farms between which FJ is interested in computing distance (measured in the length of the roads along the path between the two farms). Please answer FJ&amp;rsquo;s distance queries as quickly as possible!&lt;br /&gt;
@@ -387,10 +387,10 @@ We want to know what the variable will be.
     
     <item>
       <title>POJ1330 Nearest Common Ancestors</title>
-      <link>https://keyin.me/posts/poj1330-nearest-common-ancestors/</link>
+      <link>https://kricsleo.github.io/docs/posts/poj1330-nearest-common-ancestors/</link>
       <pubDate>Fri, 01 Aug 2014 18:43:01 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/poj1330-nearest-common-ancestors/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/poj1330-nearest-common-ancestors/</guid>
       <description>&lt;p&gt;Time Limit: 1000MS Memory Limit: 10000K&lt;br /&gt;
 Total Submissions: 17734 Accepted: 9405&lt;/p&gt;
 
@@ -404,19 +404,19 @@ For other examples, the nearest common ancestor of nodes 2 and 3 is node 10, the
     
     <item>
       <title>2014 Multi-University Training Contest 4</title>
-      <link>https://keyin.me/posts/2014-multi-university-training-contest-4/</link>
+      <link>https://kricsleo.github.io/docs/posts/2014-multi-university-training-contest-4/</link>
       <pubDate>Fri, 01 Aug 2014 03:09:32 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/2014-multi-university-training-contest-4/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/2014-multi-university-training-contest-4/</guid>
       <description>心情就像倒数第二楼那样。 CLJ，我也保证不打死你…… PS:最后一楼朱大神还暴露了。</description>
     </item>
     
     <item>
       <title>HDU4005 The war</title>
-      <link>https://keyin.me/posts/hdu4005-the-war/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4005-the-war/</link>
       <pubDate>Thu, 31 Jul 2014 03:50:40 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4005-the-war/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4005-the-war/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;2000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65768&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65768&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 1992    Accepted Submission(s): 440&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -430,10 +430,10 @@ Total Submission(s): 1992    Accepted Submission(s): 440&lt;br /&gt;
     
     <item>
       <title>HDU4612 Warm up</title>
-      <link>https://keyin.me/posts/hdu4612-warm-up/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4612-warm-up/</link>
       <pubDate>Thu, 31 Jul 2014 03:37:32 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4612-warm-up/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4612-warm-up/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;10000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65535&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65535&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 3532    Accepted Submission(s): 813&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -449,10 +449,10 @@ Note that there could be more than one channel between two planets.&lt;/div&gt;
     
     <item>
       <title>HDU4888 Redraw Beautiful Drawings </title>
-      <link>https://keyin.me/posts/hdu4888-redraw-beautiful-drawings/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4888-redraw-beautiful-drawings/</link>
       <pubDate>Wed, 30 Jul 2014 05:43:58 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4888-redraw-beautiful-drawings/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4888-redraw-beautiful-drawings/</guid>
       <description>&lt;div class=&#34;panel_title&#34; align=&#34;left&#34;&gt;Problem Description&lt;/div&gt;
 
 &lt;div class=&#34;panel_content&#34;&gt;Alice and Bob are playing together. Alice is crazy about art and she has visited many museums around the world. She has a good memory and she can remember all drawings she has seen.Today Alice designs a game using these drawings in her memory. First, she matches K+1 colors appears in the picture to K+1 different integers(from 0 to K). After that, she slices the drawing into grids and there are N rows and M columns. Each grid has an integer on it(from 0 to K) representing the color on the corresponding position in the original drawing. Alice wants to share the wonderful drawings with Bob and she tells Bob the size of the drawing, the number of different colors, and the sum of integers on each row and each column. Bob has to redraw the drawing with Alice&#39;s information. Unfortunately, somtimes, the information Alice offers is wrong because of Alice&#39;s poor math. And sometimes, Bob can work out multiple different drawings using the information Alice provides. Bob gets confused and he needs your help. You have to tell Bob if Alice&#39;s information is right and if her information is right you should also tell Bob whether he can get a unique drawing.&lt;/div&gt;

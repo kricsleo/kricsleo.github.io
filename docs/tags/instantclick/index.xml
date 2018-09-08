@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Instantclick on World of Forks</title>
-    <link>https://keyin.me/tags/instantclick/</link>
+    <link>https://kricsleo.github.io/docs/tags/instantclick/</link>
     <description>Recent content in Instantclick on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 26 Feb 2015 04:18:23 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/instantclick/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/instantclick/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hexo折腾笔记（一）博客加速以及instantclick的兼容</title>
-      <link>https://keyin.me/posts/hexo-speedup-instantclick/</link>
+      <link>https://kricsleo.github.io/docs/posts/hexo-speedup-instantclick/</link>
       <pubDate>Thu, 26 Feb 2015 04:18:23 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hexo-speedup-instantclick/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hexo-speedup-instantclick/</guid>
       <description>&lt;p&gt;&lt;del&gt;首先，Gitcafe的国内速度已经够快了，加不加速其实没多大区别,只不过是闲的蛋疼而已。&lt;/del&gt;&lt;br /&gt;
 Gitcafe无故page不更新，所以又换回了github。&lt;/p&gt;
 

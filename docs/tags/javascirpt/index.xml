@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascirpt on World of Forks</title>
-    <link>https://keyin.me/tags/javascirpt/</link>
+    <link>https://kricsleo.github.io/docs/tags/javascirpt/</link>
     <description>Recent content in Javascirpt on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 03 Nov 2016 05:07:21 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/javascirpt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/javascirpt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JS DOM API分析</title>
-      <link>https://keyin.me/posts/dom-compatibility-note/</link>
+      <link>https://kricsleo.github.io/docs/posts/dom-compatibility-note/</link>
       <pubDate>Thu, 03 Nov 2016 05:07:21 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/dom-compatibility-note/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/dom-compatibility-note/</guid>
       <description>&lt;h2 id=&#34;element-classlist&#34;&gt;Element.classList&lt;/h2&gt;
 
 &lt;p&gt;返回DOMTokenList,IE version&amp;gt;=10不完全支持。&lt;/p&gt;

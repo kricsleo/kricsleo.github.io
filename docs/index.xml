@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>World of Forks</title>
-    <link>https://keyin.me/</link>
+    <link>https://kricsleo.github.io/docs/</link>
     <description>Recent content on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 11 Dec 2017 16:47:26 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ZJU校园网Openwrt路由器设置</title>
-      <link>https://keyin.me/posts/zju-openwrt-settings/</link>
+      <link>https://kricsleo.github.io/docs/posts/zju-openwrt-settings/</link>
       <pubDate>Mon, 11 Dec 2017 16:47:26 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zju-openwrt-settings/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zju-openwrt-settings/</guid>
       <description>&lt;h2 id=&#34;why&#34;&gt;Why&lt;/h2&gt;
 
 &lt;p&gt;学校这边上网每次都要输入账号，有登陆设备数量限制，玉泉这边还要申请静态IP地址，每人只能申请两个，申请下来还需要隔天才能生效……真的是有多不方便就多不方便。不过还好，学校的上网协议是标准的L2TP VPN认证，这几天想着把压箱底的小米路由器mini拿出来试一试看看能不能的openwrt上拨VPN然后分享出来。&lt;/p&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>今日头条笔试解题报告(10.17)</title>
-      <link>https://keyin.me/posts/toutiao-test/</link>
+      <link>https://kricsleo.github.io/docs/posts/toutiao-test/</link>
       <pubDate>Wed, 18 Oct 2017 09:26:50 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/toutiao-test/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/toutiao-test/</guid>
       <description>&lt;p&gt;之前随便投了一下今日头条竟然过了,虽然不是很想去,但是已经给了我笔试邀约好歹也就做一下,锻炼锻炼脑子,说句实话还是挺喜欢头条的题目的,做起来很有以前ACM刷题的感觉,不像其他公司总感觉&amp;rdquo;工程化&amp;rdquo;比较多。&lt;/p&gt;
 
 &lt;h2 id=&#34;推箱子&#34;&gt;推箱子&lt;/h2&gt;
@@ -52,19 +52,19 @@
     
     <item>
       <title>网易互娱2018年校招笔试解题报告</title>
-      <link>https://keyin.me/posts/online-exam-of-netease-game/</link>
+      <link>https://kricsleo.github.io/docs/posts/online-exam-of-netease-game/</link>
       <pubDate>Sun, 27 Aug 2017 00:03:05 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/online-exam-of-netease-game/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/online-exam-of-netease-game/</guid>
       <description>&lt;p&gt;今天做了一下网易互娱测开的校招笔试，感觉题目挺简单的，比隔壁不招人的阿里笔试正常不少，可惜我多年不写代码正确率和手速明显跟不上了, ToT&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo使用笔记</title>
-      <link>https://keyin.me/posts/hugo-guidance/</link>
+      <link>https://kricsleo.github.io/docs/posts/hugo-guidance/</link>
       <pubDate>Sat, 26 Aug 2017 18:48:30 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hugo-guidance/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hugo-guidance/</guid>
       <description>&lt;p&gt;Hugo是spf13大神写的一个静态博客生成器，拥有仅次于Hexo的用户量。相比于Hexo，Hugo使用Go编写，生成速度快了很多。除此之外，Hugo的设计更加合理，文档也比较详尽，比较适合我这种喜欢从零开始折腾的技术宅。本博客就是在hugo上搭建的，使用了自己编写的主题： &lt;a href=&#34;https://github.com/stkevintan/canoe-blog&#34;&gt;canoe&lt;/a&gt; 。&lt;/p&gt;
 
 &lt;h2 id=&#34;迁徙博文&#34;&gt;迁徙博文&lt;/h2&gt;
@@ -79,28 +79,28 @@
     
     <item>
       <title>Archive</title>
-      <link>https://keyin.me/archive/</link>
+      <link>https://kricsleo.github.io/docs/archive/</link>
       <pubDate>Sat, 19 Aug 2017 21:37:49 +0800</pubDate>
       
-      <guid>https://keyin.me/archive/</guid>
+      <guid>https://kricsleo.github.io/docs/archive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://keyin.me/about/</link>
+      <link>https://kricsleo.github.io/docs/about/</link>
       <pubDate>Sat, 19 Aug 2017 20:09:28 +0800</pubDate>
       
-      <guid>https://keyin.me/about/</guid>
+      <guid>https://kricsleo.github.io/docs/about/</guid>
       <description> Hello World! { &amp;quot;Name&amp;quot;: &amp;quot;Kevin Tan&amp;quot;, &amp;quot;Hobbies&amp;quot;: [&amp;quot;Coding&amp;quot;, &amp;quot;Movie&amp;quot;, &amp;quot;Piano&amp;quot;, &amp;quot;Linux&amp;quot;], &amp;quot;Location&amp;quot;: &amp;quot;Hangzhou&amp;quot;, &amp;quot;Company&amp;quot;: &amp;quot;Netease&amp;quot;, &amp;quot;School&amp;quot;: &amp;quot;Zhejiang University&amp;quot;, &amp;quot;Contacts&amp;quot;: { &amp;quot;Email&amp;quot;: &amp;quot;stkevintan@zju.edu.cn&amp;quot;, &amp;quot;Telegram&amp;quot;: &amp;quot;@kevinsfork&amp;quot;, &amp;quot;Weibo&amp;quot;: &amp;quot;@kevinclasky&amp;quot; } }  </description>
     </item>
     
     <item>
       <title>GraphQL Learn (1) - Queries and Mutations</title>
-      <link>https://keyin.me/posts/graphql-learn-1---queries-and-mutations/</link>
+      <link>https://kricsleo.github.io/docs/posts/graphql-learn-1---queries-and-mutations/</link>
       <pubDate>Tue, 15 Aug 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/graphql-learn-1---queries-and-mutations/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/graphql-learn-1---queries-and-mutations/</guid>
       <description>&lt;p&gt;在此页面上，你将详细了解如何查询GrahQL服务器。&lt;/p&gt;
 
 &lt;h2 id=&#34;字段-fields&#34;&gt;字段（Fields）&lt;/h2&gt;
@@ -130,10 +130,10 @@
     
     <item>
       <title>GraphQL Learn (2) - Schemas and Types</title>
-      <link>https://keyin.me/posts/graphql-learn-2---schemas-and-types/</link>
+      <link>https://kricsleo.github.io/docs/posts/graphql-learn-2---schemas-and-types/</link>
       <pubDate>Tue, 15 Aug 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/graphql-learn-2---schemas-and-types/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/graphql-learn-2---schemas-and-types/</guid>
       <description>&lt;p&gt;在此页面上，您将了解有关GraphQL类型系统的所有知识，以及如何描述可查询哪些数据。 由于GraphQL可以与任何后端框架或编程语言一起使用，因此我们将远离实现特定的详细信息，仅讨论概念。&lt;/p&gt;
 
 &lt;h3 id=&#34;类型系统-type-system&#34;&gt;类型系统（Type System）&lt;/h3&gt;
@@ -153,10 +153,10 @@
     
     <item>
       <title>GraphQL Learn (3) - Validation</title>
-      <link>https://keyin.me/posts/graphql-learn-3---validation/</link>
+      <link>https://kricsleo.github.io/docs/posts/graphql-learn-3---validation/</link>
       <pubDate>Tue, 15 Aug 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/graphql-learn-3---validation/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/graphql-learn-3---validation/</guid>
       <description>&lt;p&gt;通过使用类型系统，可以预先确定GraphQL查询是否有效。 这样可以让服务器和客户端有效地通知开发人员在创建无效查询时，无需在运行时检查。&lt;/p&gt;
 
 &lt;p&gt;对于我们的星球大战示例，文件&lt;a href=&#34;https://github.com/graphql/graphql-js/blob/master/src/__tests__/starWarsValidation-test.js&#34;&gt;starWarsValidation-test.js&lt;/a&gt;包含许多无效的查询，可以用来测试当前实现的验证器。&lt;/p&gt;
@@ -167,10 +167,10 @@
     
     <item>
       <title>GraphQL Learn (4) - Execution</title>
-      <link>https://keyin.me/posts/graphql-learn-4---execution/</link>
+      <link>https://kricsleo.github.io/docs/posts/graphql-learn-4---execution/</link>
       <pubDate>Tue, 15 Aug 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/graphql-learn-4---execution/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/graphql-learn-4---execution/</guid>
       <description>&lt;p&gt;经过验证，GraphQL查询由GraphQL服务器执行，然后返回一个与查询形状相同的结果，通常为JSON。&lt;/p&gt;
 
 &lt;p&gt;GraphQL无法执行没有类型系统的查询，让我们使用类型系统例子来说明执行查询，这个例子是我们教程中使用的类型系统中的一部分：&lt;/p&gt;
@@ -196,10 +196,10 @@ type Starship {
     
     <item>
       <title>GraphQL Learn (5) - Introspection</title>
-      <link>https://keyin.me/posts/graphql-learn-5---introspection/</link>
+      <link>https://kricsleo.github.io/docs/posts/graphql-learn-5---introspection/</link>
       <pubDate>Tue, 15 Aug 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/graphql-learn-5---introspection/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/graphql-learn-5---introspection/</guid>
       <description>&lt;p&gt;查询GraphQL架构有关它支持的查询的信息通常很有用。 GraphQL允许我们使用内省系统来做到这一点！对于我们的星球大战例子来说，文件&lt;a href=&#34;https://github.com/graphql/graphql-js/blob/master/src/__tests__/starWarsIntrospection-test.js&#34;&gt;starWarsIntrospection-test.js&lt;/a&gt;包含许多查询内省系统的查询，并且是一个完整的按照规范实现的测试文件。&lt;/p&gt;
 
 &lt;p&gt;我们设计了类型系统，所以我们应该知道系统中可用的类型。但是如果不知道，我们还可以通过查询__schema字段来询问GraphQL。这个字段始终存在于根类型中。&lt;br /&gt;
@@ -208,10 +208,10 @@ type Starship {
     
     <item>
       <title>Polymer 2.0 文档笔记(7) Helper Element</title>
-      <link>https://keyin.me/posts/polymer-2-7-helper-element/</link>
+      <link>https://kricsleo.github.io/docs/posts/polymer-2-7-helper-element/</link>
       <pubDate>Sun, 02 Jul 2017 22:56:11 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/polymer-2-7-helper-element/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/polymer-2-7-helper-element/</guid>
       <description>&lt;p&gt;Polymer提供一系列的自定义元素来简化一些共有的数据绑定逻辑：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -234,64 +234,64 @@ helper elements you&amp;rsquo;re using.&lt;/p&gt;
     
     <item>
       <title>Polymer 2.0 文档笔记(6) Data Binding</title>
-      <link>https://keyin.me/posts/polymer-2-6-data-binding/</link>
+      <link>https://kricsleo.github.io/docs/posts/polymer-2-6-data-binding/</link>
       <pubDate>Sun, 02 Jul 2017 22:55:28 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/polymer-2-6-data-binding/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/polymer-2-6-data-binding/</guid>
       <description>A data binding connects data from a custom element (the host element) to a property or attribute of an element in its local DOM (the child or target element). The host element data can be a property or sub-property represented by a data path, or data generated based on one or more paths. 数据绑定能够将host元素和tar</description>
     </item>
     
     <item>
       <title>Polymer 2.0 文档笔记(5) Observers &amp;&amp; Computed Properites</title>
-      <link>https://keyin.me/posts/polymer-2-5-observers-and-computed-properties/</link>
+      <link>https://kricsleo.github.io/docs/posts/polymer-2-5-observers-and-computed-properties/</link>
       <pubDate>Sun, 02 Jul 2017 22:54:06 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/polymer-2-5-observers-and-computed-properties/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/polymer-2-5-observers-and-computed-properties/</guid>
       <description>有两种监听器： 简单监听器，只能监听单一的property 复杂监听器：可以监听一到多个property 每个监听器都有一个或多个 依赖 ，当依赖发生</description>
     </item>
     
     <item>
       <title>Polymer 2.0 文档笔记(4) Data System</title>
-      <link>https://keyin.me/posts/polymer-2-4-data-system/</link>
+      <link>https://kricsleo.github.io/docs/posts/polymer-2-4-data-system/</link>
       <pubDate>Sun, 02 Jul 2017 22:53:02 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/polymer-2-4-data-system/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/polymer-2-4-data-system/</guid>
       <description>Polymer提供观察函数、计算属性、数据绑定三大模型功能： Observers Callbacks invoked when data changes. Computed properties Virtual properties computed based on other properties, and recomputed when the input data changes. Data bindings Annotations that update the properties, attributes, or text content of a DOM node when data changes.</description>
     </item>
     
     <item>
       <title>Polymer 2.0 文档笔记(3) Events</title>
-      <link>https://keyin.me/posts/polymer-2-3-events/</link>
+      <link>https://kricsleo.github.io/docs/posts/polymer-2-3-events/</link>
       <pubDate>Sun, 02 Jul 2017 22:52:21 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/polymer-2-3-events/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/polymer-2-3-events/</guid>
       <description>Normal Events Polymer elements can use the standard DOM APIs for creating, dispatching, and listening for events. Polymer also provides annotated event listeners, which allow you to specify event listeners declaratively as part of the element&amp;rsquo;s DOM template. Add annotated event listeners 这个其实就是在标签上使用on-event属性。 &amp;lt;dom-module id=&amp;quot;x-custom&amp;quot;&amp;gt; &amp;lt;template&amp;gt; &amp;lt;button on-click=&amp;quot;handleClick&amp;quot;&amp;gt;Kick</description>
     </item>
     
     <item>
       <title>Polymer 2.0 文档笔记(2) ShadowDOM</title>
-      <link>https://keyin.me/posts/polymer-2-2-shadowdom/</link>
+      <link>https://kricsleo.github.io/docs/posts/polymer-2-2-shadowdom/</link>
       <pubDate>Sun, 02 Jul 2017 22:51:37 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/polymer-2-2-shadowdom/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/polymer-2-2-shadowdom/</guid>
       <description>ShadowDOM API var div = document.createElement(&#39;div&#39;); var shadowRoot = div.attachShadow({mode: &#39;open&#39;}); shadowRoot.innerHTML = &#39;&amp;lt;h1&amp;gt;Hello Shadow DOM&amp;lt;/h1&amp;gt;&#39;; ShadowDOM Composition 主要概念： LightDOM: 元素的实际子孙节点，浏览器不会对LightDOM做任何的修改和移动。但是渲染的时候会渲染到相</description>
     </item>
     
     <item>
       <title>Polymer 2.0 文档笔记(1) Custom Elements</title>
-      <link>https://keyin.me/posts/polymer-2-1-custom-elements/</link>
+      <link>https://kricsleo.github.io/docs/posts/polymer-2-1-custom-elements/</link>
       <pubDate>Sun, 02 Jul 2017 22:49:25 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/polymer-2-1-custom-elements/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/polymer-2-1-custom-elements/</guid>
       <description>https://www.polymer-project.org/2.0/docs/devguide/custom-elements Custom element names. By specification, the custom element&amp;rsquo;s name must start with a lower-case ASCII letter and must contain a dash (-). There&amp;rsquo;s also a short list of prohibited element names that match existing names. For details, see the Custom elements core concepts section in the HTML specification. 自定义元素的命名规则： 按照规范，自定义元素</description>
     </item>
     
     <item>
       <title>体验I3之美</title>
-      <link>https://keyin.me/posts/beautifull-i3/</link>
+      <link>https://kricsleo.github.io/docs/posts/beautifull-i3/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/beautifull-i3/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/beautifull-i3/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://ol1kreips.qnssl.com/%E6%88%AA%E5%9B%BE_2017-03-13_18-50-11.png&#34; alt=&#34;enter description here&#34; title=&#34;截图_2017-03-13_18-50-11&#34; /&gt;&lt;br /&gt;
 先晒张日常桌面图。Gnome3用了半年了一直被其蹩脚的交互和层出不穷的Bug所折磨。虽然Gnome3很漂亮，很简洁，但是毕竟漂亮不能当饭吃。套餐这种东西虽然简单省事，但是终究不是为你所量身定制的，总有其中一样不合你口味。因此，我决定再次抛弃“开箱即用”的DE(Desktop Environment)，在WM(Window Manager)的基础上自己打造一套适合自己的桌面环境。&lt;br /&gt;
 &lt;/p&gt;</description>
@@ -299,10 +299,10 @@ helper elements you&amp;rsquo;re using.&lt;/p&gt;
     
     <item>
       <title>斐波那契堆之Go实现</title>
-      <link>https://keyin.me/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://kricsleo.github.io/docs/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86%E4%B9%8Bgo%E5%AE%9E%E7%8E%B0/</guid>
       <description>&lt;p&gt;一个比二叉堆更高效的数据结构，但是实现起来非常复杂。本科的时候看《算法导论》的时候曾经研究过，不是很明白。今天终于对它有了一个比较清晰的了解。&lt;br /&gt;
 &lt;img src=&#34;https://ol1kreips.qnssl.com/image.png&#34; alt=&#34;enter description here&#34; title=&#34;image.png&#34; /&gt;&lt;br /&gt;
 &lt;/p&gt;</description>
@@ -310,10 +310,10 @@ helper elements you&amp;rsquo;re using.&lt;/p&gt;
     
     <item>
       <title>网易云音乐新API简述</title>
-      <link>https://keyin.me/posts/netease-music-api/</link>
+      <link>https://kricsleo.github.io/docs/posts/netease-music-api/</link>
       <pubDate>Wed, 08 Feb 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/netease-music-api/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/netease-music-api/</guid>
       <description>&lt;p&gt;新API采用了略微修改过的AES和RSA加密，主要用在登陆接口上，对新API进行简单的分析。&lt;/p&gt;
 
 &lt;h2 id=&#34;url&#34;&gt;Url&lt;/h2&gt;
@@ -340,10 +340,10 @@ helper elements you&amp;rsquo;re using.&lt;/p&gt;
     
     <item>
       <title>Pandorabox之透明代理</title>
-      <link>https://keyin.me/posts/pandorabox-transparent-proxy/</link>
+      <link>https://kricsleo.github.io/docs/posts/pandorabox-transparent-proxy/</link>
       <pubDate>Tue, 07 Feb 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/pandorabox-transparent-proxy/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/pandorabox-transparent-proxy/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://ol1kreips.qnssl.com/PandoraBox.png&#34; alt=&#34;enter description here&#34; title=&#34;PandoraBox.png&#34; /&gt;&lt;br /&gt;
 先修改Lan接口，避免在无线中继的时候发生本地Lan接口与wwan接口发生冲突导致无法登陆路由器。&lt;/p&gt;
 
@@ -363,10 +363,10 @@ opkg install shadowsocks-libev luci-app-shadowsocks ChinaDNS luci-app-chinadns -
     
     <item>
       <title>Tech Daily@1-20</title>
-      <link>https://keyin.me/posts/xiaomi-openwrt--git/</link>
+      <link>https://kricsleo.github.io/docs/posts/xiaomi-openwrt--git/</link>
       <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/xiaomi-openwrt--git/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/xiaomi-openwrt--git/</guid>
       <description>&lt;p&gt;小米路由器mini（Xiaomi mini R1CM）刷Openwrt&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;scp /path/to/PandoraBox-xxxx.bin root@192.168.1.1:/tmp/PandoraBox.bin
@@ -398,10 +398,10 @@ xinput set-button-map 21 1 0 3
     
     <item>
       <title>Deepin初始化</title>
-      <link>https://keyin.me/posts/kubernetes--deepin-settings1-12/</link>
+      <link>https://kricsleo.github.io/docs/posts/kubernetes--deepin-settings1-12/</link>
       <pubDate>Thu, 12 Jan 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/kubernetes--deepin-settings1-12/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/kubernetes--deepin-settings1-12/</guid>
       <description>&lt;h2 id=&#34;infinality-and-harfbuzz&#34;&gt;Infinality and Harfbuzz&lt;/h2&gt;
 
 &lt;p&gt;会发生冲突，这是今天Archlinux无法启动输入法界面的元凶。重新安装freetype2\fontconfig\cairo以替换infinality-bundle。&lt;/p&gt;
@@ -423,10 +423,10 @@ gpg: 找不到有效的 OpenPGP 数据。
     
     <item>
       <title>Basic Algorithms in Go</title>
-      <link>https://keyin.me/posts/basic-algorithms-in-go/</link>
+      <link>https://kricsleo.github.io/docs/posts/basic-algorithms-in-go/</link>
       <pubDate>Tue, 10 Jan 2017 08:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/basic-algorithms-in-go/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/basic-algorithms-in-go/</guid>
       <description>&lt;p&gt;最近学Go，感觉挺不错的。闲来无事用它写了几种常用的基础算法。&lt;/p&gt;
 
 &lt;h2 id=&#34;快排&#34;&gt;快排&lt;/h2&gt;
@@ -458,10 +458,10 @@ func QuickSort(arr []int) {
     
     <item>
       <title>Centos初始化</title>
-      <link>https://keyin.me/posts/centos11-3/</link>
+      <link>https://kricsleo.github.io/docs/posts/centos11-3/</link>
       <pubDate>Wed, 04 Jan 2017 00:21:43 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/centos11-3/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/centos11-3/</guid>
       <description>&lt;h2 id=&#34;换源&#34;&gt;换源&lt;/h2&gt;
 
 &lt;h3 id=&#34;备份&#34;&gt;备份&lt;/h3&gt;
@@ -478,10 +478,10 @@ func QuickSort(arr []int) {
     
     <item>
       <title>Centos初始化2</title>
-      <link>https://keyin.me/posts/centos21-4/</link>
+      <link>https://kricsleo.github.io/docs/posts/centos21-4/</link>
       <pubDate>Wed, 04 Jan 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/centos21-4/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/centos21-4/</guid>
       <description>&lt;h2 id=&#34;proxychains-ng&#34;&gt;proxychains-ng&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/rofl0r/proxychains-ng
@@ -498,10 +498,10 @@ echo &#39;http 10.100.100.136 4411&#39; &amp;gt;&amp;gt; /etc/proxychains.conf  
     
     <item>
       <title>Kubernetes部署</title>
-      <link>https://keyin.me/posts/kubernetes%E9%83%A8%E7%BD%B21-5/</link>
+      <link>https://kricsleo.github.io/docs/posts/kubernetes%E9%83%A8%E7%BD%B21-5/</link>
       <pubDate>Wed, 04 Jan 2017 00:00:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/kubernetes%E9%83%A8%E7%BD%B21-5/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/kubernetes%E9%83%A8%E7%BD%B21-5/</guid>
       <description>&lt;h2 id=&#34;meow&#34;&gt;MEOW&lt;/h2&gt;
 
 &lt;p&gt;安装&lt;/p&gt;
@@ -524,10 +524,10 @@ xclip -o -sel clipboard &amp;gt; ~/.meow/rc
     
     <item>
       <title>pygobject-tutorial-1</title>
-      <link>https://keyin.me/posts/pygobject-tutorial-1/</link>
+      <link>https://kricsleo.github.io/docs/posts/pygobject-tutorial-1/</link>
       <pubDate>Wed, 09 Nov 2016 00:55:47 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/pygobject-tutorial-1/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/pygobject-tutorial-1/</guid>
       <description>&lt;h1 id=&#34;基础&#34;&gt;基础&lt;/h1&gt;
 
 &lt;p&gt;这章将会介绍GTK+比较重要的几个方面&lt;/p&gt;
@@ -537,10 +537,10 @@ xclip -o -sel clipboard &amp;gt; ~/.meow/rc
     
     <item>
       <title>JS DOM API分析</title>
-      <link>https://keyin.me/posts/dom-compatibility-note/</link>
+      <link>https://kricsleo.github.io/docs/posts/dom-compatibility-note/</link>
       <pubDate>Thu, 03 Nov 2016 05:07:21 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/dom-compatibility-note/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/dom-compatibility-note/</guid>
       <description>&lt;h2 id=&#34;element-classlist&#34;&gt;Element.classList&lt;/h2&gt;
 
 &lt;p&gt;返回DOMTokenList,IE version&amp;gt;=10不完全支持。&lt;/p&gt;
@@ -557,10 +557,10 @@ xclip -o -sel clipboard &amp;gt; ~/.meow/rc
     
     <item>
       <title>neutron源码分析</title>
-      <link>https://keyin.me/posts/neutron-code/</link>
+      <link>https://kricsleo.github.io/docs/posts/neutron-code/</link>
       <pubDate>Fri, 28 Oct 2016 22:52:02 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/neutron-code/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/neutron-code/</guid>
       <description>&lt;h2 id=&#34;消息总线&#34;&gt;消息总线&lt;/h2&gt;
 
 &lt;p&gt;Openstack各项目之间通过RESTful API进行通信；而项目内部不同服务进程则需要通过消息总线通信。关于消息总线的实现，包含在Openstack.oslo.messaging库中。&lt;/p&gt;
@@ -580,10 +580,10 @@ xclip -o -sel clipboard &amp;gt; ~/.meow/rc
     
     <item>
       <title>Hexo折腾笔记（二）博客优化与定制</title>
-      <link>https://keyin.me/posts/hexo-lightum-enhance/</link>
+      <link>https://kricsleo.github.io/docs/posts/hexo-lightum-enhance/</link>
       <pubDate>Thu, 26 Feb 2015 06:57:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hexo-lightum-enhance/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hexo-lightum-enhance/</guid>
       <description>&lt;p&gt;首先我使用的是由&lt;a href=&#34;http://zipperary.com/&#34;&gt;zippera&lt;/a&gt;基于官方&lt;a href=&#34;https://github.com/hexojs/hexo-theme-light&#34;&gt;Light&lt;/a&gt;主题改进而来的&lt;a href=&#34;https://github.com/zippera/lightum&#34;&gt;Lightum&lt;/a&gt;主题,其他主题可能稍有出入。&lt;br /&gt;
 ##速度优化&lt;br /&gt;
 参考之前的文章：&lt;a href=&#34;http://kevinsfork.info/2015/02/25/hexo-speedup-instantclick/&#34;&gt;静态页面优化&lt;/a&gt;。然后使用了&lt;a href=&#34;https://github.com/gyk001/hexo-qiniu-sync&#34;&gt;hexo-qiniu-sync&lt;/a&gt;这个项目，将静态的图片以及css、js同步到了七牛云。（PS：主题模板中包含了两个不同版本的jquery，分别在head.ejs与after-footer.ejs中，随便删除一个。）&lt;/p&gt;
@@ -610,10 +610,10 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.56);
     
     <item>
       <title>Hexo折腾笔记（一）博客加速以及instantclick的兼容</title>
-      <link>https://keyin.me/posts/hexo-speedup-instantclick/</link>
+      <link>https://kricsleo.github.io/docs/posts/hexo-speedup-instantclick/</link>
       <pubDate>Thu, 26 Feb 2015 04:18:23 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hexo-speedup-instantclick/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hexo-speedup-instantclick/</guid>
       <description>&lt;p&gt;&lt;del&gt;首先，Gitcafe的国内速度已经够快了，加不加速其实没多大区别,只不过是闲的蛋疼而已。&lt;/del&gt;&lt;br /&gt;
 Gitcafe无故page不更新，所以又换回了github。&lt;/p&gt;
 
@@ -634,28 +634,28 @@ Gitcafe无故page不更新，所以又换回了github。&lt;/p&gt;
     
     <item>
       <title>Shadowsocks免费账号网址集</title>
-      <link>https://keyin.me/posts/shadowsocks-account/</link>
+      <link>https://kricsleo.github.io/docs/posts/shadowsocks-account/</link>
       <pubDate>Wed, 25 Feb 2015 00:26:42 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/shadowsocks-account/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/shadowsocks-account/</guid>
       <description>G+圈子很多这样的网站，大部分是由ss-panel这个开源项目建成。不知道他们是乐于分享还是另有目的。下面是列表： Shadow X(ss-panel作者</description>
     </item>
     
     <item>
       <title>ASP.NET MVC 4笔记（二）</title>
-      <link>https://keyin.me/posts/asp-net-mvc4note2/</link>
+      <link>https://kricsleo.github.io/docs/posts/asp-net-mvc4note2/</link>
       <pubDate>Tue, 24 Feb 2015 18:50:00 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/asp-net-mvc4note2/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/asp-net-mvc4note2/</guid>
       <description>有Timestamp修饰的表在修改已有的记录是一定要将该字段复制，也就是说一定要在Edit网页里面添加一行： @Html.HiddenFor(model =&amp;gt; model.RowVersion) WebSecurity.C</description>
     </item>
     
     <item>
       <title>ASP.NET MVC4笔记（一） 扩展Simplemembership</title>
-      <link>https://keyin.me/posts/asp-net-mvc4-note1-simplemembership/</link>
+      <link>https://kricsleo.github.io/docs/posts/asp-net-mvc4-note1-simplemembership/</link>
       <pubDate>Tue, 24 Feb 2015 18:45:07 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/asp-net-mvc4-note1-simplemembership/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/asp-net-mvc4-note1-simplemembership/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-C#&#34;&gt;using System.Web.Mvc;
 
 namespace MvcClassManageSystem.ActionFilters
@@ -683,19 +683,19 @@ namespace MvcClassManageSystem.ActionFilters
     
     <item>
       <title>KDE的Mac向折腾指南</title>
-      <link>https://keyin.me/posts/kde-to-mac/</link>
+      <link>https://kricsleo.github.io/docs/posts/kde-to-mac/</link>
       <pubDate>Sun, 07 Dec 2014 20:45:53 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/kde-to-mac/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/kde-to-mac/</guid>
       <description>&lt;p&gt;惯例，先上图：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>(转)慢慢的，就没有了，就像从未存在过</title>
-      <link>https://keyin.me/posts/man-man-de/</link>
+      <link>https://kricsleo.github.io/docs/posts/man-man-de/</link>
       <pubDate>Fri, 28 Nov 2014 08:24:29 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/man-man-de/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/man-man-de/</guid>
       <description>&lt;p&gt;几年以前，我曾经嘲笑过某科技界大佬。当时他说：也许90后、95后会慢慢不知道谷歌是什么网站。&lt;/p&gt;
 
 &lt;p&gt;　　那一年，这对于我来说简直就是世界上最好笑的笑话。谷歌，全世界最卓越的互联网公司，活在互联网的一代中国人，会不知道他们的网站？&lt;/p&gt;
@@ -707,10 +707,10 @@ namespace MvcClassManageSystem.ActionFilters
     
     <item>
       <title>ZOJ month contest D.Determinant and Matrix</title>
-      <link>https://keyin.me/posts/zoj-month-contest-d-determinant-and-matrix/</link>
+      <link>https://kricsleo.github.io/docs/posts/zoj-month-contest-d-determinant-and-matrix/</link>
       <pubDate>Sat, 08 Nov 2014 02:32:21 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zoj-month-contest-d-determinant-and-matrix/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zoj-month-contest-d-determinant-and-matrix/</guid>
       <description>&lt;hr /&gt;
 
 &lt;p&gt;&lt;center style=&#34;color: #000000;&#34;&gt;&lt;span style=&#34;color: green;&#34;&gt;Time Limit: &lt;/span&gt;2 Seconds      &lt;span style=&#34;color: green;&#34;&gt;Memory Limit: &lt;/span&gt;65536 KB&lt;/center&gt;&lt;/p&gt;
@@ -726,10 +726,10 @@ Recently, LBH is learning the curse linear algebra. Thus he is very interested i
     
     <item>
       <title>FFT求快速卷积的思考</title>
-      <link>https://keyin.me/posts/fft-thoughts/</link>
+      <link>https://kricsleo.github.io/docs/posts/fft-thoughts/</link>
       <pubDate>Fri, 07 Nov 2014 04:15:54 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/fft-thoughts/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/fft-thoughts/</guid>
       <description>&lt;p&gt;离散型卷积的定义是：$$y(n)=\sum_{m=0}^{n} x(m)h(n-m)$$&lt;/p&gt;
 
 &lt;p&gt;注意，h函数是反转的。&lt;/p&gt;
@@ -748,10 +748,10 @@ Recently, LBH is learning the curse linear algebra. Thus he is very interested i
     
     <item>
       <title>baylor 6622 Absurdistan Roads（ NWERC Contest）</title>
-      <link>https://keyin.me/posts/baylor6622-absurdistan-roads/</link>
+      <link>https://kricsleo.github.io/docs/posts/baylor6622-absurdistan-roads/</link>
       <pubDate>Fri, 07 Nov 2014 01:05:34 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/baylor6622-absurdistan-roads/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/baylor6622-absurdistan-roads/</guid>
       <description>&lt;p&gt;原题pdf：&lt;a href=&#34;https://icpcarchive.ecs.baylor.edu/external/66/6622.pdf&#34;&gt;click here&lt;/a&gt;&lt;br /&gt;
 ##Description&lt;br /&gt;
 The people of Absurdistan discovered how to build roads only last year. After the discovery, every city&lt;br /&gt;
@@ -765,10 +765,10 @@ city using the newly built roads.&lt;/p&gt;</description>
     
     <item>
       <title>Timus 1996 Cipher Message 3 KMP&#43;FFT求卷积</title>
-      <link>https://keyin.me/posts/timus-1996-cipher-message-3-kmpfft/</link>
+      <link>https://kricsleo.github.io/docs/posts/timus-1996-cipher-message-3-kmpfft/</link>
       <pubDate>Thu, 06 Nov 2014 06:13:15 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/timus-1996-cipher-message-3-kmpfft/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/timus-1996-cipher-message-3-kmpfft/</guid>
       <description>&lt;p&gt;题目链接：&lt;a href=&#34;http://acm.timus.ru/problem.aspx?space=1&amp;amp;amp;num=1996&#34;&gt;click here&lt;/a&gt;&lt;br /&gt;
 ##description&lt;br /&gt;
 Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has been the head of the Empire Armed Forces. However, the Rebel movement is strong like it never used to be. One of the rebel leaders, Princess Leia from Alderaan, managed to get hold of secret blueprints of the Death Star, the imperial war station.&lt;/p&gt;
@@ -778,19 +778,19 @@ Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has be
     
     <item>
       <title>（转）关于卷积的一个血腥的讲解，看完给跪了</title>
-      <link>https://keyin.me/posts/intro-of-fft/</link>
+      <link>https://kricsleo.github.io/docs/posts/intro-of-fft/</link>
       <pubDate>Thu, 06 Nov 2014 04:40:10 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/intro-of-fft/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/intro-of-fft/</guid>
       <description>比如说你的老板命令你干活，你却到楼下打台球去了，后来被老板发现，他非常气愤，扇了你一巴掌（注意，这就是输入信号，脉冲），于是你的脸上会渐渐地</description>
     </item>
     
     <item>
       <title>KDE4的配置参考</title>
-      <link>https://keyin.me/posts/kde4-config/</link>
+      <link>https://kricsleo.github.io/docs/posts/kde4-config/</link>
       <pubDate>Sat, 01 Nov 2014 04:35:05 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/kde4-config/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/kde4-config/</guid>
       <description>&lt;p&gt;西北工大回来后,时间又充裕了,所以又开始了折腾KDE。&lt;/p&gt;
 
 &lt;p&gt;话说KDE的渲染阴影等效果非常接近MacBook。先放几张图：&lt;/p&gt;</description>
@@ -798,10 +798,10 @@ Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has be
     
     <item>
       <title>ACM International Collegiate Programming Contest Asia Regional Contest, Tokyo Problem D Space Golf</title>
-      <link>https://keyin.me/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</link>
+      <link>https://kricsleo.github.io/docs/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</link>
       <pubDate>Mon, 20 Oct 2014 05:20:03 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/acm-international-collegiate-programming-contest-asia-regional-contest-tokyo-problem-d-space-golf/</guid>
       <description>&lt;p&gt;原题 pdf：&lt;a href=&#34;http://judge.u-aizu.ac.jp/onlinejudge/contest/ICPCOOC2014/D.pdf&#34;&gt;click here&lt;/a&gt;&lt;br /&gt;
 &lt;br/&gt;&lt;/p&gt;
 
@@ -818,10 +818,10 @@ Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has be
     
     <item>
       <title>优化Wine程序的字体显示</title>
-      <link>https://keyin.me/posts/wine-font-config/</link>
+      <link>https://kricsleo.github.io/docs/posts/wine-font-config/</link>
       <pubDate>Mon, 13 Oct 2014 20:42:42 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/wine-font-config/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/wine-font-config/</guid>
       <description>&lt;p&gt;默认Wine的字体太难看，而且有时候还会显示不出来。开启Wine字体的反锯齿及平滑功能以及将字体映射成文泉驿微米黑的方法是：&lt;/p&gt;
 
 &lt;p&gt;1.新建文本文件a.reg，放入如下内容：&lt;br /&gt;
@@ -830,28 +830,28 @@ Emperor Palpatine has been ruling the Empire for 25 years and Darth Vader has be
     
     <item>
       <title>用Sublime Text 3 dev 做网页开发的配置</title>
-      <link>https://keyin.me/posts/sublime-config-web/</link>
+      <link>https://kricsleo.github.io/docs/posts/sublime-config-web/</link>
       <pubDate>Wed, 17 Sep 2014 00:45:07 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/sublime-config-web/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/sublime-config-web/</guid>
       <description>文件：click here</description>
     </item>
     
     <item>
       <title>我的xfce4配置</title>
-      <link>https://keyin.me/posts/xfce4-config/</link>
+      <link>https://kricsleo.github.io/docs/posts/xfce4-config/</link>
       <pubDate>Wed, 17 Sep 2014 00:39:20 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/xfce4-config/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/xfce4-config/</guid>
       <description>1.字体：infinally 渲染 2.英文字体：courier prime 3.窗口最大化隐藏标题栏：xfwm4-titleless-dev 4.窗口最大化</description>
     </item>
     
     <item>
       <title>HDU 4965 Fast Matrix Calculation</title>
-      <link>https://keyin.me/posts/hdu-4965-fast-matrix-calculation/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-4965-fast-matrix-calculation/</link>
       <pubDate>Wed, 20 Aug 2014 04:37:28 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-4965-fast-matrix-calculation/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-4965-fast-matrix-calculation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;2000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;131072&lt;/sup&gt;&amp;frasl;&lt;sub&gt;131072&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 206    Accepted Submission(s): 116&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -880,10 +880,10 @@ Bob just made this problem for kidding but he sees Alice taking it serious, so h
     
     <item>
       <title>HDU 4952 Number Transformation</title>
-      <link>https://keyin.me/posts/hdu-4952-number-transformation/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-4952-number-transformation/</link>
       <pubDate>Sat, 16 Aug 2014 01:22:13 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-4952-number-transformation/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-4952-number-transformation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;2000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65536&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65536&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 612    Accepted Submission(s): 310&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -901,10 +901,10 @@ He wants to know what is the number x now.&lt;/div&gt;
     
     <item>
       <title>HDU 4945 2048</title>
-      <link>https://keyin.me/posts/hdu-4945-2048/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-4945-2048/</link>
       <pubDate>Sat, 16 Aug 2014 00:56:19 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-4945-2048/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-4945-2048/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;3000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1500&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65536&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65536&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 590    Accepted Submission(s): 136&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -932,19 +932,19 @@ The number can be very large, just output the number modulo 998244353.
     
     <item>
       <title>我的HerbstluftWM</title>
-      <link>https://keyin.me/posts/herbustluftwm-config/</link>
+      <link>https://kricsleo.github.io/docs/posts/herbustluftwm-config/</link>
       <pubDate>Fri, 15 Aug 2014 04:04:50 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/herbustluftwm-config/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/herbustluftwm-config/</guid>
       <description>一直以来想折腾一下WM，但是又感觉麻烦。前天把笔记本带到机房就借此机会在虚拟机中玩了一下。发现事实上比我想像的要简单的多。少量配置了一下两个</description>
     </item>
     
     <item>
       <title>HDU 2874 Connections between cities</title>
-      <link>https://keyin.me/posts/hdu-2874-connections-between-cities/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu-2874-connections-between-cities/</link>
       <pubDate>Thu, 14 Aug 2014 06:00:34 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu-2874-connections-between-cities/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu-2874-connections-between-cities/</guid>
       <description>&lt;h1 id=&#34;connections-between-cities&#34;&gt;Connections between cities&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;10000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;32768&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32768&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
@@ -961,10 +961,10 @@ Now, your task comes. After giving you the condition of the roads, we want to kn
     
     <item>
       <title>内网 2085马农</title>
-      <link>https://keyin.me/posts/zjnu2085/</link>
+      <link>https://kricsleo.github.io/docs/posts/zjnu2085/</link>
       <pubDate>Thu, 14 Aug 2014 05:09:40 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zjnu2085/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zjnu2085/</guid>
       <description>&lt;p&gt;##Description&lt;br /&gt;
  在观看完战马检阅之后，来自大草原的两兄弟决心成为超级“马农”，专门饲养战马。&lt;/p&gt;
 
@@ -979,10 +979,10 @@ Now, your task comes. After giving you the condition of the roads, we want to kn
     
     <item>
       <title>内网2082 字母</title>
-      <link>https://keyin.me/posts/zjnu2082/</link>
+      <link>https://kricsleo.github.io/docs/posts/zjnu2082/</link>
       <pubDate>Wed, 13 Aug 2014 06:10:46 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zjnu2082/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zjnu2082/</guid>
       <description>&lt;p&gt;##Description&lt;/p&gt;
 
 &lt;p&gt;乐乐开始学习英文字母了，小C为他准备了很多字母牌，每张牌有一个英文字母。有天乐乐把所有的牌排成一行，这些字母竟然形成了一个回文串。小C想知道，乐乐在排字母的时候，有多少种情况，最后的字母形成回文串。&lt;/p&gt;
@@ -1001,10 +1001,10 @@ AAAAB AABB CD&lt;/p&gt;</description>
     
     <item>
       <title>HDU4944 FSF’s game</title>
-      <link>https://keyin.me/posts/hdu4944-fsfs-game/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4944-fsfs-game/</link>
       <pubDate>Wed, 13 Aug 2014 04:59:32 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4944-fsfs-game/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4944-fsfs-game/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;9000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4500&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;131072&lt;/sup&gt;&amp;frasl;&lt;sub&gt;131072&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 166    Accepted Submission(s): 76&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1035,10 +1035,10 @@ We want to know what the variable will be.
     
     <item>
       <title>内网2073 城主GeassCode</title>
-      <link>https://keyin.me/posts/zjnu2073-geasscode/</link>
+      <link>https://kricsleo.github.io/docs/posts/zjnu2073-geasscode/</link>
       <pubDate>Sat, 02 Aug 2014 04:18:37 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/zjnu2073-geasscode/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/zjnu2073-geasscode/</guid>
       <description>&lt;p&gt;##Description&lt;/p&gt;
 
 &lt;p&gt;GeassCode凭借自己在topcoder上的超凡表现，赢得了国王的喜爱，国王赏赐他一座城池。这座城池里有n个 村子，m条路连接这些村子。坐上城主的GeassCode决定要修路，他打算用最少的代价把所以的村子连在一起。据探子回报，有些村子之间虽然原来没有路 径，但是可以强行的去建一条路。GeassCode想知道，如果强行在某两个村子之间建一条路，最后的总花费是多少？&lt;/p&gt;
@@ -1048,10 +1048,10 @@ We want to know what the variable will be.
     
     <item>
       <title>POJ1989 Distance Queries</title>
-      <link>https://keyin.me/posts/poj1989-distance-queries/</link>
+      <link>https://kricsleo.github.io/docs/posts/poj1989-distance-queries/</link>
       <pubDate>Fri, 01 Aug 2014 22:30:11 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/poj1989-distance-queries/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/poj1989-distance-queries/</guid>
       <description>&lt;p&gt;##Description&lt;/p&gt;
 
 &lt;p&gt;Farmer John&amp;rsquo;s cows refused to run in his marathon since he chose a path much too long for their leisurely lifestyle. He therefore wants to find a path of a more reasonable length. The input to this problem consists of the same input as in &amp;ldquo;Navigation Nightmare&amp;rdquo;,followed by a line containing a single integer K, followed by K &amp;ldquo;distance queries&amp;rdquo;. Each distance query is a line of input containing two integers, giving the numbers of two farms between which FJ is interested in computing distance (measured in the length of the roads along the path between the two farms). Please answer FJ&amp;rsquo;s distance queries as quickly as possible!&lt;br /&gt;
@@ -1061,10 +1061,10 @@ We want to know what the variable will be.
     
     <item>
       <title>POJ1330 Nearest Common Ancestors</title>
-      <link>https://keyin.me/posts/poj1330-nearest-common-ancestors/</link>
+      <link>https://kricsleo.github.io/docs/posts/poj1330-nearest-common-ancestors/</link>
       <pubDate>Fri, 01 Aug 2014 18:43:01 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/poj1330-nearest-common-ancestors/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/poj1330-nearest-common-ancestors/</guid>
       <description>&lt;p&gt;Time Limit: 1000MS Memory Limit: 10000K&lt;br /&gt;
 Total Submissions: 17734 Accepted: 9405&lt;/p&gt;
 
@@ -1078,19 +1078,19 @@ For other examples, the nearest common ancestor of nodes 2 and 3 is node 10, the
     
     <item>
       <title>2014 Multi-University Training Contest 4</title>
-      <link>https://keyin.me/posts/2014-multi-university-training-contest-4/</link>
+      <link>https://kricsleo.github.io/docs/posts/2014-multi-university-training-contest-4/</link>
       <pubDate>Fri, 01 Aug 2014 03:09:32 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/2014-multi-university-training-contest-4/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/2014-multi-university-training-contest-4/</guid>
       <description>心情就像倒数第二楼那样。 CLJ，我也保证不打死你…… PS:最后一楼朱大神还暴露了。</description>
     </item>
     
     <item>
       <title>HDU4005 The war</title>
-      <link>https://keyin.me/posts/hdu4005-the-war/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4005-the-war/</link>
       <pubDate>Thu, 31 Jul 2014 03:50:40 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4005-the-war/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4005-the-war/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;2000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;1000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65768&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65768&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 1992    Accepted Submission(s): 440&lt;br /&gt;
 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1104,10 +1104,10 @@ Total Submission(s): 1992    Accepted Submission(s): 440&lt;br /&gt;
     
     <item>
       <title>HDU4612 Warm up</title>
-      <link>https://keyin.me/posts/hdu4612-warm-up/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4612-warm-up/</link>
       <pubDate>Thu, 31 Jul 2014 03:37:32 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4612-warm-up/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4612-warm-up/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;10000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65535&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65535&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 3532    Accepted Submission(s): 813&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -1123,10 +1123,10 @@ Note that there could be more than one channel between two planets.&lt;/div&gt;
     
     <item>
       <title>HDU4888 Redraw Beautiful Drawings </title>
-      <link>https://keyin.me/posts/hdu4888-redraw-beautiful-drawings/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4888-redraw-beautiful-drawings/</link>
       <pubDate>Wed, 30 Jul 2014 05:43:58 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4888-redraw-beautiful-drawings/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4888-redraw-beautiful-drawings/</guid>
       <description>&lt;div class=&#34;panel_title&#34; align=&#34;left&#34;&gt;Problem Description&lt;/div&gt;
 
 &lt;div class=&#34;panel_content&#34;&gt;Alice and Bob are playing together. Alice is crazy about art and she has visited many museums around the world. She has a good memory and she can remember all drawings she has seen.Today Alice designs a game using these drawings in her memory. First, she matches K+1 colors appears in the picture to K+1 different integers(from 0 to K). After that, she slices the drawing into grids and there are N rows and M columns. Each grid has an integer on it(from 0 to K) representing the color on the corresponding position in the original drawing. Alice wants to share the wonderful drawings with Bob and she tells Bob the size of the drawing, the number of different colors, and the sum of integers on each row and each column. Bob has to redraw the drawing with Alice&#39;s information. Unfortunately, somtimes, the information Alice offers is wrong because of Alice&#39;s poor math. And sometimes, Bob can work out multiple different drawings using the information Alice provides. Bob gets confused and he needs your help. You have to tell Bob if Alice&#39;s information is right and if her information is right you should also tell Bob whether he can get a unique drawing.&lt;/div&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>树的直径 on World of Forks</title>
-    <link>https://keyin.me/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/</link>
+    <link>https://kricsleo.github.io/docs/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/</link>
     <description>Recent content in 树的直径 on World of Forks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 31 Jul 2014 03:37:32 +0800</lastBuildDate>
     
-	<atom:link href="https://keyin.me/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kricsleo.github.io/docs/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HDU4612 Warm up</title>
-      <link>https://keyin.me/posts/hdu4612-warm-up/</link>
+      <link>https://kricsleo.github.io/docs/posts/hdu4612-warm-up/</link>
       <pubDate>Thu, 31 Jul 2014 03:37:32 +0800</pubDate>
       
-      <guid>https://keyin.me/posts/hdu4612-warm-up/</guid>
+      <guid>https://kricsleo.github.io/docs/posts/hdu4612-warm-up/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-family: Arial; font-size: 12px; font-weight: bold; color: green;&#34;&gt;Time Limit: &lt;sup&gt;10000&lt;/sup&gt;&amp;frasl;&lt;sub&gt;5000&lt;/sub&gt; MS (Java/Others)    Memory Limit: &lt;sup&gt;65535&lt;/sup&gt;&amp;frasl;&lt;sub&gt;65535&lt;/sub&gt; K (Java/Others)&lt;br /&gt;
 Total Submission(s): 3532    Accepted Submission(s): 813&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 
