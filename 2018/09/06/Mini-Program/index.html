@@ -21,7 +21,7 @@
 <meta property="og:description" content="微信小程序跳坑记录开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://mp.weixin.qq.com/debug/wxadoc/dev/image/mina-lifecycle.png?t=1474644090505">
-<meta property="og:updated_time" content="2018-09-11T07:52:02.000Z">
+<meta property="og:updated_time" content="2018-09-11T08:49:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mini-Program">
 <meta name="twitter:description" content="微信小程序跳坑记录开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.">
@@ -161,9 +161,9 @@
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
     	<h1 id="微信小程序跳坑记录"><a href="#微信小程序跳坑记录" class="headerlink" title="微信小程序跳坑记录"></a>微信小程序跳坑记录</h1><p>开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.<br><a id="more"></a></p>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><a href="https://juejin.im/post/5b8fd1416fb9a05cf3710690" target="_blank" rel="noopener">参考</a><br>小程序的逻辑层和渲染层是分开的, 逻辑层运行在JSCore中 并没有一个完整的浏览器对象, 因而缺少相关的DOM API和BOM API.<br>小程序的运行环境:<br>|运行环境|逻辑层|渲染层|<br>|:-:|:-:|:-:|<br>|IOS|JavaScriptCore|WKWebView|<br>|安卓|X5 JSCore|X5浏览器|<br>|开发工具|NWJS|Chrome WebView|</p>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><a href="https://juejin.im/post/5b8fd1416fb9a05cf3710690" target="_blank" rel="noopener">参考</a><br>小程序的逻辑层和渲染层是分开的, 逻辑层运行在JSCore中 并没有一个完整的浏览器对象, 因而缺少相关的DOM API和BOM API.<br>小程序的运行环境:<br>| 运行环境 | 逻辑层 | 渲染层 |<br>| :-: | :-: | :-: |<br>| IOS | JavaScriptCore | WKWebView |<br>| 安卓 | X5 JSCore | X5浏览器 |<br>| 开发工具 | NWJS | Chrome WebView |</p>
 <p><a href="https://juejin.im/post/5abca877f265da238155b6bc" target="_blank" rel="noopener">小程序的Native和js之间的交互是通过JSBridge实现</a></p>
-<p>小程序的视图线程和服务线程的交互生命周期<br><img src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/mina-lifecycle.png?t=1474644090505" alt="小程序的视图线程和服务线程的交互生命周期"></p>
+<p><a href="https://www.jianshu.com/p/0078507e14d3" target="_blank" rel="noopener">小程序的视图线程和服务线程的交互生命周期</a><br><img src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/mina-lifecycle.png?t=1474644090505" alt="小程序的视图线程和服务线程的交互生命周期"></p>
 <p>小程序的文件编译过程:<br>WXml -&gt; js -&gt; Virtual DOM -&gt; DOM Tree<br>WXSS -&gt; js -&gt; CSS</p>
 <h2 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h2><p>微信小程序通过<code>状态模式-单向数据流</code>来实现数据绑定.<br>状态模式定义一个对象, 当对象发生改变时, 状态就发生改变, 然后通知与之绑定的视图刷新, 注意: <strong>数据流向是单向的, 即视图变化不会引起对象状态变化</strong>.<br>如果想要视图改变的时候让对象状态也一并改变, 那么就需要依赖事件来实现, 即视图变化 -&gt; 触发事件 -&gt; 捕获事件 -&gt; 回调处理(在这里可以操作对象)</p>
 <h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>  一个页面要正常显示，必须经历以上3个生命周期：<code>加载</code> -&gt; <code>显示</code> -&gt; <code>渲染</code>, 对应回调函数顺序:<code>onLoad</code> -&gt; <code>onShow</code> -&gt; <code>onReady</code>.<br>  官方给出的示例中<code>onReady</code>放在<code>onShow</code>之前, 但是这并不是真正的顺序, 容易误导开发者</p>
