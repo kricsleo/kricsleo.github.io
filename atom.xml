@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-11T08:43:42.000Z</updated>
+  <updated>2018-09-11T12:13:55.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -21,14 +21,11 @@
     <link href="https://kricsleo.github.io/2018/09/10/docker/"/>
     <id>https://kricsleo.github.io/2018/09/10/docker/</id>
     <published>2018-09-10T05:19:34.000Z</published>
-    <updated>2018-09-11T08:43:42.000Z</updated>
+    <updated>2018-09-11T12:13:55.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;docker学习笔记&quot;&gt;&lt;a href=&quot;#docker学习笔记&quot; class=&quot;headerlink&quot; title=&quot;docker学习笔记&quot;&gt;&lt;/a&gt;docker学习笔记&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.docker.org.cn/book
-      
+      &lt;h1 id=&quot;docker学习笔记&quot;&gt;&lt;a href=&quot;#docker学习笔记&quot; class=&quot;headerlink&quot; title=&quot;docker学习笔记&quot;&gt;&lt;/a&gt;docker学习笔记&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.docker.org.cn/book/docker/what-is-docker-16.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考文档&lt;/a&gt;&lt;br&gt;Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.&lt;br&gt;
     
     </summary>
     
