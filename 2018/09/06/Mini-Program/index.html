@@ -21,7 +21,7 @@
 <meta property="og:description" content="微信小程序跳坑记录开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://mp.weixin.qq.com/debug/wxadoc/dev/image/mina-lifecycle.png?t=1474644090505">
-<meta property="og:updated_time" content="2018-09-11T08:49:34.000Z">
+<meta property="og:updated_time" content="2018-09-11T11:40:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mini-Program">
 <meta name="twitter:description" content="微信小程序跳坑记录开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.">
@@ -161,17 +161,45 @@
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
     	<h1 id="微信小程序跳坑记录"><a href="#微信小程序跳坑记录" class="headerlink" title="微信小程序跳坑记录"></a>微信小程序跳坑记录</h1><p>开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.<br><a id="more"></a></p>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><a href="https://juejin.im/post/5b8fd1416fb9a05cf3710690" target="_blank" rel="noopener">参考</a><br>小程序的逻辑层和渲染层是分开的, 逻辑层运行在JSCore中 并没有一个完整的浏览器对象, 因而缺少相关的DOM API和BOM API.<br>小程序的运行环境:<br>| 运行环境 | 逻辑层 | 渲染层 |<br>| :-: | :-: | :-: |<br>| IOS | JavaScriptCore | WKWebView |<br>| 安卓 | X5 JSCore | X5浏览器 |<br>| 开发工具 | NWJS | Chrome WebView |</p>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><a href="https://juejin.im/post/5b8fd1416fb9a05cf3710690" target="_blank" rel="noopener">参考</a><br>小程序的逻辑层和渲染层是分开的, 逻辑层运行在JSCore中 并没有一个完整的浏览器对象, 因而缺少相关的DOM API和BOM API.<br>小程序的运行环境: </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">运行环境</th>
+<th style="text-align:center">逻辑层</th>
+<th style="text-align:center">渲染层</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">IOS</td>
+<td style="text-align:center">JavaScriptCore</td>
+<td style="text-align:center">WKWebView</td>
+</tr>
+<tr>
+<td style="text-align:center">安卓2</td>
+<td style="text-align:center">X5 JSCore</td>
+<td style="text-align:center">X5浏览器</td>
+</tr>
+<tr>
+<td style="text-align:center">开发工具</td>
+<td style="text-align:center">NWJS</td>
+<td style="text-align:center">Chrome WebView</td>
+</tr>
+</tbody>
+</table>
 <p><a href="https://juejin.im/post/5abca877f265da238155b6bc" target="_blank" rel="noopener">小程序的Native和js之间的交互是通过JSBridge实现</a></p>
 <p><a href="https://www.jianshu.com/p/0078507e14d3" target="_blank" rel="noopener">小程序的视图线程和服务线程的交互生命周期</a><br><img src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/mina-lifecycle.png?t=1474644090505" alt="小程序的视图线程和服务线程的交互生命周期"></p>
 <p>小程序的文件编译过程:<br>WXml -&gt; js -&gt; Virtual DOM -&gt; DOM Tree<br>WXSS -&gt; js -&gt; CSS</p>
 <h2 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h2><p>微信小程序通过<code>状态模式-单向数据流</code>来实现数据绑定.<br>状态模式定义一个对象, 当对象发生改变时, 状态就发生改变, 然后通知与之绑定的视图刷新, 注意: <strong>数据流向是单向的, 即视图变化不会引起对象状态变化</strong>.<br>如果想要视图改变的时候让对象状态也一并改变, 那么就需要依赖事件来实现, 即视图变化 -&gt; 触发事件 -&gt; 捕获事件 -&gt; 回调处理(在这里可以操作对象)</p>
-<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>  一个页面要正常显示，必须经历以上3个生命周期：<code>加载</code> -&gt; <code>显示</code> -&gt; <code>渲染</code>, 对应回调函数顺序:<code>onLoad</code> -&gt; <code>onShow</code> -&gt; <code>onReady</code>.<br>  官方给出的示例中<code>onReady</code>放在<code>onShow</code>之前, 但是这并不是真正的顺序, 容易误导开发者</p>
+<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>一个页面要正常显示，必须经历以上3个生命周期：<code>加载</code> -&gt; <code>显示</code> -&gt; <code>渲染</code>, 对应回调函数顺序:<code>onLoad</code> -&gt; <code>onShow</code> -&gt; <code>onReady</code>.<br>官方给出的示例中<code>onReady</code>放在<code>onShow</code>之前, 但是这并不是真正的顺序, 容易误导开发者</p>
 <h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><ol>
-<li><p>hidden属性<br>首先强调一点: <strong>不要使用<code>hidden</code>属性!</strong> </p>
+<li><p>hidden属性<br>首先强调一点: <strong>不要使用<code>hidden</code>属性!</strong></p>
 <ol>
-<li>语法<br>正确的写法是<code>hidden=&quot;true&quot;</code>和<code>hidden=&quot;false&quot;</code>, 遵循<code>Mustache</code>语法, 双大括号不能省略, 因为<code>hidden</code>的值是<code>Boolean</code>型的, 必须使用<code>Mustache</code>计算值才行, 如果省略了双大括号, 比如<code>hidden=&quot;false&quot;</code>(填写其它内容也一样)), 那么就会把<code>&quot;false&quot;</code>作为字符串处理, 此时字符串不为空, 那么结果就是<code>true</code>, 此组件仍然会被隐藏.  </li>
-<li>为什么不要使用该属性<br><code>hidden</code>属性的表现相当怪异.<br>根据不完全测试, 在<code>view</code>, <code>navigator</code>等组件上表现为会给你的组件添加一个css属性<code>display: none;</code>, 如果你是通过<code>id</code>或者<code>class</code>来给组件加上自定义的<code>display</code>属性的话, 那么<code>hidden</code>添加的那个<code>display</code>属性优先级比你的高, 此时组件会被隐藏; 如果你是使用的内联样式<code>style=&quot;display: flex;&quot;</code>来给组件添加<code>display</code>属性, 那么你这里添加的<code>display</code>属性优先级会比较高, 此时<code>hidden</code>属性不生效;<br>在<code>button</code>组件上添加<code>hidden=&quot;true&quot;</code>表现为会给你的组件上添加一个css属性<code>display: none !important;</code>, 这里相比之前多了<code>!important</code>关键字, 所以此时的<code>hidden</code>属性的优先级是最高的, 不会被你自定义的给覆盖掉;<br>在<code>text</code>组件上又是一种表示了, 如果你为<code>text</code>组件添加<code>hidden=&quot;true&quot;</code>, 那么只要你给这个组件自定义了<code>display</code>属性, 你的优先级就会比<code>hidden</code>的高, <code>hidden</code>处于不生效的状态, 如果你没有自定义, 那么<code>hidden</code>才会生效;<br>基于上面的种种怪异的表现, 已经不需要去测试更多的组件了, 因为这已经有足够充分的理由不去使用<code>hidden</code>属性了.  </li>
+<li><p>语法<br>正确的写法是<code>hidden=&quot;true&quot;</code>和<code>hidden=&quot;false&quot;</code>, 遵循<code>Mustache</code>语法, 双大括号不能省略, 因为<code>hidden</code>的值是<code>Boolean</code>型的, 必须使用<code>Mustache</code>计算值才行, 如果省略了双大括号, 比如<code>hidden=&quot;false&quot;</code>(填写其它内容也一样)), 那么就会把<code>&quot;false&quot;</code>作为字符串处理, 此时字符串不为空, 那么结果就是<code>true</code>, 此组件仍然会被隐藏. </p>
+</li>
+<li><p>为什么不要使用该属性<br><code>hidden</code>属性的表现相当怪异.<br>根据不完全测试, 在<code>view</code>, <code>navigator</code>等组件上表现为会给你的组件添加一个css属性<code>display: none;</code>, 如果你是通过<code>id</code>或者<code>class</code>来给组件加上自定义的<code>display</code>属性的话, 那么<code>hidden</code>添加的那个<code>display</code>属性优先级比你的高, 此时组件会被隐藏; 如果你是使用的内联样式<code>style=&quot;display: flex;&quot;</code>来给组件添加<code>display</code>属性, 那么你这里添加的<code>display</code>属性优先级会比较高, 此时<code>hidden</code>属性不生效;<br>在<code>button</code>组件上添加<code>hidden=&quot;true&quot;</code>表现为会给你的组件上添加一个css属性<code>display: none !important;</code>, 这里相比之前多了<code>!important</code>关键字, 所以此时的<code>hidden</code>属性的优先级是最高的, 不会被你自定义的给覆盖掉;<br>在<code>text</code>组件上又是一种表示了, 如果你为<code>text</code>组件添加<code>hidden=&quot;true&quot;</code>, 那么只要你给这个组件自定义了<code>display</code>属性, 你的优先级就会比<code>hidden</code>的高, <code>hidden</code>处于不生效的状态, 如果你没有自定义, 那么<code>hidden</code>才会生效;<br>基于上面的种种怪异的表现, 已经不需要去测试更多的组件了, 因为这已经有足够充分的理由不去使用<code>hidden</code>属性了. </p>
+</li>
 <li><p>替代办法<br>我们使用<code>hidden</code>属性无非是想控制组件的显示与否, 那么可以采取如下的替代方案:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">style</span>=<span class="string">"display: &#123;&#123;isHidden ? 'none' : 'flex'&#125;&#125;;"</span>&gt;</span><span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -186,14 +214,16 @@
 </ol>
 <h2 id="request"><a href="#request" class="headerlink" title="request"></a>request</h2><p><code>GET</code>一般都正常, 但是<code>POST</code>请求真可谓是’一千个读者有一千个哈姆雷特’, 各种失败的情况都有, 可尝试如下方法:</p>
 <ol>
-<li>首先<code>method</code>是必须设置为<code>POST</code>的;</li>
-<li><code>header</code>中设置<code>&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;</code>, 也有说小写<code>&quot;content-type&quot;: &quot;application/x-www-form-urlencoded&quot;</code>能成功;</li>
-<li><p>data有说不能直接传<code>json</code>格式, 需要先转格式:</p>
+<li><p>首先<code>method</code>是必须设置为<code>POST</code>的;</p>
+</li>
+<li><p><code>header</code>中设置<code>&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;</code>, 也有说小写<code>&quot;content-type&quot;: &quot;application/x-www-form-urlencoded&quot;</code>能成功;</p>
+</li>
+<li><p>data有说不能直接传<code>json</code>格式, 需要先转格式:  </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">json2Form</span>(<span class="params">json</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> str = [];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> p <span class="keyword">in</span> json)&#123;</span><br><span class="line">        str.push(<span class="built_in">encodeURIComponent</span>(p) + <span class="string">"="</span> + <span class="built_in">encodeURIComponent</span>(json[p]));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> str.join(<span class="string">"&amp;"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> data = &#123;</span><br><span class="line">  name: <span class="string">'张三'</span>,</span><br><span class="line">  age: <span class="string">'23'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> ajaxData = json2Form(data); <span class="comment">// 然后将`ajaxData`附在请求的`data`中字段中</span></span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li>也有说服务端必须是<code>https</code>的;</li>
-<li>实在不行服务端就改成<code>GET</code>吧…</li>
-</ol>
+</li>
+<li><p>也有说服务端必须是<code>https</code>的;   </p>
+</li>
+<li><p>实在不行服务端就改成<code>GET</code>吧…  </p>
 </li>
 </ol>
 <h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><p>小程序对于服务器的域名有要求, 在开发时如果没有https的服务器, 那么pc端可以把微信开发工具里的域名校验展示关闭, ios端打开调试模式运行小程序, 安卓端打不打开调试模式都可以, 之后如果申请到了https的服务器, 那么把服务器域名加入到微信管理平台的域名列表中, 然后就可以关闭各种之前调试的东西正常使用了.</p>
