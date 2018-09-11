@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>kricsleo</title>
+  <title>docker | kricsleo</title>
   <meta name="description" content="It&#39;s my personal blog." />
   <meta name="keywords" content="blog,kricsleo,IT,Web Front End" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,17 +12,18 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="It&apos;s my personal blog.">
-<meta name="keywords" content="blog,kricsleo,IT,Web Front End">
-<meta property="og:type" content="website">
-<meta property="og:title" content="kricsleo">
-<meta property="og:url" content="https://kricsleo.github.io/index.html">
+  <meta name="description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台. 如无特殊说明, 以下操作环境均为CentOS 7, 内核版本位3.10.0-693.2.2.el7.x86_64(查看内核版">
+<meta name="keywords" content="docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker">
+<meta property="og:url" content="https://kricsleo.github.io/2018/09/10/docker/index.html">
 <meta property="og:site_name" content="kricsleo">
-<meta property="og:description" content="It&apos;s my personal blog.">
+<meta property="og:description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台. 如无特殊说明, 以下操作环境均为CentOS 7, 内核版本位3.10.0-693.2.2.el7.x86_64(查看内核版">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-10T10:33:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kricsleo">
-<meta name="twitter:description" content="It&apos;s my personal blog.">
+<meta name="twitter:title" content="docker">
+<meta name="twitter:description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台. 如无特殊说明, 以下操作环境均为CentOS 7, 内核版本位3.10.0-693.2.2.el7.x86_64(查看内核版">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -133,31 +134,31 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        
-<section class="post-list">
+        <article id="post-docker"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2018/09/10/docker/">
+    	docker
+    </a>
+  </h2>
+	<time>
+	  9月 10, 2018
+	</time>
 	
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2018/09/10/docker/">
-        docker
-      </a>
-    </h2>
-    
-    <time>
-      9月 10, 2018
-    </time>
-		
     
     <div class='cats'>
         <a href="/categories/工具/">工具</a>
     </div>
 
-  </section>
-  <section class="article typo">
-	  <h1 id="docker学习笔记"><a href="#docker学习笔记" class="headerlink" title="docker学习笔记"></a>docker学习笔记</h1><p><a href="http://www.docker.org.cn/book/docker/what-is-docker-16.html" target="_blank" rel="noopener">参考文档</a><br>Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.</p>
+	</section>
+	
+		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#docker学习笔记"><span class="toc-number">1.</span> <span class="toc-text">docker学习笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker常用命令"><span class="toc-number">1.1.</span> <span class="toc-text">docker常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据卷"><span class="toc-number">1.2.</span> <span class="toc-text">数据卷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker中使用mysql"><span class="toc-number">1.3.</span> <span class="toc-text">docker中使用mysql</span></a></li></ol></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<h1 id="docker学习笔记"><a href="#docker学习笔记" class="headerlink" title="docker学习笔记"></a>docker学习笔记</h1><p><a href="http://www.docker.org.cn/book/docker/what-is-docker-16.html" target="_blank" rel="noopener">参考文档</a><br>Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.</p>
 <p>如无特殊说明, 以下操作环境均为<code>CentOS 7</code>, 内核版本位<code>3.10.0-693.2.2.el7.x86_64</code><br>(查看内核版本: <code>uname -r</code>)</p>
 <h2 id="docker常用命令"><a href="#docker常用命令" class="headerlink" title="docker常用命令"></a>docker常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装docker</span></span><br><span class="line">yum install -y docker</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动docker服务</span></span><br><span class="line">service docker start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 给个hello-world的测试例子, 由于本地没有hello-world这个镜像，所以会下载一个hello-world的镜像，并在容器内运行。</span></span><br><span class="line">docker run hello-world</span><br><span class="line"></span><br><span class="line"><span class="comment"># 停止容器</span></span><br><span class="line">docker stop CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动已经停止的容器</span></span><br><span class="line">docker start CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启容器</span></span><br><span class="line">docker restart CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除容器</span></span><br><span class="line">docker rm CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取容器的输出信息</span></span><br><span class="line">docker logs CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 容器文件拷贝到主机</span></span><br><span class="line">docker cp ed0f8bb24f3e:/opt/webapp/app.py   d:/www</span><br><span class="line"><span class="comment"># 参数说明</span></span><br><span class="line"><span class="comment"># ed0f8bb24f3e： 容器id</span></span><br><span class="line"><span class="comment"># /opt/webapp/app.py: 容器中的文件</span></span><br><span class="line"><span class="comment"># d:/www： 主机文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 主机文件拷贝到容器</span></span><br><span class="line">docker cp d:/www/文件 ed0f8bb24f3e:/opt/webapp/</span><br></pre></td></tr></table></figure>
 <h2 id="数据卷"><a href="#数据卷" class="headerlink" title="数据卷"></a>数据卷</h2><h2 id="docker中使用mysql"><a href="#docker中使用mysql" class="headerlink" title="docker中使用mysql"></a>docker中使用mysql</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载mysql镜像</span></span><br><span class="line">docker pull mysql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看已下载的镜像</span></span><br><span class="line"><span class="comment"># 或 docker image ls</span></span><br><span class="line">docker images </span><br><span class="line"></span><br><span class="line"><span class="comment"># 从镜像创建并运行一个容器</span></span><br><span class="line">docker run --name first-mysql -p 3306:3306 -e MYSQL\_ROOT\_PASSWORD=root -d mysql</span><br><span class="line"><span class="comment"># 参数说明:</span></span><br><span class="line"><span class="comment"># --name 指定容器独一无二的名字</span></span><br><span class="line"><span class="comment"># -p mysql容器的端口映射</span></span><br><span class="line"><span class="comment"># -e &lt;key=value&gt;	设置进入后可以使用的环境变量，这样动态指定比较灵活</span></span><br><span class="line"><span class="comment"># -d 表示使用守护进程, 即服务挂在后台</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前已经运行的容器(可以看到容器id: CONTAINER_ID)</span></span><br><span class="line">docker ps</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入容器内部(推荐使用exec)</span></span><br><span class="line">docker <span class="built_in">exec</span> -it CONTAINER_ID /bin/bash</span><br><span class="line"><span class="comment"># 参数说明</span></span><br><span class="line"><span class="comment"># -i 以交互方式运行，是阻塞式的</span></span><br><span class="line"><span class="comment"># -t 分配一个伪终端，这个参数通常与-i参数一起使用，然后， 在后面跟上容器里的/bin/bash，这样就把我们带到容器里去了。</span></span><br><span class="line"><span class="comment"># -d 以后台方式执行，这样，我们执行完这条命令，还可以干其他事情，写脚本最常用</span></span><br></pre></td></tr></table></figure>
@@ -171,183 +172,38 @@
 </li>
 </ol>
 
-
-    
-    
-    
-	  <div class="full-width auto-padding tags">
+  	</div>
+	  
+	  <div class="article-tags tags">
       
         <a href="/tags/docker/">docker</a>
       
 	  </div>
     
-  </section>
-</article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2018/09/07/practical-function-in-javascript/">
-        Practical-Function-In-Javascript
-      </a>
-    </h2>
-    
-    <time>
-      9月 7, 2018
-    </time>
 		
-    
-    <div class='cats'>
-        <a href="/categories/前端/">前端</a>
-    </div>
-
-  </section>
-  <section class="article typo">
-	  <h1 id="JavaScript中的常用函数"><a href="#JavaScript中的常用函数" class="headerlink" title="JavaScript中的常用函数"></a>JavaScript中的常用函数</h1><p>本文主要整理了平时JavaScript中常用的函数, 持续更新.<br>
-
-    
-	  <div class="readmore">
-      <a href="/2018/09/07/practical-function-in-javascript/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/funtion/">funtion</a>
-      
-	  </div>
-    
-  </section>
+	
+		<div class="art-item-footer">
+				
+				
+					<span class="art-item-right">next：<a href="/2018/09/07/practical-function-in-javascript/" rel="next"  title="Practical-Function-In-Javascript">
+						Practical-Function-In-Javascript
+					</a><i class="icon icon-chevron-thin-right"></i></span>
+				
+		</div>
+	
+	</section>
+	
+		<section id="comments">
+			<div id="disqus_thread"></div>
+		</section>
+	
 </article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2018/09/06/Mini-Program/">
-        Mini-Program
-      </a>
-    </h2>
-    
-    <time>
-      9月 6, 2018
-    </time>
-		
-    
-    <div class='cats'>
-        <a href="/categories/前端/">前端</a>
-    </div>
-
-  </section>
-  <section class="article typo">
-	  <h1 id="微信小程序跳坑记录"><a href="#微信小程序跳坑记录" class="headerlink" title="微信小程序跳坑记录"></a>微信小程序跳坑记录</h1><p>开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.<br>
-
-    
-	  <div class="readmore">
-      <a href="/2018/09/06/Mini-Program/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/Mini-Program/">Mini-Program</a>
-      
-	  </div>
-    
-  </section>
-</article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2018/09/05/unicode-utf8/">
-        ASCII-Unicode-UTF8
-      </a>
-    </h2>
-    
-    <time>
-      9月 5, 2018
-    </time>
-		
-  </section>
-  <section class="article typo">
-	  <h1 id="ASCII-Unicode和UTF8之间的关系"><a href="#ASCII-Unicode和UTF8之间的关系" class="headerlink" title="ASCII, Unicode和UTF8之间的关系"></a>ASCII, Unicode和UTF8之间的关系</h1><p>本文主要了解一下ASCII码、Unicode码和UTF-8码的来源和相互之间的关系, 顺便也理了一下中文编码GB2312, GBK, GB18030的关系。<br>
-
-    
-	  <div class="readmore">
-      <a href="/2018/09/05/unicode-utf8/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/encrypt/">encrypt</a>
-      
-	  </div>
-    
-  </section>
-</article>
-    </div>
-  
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2018/09/05/Airbnb-JavaScript-Style-Guide/">
-        Airbnb-JavaScript-Style-Guide
-      </a>
-    </h2>
-    
-    <time>
-      9月 5, 2018
-    </time>
-		
-  </section>
-  <section class="article typo">
-	  <h1 id="Airbnb-JavaScript-Style-Guide-阅读笔记"><a href="#Airbnb-JavaScript-Style-Guide-阅读笔记" class="headerlink" title="Airbnb JavaScript Style Guide 阅读笔记"></a>Airbnb JavaScript Style Guide 阅读笔记</h1><p>Airbnb的JavaScript代码风格是世界上最流行的JavaScript代码风格之一, 在阅读的时候结合我自己的使用经验记录如下重点, 日后多次阅读应该会持续更新.<br>在线阅读地址: <a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener">https://github.com/airbnb/javascript</a><br>(中文翻译版: <a href="https://github.com/yuche/javascript" target="_blank" rel="noopener">https://github.com/yuche/javascript</a>)<br>
-
-    
-	  <div class="readmore">
-      <a href="/2018/09/05/Airbnb-JavaScript-Style-Guide/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/codeStyle/">codeStyle</a>
-      
-	  </div>
-    
-  </section>
-</article>
-    </div>
-  
-</section>
-
-
-  <nav id="page-nav">
-    
-    
-    <a class="next" rel="next" href="/page/2/">
-      <span class="text">Next</span>
-      <span class="icon icon-chevron-right"></span>
-    </a>
-    
-  </nav>
-  
+<script>
+	window.subData = {
+		title: 'docker',
+		tools: true
+	}
+</script>
 
       </div>
       <aside class='l_side'>
@@ -438,11 +294,13 @@
 <script>
   var disqus_shortname = 'kricsleo';
   
+  var disqus_url = 'https://kricsleo.github.io/2018/09/10/docker/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

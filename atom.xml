@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-07T10:25:51.000Z</updated>
+  <updated>2018-09-10T10:33:29.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker</title>
+    <link href="https://kricsleo.github.io/2018/09/10/docker/"/>
+    <id>https://kricsleo.github.io/2018/09/10/docker/</id>
+    <published>2018-09-10T05:19:34.000Z</published>
+    <updated>2018-09-10T10:33:29.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;docker学习笔记&quot;&gt;&lt;a href=&quot;#docker学习笔记&quot; class=&quot;headerlink&quot; title=&quot;docker学习笔记&quot;&gt;&lt;/a&gt;docker学习笔记&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.docker.org.cn/book
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="docker" scheme="https://kricsleo.github.io/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>Practical-Function-In-Javascript</title>
@@ -41,7 +64,7 @@
     <link href="https://kricsleo.github.io/2018/09/06/Mini-Program/"/>
     <id>https://kricsleo.github.io/2018/09/06/Mini-Program/</id>
     <published>2018-09-06T07:10:23.000Z</published>
-    <updated>2018-09-06T10:36:06.000Z</updated>
+    <updated>2018-09-11T07:52:02.000Z</updated>
     
     <summary type="html">
     
@@ -52,7 +75,7 @@
       <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="Mini Program" scheme="https://kricsleo.github.io/tags/Mini-Program/"/>
+      <category term="Mini-Program" scheme="https://kricsleo.github.io/tags/Mini-Program/"/>
     
   </entry>
   
@@ -138,7 +161,7 @@
     <link href="https://kricsleo.github.io/2018/08/30/ssh-git/"/>
     <id>https://kricsleo.github.io/2018/08/30/ssh-git/</id>
     <published>2018-08-30T01:56:01.000Z</published>
-    <updated>2018-08-31T10:46:10.000Z</updated>
+    <updated>2018-09-10T06:29:02.000Z</updated>
     
     <summary type="html">
     
@@ -180,7 +203,7 @@
     <link href="https://kricsleo.github.io/2018/08/22/git-workflow/"/>
     <id>https://kricsleo.github.io/2018/08/22/git-workflow/</id>
     <published>2018-08-22T07:01:31.000Z</published>
-    <updated>2018-09-04T10:22:44.000Z</updated>
+    <updated>2018-09-10T07:46:42.000Z</updated>
     
     <summary type="html">
     
