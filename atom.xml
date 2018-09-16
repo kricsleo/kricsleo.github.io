@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-11T12:13:55.000Z</updated>
+  <updated>2018-09-13T04:45:24.000Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bash</title>
+    <link href="https://kricsleo.github.io/2018/09/13/bash/"/>
+    <id>https://kricsleo.github.io/2018/09/13/bash/</id>
+    <published>2018-09-13T04:41:22.000Z</published>
+    <updated>2018-09-13T04:45:24.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;常用的bash命令&quot;&gt;&lt;a href=&quot;#常用的bash命令&quot; class=&quot;headerlink&quot; title=&quot;常用的bash命令&quot;&gt;&lt;/a&gt;常用的bash命令&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="bash" scheme="https://kricsleo.github.io/tags/bash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>flex</title>
+    <link href="https://kricsleo.github.io/2018/09/13/flex/"/>
+    <id>https://kricsleo.github.io/2018/09/13/flex/</id>
+    <published>2018-09-13T04:36:29.000Z</published>
+    <updated>2018-09-13T04:45:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;flex布局&quot;&gt;&lt;a href=&quot;#flex布局&quot; class=&quot;headerlink&quot; title=&quot;flex布局&quot;&gt;&lt;/a&gt;flex布局&lt;/h1&gt;&lt;p&gt;关于flex布局的笔记&lt;br&gt;&lt;img src=&quot;https://lc-gold-cdn.xitu.io/0dd26d8e99257ff36443.png?imageslim&quot; alt=&quot;flex&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="css" scheme="https://kricsleo.github.io/tags/css/"/>
+    
+      <category term="flex" scheme="https://kricsleo.github.io/tags/flex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue</title>
+    <link href="https://kricsleo.github.io/2018/09/13/vue/"/>
+    <id>https://kricsleo.github.io/2018/09/13/vue/</id>
+    <published>2018-09-13T01:42:12.000Z</published>
+    <updated>2018-09-13T01:55:59.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Vue学习笔记&quot;&gt;&lt;a href=&quot;#Vue学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue学习笔记&quot;&gt;&lt;/a&gt;Vue学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习Vue了, 在这里记录一下学习笔记.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="框架" scheme="https://kricsleo.github.io/categories/%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="vue" scheme="https://kricsleo.github.io/tags/vue/"/>
+    
+      <category term="ast" scheme="https://kricsleo.github.io/tags/ast/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker</title>
@@ -61,11 +125,11 @@
     <link href="https://kricsleo.github.io/2018/09/06/Mini-Program/"/>
     <id>https://kricsleo.github.io/2018/09/06/Mini-Program/</id>
     <published>2018-09-06T07:10:23.000Z</published>
-    <updated>2018-09-11T11:40:58.000Z</updated>
+    <updated>2018-09-16T07:59:08.979Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;微信小程序跳坑记录&quot;&gt;&lt;a href=&quot;#微信小程序跳坑记录&quot; class=&quot;headerlink&quot; title=&quot;微信小程序跳坑记录&quot;&gt;&lt;/a&gt;微信小程序跳坑记录&lt;/h1&gt;&lt;p&gt;开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多google吧.&lt;br&gt;
+      &lt;h1 id=&quot;微信小程序跳坑记录&quot;&gt;&lt;a href=&quot;#微信小程序跳坑记录&quot; class=&quot;headerlink&quot; title=&quot;微信小程序跳坑记录&quot;&gt;&lt;/a&gt;微信小程序跳坑记录&lt;/h1&gt;&lt;p&gt;开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多 google 吧.&lt;/p&gt;
     
     </summary>
     
