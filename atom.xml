@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-13T04:45:24.000Z</updated>
+  <updated>2018-09-23T03:48:03.664Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js-object</title>
+    <link href="https://kricsleo.github.io/2018/09/22/js-object/"/>
+    <id>https://kricsleo.github.io/2018/09/22/js-object/</id>
+    <published>2018-09-22T15:44:52.000Z</published>
+    <updated>2018-09-23T03:48:03.664Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;a href=&quot;#JavaScript的内存机制及按值传递&quot; class=&quot;headerlink&quot; title=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;/a&gt;JavaScript的内存机制及按值传递&lt;/h1&gt;&lt;p&gt;JavaScript是一门轻级的编程语言, 我之前也用过C++和Java, 相比起来JavaScript是一门年轻简约的编程语言, 但是我很看好这门语言, 我记得之前看过一个大牛说现在的前端开发是黎明前的黑暗, 在数年之内必定会清晰明朗起来. 自己深表赞同, JavaScript现在的确是有很多的缺陷, 相比较起来它的依赖库也不如java那般丰富, 但是它一个最大的优点(个人认为)就是它的轻量级, 你仅仅需要一个浏览器(或者Node环境, 但是Node其实也是基于Chrome的V8引擎), 他就能完成自己所有的工作, 我坚信随着各种标准的制定以及已经走在探索路上的前端开发师们能够很快为JavaScript带来它起飞的春天.&lt;/p&gt;
+&lt;p&gt;上面是我的个人希冀, 说到这篇文章, 主要是记录一下JavaScript的内存机制以及按值传递规则, 因为我在JavaScript的开发过程中会不由自主的把它和我也使用过的C++和Java进行比较, 我认为编程语言是互通的, 但是它们在某些细节上的处理有所不同, 则正是我们需要去注意的.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="https://kricsleo.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>bash</title>
@@ -63,11 +84,12 @@
     <link href="https://kricsleo.github.io/2018/09/13/vue/"/>
     <id>https://kricsleo.github.io/2018/09/13/vue/</id>
     <published>2018-09-13T01:42:12.000Z</published>
-    <updated>2018-09-13T01:55:59.000Z</updated>
+    <updated>2018-09-19T01:42:50.192Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Vue学习笔记&quot;&gt;&lt;a href=&quot;#Vue学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue学习笔记&quot;&gt;&lt;/a&gt;Vue学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习Vue了, 在这里记录一下学习笔记.&lt;br&gt;
+      &lt;h1 id=&quot;Vue-学习笔记&quot;&gt;&lt;a href=&quot;#Vue-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue 学习笔记&quot;&gt;&lt;/a&gt;Vue 学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习 Vue 了, 在这里记录一下学习笔记.&lt;/p&gt;
+&lt;p&gt;最近像没头的苍蝇一样盯着 Vue, 感觉好些地方不甚了解, 博客也搁置了快五天没动过笔了…&lt;/p&gt;
     
     </summary>
     
@@ -125,7 +147,7 @@
     <link href="https://kricsleo.github.io/2018/09/06/Mini-Program/"/>
     <id>https://kricsleo.github.io/2018/09/06/Mini-Program/</id>
     <published>2018-09-06T07:10:23.000Z</published>
-    <updated>2018-09-16T07:59:08.979Z</updated>
+    <updated>2018-09-16T08:28:26.185Z</updated>
     
     <summary type="html">
     
@@ -222,7 +244,7 @@
     <link href="https://kricsleo.github.io/2018/08/30/ssh-git/"/>
     <id>https://kricsleo.github.io/2018/08/30/ssh-git/</id>
     <published>2018-08-30T01:56:01.000Z</published>
-    <updated>2018-09-10T06:29:02.000Z</updated>
+    <updated>2018-09-23T03:53:18.381Z</updated>
     
     <summary type="html">
     
@@ -230,7 +252,7 @@
     
     </summary>
     
-      <category term="Tools" scheme="https://kricsleo.github.io/categories/Tools/"/>
+      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
       <category term="ssh" scheme="https://kricsleo.github.io/tags/ssh/"/>
@@ -244,7 +266,7 @@
     <link href="https://kricsleo.github.io/2018/08/23/markdown/"/>
     <id>https://kricsleo.github.io/2018/08/23/markdown/</id>
     <published>2018-08-23T01:09:00.000Z</published>
-    <updated>2018-09-03T07:45:14.000Z</updated>
+    <updated>2018-09-23T03:53:46.537Z</updated>
     
     <summary type="html">
     
@@ -252,7 +274,7 @@
     
     </summary>
     
-      <category term="Tools" scheme="https://kricsleo.github.io/categories/Tools/"/>
+      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
       <category term="markdown" scheme="https://kricsleo.github.io/tags/markdown/"/>
@@ -264,7 +286,7 @@
     <link href="https://kricsleo.github.io/2018/08/22/git-workflow/"/>
     <id>https://kricsleo.github.io/2018/08/22/git-workflow/</id>
     <published>2018-08-22T07:01:31.000Z</published>
-    <updated>2018-09-10T07:46:42.000Z</updated>
+    <updated>2018-09-23T03:53:10.215Z</updated>
     
     <summary type="html">
     
@@ -272,7 +294,7 @@
     
     </summary>
     
-      <category term="Tools" scheme="https://kricsleo.github.io/categories/Tools/"/>
+      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
       <category term="git" scheme="https://kricsleo.github.io/tags/git/"/>
