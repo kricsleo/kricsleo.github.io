@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-23T03:48:03.664Z</updated>
+  <updated>2018-09-24T09:01:24.625Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AST</title>
+    <link href="https://kricsleo.github.io/2018/09/24/AST/"/>
+    <id>https://kricsleo.github.io/2018/09/24/AST/</id>
+    <published>2018-09-24T08:33:49.000Z</published>
+    <updated>2018-09-24T09:01:24.625Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;AST&quot;&gt;&lt;a href=&quot;#AST&quot; class=&quot;headerlink&quot; title=&quot;AST&quot;&gt;&lt;/a&gt;AST&lt;/h1&gt;&lt;h2 id=&quot;AST-简介&quot;&gt;&lt;a href=&quot;#AST-简介&quot; class=&quot;headerlink&quot; title=&quot;AST 简介&quot;&gt;&lt;/a&gt;AST 简介&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代码的结构，通过操纵这颗树，我们可以精准的定位到声明语句、赋值语句、运算语句等等，实现对代码的分析、优化、变更等操作. 然后浏览器会把 js 源码通过解析器转为抽象语法树，再进一步转化为字节码或直接生成机器码. – &lt;a href=&quot;https://www.jianshu.com/p/b9f14f384954&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书文章&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于 Vue 的语法树解析可以查看&lt;a href=&quot;https://github.com/answershuto/learnVue/blob/master/docs/%E8%81%8A%E8%81%8AVue%E7%9A%84template%E7%BC%96%E8%AF%91.MarkDown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>js-object</title>
@@ -127,7 +147,7 @@
     <link href="https://kricsleo.github.io/2018/09/07/practical-function-in-javascript/"/>
     <id>https://kricsleo.github.io/2018/09/07/practical-function-in-javascript/</id>
     <published>2018-09-07T01:07:17.000Z</published>
-    <updated>2018-09-07T10:25:51.000Z</updated>
+    <updated>2018-09-23T04:17:53.640Z</updated>
     
     <summary type="html">
     
