@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-26T03:25:09.912Z</updated>
+  <updated>2018-09-26T06:40:20.784Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>CommonJS-AMD-CMD-ES6</title>
-    <link href="https://kricsleo.github.io/2018/09/25/CommonJS-AMD-CMD/"/>
-    <id>https://kricsleo.github.io/2018/09/25/CommonJS-AMD-CMD/</id>
+    <link href="https://kricsleo.github.io/CommonJS-AMD-CMD/"/>
+    <id>https://kricsleo.github.io/CommonJS-AMD-CMD/</id>
     <published>2018-09-25T08:49:17.000Z</published>
-    <updated>2018-09-26T03:25:09.912Z</updated>
+    <updated>2018-09-26T06:40:20.784Z</updated>
     
     <summary type="html">
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>AST</title>
-    <link href="https://kricsleo.github.io/2018/09/24/AST/"/>
-    <id>https://kricsleo.github.io/2018/09/24/AST/</id>
+    <link href="https://kricsleo.github.io/AST/"/>
+    <id>https://kricsleo.github.io/AST/</id>
     <published>2018-09-24T08:33:49.000Z</published>
     <updated>2018-09-25T01:19:25.970Z</updated>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title>js-object</title>
-    <link href="https://kricsleo.github.io/2018/09/22/js-object/"/>
-    <id>https://kricsleo.github.io/2018/09/22/js-object/</id>
+    <link href="https://kricsleo.github.io/js-object/"/>
+    <id>https://kricsleo.github.io/js-object/</id>
     <published>2018-09-22T15:44:52.000Z</published>
     <updated>2018-09-23T03:48:03.664Z</updated>
     
@@ -83,8 +83,8 @@
   
   <entry>
     <title>bash</title>
-    <link href="https://kricsleo.github.io/2018/09/13/bash/"/>
-    <id>https://kricsleo.github.io/2018/09/13/bash/</id>
+    <link href="https://kricsleo.github.io/bash/"/>
+    <id>https://kricsleo.github.io/bash/</id>
     <published>2018-09-13T04:41:22.000Z</published>
     <updated>2018-09-13T04:45:24.000Z</updated>
     
@@ -103,8 +103,8 @@
   
   <entry>
     <title>flex</title>
-    <link href="https://kricsleo.github.io/2018/09/13/flex/"/>
-    <id>https://kricsleo.github.io/2018/09/13/flex/</id>
+    <link href="https://kricsleo.github.io/flex/"/>
+    <id>https://kricsleo.github.io/flex/</id>
     <published>2018-09-13T04:36:29.000Z</published>
     <updated>2018-09-13T04:45:32.000Z</updated>
     
@@ -125,8 +125,8 @@
   
   <entry>
     <title>vue</title>
-    <link href="https://kricsleo.github.io/2018/09/13/vue/"/>
-    <id>https://kricsleo.github.io/2018/09/13/vue/</id>
+    <link href="https://kricsleo.github.io/vue/"/>
+    <id>https://kricsleo.github.io/vue/</id>
     <published>2018-09-13T01:42:12.000Z</published>
     <updated>2018-09-24T09:05:33.991Z</updated>
     
@@ -148,8 +148,8 @@
   
   <entry>
     <title>Docker</title>
-    <link href="https://kricsleo.github.io/2018/09/10/docker/"/>
-    <id>https://kricsleo.github.io/2018/09/10/docker/</id>
+    <link href="https://kricsleo.github.io/docker/"/>
+    <id>https://kricsleo.github.io/docker/</id>
     <published>2018-09-10T05:19:34.000Z</published>
     <updated>2018-09-11T12:13:55.000Z</updated>
     
@@ -168,8 +168,8 @@
   
   <entry>
     <title>Practical-Function-In-Javascript</title>
-    <link href="https://kricsleo.github.io/2018/09/07/practical-function-in-javascript/"/>
-    <id>https://kricsleo.github.io/2018/09/07/practical-function-in-javascript/</id>
+    <link href="https://kricsleo.github.io/practical-function-in-javascript/"/>
+    <id>https://kricsleo.github.io/practical-function-in-javascript/</id>
     <published>2018-09-07T01:07:17.000Z</published>
     <updated>2018-09-23T04:17:53.640Z</updated>
     
@@ -188,8 +188,8 @@
   
   <entry>
     <title>Mini-Program</title>
-    <link href="https://kricsleo.github.io/2018/09/06/Mini-Program/"/>
-    <id>https://kricsleo.github.io/2018/09/06/Mini-Program/</id>
+    <link href="https://kricsleo.github.io/Mini-Program/"/>
+    <id>https://kricsleo.github.io/Mini-Program/</id>
     <published>2018-09-06T07:10:23.000Z</published>
     <updated>2018-09-16T08:28:26.185Z</updated>
     
@@ -208,8 +208,8 @@
   
   <entry>
     <title>ASCII-Unicode-UTF8</title>
-    <link href="https://kricsleo.github.io/2018/09/05/unicode-utf8/"/>
-    <id>https://kricsleo.github.io/2018/09/05/unicode-utf8/</id>
+    <link href="https://kricsleo.github.io/unicode-utf8/"/>
+    <id>https://kricsleo.github.io/unicode-utf8/</id>
     <published>2018-09-05T09:33:51.000Z</published>
     <updated>2018-09-07T10:28:12.000Z</updated>
     
@@ -226,8 +226,8 @@
   
   <entry>
     <title>Airbnb-JavaScript-Style-Guide</title>
-    <link href="https://kricsleo.github.io/2018/09/05/Airbnb-JavaScript-Style-Guide/"/>
-    <id>https://kricsleo.github.io/2018/09/05/Airbnb-JavaScript-Style-Guide/</id>
+    <link href="https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/"/>
+    <id>https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/</id>
     <published>2018-09-05T01:55:28.000Z</published>
     <updated>2018-09-05T06:43:46.000Z</updated>
     
@@ -244,8 +244,8 @@
   
   <entry>
     <title>Base64-md5</title>
-    <link href="https://kricsleo.github.io/2018/09/04/base64-md5/"/>
-    <id>https://kricsleo.github.io/2018/09/04/base64-md5/</id>
+    <link href="https://kricsleo.github.io/base64-md5/"/>
+    <id>https://kricsleo.github.io/base64-md5/</id>
     <published>2018-09-04T01:11:03.000Z</published>
     <updated>2018-09-06T10:39:55.000Z</updated>
     
@@ -262,8 +262,8 @@
   
   <entry>
     <title>IIFE</title>
-    <link href="https://kricsleo.github.io/2018/09/02/IIFE/"/>
-    <id>https://kricsleo.github.io/2018/09/02/IIFE/</id>
+    <link href="https://kricsleo.github.io/IIFE/"/>
+    <id>https://kricsleo.github.io/IIFE/</id>
     <published>2018-09-02T01:44:02.000Z</published>
     <updated>2018-09-03T07:47:59.000Z</updated>
     
@@ -285,8 +285,8 @@
   
   <entry>
     <title>ssh-git</title>
-    <link href="https://kricsleo.github.io/2018/08/30/ssh-git/"/>
-    <id>https://kricsleo.github.io/2018/08/30/ssh-git/</id>
+    <link href="https://kricsleo.github.io/ssh-git/"/>
+    <id>https://kricsleo.github.io/ssh-git/</id>
     <published>2018-08-30T01:56:01.000Z</published>
     <updated>2018-09-23T03:53:18.381Z</updated>
     
@@ -307,8 +307,8 @@
   
   <entry>
     <title>markdown</title>
-    <link href="https://kricsleo.github.io/2018/08/23/markdown/"/>
-    <id>https://kricsleo.github.io/2018/08/23/markdown/</id>
+    <link href="https://kricsleo.github.io/markdown/"/>
+    <id>https://kricsleo.github.io/markdown/</id>
     <published>2018-08-23T01:09:00.000Z</published>
     <updated>2018-09-23T03:53:46.537Z</updated>
     
@@ -327,8 +327,8 @@
   
   <entry>
     <title>git-workflow</title>
-    <link href="https://kricsleo.github.io/2018/08/22/git-workflow/"/>
-    <id>https://kricsleo.github.io/2018/08/22/git-workflow/</id>
+    <link href="https://kricsleo.github.io/git-workflow/"/>
+    <id>https://kricsleo.github.io/git-workflow/</id>
     <published>2018-08-22T07:01:31.000Z</published>
     <updated>2018-09-23T03:53:10.215Z</updated>
     
