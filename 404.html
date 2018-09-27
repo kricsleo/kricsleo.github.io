@@ -11,17 +11,67 @@ layout: false
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>404</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
         body {
-            background-color: #63B2CB;
+            width: 100%;
+            height: 100%;
+            font-family: Roboto Mono, -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
+            /*   overflow: hidden; */
+        }
+
+        .main,
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
         }
 
         .main {
-            width: 100%;
-            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 50px;
+            background-color: #2d323a;
+        }
+
+        .main__content {
+            color: #ced3d8;
+            font-size: 200px;
+            font-weight: 800;
+        }
+
+        .cover__line {
+            display: inline-block;
+            transform-origin: center left;
+            transform: rotatez(-45deg);
+            width: 200%;
+            height: 2px;
+            margin: 0px 0;
+        }
+
+        .cover__line.active {
+            animation: blink .1s 1;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                background-color: #eee;
+                opacity: 1;
+            }
         }
 
     </style>
@@ -29,8 +79,72 @@ layout: false
 
 <body>
     <div class="main">
-        404
+        <p class="main__content">404</p>
     </div>
+    <div class="cover">
+    </div>
+
+    <script>
+        const Line = (function () {
+            const maxWidth = 130;
+            const minWidth = 10;
+            const maxHeight = 5;
+            const minHeight = 1;
+            let index = 0;
+
+            return {
+                createLine(count) {
+                    for (let i = 0; i < count; i++) {
+                        let randomWidth = Math.random() * (maxWidth - minWidth) + minWidth;
+                        let randomHeight = Math.random() * (maxHeight - minHeight) + minHeight;
+                        let randomLeft = Math.random() * (maxWidth - randomWidth);
+                        let dSpan = document.createElement('span');
+                        dSpan.className = 'cover__line';
+                        dSpan.id = index;
+                        dSpan.style.cssText = `width: ${randomWidth}%; height: ${randomHeight}px; margin-left: ${randomLeft}%;`;
+                        document.getElementsByClassName('cover')[0].append(dSpan);
+                        index++;
+                    }
+                },
+                getLine(id) {
+                    return document.getElementById(id);
+                },
+                getLineList() {
+                    return document.getElementsByClassName('cover__line');
+                },
+                getLineCount() {
+                    return index;
+                },
+                showRandomLine(min, max) {
+                    let ramdamCount = Math.random() * (max - min) + min;
+                    for (let i = 0; i < ramdamCount; i++) {
+                        const random = Math.random() * (this.getLineCount() - 1);
+                        let randomIndex = Math.round(random);
+                        const dSpan = this.getLine(randomIndex);
+                        dSpan.className = 'cover__line active';
+                        setTimeout(() => {
+                            dSpan.className = 'cover__line';
+                        }, 2e3);
+                    }
+                },
+                run(minInterval, maxInterval, minCount, maxCount) {
+                    let randomInterval = Math.random() * (maxInterval - minInterval) + minInterval;
+                    setTimeout(() => {
+                        this.showRandomLine(minCount, maxCount);
+                        this.run(minInterval, maxInterval, minCount, maxCount);
+                    }, randomInterval);
+                }
+            }
+        })();
+
+        // 创建一定数量的线条
+        Line.createLine(100);
+
+        // 启动
+        Line.run(100, 3000, 3, 10);
+
+
+    </script>
 </body>
 
 </html>
