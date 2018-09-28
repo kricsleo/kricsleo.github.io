@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-26T06:40:20.784Z</updated>
+  <updated>2018-09-28T12:12:33.332Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MVC-MVP-MVVM</title>
+    <link href="https://kricsleo.github.io/MVC-MVP-MVVM/"/>
+    <id>https://kricsleo.github.io/MVC-MVP-MVVM/</id>
+    <published>2018-09-28T11:51:24.000Z</published>
+    <updated>2018-09-28T12:12:33.332Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;关于-MV&quot;&gt;&lt;a href=&quot;#关于-MV&quot; class=&quot;headerlink&quot; title=&quot;关于 MV*&quot;&gt;&lt;/a&gt;关于 MV*&lt;/h1&gt;&lt;p&gt;为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="MVC" scheme="https://kricsleo.github.io/tags/MVC/"/>
+    
+      <category term="MVP" scheme="https://kricsleo.github.io/tags/MVP/"/>
+    
+      <category term="MVVM" scheme="https://kricsleo.github.io/tags/MVVM/"/>
+    
+  </entry>
   
   <entry>
     <title>CommonJS-AMD-CMD-ES6</title>
