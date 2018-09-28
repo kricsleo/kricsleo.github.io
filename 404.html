@@ -23,9 +23,84 @@ layout: false
             height: 100%;
             font-family: Roboto Mono, -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
             /*   overflow: hidden; */
+            background-color: #2d323a;
+            color: #ced3d8;
         }
 
-        .main,
+
+        .upper,
+        .lower {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            transform: rotate(-45deg);
+        }
+
+        .upper {
+            transform-origin: bottom center;
+        }
+
+        .lower {
+            transform-origin: top center;
+        }
+
+        .upper__content,
+        .lower__content {
+            position: absolute;
+            height: 200px;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -180px;
+            font-size: 200px;
+            font-weight: 800;
+            text-align: center;
+            transform: rotate(45deg);
+            transform-origin: center center;
+        }
+
+        .upper__content {
+            bottom: -100px;
+        }
+
+        .lower__content {
+            top: -100px;
+        }
+
+        .swipe {
+            animation: swipe .1s 1;
+        }
+
+        .swipe-reverse {
+            animation: swipe-reverse .1s 1;
+        }
+
+        @keyframes swipe {
+
+            0%,
+            100% {
+                transform: rotate(45deg);
+            }
+
+            50% {
+                transform: translateX(100px) rotate(45deg);
+            }
+        }
+
+        @keyframes swipe-reverse {
+
+            0%,
+            100% {
+                transform: rotate(45deg);
+            }
+
+            50% {
+                transform: translateX(-100px) rotate(45deg);
+            }
+        }
+
         .cover {
             position: absolute;
             top: 0;
@@ -33,19 +108,6 @@ layout: false
             width: 100%;
             height: 100%;
             overflow: hidden;
-        }
-
-        .main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #2d323a;
-        }
-
-        .main__content {
-            color: #ced3d8;
-            font-size: 200px;
-            font-weight: 800;
         }
 
         .cover__line {
@@ -78,8 +140,11 @@ layout: false
 </head>
 
 <body>
-    <div class="main">
-        <p class="main__content">404</p>
+    <div class="upper" id="js__upper">
+        <p class="upper__content" id="js__upper__content">404</p>
+    </div>
+    <div class="lower" id="js__lower">
+        <p class="lower__content" id="js__lower__content">404</p>
     </div>
     <div class="cover">
     </div>
@@ -96,12 +161,12 @@ layout: false
                 createLine(count) {
                     for (let i = 0; i < count; i++) {
                         let randomWidth = Math.random() * (maxWidth - minWidth) + minWidth;
-                        let randomHeight = Math.random() * (maxHeight - minHeight) + minHeight;
+                        let randomHeith = Math.random() * (maxHeight - minHeight) + minHeight;
                         let randomLeft = Math.random() * (maxWidth - randomWidth);
                         let dSpan = document.createElement('span');
                         dSpan.className = 'cover__line';
                         dSpan.id = index;
-                        dSpan.style.cssText = `width: ${randomWidth}%; height: ${randomHeight}px; margin-left: ${randomLeft}%;`;
+                        dSpan.style.cssText = `width: ${randomWidth}%; height: ${randomHeith}px; margin-left: ${randomLeft}%;`;
                         document.getElementsByClassName('cover')[0].append(dSpan);
                         index++;
                     }
@@ -137,12 +202,47 @@ layout: false
             }
         })();
 
+        const Logo = (function () {
+            const dUpper = document.getElementById('js__upper');
+            const dLower = document.getElementById('js__lower');
+            const dUpperContent = document.getElementById('js__upper__content');
+            const dLowerContent = document.getElementById('js__lower__content');
+            const minDistance = 20;
+            const maxDistance = 120;
+
+            return {
+                setDividingLine(distance) {
+                    const transform = `rotate(-45deg) translateY(${100 - distance}px)`;
+                    dUpper.style.transform = transform;
+                    dLower.style.transform = transform;
+                    dUpperContent.style.bottom = `-${distance}px`;
+                    dLowerContent.style.top = `-${200 - distance}px`;
+                    dUpperContent.className = 'upper__content swipe';
+                    dLowerContent.className = 'lower__content swipe-reverse';
+                    setTimeout(() => {
+                        dUpperContent.className = 'upper__content';
+                        dLowerContent.className = 'lower__content';
+                    }, 1e3);
+                },
+                run(minInterval, maxInterval) {
+                    let randomInterval = Math.random() * (maxInterval - minInterval) + minInterval;
+                    let randomDistance = Math.random() * (maxDistance - minDistance) + minDistance;
+                    setTimeout(() => {
+                        this.setDividingLine(randomDistance);
+                        this.run(minInterval, maxInterval);
+                    }, randomInterval);
+                }
+            }
+        })()
+
         // 创建一定数量的线条
         Line.createLine(100);
 
-        // 启动
+        // 启动线条
         Line.run(100, 3000, 3, 10);
 
+        // 启动 LOGO
+        Logo.run(100, 3000);
 
     </script>
 </body>
