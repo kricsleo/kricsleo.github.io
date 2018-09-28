@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://camo.githubusercontent.com/83d207d438e9f95741e6ab57a122728867e13383/687474703a2f2f6c69766f7261732e6769746875622e696f2f626c6f672f6d76632f6d76702d73632e706e67">
 <meta property="og:image" content="https://camo.githubusercontent.com/208d64a1323b628ccab177d0fac2fb4dc8541619/687474703a2f2f6c69766f7261732e6769746875622e696f2f626c6f672f6d76632f6d76766d2d6465702e706e67">
 <meta property="og:image" content="https://camo.githubusercontent.com/61ef7578cd46b1d37dd3ea52ce0a3be570e427cc/687474703a2f2f6c69766f7261732e6769746875622e696f2f626c6f672f6d76632f6d76766d2d63616c6c2e706e67">
-<meta property="og:updated_time" content="2018-09-28T12:13:19.726Z">
+<meta property="og:updated_time" content="2018-09-28T12:15:23.499Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MVC-MVP-MVVM">
 <meta name="twitter:description" content="关于 MV*为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文.">
@@ -171,7 +171,7 @@
   	<div class="article-entry" itemprop="articleBody">
     	<h1 id="关于-MV"><a href="#关于-MV" class="headerlink" title="关于 MV*"></a>关于 MV*</h1><p>为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文.</p>
 <a id="more"></a>
-<p>一下为转载内容.</p>
+<p>以下为转载内容.</p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>做客户端开发、前端开发对MVC、MVP、MVVM这些名词不了解也应该大致听过，都是为了解决图形界面应用程序复杂性管理问题而产生的应用架构模式。网上很多文章关于这方面的讨论比较杂乱，各种MV模式之间的区别分不清，甚至有些描述都是错误的。本文追根溯源，从最经典的Smalltalk-80 MVC模式开始逐步还原图形界面之下最真实的MV模式。</p>
 <h2 id="GUI程序所面临的问题"><a href="#GUI程序所面临的问题" class="headerlink" title="GUI程序所面临的问题"></a>GUI程序所面临的问题</h2><p>图形界面的应用程序提供给用户可视化的操作界面，这个界面提供给数据和信息。用户输入行为（键盘，鼠标等）会执行一些应用逻辑，应用逻辑（application logic）可能会触发一定的业务逻辑（business logic）对应用程序数据的变更，数据的变更自然需要用户界面的同步变更以提供最准确的信息。例如用户对一个电子表格重新排序的操作，应用程序需要响应用户操作，对数据进行排序，然后需要同步到界面上。</p>
 <p>在开发应用程序的时候，以求更好的管理应用程序的复杂性，基于<strong>职责分离（Speration of Duties）</strong>的思想都会对应用程序进行分层。在开发图形界面应用程序的时候，会把管理用户界面的层次称为View，应用程序的数据为Model（注意这里的Model指的是Domain Model，这个应用程序对需要解决的问题的数据抽象，不包含应用的状态，可以简单理解为对象）。Model提供数据操作的接口，执行相应的业务逻辑。</p>
