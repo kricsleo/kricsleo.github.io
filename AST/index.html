@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://segmentfault.com/img/bVMk2D?w=500&h=339">
 <meta property="og:image" content="https://segmentfault.com/img/bVHJfZ?w=624&h=289">
 <meta property="og:image" content="https://segmentfault.com/img/bVHJfZ?w=624&h=289">
-<meta property="og:updated_time" content="2018-09-25T01:19:25.970Z">
+<meta property="og:updated_time" content="2018-09-29T00:59:43.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AST">
 <meta name="twitter:description" content="ASTAST 简介 在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – 维基百科  而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代">
@@ -174,7 +174,7 @@
 <li>解析 / 语法分析: 在对上面已经被拆分提取过的关键词进行分析之后建立一课语法树(<code>AST</code>), 效果可参见下面</li>
 <li>底层代码生成: 得到语法树之后执行引擎(例如 chrome 的 v8引擎)会对这颗树进行一定的优化分析, 然后生成更底层的代码或者机器指令交由机器执行</li>
 </ol>
-<p>无图不真相, 我们借助一个在线的<a href="http://resources.jointjs.com/demos/javascript-ast" target="_blank" rel="noopener">可视化工具</a>或者<a href="http://esprima.org/demo/parse.html#" target="_blank" rel="noopener">esprima</a>来具体看一下过程, 对于如下代码进行生成 AST 树</p>
+<p>无图不真相, 我们借助一个在线的<a href="https://resources.jointjs.com/demos/javascript-ast" target="_blank" rel="noopener">可视化工具</a>或者<a href="https://esprima.org/demo/parse.html#" target="_blank" rel="noopener">esprima</a>来具体看一下过程, 对于如下代码进行生成 AST 树</p>
 <ol>
 <li><p>源码:</p>
  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">42</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">5</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addA</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + d;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> c = addA(<span class="number">2</span>) + b;</span><br></pre></td></tr></table></figure>
