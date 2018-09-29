@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://camo.githubusercontent.com/83d207d438e9f95741e6ab57a122728867e13383/687474703a2f2f6c69766f7261732e6769746875622e696f2f626c6f672f6d76632f6d76702d73632e706e67">
 <meta property="og:image" content="https://camo.githubusercontent.com/208d64a1323b628ccab177d0fac2fb4dc8541619/687474703a2f2f6c69766f7261732e6769746875622e696f2f626c6f672f6d76632f6d76766d2d6465702e706e67">
 <meta property="og:image" content="https://camo.githubusercontent.com/61ef7578cd46b1d37dd3ea52ce0a3be570e427cc/687474703a2f2f6c69766f7261732e6769746875622e696f2f626c6f672f6d76632f6d76766d2d63616c6c2e706e67">
-<meta property="og:updated_time" content="2018-09-28T12:21:18.874Z">
+<meta property="og:updated_time" content="2018-09-29T01:02:49.797Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MVC-MVP-MVVM">
 <meta name="twitter:description" content="关于 MV*为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文. 作者: livoras原文: htt">
@@ -253,7 +253,7 @@
 <h3 id="MVVM的调用关系"><a href="#MVVM的调用关系" class="headerlink" title="MVVM的调用关系"></a>MVVM的调用关系</h3><p>MVVM的调用关系和MVP一样。但是，在ViewModel当中会有一个叫Binder，或者是Data-binding engine的东西。以前全部由Presenter负责的View和Model之间数据同步操作交由给Binder处理。你只需要在View的模版语法当中，指令式地声明View上的显示的内容是和Model的哪一块数据绑定的。当ViewModel对进行Model更新的时候，Binder会自动把数据更新到View上去，当用户对View进行操作（例如表单输入），Binder也会自动把数据更新到Model上去。这种方式称为：Two-way data-binding，双向数据绑定。可以简单而不恰当地理解为一个模版引擎，但是会根据数据变更实时渲染。</p>
 <p><img src="https://camo.githubusercontent.com/61ef7578cd46b1d37dd3ea52ce0a3be570e427cc/687474703a2f2f6c69766f7261732e6769746875622e696f2f626c6f672f6d76632f6d76766d2d63616c6c2e706e67" alt=""></p>
 <p>也就是说，MVVM把View和Model的同步逻辑自动化了。以前Presenter负责的View和Model同步不再手动地进行操作，而是交由框架所提供的Binder进行负责。只需要告诉Binder，View显示的数据对应的是Model哪一部分即可。</p>
-<p>这里有一个JavaScript MVVM的<a href="https://github.com/livoras/MVW-demos/tree/master/src/scripts/mvvm.js" target="_blank" rel="noopener">例子</a>，因为MVVM需要Binder引擎。所以例子中使用了一个MVVM的库：<a href="http://vuejs.org/" target="_blank" rel="noopener">Vue.js</a>。</p>
+<p>这里有一个JavaScript MVVM的<a href="https://github.com/livoras/MVW-demos/tree/master/src/scripts/mvvm.js" target="_blank" rel="noopener">例子</a>，因为MVVM需要Binder引擎。所以例子中使用了一个MVVM的库：<a href="https//vuejs.org/">Vue.js</a>。</p>
 <p>MVVM的优缺点<br>优点：</p>
 <ol>
 <li>提高可维护性。解决了MVP大量的手动View和Model同步的问题，提供双向绑定机制。提高了代码的可维护性。</li>
@@ -266,7 +266,7 @@
 <li>数据绑定的声明是指令式地写在View的模版当中的，这些内容是没办法去打断点debug的。</li>
 </ol>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>可以看到，从MVC-&gt;MVP-&gt;MVVM，就像一个打怪升级的过程。后者解决了前者遗留的问题，把前者的缺点优化成了优点。同样的Demo功能，代码从最开始的一堆文件，优化成了最后只需要20几行代码就完成。MV*模式之间的区分还是蛮清晰的，希望可以给对这些模式理解比较模糊的同学带来一些参考和思路。</p>
-<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="http://blog.nodejitsu.com/scaling-isomorphic-javascript-code/" target="_blank" rel="noopener">Scaling Isomorphic Javascript Code</a><br><a href="http://www.math.sfedu.ru/smalltalk/gui/mvc.pdf" target="_blank" rel="noopener">Smalltalk-80 MVC</a><br><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp" target="_blank" rel="noopener">Learning JavaScript Design Patterns</a><br><a href="https://www.safaribooksonline.com/library/view/learning-javascript-design/9781449334840/ch10s04.html" target="_blank" rel="noopener">Smalltalk-80 MVC in JavaScript</a><br><a href="http://martinfowler.com/eaaDev/uiArchs.html" target="_blank" rel="noopener">GUI Architectures</a><br><a href="https://msdn.microsoft.com/en-us/library/ff649571.aspx" target="_blank" rel="noopener">The Model-View-Presenter (MVP) Pattern</a><br><a href="http://stackoverflow.com/questions/1456425/business-and-application-logic" target="_blank" rel="noopener">Business and application logic?</a><br><a href="http://stackoverflow.com/questions/4415904/business-logic-in-mvc" target="_blank" rel="noopener">Business logic in MVC</a></p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https//blog.nodejitsu.com/scaling-isomorphic-javascript-code/">Scaling Isomorphic Javascript Code</a><br><a href="https//www.math.sfedu.ru/smalltalk/gui/mvc.pdf">Smalltalk-80 MVC</a><br><a href="https//addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp">Learning JavaScript Design Patterns</a><br><a href="https://www.safaribooksonline.com/library/view/learning-javascript-design/9781449334840/ch10s04.html" target="_blank" rel="noopener">Smalltalk-80 MVC in JavaScript</a><br><a href="https//martinfowler.com/eaaDev/uiArchs.html">GUI Architectures</a><br><a href="https://msdn.microsoft.com/en-us/library/ff649571.aspx" target="_blank" rel="noopener">The Model-View-Presenter (MVP) Pattern</a><br><a href="https//stackoverflow.com/questions/1456425/business-and-application-logic">Business and application logic?</a><br><a href="https//stackoverflow.com/questions/4415904/business-logic-in-mvc">Business logic in MVC</a></p>
 
   	</div>
 	  

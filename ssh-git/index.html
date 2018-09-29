@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="kricsleo">
 <meta property="og:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-23T03:53:18.381Z">
+<meta property="og:updated_time" content="2018-09-29T01:02:49.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh-git">
 <meta name="twitter:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
@@ -166,8 +166,8 @@
 <li>中间人攻击<br>那么<code>SSH</code>如何应对之前提到的<code>中间人攻击</code>呢?<br>在我们第一次连接一个远程主机例如<code>ssh user@host</code>连接时, 我们会收到如下提示信息:<blockquote>
 <p>The authenticity of host ‘host (12.18.429.21)’ can’t be established.<br>　　 RSA key fingerprint is 98:2e:d7:e0:de:9f:ac:67:28:c2:42:2d:37:16:58:4d.<br>　　 Are you sure you want to continue connecting (yes/no)?<br>这就是在提示我们是第一次连接这个主机, 然后消息里面给出了这个主机的公钥的md5摘要信息<code>98:2e:d7:e0:de:9f:ac:67:28:c2:42:2d:37:16:58:4d</code>, 我们可以通过确认这个摘要值是不是我们想要连接的主机的, 如果是就输入<code>yes</code>回车确认连接, 并且会自动把这个主机加入到我们的本地<code>known hosts</code>（已知主机）名单里面, 以后都不再提示.<br>因为<code>中间人攻击</code>核心就是使用假的公钥来替代真正的远程主机的公钥, 那么可以通过如下两种解决方案来应对: </p>
 <ol>
-<li>远程主机把自己的公钥拿到CA处做认证，申请一个数字证书<br>有关数字证书和数字签名的区别可以查看<a href="http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html" target="_blank" rel="noopener">这里</a>, 以后只要确认这个证书是正规可信的, 那就可以对应的信任该公钥</li>
-<li>远程主机把自己公钥的指纹信息公布出来, 让大家自己来查看对比<br>比如放在自己的网站上面供想要连接的人执行对比查阅<br>通过上面两种做法都可以是的用户确认自己当前加密信息所使用的公钥确定是正确的远程主机的公钥, 而不是<code>中间人</code>的公钥<br>关于<code>SSH</code>, 你也可以参考<a href="http://blog.51cto.com/zhaochj/1602279" target="_blank" rel="noopener">这里</a>或者<a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html" target="_blank" rel="noopener">阮一峰的博客</a></li>
+<li>远程主机把自己的公钥拿到CA处做认证，申请一个数字证书<br>有关数字证书和数字签名的区别可以查看<a href="https//www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html">这里</a>, 以后只要确认这个证书是正规可信的, 那就可以对应的信任该公钥</li>
+<li>远程主机把自己公钥的指纹信息公布出来, 让大家自己来查看对比<br>比如放在自己的网站上面供想要连接的人执行对比查阅<br>通过上面两种做法都可以是的用户确认自己当前加密信息所使用的公钥确定是正确的远程主机的公钥, 而不是<code>中间人</code>的公钥<br>关于<code>SSH</code>, 你也可以参考<a href="https//blog.51cto.com/zhaochj/1602279">这里</a>或者<a href="https//www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">阮一峰的博客</a></li>
 </ol>
 </blockquote>
 </li>
@@ -228,7 +228,7 @@
 <li>使用ssh方式clone项目<br>之前说过了ssh方式只能操作我们有管理权限的项目，所以这里我拿自己做的一个<a href="https://github.com/kricsleo/vehicleKeyboard" target="_blank" rel="noopener">微信小程序的虚拟车牌键盘</a>的项目为例<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:kricsleo/vehicleKeyboard.git</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>这个时候我们就能顺利clone该项目到本机了，因为在我们上面这条命令请求数据的过程中，我们本机和github的服务器会使用我们之前生成的那对密钥来进行相互认证，从而使我们不需要手动输入github的账户名和密码信息来完成认证登陆，同时我们以后修改了项目代码在进行提交的时候也可直接进行提交等相关操作，无需再考虑登陆及连接的问题，git的使用可以参考我之前的一篇<a href="http://kricsleo.com/2018/08/22/git-workflow/" target="_blank" rel="noopener">小总结</a></p>
+<p>这个时候我们就能顺利clone该项目到本机了，因为在我们上面这条命令请求数据的过程中，我们本机和github的服务器会使用我们之前生成的那对密钥来进行相互认证，从而使我们不需要手动输入github的账户名和密码信息来完成认证登陆，同时我们以后修改了项目代码在进行提交的时候也可直接进行提交等相关操作，无需再考虑登陆及连接的问题，git的使用可以参考我之前的一篇<a href="https//kricsleo.com/2018/08/22/git-workflow/">小总结</a></p>
 <p>关于git使用https和ssh方式的区别你也可以查看<a href="https://blog.cuiyongjian.com/engineering/git-https-ssh/" target="_blank" rel="noopener">这里</a></p>
 <h2 id="多git账户配置"><a href="#多git账户配置" class="headerlink" title="多git账户配置"></a>多git账户配置</h2><p>如果你需要生成多对密钥，比如你需要和两个不一样的服务器A和B进行ssh通信，那么这个时候你就可以生成两对密钥，一对用来和A通信，另一对用来和B通信，最常见的情况就是我们自己在github上面会有自己的github账户，自己平时会开发一些自己的项目，然后提交到github上面，在公司里面公司一般会有自己的gitlab服务器，然后给员工开通一个gitlab的账号，有关公司内部的项目就会让员工用gitlab的账户进行开发，然后提交代码到公司的gitlab上面，那么这时候我们可以按照如下的方法来配置一下，保证自己随时提交代码的时候都是能够提交到正确的地方，而不会混乱。</p>
 <ol>

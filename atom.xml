@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-28T12:21:18.874Z</updated>
+  <updated>2018-09-29T01:02:49.797Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://kricsleo.github.io/MVC-MVP-MVVM/"/>
     <id>https://kricsleo.github.io/MVC-MVP-MVVM/</id>
     <published>2018-09-28T11:51:24.000Z</published>
-    <updated>2018-09-28T12:21:18.874Z</updated>
+    <updated>2018-09-29T01:02:49.797Z</updated>
     
     <summary type="html">
     
@@ -47,7 +47,7 @@
     <link href="https://kricsleo.github.io/CommonJS-AMD-CMD/"/>
     <id>https://kricsleo.github.io/CommonJS-AMD-CMD/</id>
     <published>2018-09-25T08:49:17.000Z</published>
-    <updated>2018-09-26T06:40:20.784Z</updated>
+    <updated>2018-09-29T01:02:49.797Z</updated>
     
     <summary type="html">
     
@@ -177,11 +177,11 @@
     <link href="https://kricsleo.github.io/docker/"/>
     <id>https://kricsleo.github.io/docker/</id>
     <published>2018-09-10T05:19:34.000Z</published>
-    <updated>2018-09-11T12:13:55.000Z</updated>
+    <updated>2018-09-29T01:02:49.799Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;docker学习笔记&quot;&gt;&lt;a href=&quot;#docker学习笔记&quot; class=&quot;headerlink&quot; title=&quot;docker学习笔记&quot;&gt;&lt;/a&gt;docker学习笔记&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.docker.org.cn/book/docker/what-is-docker-16.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;参考文档&lt;/a&gt;&lt;br&gt;Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.&lt;br&gt;
+      &lt;h1 id=&quot;docker学习笔记&quot;&gt;&lt;a href=&quot;#docker学习笔记&quot; class=&quot;headerlink&quot; title=&quot;docker学习笔记&quot;&gt;&lt;/a&gt;docker学习笔记&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https//www.docker.org.cn/book/docker/what-is-docker-16.html&quot;&gt;参考文档&lt;/a&gt;&lt;br&gt;Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.&lt;br&gt;
     
     </summary>
     
@@ -197,7 +197,7 @@
     <link href="https://kricsleo.github.io/practical-function-in-javascript/"/>
     <id>https://kricsleo.github.io/practical-function-in-javascript/</id>
     <published>2018-09-07T01:07:17.000Z</published>
-    <updated>2018-09-23T04:17:53.640Z</updated>
+    <updated>2018-09-29T01:02:49.799Z</updated>
     
     <summary type="html">
     
@@ -237,7 +237,7 @@
     <link href="https://kricsleo.github.io/unicode-utf8/"/>
     <id>https://kricsleo.github.io/unicode-utf8/</id>
     <published>2018-09-05T09:33:51.000Z</published>
-    <updated>2018-09-07T10:28:12.000Z</updated>
+    <updated>2018-09-29T01:02:49.799Z</updated>
     
     <summary type="html">
     
@@ -273,7 +273,7 @@
     <link href="https://kricsleo.github.io/base64-md5/"/>
     <id>https://kricsleo.github.io/base64-md5/</id>
     <published>2018-09-04T01:11:03.000Z</published>
-    <updated>2018-09-06T10:39:55.000Z</updated>
+    <updated>2018-09-29T01:02:49.799Z</updated>
     
     <summary type="html">
     
@@ -291,12 +291,12 @@
     <link href="https://kricsleo.github.io/IIFE/"/>
     <id>https://kricsleo.github.io/IIFE/</id>
     <published>2018-09-02T01:44:02.000Z</published>
-    <updated>2018-09-03T07:47:59.000Z</updated>
+    <updated>2018-09-29T01:02:49.799Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;增-转-译-JavaScript：立即执行函数表达式（IIFE）&quot;&gt;&lt;a href=&quot;#增-转-译-JavaScript：立即执行函数表达式（IIFE）&quot; class=&quot;headerlink&quot; title=&quot;[增][转][译]JavaScript：立即执行函数表达式（IIFE）&quot;&gt;&lt;/a&gt;[增][转][译]JavaScript：立即执行函数表达式（IIFE）&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;原文: &lt;a href=&quot;http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife&lt;/a&gt;&lt;br&gt;译文: &lt;a href=&quot;https://segmentfault.com/a/1190000003985390&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://segmentfault.com/a/1190000003985390&lt;/a&gt; by Murphywuwu&lt;/p&gt;
+&lt;p&gt;原文: https//benalman.com/news/2010/11/immediately-invoked-function-expression/#iife&lt;br&gt;译文: &lt;a href=&quot;https://segmentfault.com/a/1190000003985390&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://segmentfault.com/a/1190000003985390&lt;/a&gt; by Murphywuwu&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
     
@@ -314,7 +314,7 @@
     <link href="https://kricsleo.github.io/ssh-git/"/>
     <id>https://kricsleo.github.io/ssh-git/</id>
     <published>2018-08-30T01:56:01.000Z</published>
-    <updated>2018-09-23T03:53:18.381Z</updated>
+    <updated>2018-09-29T01:02:49.796Z</updated>
     
     <summary type="html">
     
@@ -336,7 +336,7 @@
     <link href="https://kricsleo.github.io/markdown/"/>
     <id>https://kricsleo.github.io/markdown/</id>
     <published>2018-08-23T01:09:00.000Z</published>
-    <updated>2018-09-23T03:53:46.537Z</updated>
+    <updated>2018-09-29T01:02:49.796Z</updated>
     
     <summary type="html">
     
@@ -356,11 +356,11 @@
     <link href="https://kricsleo.github.io/git-workflow/"/>
     <id>https://kricsleo.github.io/git-workflow/</id>
     <published>2018-08-22T07:01:31.000Z</published>
-    <updated>2018-09-23T03:53:10.215Z</updated>
+    <updated>2018-09-29T01:02:49.796Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/08/git-use-process.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git使用规范流程&lt;/a&gt;，记录一下git的日常使用流程。&lt;br&gt;
+      &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;https//www.ruanyifeng.com/blog/2015/08/git-use-process.html&quot;&gt;Git使用规范流程&lt;/a&gt;，记录一下git的日常使用流程。&lt;br&gt;
     
     </summary>
     
