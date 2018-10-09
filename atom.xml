@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-09-29T01:02:49.797Z</updated>
+  <updated>2018-10-08T06:02:23.483Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>object-get-set</title>
+    <link href="https://kricsleo.github.io/object-get-set/"/>
+    <id>https://kricsleo.github.io/object-get-set/</id>
+    <published>2018-10-07T16:06:51.000Z</published>
+    <updated>2018-10-08T06:02:23.483Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;属性描述符&quot;&gt;&lt;a href=&quot;#属性描述符&quot; class=&quot;headerlink&quot; title=&quot;属性描述符&quot;&gt;&lt;/a&gt;属性描述符&lt;/h1&gt;&lt;p&gt;在js的对象中通常会有很多个属性, 例如&lt;code&gt;let person = { name: &amp;#39;john&amp;#39;}&lt;/code&gt;中的&lt;code&gt;name&lt;/code&gt;就是&lt;code&gt;person&lt;/code&gt;这个对象的一个属性, 我们可以定义这个属性的一些特性, 也就是来描述这个属性, 比如这个属性是否是可读写的, 是否是可以被枚举的等等, 由此产生出了&lt;strong&gt;属性描述符&lt;/strong&gt;这个概念.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="object" scheme="https://kricsleo.github.io/tags/object/"/>
+    
+  </entry>
   
   <entry>
     <title>MVC-MVP-MVVM</title>
@@ -112,7 +132,7 @@
     <link href="https://kricsleo.github.io/bash/"/>
     <id>https://kricsleo.github.io/bash/</id>
     <published>2018-09-13T04:41:22.000Z</published>
-    <updated>2018-09-13T04:45:24.000Z</updated>
+    <updated>2018-09-29T05:55:18.395Z</updated>
     
     <summary type="html">
     
@@ -197,7 +217,7 @@
     <link href="https://kricsleo.github.io/practical-function-in-javascript/"/>
     <id>https://kricsleo.github.io/practical-function-in-javascript/</id>
     <published>2018-09-07T01:07:17.000Z</published>
-    <updated>2018-09-29T01:02:49.799Z</updated>
+    <updated>2018-10-08T06:09:13.837Z</updated>
     
     <summary type="html">
     
@@ -208,7 +228,7 @@
       <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="funtion" scheme="https://kricsleo.github.io/tags/funtion/"/>
+      <category term="function" scheme="https://kricsleo.github.io/tags/function/"/>
     
   </entry>
   
@@ -217,7 +237,7 @@
     <link href="https://kricsleo.github.io/Mini-Program/"/>
     <id>https://kricsleo.github.io/Mini-Program/</id>
     <published>2018-09-06T07:10:23.000Z</published>
-    <updated>2018-09-16T08:28:26.185Z</updated>
+    <updated>2018-10-08T06:11:56.880Z</updated>
     
     <summary type="html">
     

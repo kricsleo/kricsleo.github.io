@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Docker | kricsleo</title>
+  <title>object-get-set | kricsleo</title>
   <meta name="description" content="It&#39;s my personal blog." />
   <meta name="keywords" content="blog,kricsleo,IT,Web Front End" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,18 +12,18 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.">
-<meta name="keywords" content="docker">
+  <meta name="description" content="属性描述符在js的对象中通常会有很多个属性, 例如let person = { name: &amp;#39;john&amp;#39;}中的name就是person这个对象的一个属性, 我们可以定义这个属性的一些特性, 也就是来描述这个属性, 比如这个属性是否是可读写的, 是否是可以被枚举的等等, 由此产生出了属性描述符这个概念.">
+<meta name="keywords" content="object">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Docker">
-<meta property="og:url" content="https://kricsleo.github.io/docker/index.html">
+<meta property="og:title" content="object-get-set">
+<meta property="og:url" content="https://kricsleo.github.io/object-get-set/index.html">
 <meta property="og:site_name" content="kricsleo">
-<meta property="og:description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.">
+<meta property="og:description" content="属性描述符在js的对象中通常会有很多个属性, 例如let person = { name: &amp;#39;john&amp;#39;}中的name就是person这个对象的一个属性, 我们可以定义这个属性的一些特性, 也就是来描述这个属性, 比如这个属性是否是可读写的, 是否是可以被枚举的等等, 由此产生出了属性描述符这个概念.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-29T01:02:49.799Z">
+<meta property="og:updated_time" content="2018-10-08T06:02:23.483Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Docker">
-<meta name="twitter:description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.">
+<meta name="twitter:title" content="object-get-set">
+<meta name="twitter:description" content="属性描述符在js的对象中通常会有很多个属性, 例如let person = { name: &amp;#39;john&amp;#39;}中的name就是person这个对象的一个属性, 我们可以定义这个属性的一些特性, 也就是来描述这个属性, 比如这个属性是否是可读写的, 是否是可以被枚举的等等, 由此产生出了属性描述符这个概念.">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -134,49 +134,108 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        <article id="post-docker"
+        <article id="post-object-get-set"
   class="post white-box article-type-post"
   itemscope itemprop="blogPost">
 	<section class='meta'>
 	<h2 class="title">
-  	<a href="/docker/">
-    	Docker
+  	<a href="/object-get-set/">
+    	object-get-set
     </a>
   </h2>
 	<time>
-	  9月 10, 2018
+	  10月 8, 2018
 	</time>
 	
     
     <div class='cats'>
-        <a href="/categories/工具/">工具</a>
+        <a href="/categories/front-end/">front-end</a>
     </div>
 
 	</section>
 	
-		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#docker学习笔记"><span class="toc-number">1.</span> <span class="toc-text">docker学习笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker常用命令"><span class="toc-number">1.1.</span> <span class="toc-text">docker常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据卷"><span class="toc-number">1.2.</span> <span class="toc-text">数据卷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker中使用mysql"><span class="toc-number">1.3.</span> <span class="toc-text">docker中使用mysql</span></a></li></ol></li></ol></section>
+		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#属性描述符"><span class="toc-number">1.</span> <span class="toc-text">属性描述符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据描述符"><span class="toc-number">1.1.</span> <span class="toc-text">数据描述符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#存取描述符"><span class="toc-number">1.2.</span> <span class="toc-text">存取描述符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#属性的遍历"><span class="toc-number">1.3.</span> <span class="toc-text">属性的遍历</span></a></li></ol></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	<h1 id="docker学习笔记"><a href="#docker学习笔记" class="headerlink" title="docker学习笔记"></a>docker学习笔记</h1><p><a href="https//www.docker.org.cn/book/docker/what-is-docker-16.html">参考文档</a><br>Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.<br><a id="more"></a></p>
-<p>如无特殊说明, 以下操作环境均为<code>CentOS 7</code>, 内核版本位<code>3.10.0-693.2.2.el7.x86_64</code><br>(查看内核版本: <code>uname -r</code>)</p>
-<h2 id="docker常用命令"><a href="#docker常用命令" class="headerlink" title="docker常用命令"></a>docker常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装docker</span></span><br><span class="line">yum install -y docker</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动docker服务</span></span><br><span class="line">service docker start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 给个hello-world的测试例子, 由于本地没有hello-world这个镜像，所以会下载一个hello-world的镜像，并在容器内运行。</span></span><br><span class="line">docker run hello-world</span><br><span class="line"></span><br><span class="line"><span class="comment"># 停止容器</span></span><br><span class="line">docker stop CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动已经停止的容器</span></span><br><span class="line">docker start CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启容器</span></span><br><span class="line">docker restart CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除容器</span></span><br><span class="line">docker rm CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取容器的输出信息</span></span><br><span class="line">docker logs CONTAINER [CONTAINER...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 容器文件拷贝到主机</span></span><br><span class="line">docker cp ed0f8bb24f3e:/opt/webapp/app.py   d:/www</span><br><span class="line"><span class="comment"># 参数说明</span></span><br><span class="line"><span class="comment"># ed0f8bb24f3e： 容器id</span></span><br><span class="line"><span class="comment"># /opt/webapp/app.py: 容器中的文件</span></span><br><span class="line"><span class="comment"># d:/www： 主机文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 主机文件拷贝到容器</span></span><br><span class="line">docker cp d:/www/文件 ed0f8bb24f3e:/opt/webapp/</span><br></pre></td></tr></table></figure>
-<h2 id="数据卷"><a href="#数据卷" class="headerlink" title="数据卷"></a>数据卷</h2><h2 id="docker中使用mysql"><a href="#docker中使用mysql" class="headerlink" title="docker中使用mysql"></a>docker中使用mysql</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载mysql镜像</span></span><br><span class="line">docker pull mysql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看已下载的镜像</span></span><br><span class="line"><span class="comment"># 或 docker image ls</span></span><br><span class="line">docker images </span><br><span class="line"></span><br><span class="line"><span class="comment"># 从镜像创建并运行一个容器</span></span><br><span class="line">docker run --name first-mysql -p 3306:3306 -e MYSQL\_ROOT\_PASSWORD=root -d mysql</span><br><span class="line"><span class="comment"># 参数说明:</span></span><br><span class="line"><span class="comment"># --name 指定容器独一无二的名字</span></span><br><span class="line"><span class="comment"># -p mysql容器的端口映射</span></span><br><span class="line"><span class="comment"># -e &lt;key=value&gt;	设置进入后可以使用的环境变量，这样动态指定比较灵活</span></span><br><span class="line"><span class="comment"># -d 表示使用守护进程, 即服务挂在后台</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前已经运行的容器(可以看到容器id: CONTAINER_ID)</span></span><br><span class="line">docker ps</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入容器内部(推荐使用exec)</span></span><br><span class="line">docker <span class="built_in">exec</span> -it CONTAINER_ID /bin/bash</span><br><span class="line"><span class="comment"># 参数说明</span></span><br><span class="line"><span class="comment"># -i 以交互方式运行，是阻塞式的</span></span><br><span class="line"><span class="comment"># -t 分配一个伪终端，这个参数通常与-i参数一起使用，然后， 在后面跟上容器里的/bin/bash，这样就把我们带到容器里去了。</span></span><br><span class="line"><span class="comment"># -d 以后台方式执行，这样，我们执行完这条命令，还可以干其他事情，写脚本最常用</span></span><br></pre></td></tr></table></figure>
-<p>在我本机连接阿里云上的ECS中的mysql容器时无法连接, 后来排查使用如下解决方案:</p>
-<ol>
-<li>编辑ECS的安全组规则<br>把mysql的通信端口3306加入到允许列表中, 如果你是把docker里面的mysql的端口映射到ECS的其它端口, 比如3307, 那么这里你就把这个映射之后的端口3307加入到运行列表即可;</li>
-<li><p>编辑ECS的防火墙<br>ECS的防火墙可能会拦截3306端口的通信, 那么你需要打开这个端口, 让防火墙允许端口通信, 我的ECS系统是CentOS7, 在CentOS7中是使用<code>firewall</code>来管理端口通信的, 那么使用如下方法加入306端口: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 永久加入3306端口</span></span><br><span class="line">firewall-cmd --zone=public --add-port=3306/tcp --permanent</span><br><span class="line"><span class="comment"># 参数说明:</span></span><br><span class="line"><span class="comment"># –zone 作用域</span></span><br><span class="line"><span class="comment"># –add-port=80/tcp 添加端口，格式为：端口/通讯协议</span></span><br><span class="line"><span class="comment"># –permanent 永久生效，没有此参数重启后失效</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 重启防火墙生效</span></span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-<p>另外附上常用防火墙命令:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 关闭防火墙</span></span><br><span class="line">systemctl stop firewalld</span><br><span class="line"></span><br><span class="line"><span class="comment">#打开防火墙</span></span><br><span class="line">systemctl start firewalld</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看防火墙状态</span></span><br><span class="line">firewall-cmd --state</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+    	<h1 id="属性描述符"><a href="#属性描述符" class="headerlink" title="属性描述符"></a>属性描述符</h1><p>在js的对象中通常会有很多个属性, 例如<code>let person = { name: &#39;john&#39;}</code>中的<code>name</code>就是<code>person</code>这个对象的一个属性, 我们可以定义这个属性的一些特性, 也就是来描述这个属性, 比如这个属性是否是可读写的, 是否是可以被枚举的等等, 由此产生出了<strong>属性描述符</strong>这个概念.<br><a id="more"></a><br>属性描述符分为两种: <code>数据描述符</code>和<code>存取描述符</code>:</p>
+<ul>
+<li><code>数据描述符</code>是一个拥有可写或不可写值的属性</li>
+<li><code>存取描述符</code>是由一对<code>getter-setter</code>函数功能来描述的属性</li>
+</ul>
+<p>属性描述符必须是两种形式其中之一, 不能同时是两者. 我们使用<code>Object.defineProperty()</code>这个方法来定义一个属性的属性描述符.</p>
+<h2 id="数据描述符"><a href="#数据描述符" class="headerlink" title="数据描述符"></a>数据描述符</h2><p>数据描述符有四个: <code>configurable</code>, <code>enumerable</code>, <code>writable</code>和<code>value</code>, 前三个属性在使用<code>Object.defineProperty()</code>定义时默认都是<code>false</code>,第四个属性<code>value</code>默认为<code>undefined</code>, 而如果使用字面量直接添加属性的话, 那么这个属性的前三个属性默认都是<code>true</code>. 下面具体说一下这个四个属性:</p>
+<ul>
+<li><code>configurable</code></li>
+</ul>
+<p>是否可以删除目标属性或是否可以再次修改属性的四个特性, 意思是当设置为<code>true</code>时可以随时对<code>configurable</code>, <code>enumerable</code>, <code>writable</code>和<code>value</code>这四个属性进行修改, 但是一旦设置为<code>false</code>, 那么这个四个属性将都不能被更改, 你也无法再次将<code>configurable</code>设置为<code>true</code>, 默认为<code>false</code></p>
+<ul>
+<li><code>enumerable</code></li>
+</ul>
+<p>此属性是否可以被枚举（使用<code>for...in</code>或<code>Object.keys()</code>）。设置为<code>true</code>可以被枚举；设置为<code>false</code>，不能被枚举, 默认为<code>false</code></p>
+<ul>
+<li><code>writable</code></li>
+</ul>
+<p>属性的值是否可以被重写。设置为<code>true</code>可以被重写；设置为<code>false</code>，不能被重写, 默认为<code>false</code></p>
+<ul>
+<li><code>value</code></li>
+</ul>
+<p>属性对应的值,可以使任意类型的值，默认为<code>undefined</code></p>
+<p>使用举例:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">  name: <span class="string">'john'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义一个已经有的属性 name, 或者新增一个属性 name, 写法一样</span></span><br><span class="line"><span class="built_in">Object</span>.defineProperty(person, <span class="string">'name'</span>, &#123;</span><br><span class="line">  configurable: <span class="literal">true</span> | <span class="literal">false</span>,</span><br><span class="line">  enumerable: <span class="literal">true</span> | <span class="literal">false</span>,</span><br><span class="line">  writable: <span class="literal">true</span> | <span class="literal">false</span>,</span><br><span class="line">  value: 任意类型的值</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 查看属性</span></span><br><span class="line"><span class="built_in">Object</span>.getOwnPropertyDescriptor(person, <span class="string">'name'</span>);</span><br><span class="line"><span class="comment">// =&gt; &#123;</span></span><br><span class="line"><span class="comment">//      configurable: true,</span></span><br><span class="line"><span class="comment">//      enumerable: true,</span></span><br><span class="line"><span class="comment">//      writable: true,</span></span><br><span class="line"><span class="comment">//      value: 'john'</span></span><br><span class="line"><span class="comment">//    &#125;</span></span><br></pre></td></tr></table></figure>
+<p>ES5有三个操作符会忽略掉对象中<code>enumerable</code>设置为<code>false</code>的属性:</p>
+<ul>
+<li><code>for...in</code>循环: 只遍历对象自身的和继承的可枚举的属性</li>
+<li><code>Object.keys()</code>：返回对象自身的所有可枚举的属性的键名</li>
+<li><code>JSON.stringify()</code>：只串行化对象自身的可枚举的属性</li>
+</ul>
+<p>ES6新增了一个操作<code>Object.assign()</code>，也会忽略对象中<code>enumerable</code>为<code>false</code>的属性，只拷贝对象自身的可枚举的属性。</p>
+<h2 id="存取描述符"><a href="#存取描述符" class="headerlink" title="存取描述符"></a>存取描述符</h2><p>存取描述符也有四个: <code>configurable</code>, <code>enumerable</code>, <code>get</code>和<code>set</code>, 前两个属性在使用<code>Object.defineProperty()</code>定义时默认都是<code>false</code>, 后两个属性默认是<code>undefined</code>, 而如果使用字面量直接添加属性的话, 那么这个属性的前两个属性默认都是<code>true</code>, 下面具体说一下这个四个属性:</p>
+<ul>
+<li><code>configurable</code></li>
+</ul>
+<p>与上面<code>数据描述符</code>中相同</p>
+<ul>
+<li><code>enumerable</code></li>
+</ul>
+<p>与上面<code>数据描述符</code>中相同</p>
+<ul>
+<li><code>get</code></li>
+</ul>
+<p>获取对象中属性值的方法, 它的值应该是一个返回这个属性值的方法, 默认为<code>undefined</code></p>
+<ul>
+<li><code>set</code></li>
+</ul>
+<p>设置对象中属性值的方法, 它的值应该是一个接受一个新值作为参数然后执行设置属性值的方法, 默认为<code>undefined</code></p>
+<p>使用举例:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123; <span class="attr">name</span>: <span class="string">'john'</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">Object</span>.defineProperty(person, <span class="string">'name'</span>, &#123;</span><br><span class="line">  configurable: <span class="literal">true</span> | <span class="literal">false</span>,</span><br><span class="line">  enumerable: <span class="literal">true</span> | <span class="literal">false</span>,</span><br><span class="line">  get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value;</span><br><span class="line">  &#125; | <span class="literal">undefined</span>,</span><br><span class="line">  set: <span class="function"><span class="keyword">function</span>(<span class="params">newVal</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(newVal !== value) &#123;</span><br><span class="line">      value = newVal;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; | <span class="literal">undefined</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>这里的<code>set</code>的用途就很强大了, 比如我们使用的Vue里面的数据绑定就是基于这个<code>set</code>实现的双向数据绑定, 这里埋下一个坑: TODO: 分析Vue的源码中的数据绑定部分</p>
+<h2 id="属性的遍历"><a href="#属性的遍历" class="headerlink" title="属性的遍历"></a>属性的遍历</h2><ul>
+<li><code>for...in</code></li>
+</ul>
+<p><code>for...in</code>循环遍历对象自身的和继承的可枚举属性（不含Symbol属性)</p>
+<ul>
+<li><code>Object.keys(obj)</code></li>
+</ul>
+<p><code>Object.keys</code>返回一个数组，包括对象自身的（不含继承的）所有可枚举属性（不含Symbol属性）。</p>
+<ul>
+<li><code>Object.getOwnPropertyNames(obj)</code></li>
+</ul>
+<p><code>Object.getOwnPropertyNames</code>返回一个数组，包含对象自身的所有属性（不含Symbol属性，但是包括不可枚举属性）。</p>
+<ul>
+<li><code>Object.getOwnPropertySymbols(obj)</code></li>
+</ul>
+<p><code>Object.getOwnPropertySymbols</code>返回一个数组，包含对象自身的所有Symbol属性。</p>
+<ul>
+<li><code>Reflect.ownKeys(obj)</code></li>
+</ul>
+<p><code>Reflect.ownKeys</code>返回一个数组，包含对象自身的所有属性，不管是属性名是Symbol或字符串，也不管是否可枚举。</p>
 
   	</div>
 	  
 	  <div class="article-tags tags">
       
-        <a href="/tags/docker/">docker</a>
+        <a href="/tags/object/">object</a>
       
 	  </div>
     
@@ -184,13 +243,9 @@
 	
 		<div class="art-item-footer">
 				
-					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/vue/" rel="prev"  title="vue">
-						vue 
-					</a></span>
 				
-				
-					<span class="art-item-right">next：<a href="/practical-function-in-javascript/" rel="next"  title="Practical-Function-In-Javascript">
-						Practical-Function-In-Javascript
+					<span class="art-item-right">next：<a href="/MVC-MVP-MVVM/" rel="next"  title="MVC-MVP-MVVM">
+						MVC-MVP-MVVM
 					</a><i class="icon icon-chevron-thin-right"></i></span>
 				
 		</div>
@@ -204,7 +259,7 @@
 </article>
 <script>
 	window.subData = {
-		title: 'Docker',
+		title: 'object-get-set',
 		tools: true
 	}
 </script>
@@ -300,7 +355,7 @@
 <script>
   var disqus_shortname = 'kricsleo';
   
-  var disqus_url = 'https://kricsleo.github.io/docker/';
+  var disqus_url = 'https://kricsleo.github.io/object-get-set/';
   
   (function(){
     var dsq = document.createElement('script');
