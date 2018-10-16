@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-10-08T06:02:23.483Z</updated>
+  <updated>2018-10-16T09:15:00.942Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>same-origin-and-CORS</title>
+    <link href="https://kricsleo.github.io/same-origin-and-CORS/"/>
+    <id>https://kricsleo.github.io/same-origin-and-CORS/</id>
+    <published>2018-10-16T03:06:36.000Z</published>
+    <updated>2018-10-16T09:15:00.942Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;浏览器同源策略&quot;&gt;&lt;a href=&quot;#浏览器同源策略&quot; class=&quot;headerlink&quot; title=&quot;浏览器同源策略&quot;&gt;&lt;/a&gt;浏览器同源策略&lt;/h1&gt;&lt;p&gt;目前的 web 开发还相当的依赖 cookie , 而cookie的使用限制于浏览器的同源策略(same-origin policy), 同时这个策略也是保证我们网站信息安全的基础, 这篇文章主要了解一下浏览器同源策略具体的含义, 以及在实际开发中如何绕过这一限制来达到跨域请求数据的目的.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="same-origin" scheme="https://kricsleo.github.io/tags/same-origin/"/>
+    
+      <category term="CORS" scheme="https://kricsleo.github.io/tags/CORS/"/>
+    
+      <category term="cookie" scheme="https://kricsleo.github.io/tags/cookie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Content-Type</title>
+    <link href="https://kricsleo.github.io/Content-Type/"/>
+    <id>https://kricsleo.github.io/Content-Type/</id>
+    <published>2018-10-12T02:32:51.000Z</published>
+    <updated>2018-10-12T06:44:59.193Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;HTTP/1.1&lt;/code&gt;协议规定的&lt;code&gt;HTTP&lt;/code&gt;请求方法有&lt;code&gt;OPTIONS&lt;/code&gt;、&lt;code&gt;GET&lt;/code&gt;、&lt;code&gt;HEAD&lt;/code&gt;、&lt;code&gt;POST&lt;/code&gt;、&lt;code&gt;PUT&lt;/code&gt;、&lt;code&gt;DELETE&lt;/code&gt;、&lt;code&gt;TRACE&lt;/code&gt;、&lt;code&gt;CONNECT&lt;/code&gt;这几种, 用的最多的是&lt;code&gt;GET&lt;/code&gt;和&lt;code&gt;POST&lt;/code&gt;, 这里主要说一下提交请求时的请求头中&lt;code&gt;Content-Type&lt;/code&gt;字段&lt;br&gt;
+    
+    </summary>
+    
+      <category term="通信" scheme="https://kricsleo.github.io/categories/%E9%80%9A%E4%BF%A1/"/>
+    
+    
+      <category term="Content-Type" scheme="https://kricsleo.github.io/tags/Content-Type/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http</title>
+    <link href="https://kricsleo.github.io/http/"/>
+    <id>https://kricsleo.github.io/http/</id>
+    <published>2018-10-12T02:29:30.000Z</published>
+    <updated>2018-10-12T06:45:49.163Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;http&quot;&gt;&lt;a href=&quot;#http&quot; class=&quot;headerlink&quot; title=&quot;http&quot;&gt;&lt;/a&gt;http&lt;/h1&gt;&lt;p&gt;http虽然内容简单, 容易理解, 但是内容十分庞大, 涉及到现在通信的方方面面, 我打算花点时间陆陆续续的把我接触到的ht
+      
+    
+    </summary>
+    
+      <category term="通信" scheme="https://kricsleo.github.io/categories/%E9%80%9A%E4%BF%A1/"/>
+    
+    
+      <category term="http" scheme="https://kricsleo.github.io/tags/http/"/>
+    
+  </entry>
   
   <entry>
     <title>object-get-set</title>
@@ -334,7 +401,7 @@
     <link href="https://kricsleo.github.io/ssh-git/"/>
     <id>https://kricsleo.github.io/ssh-git/</id>
     <published>2018-08-30T01:56:01.000Z</published>
-    <updated>2018-09-29T01:02:49.796Z</updated>
+    <updated>2018-10-16T03:03:29.791Z</updated>
     
     <summary type="html">
     
@@ -368,26 +435,6 @@
     
     
       <category term="markdown" scheme="https://kricsleo.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git-workflow</title>
-    <link href="https://kricsleo.github.io/git-workflow/"/>
-    <id>https://kricsleo.github.io/git-workflow/</id>
-    <published>2018-08-22T07:01:31.000Z</published>
-    <updated>2018-09-29T01:02:49.796Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;git的日常使用流程记录&quot;&gt;&lt;a href=&quot;#git的日常使用流程记录&quot; class=&quot;headerlink&quot; title=&quot;git的日常使用流程记录&quot;&gt;&lt;/a&gt;git的日常使用流程记录&lt;/h3&gt;&lt;p&gt;内容参考于阮一峰老师的&lt;a href=&quot;https//www.ruanyifeng.com/blog/2015/08/git-use-process.html&quot;&gt;Git使用规范流程&lt;/a&gt;，记录一下git的日常使用流程。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="git" scheme="https://kricsleo.github.io/tags/git/"/>
     
   </entry>
   

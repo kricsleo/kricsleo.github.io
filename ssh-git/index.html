@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="kricsleo">
 <meta property="og:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-29T01:02:49.796Z">
+<meta property="og:updated_time" content="2018-10-16T03:03:29.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh-git">
 <meta name="twitter:description" content="github的https和ssh连接方式探究在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。">
@@ -161,15 +161,21 @@
     	<h1 id="github的https和ssh连接方式探究"><a href="#github的https和ssh连接方式探究" class="headerlink" title="github的https和ssh连接方式探究"></a>github的https和ssh连接方式探究</h1><p>在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。<br><a id="more"></a></p>
 <h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><p>1995年芬兰赫尔辛基理工大学的塔图·于勒宁编写了<code>secure shell</code>, 简称<code>SSH</code>, 在这之前已经有不安全的<code>shell</code>, 但是<code>SSH</code>的提出保证了在非安全网络中可以加密完整可靠的传输数据, 要注意的是<code>SSH</code>只是一种通信协议, 存在则多种实现, 下面使用的是其中应用最广泛其中之一的开源实现<code>OpenSSH</code>.<br><code>SSH</code>基于公钥和私钥形式的<code>非对称加密</code>实现身份验证, 其默认的通信端口是22, 在登录验证时有两种方式: 1.密码认证;2.公钥认证.</p>
 <ol>
-<li>密码认证<br>1.用户使用<code>SSH</code>向远程主机发起连接请求; 2.远程主机收到请求后把自己的公钥发给用户; 3.用户使用公钥对自己的登录密码进行加密, 然后发送给远程主机; 4.远程主机使用自己的密钥对发来的加密信息进行解密, 然后验证解密出来的用户密码是否正确, 如果密码正确则允许用户连接, 登录成功, 然后用户会把远程主机的公钥加入到自己本地的<code>$HOME/.ssh/known_hosts</code>中.<br>仔细分析这个过程我们会发现一个漏洞, 假如我是个黑客, 我出现在了用户和服务器中间的位置, 当在上面第二步的过程时我把我自己的公钥发送给用户, 然后用户就会用我的公钥加密他的密码然后发送给我, 这样我再用我的私钥来解密消息, 就可以获得用户的明文密码了, 这其实就是著名的<code>中间人攻击Main-in-the-middle attack(MITM)</code>. 如何应对<code>中间人攻击</code>可以参加下面.</li>
-<li>密钥认证<br>密钥认证比密码认证安全一些, 因为不涉及用户密码的传输过程. 过程大致如下: 1.用户生成自己的一对公钥和密钥, 然后将公钥存储在远程主机上; 2.用户登录的时候向远程主机发送用私钥签名的包含用户名和公钥等信息; 2.远程主机收到请求后检查自己的<code>$HOME/.ssh/authorized_keys</code>中是否有用户发送的消息中的公钥信息, 如果有则证明该消息的公钥信息合法, 然后就会使用该公钥解密消息.</li>
-<li>中间人攻击<br>那么<code>SSH</code>如何应对之前提到的<code>中间人攻击</code>呢?<br>在我们第一次连接一个远程主机例如<code>ssh user@host</code>连接时, 我们会收到如下提示信息:<blockquote>
-<p>The authenticity of host ‘host (12.18.429.21)’ can’t be established.<br>　　 RSA key fingerprint is 98:2e:d7:e0:de:9f:ac:67:28:c2:42:2d:37:16:58:4d.<br>　　 Are you sure you want to continue connecting (yes/no)?<br>这就是在提示我们是第一次连接这个主机, 然后消息里面给出了这个主机的公钥的md5摘要信息<code>98:2e:d7:e0:de:9f:ac:67:28:c2:42:2d:37:16:58:4d</code>, 我们可以通过确认这个摘要值是不是我们想要连接的主机的, 如果是就输入<code>yes</code>回车确认连接, 并且会自动把这个主机加入到我们的本地<code>known hosts</code>（已知主机）名单里面, 以后都不再提示.<br>因为<code>中间人攻击</code>核心就是使用假的公钥来替代真正的远程主机的公钥, 那么可以通过如下两种解决方案来应对: </p>
-<ol>
-<li>远程主机把自己的公钥拿到CA处做认证，申请一个数字证书<br>有关数字证书和数字签名的区别可以查看<a href="https//www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html">这里</a>, 以后只要确认这个证书是正规可信的, 那就可以对应的信任该公钥</li>
-<li>远程主机把自己公钥的指纹信息公布出来, 让大家自己来查看对比<br>比如放在自己的网站上面供想要连接的人执行对比查阅<br>通过上面两种做法都可以是的用户确认自己当前加密信息所使用的公钥确定是正确的远程主机的公钥, 而不是<code>中间人</code>的公钥<br>关于<code>SSH</code>, 你也可以参考<a href="https//blog.51cto.com/zhaochj/1602279">这里</a>或者<a href="https//www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">阮一峰的博客</a></li>
-</ol>
+<li><p>密码认证<br>1.用户使用<code>SSH</code>向远程主机发起连接请求; 2.远程主机收到请求后把自己的公钥发给用户; 3.用户使用公钥对自己的登录密码进行加密, 然后发送给远程主机; 4.远程主机使用自己的密钥对发来的加密信息进行解密, 然后验证解密出来的用户密码是否正确, 如果密码正确则允许用户连接, 登录成功, 然后用户会把远程主机的公钥加入到自己本地的<code>$HOME/.ssh/known_hosts</code>中.<br>仔细分析这个过程我们会发现一个漏洞, 假如我是个黑客, 我出现在了用户和服务器中间的位置, 当在上面第二步的过程时我把我自己的公钥发送给用户, 然后用户就会用我的公钥加密他的密码然后发送给我, 这样我再用我的私钥来解密消息, 就可以获得用户的明文密码了, 这其实就是著名的<code>中间人攻击Main-in-the-middle attack(MITM)</code>. 如何应对<code>中间人攻击</code>可以参加下面.</p>
+</li>
+<li><p>密钥认证<br>密钥认证比密码认证安全一些, 因为不涉及用户密码的传输过程. 过程大致如下: 1.用户生成自己的一对公钥和密钥, 然后将公钥存储在远程主机上; 2.用户登录的时候向远程主机发送用私钥签名的包含用户名和公钥等信息; 2.远程主机收到请求后检查自己的<code>$HOME/.ssh/authorized_keys</code>中是否有用户发送的消息中的公钥信息, 如果有则证明该消息的公钥信息合法, 然后就会使用该公钥解密消息.</p>
+</li>
+<li><p>中间人攻击<br>那么<code>SSH</code>如何应对之前提到的<code>中间人攻击</code>呢?<br>在我们第一次连接一个远程主机例如<code>ssh user@host</code>连接时, 我们会收到如下提示信息:</p>
+<blockquote>
+<p>The authenticity of host ‘host (12.18.429.21)’ can’t be established.<br>RSA key fingerprint is 98:2e:d7:e0:de:9f:ac:67:28:c2:42:2d:37:16:58:4d.<br>Are you sure you want to continue connecting (yes/no)?</p>
 </blockquote>
+<p>这就是在提示我们是第一次连接这个主机, 然后消息里面给出了这个主机的公钥的md5摘要信息<code>98:2e:d7:e0:de:9f:ac:67:28:c2:42:2d:37:16:58:4d</code>, 我们可以通过确认这个摘要值是不是我们想要连接的主机的, 如果是就输入<code>yes</code>回车确认连接, 并且会自动把这个主机加入到我们的本地<code>known hosts</code>（已知主机）名单里面, 以后都不再提示.<br>因为<code>中间人攻击</code>核心就是使用假的公钥来替代真正的远程主机的公钥, 那么可以通过如下两种解决方案来应对: </p>
+<ol>
+<li><p>远程主机把自己的公钥拿到CA处做认证，申请一个数字证书<br>有关数字证书和数字签名的区别可以查看<a href="https//www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html">这里</a>, 以后只要确认这个证书是正规可信的, 那就可以对应的信任该公钥</p>
+</li>
+<li><p>远程主机把自己公钥的指纹信息公布出来, 让大家自己来查看对比<br>比如放在自己的网站上面供想要连接的人执行对比查阅<br>通过上面两种做法都可以是的用户确认自己当前加密信息所使用的公钥确定是正确的远程主机的公钥, 而不是<code>中间人</code>的公钥<br>关于<code>SSH</code>, 你也可以参考<a href="https//blog.51cto.com/zhaochj/1602279">这里</a>或者<a href="https//www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">阮一峰的博客</a></p>
+</li>
+</ol>
 </li>
 </ol>
 <h2 id="git的两种通信协议"><a href="#git的两种通信协议" class="headerlink" title="git的两种通信协议"></a>git的两种通信协议</h2><p>实际上git可以使用四种通信协议:<code>本地传输</code>，<code>SSH协议</code>，<code>Git协议</code>和<code>HTTP/S协议</code>, 我们这里只讨论其中的<code>SSH协议</code>和<code>HTTP/S协议</code>.<br>使用中最明显的区别是<code>SSH协议</code>只能操作我们有管理权限的项目, 但是<code>HTTP/S协议</code>允许我们clone没有管理权限的项目(不能修改, 只能clone查看).<br>一般我们使用<code>SSH协议</code>比较多, 因为服务器一般是<code>linux</code>系统的, 它内置了<code>SSH</code>, 使用方便, 而且<code>SSH</code>也更安全.</p>
@@ -190,9 +196,9 @@
 <p><strong>那么接下来看一下对于一个我们有管理权限的仓库应该如何使用ssh方式去clone到本地</strong></p>
 <p>ssh方式是基于不对称性加密来通信的，你需要使用不对称性算法来生成一对密钥，然后将私钥放置在你本机上，将公钥放置在github服务器上，之后在进行ssh通信时将会使用这对秘钥来完成认证登陆及加密和解密信息，<br>在window上和mac上我们都可以使用<code>ssh-keygen</code>这个命令行工具来生成我们需要的密钥，这是我们想要使用ssh通信的第一步</p>
 <ol>
-<li>生成一对密钥<br>打开你的命令行（window下使用<code>cmd.exe</code>，mac下使用<code>terminal.app</code>），然后按照如下命令来生成密钥<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">"your_email@example.com"</span></span><br><span class="line"><span class="comment"># 参数说明：  </span></span><br><span class="line"><span class="comment"># ssh-keygen: 表示将要使用ssh-keygen这个工具来生成密钥</span></span><br><span class="line"><span class="comment"># -t: 指定要生成的密钥类型，有rsa1(SSH1),dsa(SSH2),ecdsa(SSH2),rsa(SSH2)等类型，较为常用的是rsa类型，此处指定为rsa类型</span></span><br><span class="line"><span class="comment"># -b: 指定要生成的密钥长度 (单位:bit)，对于RSA类型的密钥，最小长度768bits,默认长度为2048bits。DSA密钥必须是1024bits，此处指定为4096bits</span></span><br><span class="line"><span class="comment"># -C: 制定要生成的密钥的注释，这个可以自己随意填写，就相当于给这个密钥留个名，好分辨，比如此处可以用注册github的邮箱号</span></span><br></pre></td></tr></table></figure>
-</li>
+<li>生成一对密钥<br>打开你的命令行（window下使用<code>cmd.exe</code>，mac下使用<code>terminal.app</code>），然后按照如下命令来生成密钥</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">"your_email@example.com"</span></span><br><span class="line"><span class="comment"># 参数说明：  </span></span><br><span class="line"><span class="comment"># ssh-keygen: 表示将要使用ssh-keygen这个工具来生成密钥</span></span><br><span class="line"><span class="comment"># -t: 指定要生成的密钥类型，有rsa1(SSH1),dsa(SSH2),ecdsa(SSH2),rsa(SSH2)等类型，较为常用的是rsa类型，此处指定为rsa类型</span></span><br><span class="line"><span class="comment"># -b: 指定要生成的密钥长度 (单位:bit)，对于RSA类型的密钥，最小长度768bits,默认长度为2048bits。DSA密钥必须是1024bits，此处指定为4096bits</span></span><br><span class="line"><span class="comment"># -C: 制定要生成的密钥的注释，这个可以自己随意填写，就相当于给这个密钥留个名，好分辨，比如此处可以用注册github的邮箱号</span></span><br></pre></td></tr></table></figure>
 <p>之后会出现如下提示内容：</p>
 <blockquote>
 <p>Generating public/private rsa key pair.<br>Enter file in which to save the key (C:/Users/xxxxx/.ssh/id_rsa):</p>
@@ -207,13 +213,15 @@
 </blockquote>
 <p>那么恭喜你，你已经生成了一对密钥文件，他们存储在<code>C:/Users/xxxxx/.ssh/</code>（windows）或者<code>~/.ssh</code>（mac）目录下，默认的文件是id_rsa（私钥文件名）和id_rsa.pub（公钥文件名），你可以去打开查看一下里面的内容。</p>
 <ol start="2">
-<li>部署密钥<br>之前说过了你需要将私钥保存在本机，公钥放置在服务器上，这样之后才能用这对密钥建立ssh通信，那么在github上我们按照如下做法来部署密钥<ol>
+<li><p>部署密钥<br>之前说过了你需要将私钥保存在本机，公钥放置在服务器上，这样之后才能用这对密钥建立ssh通信，那么在github上我们按照如下做法来部署密钥</p>
+<ol>
 <li>用文本编辑器打开刚才生成的公钥文件id_rsa.pub，拷贝里面的全部内容；</li>
 <li>打开浏览器登陆你的github账户，依次打开你头像上的Settings &gt; SSH and GPG keys &gt; New SSH key;</li>
 <li>填写相关信息，<strong>title</strong>可以类似之前生成密钥时填写的注释信息那样填写你的邮箱名，然后<strong>key</strong>里面填上刚才拷贝的公钥内容，点击<strong>Add SSH key</strong>之后输入一次你的github账户密码进行确认，然后你的公钥就被保存部署到github服务器上了；</li>
 </ol>
 </li>
-<li>测试连接，使用如下命令来测试是否能够通过ssh连接到github<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh git@github.com</span><br><span class="line"><span class="comment"># 参数说明：</span></span><br><span class="line"><span class="comment"># ssh: 使用ssh进行连接</span></span><br><span class="line"><span class="comment"># git@github.com: ssh连接时需要指定登陆用户名和远程主机名，这里的git就是github的远程服务器的用户名，github.com就是远程服务器的主机名，用'@'符号连接起来</span></span><br></pre></td></tr></table></figure>
+<li><p>测试连接，使用如下命令来测试是否能够通过ssh连接到github</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh git@github.com</span><br><span class="line"><span class="comment"># 参数说明：</span></span><br><span class="line"><span class="comment"># ssh: 使用ssh进行连接</span></span><br><span class="line"><span class="comment"># git@github.com: ssh连接时需要指定登陆用户名和远程主机名，这里的git就是github的远程服务器的用户名，github.com就是远程服务器的主机名，用'@'符号连接起来</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>当你是第一次连接的时候会提示你如下信息：</p>
@@ -239,7 +247,7 @@
 <ol start="2">
 <li>部署新生成的密钥<br>和之前部署github密钥的步骤类似，你登录你公司的gitlab，找到添加<code>ssh-key</code>的地方，然后拷贝新生成的公钥id_rsa_xx.pub文件内容到gitlab里面去并且保存，这样你公司的gitlab服务器上的公钥信息就配置好了</li>
 <li><p>新建配置文件<br>因为现在我们本机上有了两对密钥，提交代码到github时需要使用之前生成的那一对，提交代码到公司的gitlab上需要我们现在刚刚生成的这一对，那么我们就要写一个简单的配置文件来告诉git该如何再提交代码时选择正确的密钥，实际上就是编写SSH的用户配置文件config。<br>在目录<code>~/.ssh</code>(mac环境)或者<code>C:/Users/xxxxx/.ssh/</code>下新建文件<code>config</code>，注意<strong>没有后缀名</strong>的，然后在里面填写上如下内容：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#github</span></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment">#yourcompany</span></span><br><span class="line">Host git.XXXXX.com</span><br><span class="line">    HostName git.XXXXX.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa_XX</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数说明，此段内容不用拷贝，是为了加以说明</span></span><br><span class="line"><span class="comment"># Host: 别名，为了方便记忆和区分，可以任意填写</span></span><br><span class="line"><span class="comment"># HostName： 主机名 服务器的主机名，也可以是服务器的ip地址，需要准确填写</span></span><br><span class="line"><span class="comment"># User： 用户名，ssh登录服务器时的用户名，一般是git</span></span><br><span class="line"><span class="comment"># IdentityFile： 密钥文件的路径，填写上你要用来和这个服务器通信使用的密钥文件的路径</span></span><br><span class="line"><span class="comment"># PreferredAuthentications： 强制使用Public Key验证，我这里没有要求这个，你也可以加上</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#github</span></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment">#yourcompany</span></span><br><span class="line">Host git.XXXXX.com</span><br><span class="line">    HostName git.XXXXX.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa_XX</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数说明，此段内容不用拷贝，是为了加以说明</span></span><br><span class="line"><span class="comment"># Host: 别名，为了方便记忆和区分，可以任意填写</span></span><br><span class="line"><span class="comment"># HostName： 主机名 服务器的主机名，也可以是服务器的ip地址，需要准确填写</span></span><br><span class="line"><span class="comment"># User： 用户名，ssh登录服务器时的用户名，一般是git</span></span><br><span class="line"><span class="comment"># IdentityFile： 密钥文件的路径，填写上你要用来和这个服务器通信使用的密钥文件的路径</span></span><br><span class="line"><span class="comment"># PreferredAuthentications：可选值 'publickey'和'password',强制使用密钥验证或者密码认证，我这里没有要求这个，你也可以按自己需求加上</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>测试连接<br>使用如下命令来分别测试能否连接到对应的服务器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 测试连接公司</span></span><br><span class="line">ssh git@git.XXXXX.com</span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试连接github</span></span><br><span class="line">ssh git@github.com</span><br></pre></td></tr></table></figure>
@@ -312,11 +320,13 @@
     
         <li><a class="flat-box" href="/categories/front-end/"><div class='name'>front-end</div><div class='badget'>1</div></a></li>
     
-        <li><a class="flat-box" href="/categories/前端/"><div class='name'>前端</div><div class='badget'>8</div></a></li>
+        <li><a class="flat-box" href="/categories/前端/"><div class='name'>前端</div><div class='badget'>9</div></a></li>
     
         <li><a class="flat-box" href="/categories/工具/"><div class='name'>工具</div><div class='badget'>5</div></a></li>
     
         <li><a class="flat-box" href="/categories/框架/"><div class='name'>框架</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/通信/"><div class='name'>通信</div><div class='badget'>2</div></a></li>
     
     </ul>
     
@@ -327,7 +337,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="/tags/AST/" style="font-size: 14px; color: #808080">AST</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #808080">JavaScript</a> <a href="/tags/MVC/" style="font-size: 14px; color: #808080">MVC</a> <a href="/tags/MVP/" style="font-size: 14px; color: #808080">MVP</a> <a href="/tags/MVVM/" style="font-size: 14px; color: #808080">MVVM</a> <a href="/tags/Mini-Program/" style="font-size: 14px; color: #808080">Mini-Program</a> <a href="/tags/ast/" style="font-size: 14px; color: #808080">ast</a> <a href="/tags/bash/" style="font-size: 14px; color: #808080">bash</a> <a href="/tags/codeStyle/" style="font-size: 14px; color: #808080">codeStyle</a> <a href="/tags/css/" style="font-size: 14px; color: #808080">css</a> <a href="/tags/docker/" style="font-size: 14px; color: #808080">docker</a> <a href="/tags/encrypt/" style="font-size: 20px; color: #000">encrypt</a> <a href="/tags/flex/" style="font-size: 14px; color: #808080">flex</a> <a href="/tags/function/" style="font-size: 14px; color: #808080">function</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/github/" style="font-size: 14px; color: #808080">github</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/markdown/" style="font-size: 14px; color: #808080">markdown</a> <a href="/tags/object/" style="font-size: 14px; color: #808080">object</a> <a href="/tags/ssh/" style="font-size: 14px; color: #808080">ssh</a> <a href="/tags/vue/" style="font-size: 14px; color: #808080">vue</a> <a href="/tags/前端模块化/" style="font-size: 14px; color: #808080">前端模块化</a>
+        <a href="/tags/AST/" style="font-size: 14px; color: #808080">AST</a> <a href="/tags/CORS/" style="font-size: 14px; color: #808080">CORS</a> <a href="/tags/Content-Type/" style="font-size: 14px; color: #808080">Content-Type</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #808080">JavaScript</a> <a href="/tags/MVC/" style="font-size: 14px; color: #808080">MVC</a> <a href="/tags/MVP/" style="font-size: 14px; color: #808080">MVP</a> <a href="/tags/MVVM/" style="font-size: 14px; color: #808080">MVVM</a> <a href="/tags/Mini-Program/" style="font-size: 14px; color: #808080">Mini-Program</a> <a href="/tags/ast/" style="font-size: 14px; color: #808080">ast</a> <a href="/tags/bash/" style="font-size: 14px; color: #808080">bash</a> <a href="/tags/codeStyle/" style="font-size: 14px; color: #808080">codeStyle</a> <a href="/tags/cookie/" style="font-size: 14px; color: #808080">cookie</a> <a href="/tags/css/" style="font-size: 14px; color: #808080">css</a> <a href="/tags/docker/" style="font-size: 14px; color: #808080">docker</a> <a href="/tags/encrypt/" style="font-size: 20px; color: #000">encrypt</a> <a href="/tags/flex/" style="font-size: 14px; color: #808080">flex</a> <a href="/tags/function/" style="font-size: 14px; color: #808080">function</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/github/" style="font-size: 14px; color: #808080">github</a> <a href="/tags/http/" style="font-size: 14px; color: #808080">http</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/markdown/" style="font-size: 14px; color: #808080">markdown</a> <a href="/tags/object/" style="font-size: 14px; color: #808080">object</a> <a href="/tags/same-origin/" style="font-size: 14px; color: #808080">same-origin</a> <a href="/tags/ssh/" style="font-size: 14px; color: #808080">ssh</a> <a href="/tags/vue/" style="font-size: 14px; color: #808080">vue</a> <a href="/tags/前端模块化/" style="font-size: 14px; color: #808080">前端模块化</a>
     </div>
 </div>
 
