@@ -102,32 +102,62 @@ var customSearch;
 		var $header = $('.l_header');
 		var $search = $('.l_header .m_search');
 		if ($switcher.length === 0) return;
+
+		// 动态加载搜索 js
+		$search.click(function (e) {
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.src = '/js/search.js';
+			s.onload = function () {
+				if (SEARCH_SERVICE === 'google') {
+					customSearch = new GoogleCustomSearch({
+						apiKey: GOOGLE_CUSTOM_SEARCH_API_KEY,
+						engineId: GOOGLE_CUSTOM_SEARCH_ENGINE_ID,
+						imagePath: "/images/"
+					});
+				}
+				else if (SEARCH_SERVICE === 'algolia') {
+					customSearch = new AlgoliaSearch({
+						apiKey: ALGOLIA_API_KEY,
+						appId: ALGOLIA_APP_ID,
+						indexName: ALGOLIA_INDEX_NAME,
+						imagePath: "/images/"
+					});
+				}
+				else if (SEARCH_SERVICE === 'hexo') {
+					customSearch = new HexoSearch({
+						imagePath: "/images/"
+					});
+				}
+				else if (SEARCH_SERVICE === 'azure') {
+					customSearch = new AzureSearch({
+						serviceName: AZURE_SERVICE_NAME,
+						indexName: AZURE_INDEX_NAME,
+						queryKey: AZURE_QUERY_KEY,
+						imagePath: "/images/"
+					});
+				}
+				else if (SEARCH_SERVICE === 'baidu') {
+					customSearch = new BaiduSearch({
+						apiId: BAIDU_API_ID,
+						imagePath: "/images/"
+					});
+				}
+			}
+			document.body.appendChild(s);
+		});
 		$switcher.click(function (e) {
 			e.stopPropagation();
 			$header.toggleClass('z_search-open');
 			$search.find('input').focus();
 		});
+
 		$(document).click(function (e) {
 			$header.removeClass('z_search-open');
 		});
 		$search.click(function (e) {
 			e.stopPropagation();
 		})
-	}
-	function setWaves() {
-		Waves.attach('.flat-btn', ['waves-button']);
-		Waves.attach('.float-btn', ['waves-button', 'waves-float']);
-		Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
-		Waves.attach('.flat-box', ['waves-block']);
-		Waves.attach('.float-box', ['waves-block', 'waves-float']);
-		Waves.attach('.waves-image');
-		Waves.init();
-	}
-	function setScrollReveal() {
-		const $reveal = $('.reveal');
-		if ($reveal.length === 0) return;
-		const sr = ScrollReveal({ distance: 0 });
-		sr.reveal('.reveal');
 	}
 	function setTocToggle() {
 		const $toc = $('.toc-wrapper');
@@ -170,87 +200,17 @@ var customSearch;
 		scrollListener();
 	}
 
-	// function getPicture() {
-	// 	const $banner = $('.banner');
-	// 	if ($banner.length === 0) return;
-	// 	const url = ROOT + 'js/lovewallpaper.json';
-	// 	$.get(url).done(res => {
-	// 		if (res.data.length > 0) {
-	// 			const index = Math.floor(Math.random() * res.data.length);
-	// 			$banner.css('background-image', 'url(' + res.data[index].big + ')');
-	// 		}
-	// 	})
-	// }
-
-	// function getHitokoto() {
-	// 	const $hitokoto = $('#hitokoto');
-	// 	if($hitokoto.length === 0) return;
-	// 	const url = 'http://api.hitokoto.us/rand?length=80&encode=jsc&fun=handlerHitokoto';
-	// 	$('body').append('<script	src="%s"></script>'.replace('%s',url));
-	// 	window.handlerHitokoto = (data) => {
-	// 		$hitokoto
-	// 			.css('color','transparent')
-	// 			.text(data.hitokoto)
-	// 		if(data.source) $hitokoto.append('<cite> ——  %s</cite>'.replace('%s',data.source));
-	// 		else if(data.author) $hitokoto.append('<cite> ——  %s</cite>'.replace('%s',data.author));
-	// 		$hitokoto.css('color','white');
-	// 	}
-	// }
-
-
 	$(function () {
 		//set header
 		setHeader();
 		setHeaderMenu();
 		setHeaderMenuPhone();
 		setHeaderSearch();
-		setWaves();
-		setScrollReveal();
 		setTocToggle();
-		// getHitokoto();
-		// getPicture();
-
-
-		$(".article .video-container").fitVids();
 
 		setTimeout(function () {
 			$('#loading-bar-wrapper').fadeOut(500);
 		}, 300);
-
-		if (SEARCH_SERVICE === 'google') {
-			customSearch = new GoogleCustomSearch({
-				apiKey: GOOGLE_CUSTOM_SEARCH_API_KEY,
-				engineId: GOOGLE_CUSTOM_SEARCH_ENGINE_ID,
-				imagePath: "/images/"
-			});
-		}
-		else if (SEARCH_SERVICE === 'algolia') {
-			customSearch = new AlgoliaSearch({
-				apiKey: ALGOLIA_API_KEY,
-				appId: ALGOLIA_APP_ID,
-				indexName: ALGOLIA_INDEX_NAME,
-				imagePath: "/images/"
-			});
-		}
-		else if (SEARCH_SERVICE === 'hexo') {
-			customSearch = new HexoSearch({
-				imagePath: "/images/"
-			});
-		}
-		else if (SEARCH_SERVICE === 'azure') {
-			customSearch = new AzureSearch({
-				serviceName: AZURE_SERVICE_NAME,
-				indexName: AZURE_INDEX_NAME,
-				queryKey: AZURE_QUERY_KEY,
-				imagePath: "/images/"
-			});
-		}
-		else if (SEARCH_SERVICE === 'baidu') {
-			customSearch = new BaiduSearch({
-				apiId: BAIDU_API_ID,
-				imagePath: "/images/"
-			});
-		}
 
 	});
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-10-16T09:18:46.598Z</updated>
+  <updated>2018-10-21T11:27:42.011Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -17,11 +17,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>custom-hexo-theme</title>
+    <link href="https://kricsleo.github.io/custom-hexo-theme/"/>
+    <id>https://kricsleo.github.io/custom-hexo-theme/</id>
+    <published>2018-10-21T06:58:11.000Z</published>
+    <updated>2018-10-21T11:27:42.011Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;hexo主题-MaterialFlow-主题改造&quot;&gt;&lt;a href=&quot;#hexo主题-MaterialFlow-主题改造&quot; class=&quot;headerlink&quot; title=&quot;hexo主题 MaterialFlow 主题改造&quot;&gt;&lt;/a&gt;hexo主题 Materia
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Promise-Generator</title>
+    <link href="https://kricsleo.github.io/Promise-Generator/"/>
+    <id>https://kricsleo.github.io/Promise-Generator/</id>
+    <published>2018-10-18T02:33:04.000Z</published>
+    <updated>2018-10-18T03:05:33.711Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;异步解决方案&quot;&gt;&lt;a href=&quot;#异步解决方案&quot; class=&quot;headerlink&quot; title=&quot;异步解决方案&quot;&gt;&lt;/a&gt;异步解决方案&lt;/h1&gt;&lt;p&gt;本文是为了解js的异步操作解决方案发展过程. 从原始的回调地狱到ES6的&lt;code&gt;Promise&lt;/code&gt;和&lt;code&gt;Generator&lt;/code&gt;再到ES7提案阶段的&lt;code&gt;async&lt;/code&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="Generator" scheme="https://kricsleo.github.io/tags/Generator/"/>
+    
+      <category term="Promise" scheme="https://kricsleo.github.io/tags/Promise/"/>
+    
+      <category term="async" scheme="https://kricsleo.github.io/tags/async/"/>
+    
+  </entry>
+  
+  <entry>
     <title>same-origin-and-CORS</title>
     <link href="https://kricsleo.github.io/same-origin-and-CORS/"/>
     <id>https://kricsleo.github.io/same-origin-and-CORS/</id>
     <published>2018-10-16T03:06:36.000Z</published>
-    <updated>2018-10-16T09:18:46.598Z</updated>
+    <updated>2018-10-21T05:40:45.991Z</updated>
     
     <summary type="html">
     
@@ -393,48 +436,6 @@
     
     
       <category term="javascript" scheme="https://kricsleo.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ssh-git</title>
-    <link href="https://kricsleo.github.io/ssh-git/"/>
-    <id>https://kricsleo.github.io/ssh-git/</id>
-    <published>2018-08-30T01:56:01.000Z</published>
-    <updated>2018-10-16T03:03:29.791Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;github的https和ssh连接方式探究&quot;&gt;&lt;a href=&quot;#github的https和ssh连接方式探究&quot; class=&quot;headerlink&quot; title=&quot;github的https和ssh连接方式探究&quot;&gt;&lt;/a&gt;github的https和ssh连接方式探究&lt;/h1&gt;&lt;p&gt;在本机连接github仓库提交代码时有两种可选方法，一种是使用github账号的用户名和密码的认证方式通过https连接，另一种是使用ssh-key的认证方式通过ssh连接，本文主要研究这两种方式的工作过程以及可能会扩展探究一些相关的知识。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="ssh" scheme="https://kricsleo.github.io/tags/ssh/"/>
-    
-      <category term="github" scheme="https://kricsleo.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown</title>
-    <link href="https://kricsleo.github.io/markdown/"/>
-    <id>https://kricsleo.github.io/markdown/</id>
-    <published>2018-08-23T01:09:00.000Z</published>
-    <updated>2018-09-29T01:02:49.796Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;markdown语法整理&quot;&gt;&lt;a href=&quot;#markdown语法整理&quot; class=&quot;headerlink&quot; title=&quot;markdown语法整理&quot;&gt;&lt;/a&gt;markdown语法整理&lt;/h1&gt;&lt;p&gt;经常使用markdown来做笔记，这里把现在常用的语法先记录一下，万一老年人了记忆不好，也可以查一查&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="markdown" scheme="https://kricsleo.github.io/tags/markdown/"/>
     
   </entry>
   

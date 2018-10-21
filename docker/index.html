@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <title>Docker | kricsleo</title>
-  <meta name="description" content="It&#39;s my personal blog." />
-  <meta name="keywords" content="blog,kricsleo,IT,Web Front End" />
-  <meta name="HandheldFriendly" content="True" />
+  <meta name="description" content="It&#39;s my personal blog.">
+  <meta name="keywords" content="blog,kricsleo,IT,Web Front End">
+  <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="shortcut icon" href="http://store.kricsleo.com/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.">
@@ -24,10 +24,6 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker">
 <meta name="twitter:description" content="docker学习笔记参考文档Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.">
-    
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="/style.css">
   <script>
     function setLoadingBarProgress(num) {
@@ -35,7 +31,7 @@
     }
   </script>
 </head>
-
+</html>
 <body>
   <div id="loading-bar-wrapper">
   <div id="loading-bar"></div>
@@ -44,66 +40,66 @@
 
   <script>setLoadingBarProgress(20)</script> 
   <header class="l_header">
-	<div class='wrapper'>
+	<div class="wrapper">
 		<div class="nav-main container container--flex">
-			<a class="logo flat-box" href='/' >
+			<a class="logo flat-box" href="/">
 				kricsleo
 			</a>
-			<div class='menu'>
-				<ul class='h-list'>
+			<div class="menu">
+				<ul class="h-list">
 					
 						<li>
-							<a class='flat-box nav-home' href='/'>
+							<a class="flat-box nav-home" href="/">
 								Home
 							</a>
 						</li>
 					
 						<li>
-							<a class='flat-box nav-categories' href='/categories'>
+							<a class="flat-box nav-categories" href="/categories">
 								Categories
 							</a>
 						</li>
 					
 						<li>
-							<a class='flat-box nav-archives' href='/archives'>
+							<a class="flat-box nav-archives" href="/archives">
 								Archives
 							</a>
 						</li>
 					
 						<li>
-							<a class='flat-box nav-about' href='https://github.com/kricsleo'>
+							<a class="flat-box nav-about" href="https://github.com/kricsleo">
 								About
 							</a>
 						</li>
 					
 				</ul>
-				<div class='underline'></div>
+				<div class="underline"></div>
 			</div>
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="Search" />
+						<input type="text" class="input u-search-input" placeholder="Search">
 						<span class="icon icon-search"></span>
 					</form>
 				</div>
 			
-			<ul class='switcher h-list'>
+			<ul class="switcher h-list">
 				
-					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a></li>
+					<li class="s-search"><a href="javascript:void(0)"><span class="icon icon-search flat-box"></span></a></li>
 				
-				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+				<li class="s-menu"><a href="javascript:void(0)"><span class="icon icon-menu flat-box"></span></a></li>
 			</ul>
 		</div>
 		
-		<div class='nav-sub container container--flex'>
-			<a class="logo" class="flat-box" href='javascript:void(0)'>
+		<div class="nav-sub container container--flex">
+			<a class="logo" href="javascript:void(0)">
 				Word of Forks
 			</a>
 
-			<ul class='switcher h-list'>
-				<li class='s-comment'><a href='javascript:void(0)'><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
-				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a></li>
-				<li class='s-toc'><a href='javascript:void(0)'><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+			<ul class="switcher h-list">
+				<li class="s-comment"><a href="javascript:void(0)"><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class="s-top"><a href="javascript:void(0)"><span class="icon icon-arrow_upward flat-box"></span></a></li>
+				<li class="s-toc"><a href="javascript:void(0)"><span class="icon icon-format_list_numbered flat-box"></span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -134,10 +130,8 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        <article id="post-docker"
-  class="post white-box article-type-post"
-  itemscope itemprop="blogPost">
-	<section class='meta'>
+        <article id="post-docker" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+	<section class="meta">
 	<h2 class="title">
   	<a href="/docker/">
     	Docker
@@ -148,7 +142,7 @@
 	</time>
 	
     
-    <div class='cats'>
+    <div class="cats">
         <a href="/categories/工具/">工具</a>
     </div>
 
@@ -184,22 +178,18 @@
 	
 		<div class="art-item-footer">
 				
-					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/vue/" rel="prev"  title="vue">
+					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/vue/" rel="prev" title="vue">
 						vue 
 					</a></span>
 				
 				
-					<span class="art-item-right">next：<a href="/practical-function-in-javascript/" rel="next"  title="Practical-Function-In-Javascript">
+					<span class="art-item-right">next：<a href="/practical-function-in-javascript/" rel="next" title="Practical-Function-In-Javascript">
 						Practical-Function-In-Javascript
 					</a><i class="icon icon-chevron-thin-right"></i></span>
 				
 		</div>
 	
 	</section>
-	
-		<section id="comments">
-			<div id="disqus_thread"></div>
-		</section>
 	
 </article>
 <script>
@@ -212,31 +202,31 @@
       </div>
       <aside class='l_side'>
         
-  <section class='m_widget about'>
+  <section class="m_widget about">
 
-<img class='avatar waves-image' src='/images/avatar.png' />
+<img class="avatar" src="http://store.kricsleo.com/avatar.png">
 
 <!-- <div class='header'>kricsleo</div> -->
-<div class='content'>
-<div class='desc'>前端开发现在是黎明前的黑暗, 在几年之内一定会明晰起来</div>
+<div class="content">
+<div class="desc">前端开发现在是黎明前的黑暗, 在几年之内一定会明晰起来</div>
 </div>
 </section>
 
-  <section class='m_widget categories'>
-<div class='header'>Categories</div>
-<div class='content'>
+  <section class="m_widget categories">
+<div class="header">Categories</div>
+<div class="content">
     
     <ul class="entry">
     
-        <li><a class="flat-box" href="/categories/front-end/"><div class='name'>front-end</div><div class='badget'>1</div></a></li>
+        <li><a class="flat-box" href="/categories/front-end/"><div class="name">front-end</div><div class="badget">2</div></a></li>
     
-        <li><a class="flat-box" href="/categories/前端/"><div class='name'>前端</div><div class='badget'>9</div></a></li>
+        <li><a class="flat-box" href="/categories/前端/"><div class="name">前端</div><div class="badget">9</div></a></li>
     
-        <li><a class="flat-box" href="/categories/工具/"><div class='name'>工具</div><div class='badget'>5</div></a></li>
+        <li><a class="flat-box" href="/categories/工具/"><div class="name">工具</div><div class="badget">5</div></a></li>
     
-        <li><a class="flat-box" href="/categories/框架/"><div class='name'>框架</div><div class='badget'>1</div></a></li>
+        <li><a class="flat-box" href="/categories/框架/"><div class="name">框架</div><div class="badget">1</div></a></li>
     
-        <li><a class="flat-box" href="/categories/通信/"><div class='name'>通信</div><div class='badget'>2</div></a></li>
+        <li><a class="flat-box" href="/categories/通信/"><div class="name">通信</div><div class="badget">2</div></a></li>
     
     </ul>
     
@@ -246,8 +236,8 @@
   
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
-    <div class='content'>
-        <a href="/tags/AST/" style="font-size: 14px; color: #808080">AST</a> <a href="/tags/CORS/" style="font-size: 14px; color: #808080">CORS</a> <a href="/tags/Content-Type/" style="font-size: 14px; color: #808080">Content-Type</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #808080">JavaScript</a> <a href="/tags/MVC/" style="font-size: 14px; color: #808080">MVC</a> <a href="/tags/MVP/" style="font-size: 14px; color: #808080">MVP</a> <a href="/tags/MVVM/" style="font-size: 14px; color: #808080">MVVM</a> <a href="/tags/Mini-Program/" style="font-size: 14px; color: #808080">Mini-Program</a> <a href="/tags/ast/" style="font-size: 14px; color: #808080">ast</a> <a href="/tags/bash/" style="font-size: 14px; color: #808080">bash</a> <a href="/tags/codeStyle/" style="font-size: 14px; color: #808080">codeStyle</a> <a href="/tags/cookie/" style="font-size: 14px; color: #808080">cookie</a> <a href="/tags/css/" style="font-size: 14px; color: #808080">css</a> <a href="/tags/docker/" style="font-size: 14px; color: #808080">docker</a> <a href="/tags/encrypt/" style="font-size: 20px; color: #000">encrypt</a> <a href="/tags/flex/" style="font-size: 14px; color: #808080">flex</a> <a href="/tags/function/" style="font-size: 14px; color: #808080">function</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/github/" style="font-size: 14px; color: #808080">github</a> <a href="/tags/http/" style="font-size: 14px; color: #808080">http</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/markdown/" style="font-size: 14px; color: #808080">markdown</a> <a href="/tags/object/" style="font-size: 14px; color: #808080">object</a> <a href="/tags/same-origin/" style="font-size: 14px; color: #808080">same-origin</a> <a href="/tags/ssh/" style="font-size: 14px; color: #808080">ssh</a> <a href="/tags/vue/" style="font-size: 14px; color: #808080">vue</a> <a href="/tags/前端模块化/" style="font-size: 14px; color: #808080">前端模块化</a>
+    <div class="content">
+        <a href="/tags/AST/" style="font-size: 14px; color: #808080">AST</a> <a href="/tags/CORS/" style="font-size: 14px; color: #808080">CORS</a> <a href="/tags/Content-Type/" style="font-size: 14px; color: #808080">Content-Type</a> <a href="/tags/Generator/" style="font-size: 14px; color: #808080">Generator</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #808080">JavaScript</a> <a href="/tags/MVC/" style="font-size: 14px; color: #808080">MVC</a> <a href="/tags/MVP/" style="font-size: 14px; color: #808080">MVP</a> <a href="/tags/MVVM/" style="font-size: 14px; color: #808080">MVVM</a> <a href="/tags/Mini-Program/" style="font-size: 14px; color: #808080">Mini-Program</a> <a href="/tags/Promise/" style="font-size: 14px; color: #808080">Promise</a> <a href="/tags/ast/" style="font-size: 14px; color: #808080">ast</a> <a href="/tags/async/" style="font-size: 14px; color: #808080">async</a> <a href="/tags/bash/" style="font-size: 14px; color: #808080">bash</a> <a href="/tags/codeStyle/" style="font-size: 14px; color: #808080">codeStyle</a> <a href="/tags/cookie/" style="font-size: 14px; color: #808080">cookie</a> <a href="/tags/css/" style="font-size: 14px; color: #808080">css</a> <a href="/tags/docker/" style="font-size: 14px; color: #808080">docker</a> <a href="/tags/encrypt/" style="font-size: 20px; color: #000">encrypt</a> <a href="/tags/flex/" style="font-size: 14px; color: #808080">flex</a> <a href="/tags/function/" style="font-size: 14px; color: #808080">function</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/github/" style="font-size: 14px; color: #808080">github</a> <a href="/tags/http/" style="font-size: 14px; color: #808080">http</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/markdown/" style="font-size: 14px; color: #808080">markdown</a> <a href="/tags/object/" style="font-size: 14px; color: #808080">object</a> <a href="/tags/same-origin/" style="font-size: 14px; color: #808080">same-origin</a> <a href="/tags/ssh/" style="font-size: 14px; color: #808080">ssh</a> <a href="/tags/vue/" style="font-size: 14px; color: #808080">vue</a> <a href="/tags/前端模块化/" style="font-size: 14px; color: #808080">前端模块化</a>
     </div>
 </div>
 
@@ -283,41 +273,17 @@
     | Theme - 
     <a href="https://github.com/stkevintan/hexo-theme-material-flow'">MaterialFlow</a>
   </div>
-  <div>
-      <svg t="1536319113121" class="icon" style="width: 20px; height: 20px; position: relative; top: 5px;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1133" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><defs><style type="text/css"></style></defs><path d="M701.056 495.72352c-72.236032-41.716736-196.593664 4.476928-160.536576 91.467776 36.056064 87.04512-2.407424 180.92032-54.668288 226.881536-52.245504 45.980672-35.419136 113.688576 6.562816 133.715968 77.24544 36.835328 140.899328 12.24192 169.348096-105.337856 16.841728-69.581824 70.14912-106.54208 97.093632-142.74048C845.6704 583.368704 701.056 495.72352 701.056 495.72352zM580.450304 435.730432c18.893824-1.557504 32.482304-23.211008 29.718528-56.332288-2.811904-33.119232-19.44064-47.50336-38.284288-45.910016-18.912256 1.593344-32.908288 18.540544-30.147584 51.678208C544.605184 418.304 561.589248 437.341184 580.450304 435.730432zM853.87776 533.302272c-7.411712-3.484672-16.789504 0.813056-23.776256 15.850496-6.972416 15.020032-5.20192 27.032576 2.245632 30.49984 7.446528 3.469312 17.778688-2.955264 24.730624-17.99168C864.069632 546.676736 861.326336 536.769536 853.87776 533.302272zM674.41152 431.855616c12.506112-0.034816 22.626304-15.4624 22.592512-40.620032 0-25.157632-10.048512-37.064704-22.556672-37.064704-12.489728 0-22.60992 11.88864-22.60992 37.028864C651.836416 416.39424 661.955584 431.855616 674.41152 431.855616zM743.409664 453.103616c10.456064 3.591168 23.478272-6.934528 30.978048-28.838912 7.432192-21.849088 2.566144-35.064832-7.88992-38.639616-10.420224-3.572736-22.433792 3.893248-29.863936 25.724928C729.133056 433.234944 733.007872 449.548288 743.409664 453.103616zM827.76576 454.642688c-8.403968-4.653056-19.8144-0.282624-29.263872 16.914432-9.498624 17.24928-8.472576 31.596544-0.032768 36.233216 8.420352 4.670464 21.124096-2.141184 30.642176-19.373056C838.557696 471.202816 836.20352 459.314176 827.76576 454.642688zM332.213248 191.350784c0 0-168.905728 7.643136-148.49024 151.319552 6.315008 44.690432 35.419136 102.720512 16.842752 171.840512-31.314944 116.840448 12.755968 168.890368 98.190336 173.594624 46.442496 2.546688 93.679616-48.7936 69.849088-114.220032-23.867392-65.389568-12.632064-166.198272 60.684288-225.344512C502.656 289.452032 415.612928 189.350912 332.213248 191.350784zM466.848768 196.410368c15.85152 10.437632 39.877632 1.90976 58.26048-25.848832 18.292736-27.722752 14.13632-49.306624-1.683456-59.78112-15.797248-10.437632-37.274624-5.784576-55.620608 21.938176C449.494016 160.478208 451.049472 185.971712 466.848768 196.410368zM193.364992 176.417792c1.060864-16.559104-5.076992-24.804352-13.268992-25.316352-8.209408-0.548864-15.374336 6.846464-16.451584 23.369728-1.026048 16.561152 4.934656 27.140096 13.162496 27.634688C184.962048 202.638336 192.285696 192.943104 193.364992 176.417792zM386.2272 148.040704c10.934272 5.961728 27.22816-2.724864 39.259136-24.840192 12.065792-22.080512 8.897536-37.36576-2.052096-43.363328-10.969088-5.98016-25.566208-0.335872-37.578752 21.707776C373.752832 123.661312 375.258112 142.060544 386.2272 148.040704zM315.441152 133.639168c10.826752 1.875968 22.080512-10.579968 26.025984-33.385472 3.908608-22.733824-3.044352-35.048448-13.90592-36.923392-10.91584-1.840128-21.531648 7.411712-25.494528 30.164992C298.17344 116.283392 304.577536 131.765248 315.441152 133.639168zM240.939008 155.293696c9.66144-0.070656 17.409024-12.153856 17.339392-31.81056-0.106496-19.673088-7.944192-28.94336-17.567744-28.90752-9.695232 0.03584-17.42848 9.376768-17.409024 29.01504C223.40608 143.26272 231.315456 155.312128 240.939008 155.293696z" p-id="1134" fill="#cdcdcd"></path></svg>
-      <span id="busuanzi_container_site_pv">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </div>
-
-  <!-- 不蒜子统计 -->
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-  </script>
+  
   
 </footer>
 
 
   <script>setLoadingBarProgress(80);</script>
   
-<script>
-  var disqus_shortname = 'kricsleo';
-  
-  var disqus_url = 'https://kricsleo.github.io/docker/';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
 
 <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
-<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
-<script src="/js/jquery.fitvids.js"></script>
+
+<!-- 动态加载搜索 -->
 <script>
 	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
 	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
@@ -332,7 +298,6 @@
   var ROOT = "/"||"/";
   if(!ROOT.endsWith('/'))ROOT += '/';
 </script>
-<script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
 
 
