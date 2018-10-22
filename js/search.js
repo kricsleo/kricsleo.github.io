@@ -134,7 +134,7 @@ var SearchService = "";
       html +=   "<a class='result' href='" +url+ "'>";
       html +=     "<span class='title'>" +title+ "</span>";
       html +=     "<span class='digest'>" +digest+ "</span>";
-      html +=     "<span class='iconfont icon-chevron-right'></span>";
+      html +=     "<span class='result-icon iconfont icon-arrow-circle-right'></span>";
       html +=   "</a>";
       html += "</li>";
       return html;
