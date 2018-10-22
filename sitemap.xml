@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/custom-hexo-theme/</loc>
+    
+    <lastmod>2018-10-22T15:13:46.791Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/</loc>
     
     <lastmod>2018-10-22T10:51:53.739Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://kricsleo.github.io/Content-Type/</loc>
     
     <lastmod>2018-10-21T16:40:34.964Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/custom-hexo-theme/</loc>
-    
-    <lastmod>2018-10-21T14:22:03.514Z</lastmod>
     
   </url>
   

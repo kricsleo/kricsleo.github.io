@@ -12,18 +12,18 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo主题 MaterialFlow 主题改造更少的文件加载 字体Roboto Monoali-icon 在线添加引入, 后期如果使用的图标不多的话考虑直接使用css 内嵌 js搜索目前采用hexo-generator-search生成的站内静态文件.[x] 第一步优化: 不使用搜索框则不加载索引 js 以及索引文件[ ] 后期考虑把博客部署到自己的服务器后使用 Elasticsearch搜索[">
+  <meta name="description" content="hexo主题 MaterialFlow 主题改造主要记录一下对自己的博客的改造过程.">
 <meta name="keywords" content="blog,kricsleo,IT,Web Front End">
 <meta property="og:type" content="article">
 <meta property="og:title" content="custom-hexo-theme">
 <meta property="og:url" content="https://kricsleo.github.io/custom-hexo-theme/index.html">
 <meta property="og:site_name" content="kricsleo">
-<meta property="og:description" content="hexo主题 MaterialFlow 主题改造更少的文件加载 字体Roboto Monoali-icon 在线添加引入, 后期如果使用的图标不多的话考虑直接使用css 内嵌 js搜索目前采用hexo-generator-search生成的站内静态文件.[x] 第一步优化: 不使用搜索框则不加载索引 js 以及索引文件[ ] 后期考虑把博客部署到自己的服务器后使用 Elasticsearch搜索[">
+<meta property="og:description" content="hexo主题 MaterialFlow 主题改造主要记录一下对自己的博客的改造过程.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-21T14:22:03.514Z">
+<meta property="og:updated_time" content="2018-10-22T15:13:46.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="custom-hexo-theme">
-<meta name="twitter:description" content="hexo主题 MaterialFlow 主题改造更少的文件加载 字体Roboto Monoali-icon 在线添加引入, 后期如果使用的图标不多的话考虑直接使用css 内嵌 js搜索目前采用hexo-generator-search生成的站内静态文件.[x] 第一步优化: 不使用搜索框则不加载索引 js 以及索引文件[ ] 后期考虑把博客部署到自己的服务器后使用 Elasticsearch搜索[">
+<meta name="twitter:description" content="hexo主题 MaterialFlow 主题改造主要记录一下对自己的博客的改造过程.">
   <link rel="stylesheet" href="/style.css">
   <script>
     function setLoadingBarProgress(num) {
@@ -132,14 +132,37 @@
       <div class='l_main'>
         <article id="post-custom-hexo-theme" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
 	
-		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo主题-MaterialFlow-主题改造"><span class="toc-number">1.</span> <span class="toc-text">hexo主题 MaterialFlow 主题改造</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#更少的文件加载"><span class="toc-number">1.1.</span> <span class="toc-text">更少的文件加载</span></a></li></ol></li></ol></section>
+		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo主题-MaterialFlow-主题改造"><span class="toc-number">1.</span> <span class="toc-text">hexo主题 MaterialFlow 主题改造</span></a></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	<h1 id="hexo主题-MaterialFlow-主题改造"><a href="#hexo主题-MaterialFlow-主题改造" class="headerlink" title="hexo主题 MaterialFlow 主题改造"></a>hexo主题 MaterialFlow 主题改造</h1><h2 id="更少的文件加载"><a href="#更少的文件加载" class="headerlink" title="更少的文件加载"></a>更少的文件加载</h2><ol>
-<li>字体<br><a href="https://github.com/google/fonts/tree/master/apache/robotomono" target="_blank" rel="noopener">Roboto Mono</a><br>ali-icon 在线添加引入, 后期如果使用的图标不多的话考虑直接使用css 内嵌</li>
-<li>js<br>搜索目前采用<code>hexo-generator-search</code>生成的站内静态文件.<br>[x] 第一步优化: 不使用搜索框则不加载索引 js 以及索引文件<br>[ ] 后期考虑把博客部署到自己的服务器后使用 <code>Elasticsearch</code>搜索<br>[ ] 去掉jquery</li>
-<li>样式改写</li>
+    	<h1 id="hexo主题-MaterialFlow-主题改造"><a href="#hexo主题-MaterialFlow-主题改造" class="headerlink" title="hexo主题 MaterialFlow 主题改造"></a>hexo主题 MaterialFlow 主题改造</h1><p>主要记录一下对自己的博客的改造过程.<br><a id="more"></a><br>目标有如下几个:</p>
+<ol>
+<li>速度:<ul>
+<li style="list-style: none"><input type="checkbox"> 请求数: 页面初始请求不超过4个</li>
+<li style="list-style: none"><input type="checkbox"> 请求大小: 最大请求大小不超过50k</li>
+<li style="list-style: none"><input type="checkbox"> 不超过2s 加载完毕</li>
+<li style="list-style: none"><input type="checkbox"> 静态文件采用 cdn 缓存</li>
+</ul>
+</li>
+<li>样式<ul>
+<li style="list-style: none"><input type="checkbox"> 整体风格天蓝色</li>
+<li style="list-style: none"><input type="checkbox"> 采用卡片式布局(可以考虑重写, 既可以练习自己的建站技巧, 也可以去除原本 css 中的冗余部分)</li>
+</ul>
+</li>
+<li>安全<ul>
+<li style="list-style: none"><input type="checkbox"> 全站升级为 https</li>
+<li style="list-style: none"><input type="checkbox"> 七牛云空间也一并配置 https</li>
+</ul>
+</li>
+<li>评论<ul>
+<li>等到前三点稳定以后再开启评论合适/速度快/国内可访问的评论系统</li>
+</ul>
+</li>
+<li>搜索<ul>
+<li>等到前四点稳定以后再考虑转用其他搜索实现毫秒级响应(第三方搜索或者自己部署 Elasticsearch)<br>目前采用的是<code>hexo-generator-search</code>生成的站内静态文件.</li>
+</ul>
+</li>
 </ol>
 
   	</div>
@@ -161,7 +184,7 @@
 <script>
 	window.subData = {
 		title: 'custom-hexo-theme',
-		subtitle: '',
+		subtitle: '个人博客改造过程',
 		tools: true
 	}
 </script>
