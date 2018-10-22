@@ -78,15 +78,15 @@
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
 						<input type="text" class="input u-search-input" placeholder="Search">
-						<span class="icon icon-search"></span>
+						<span class="iconfont icon-search"></span>
 					</form>
 				</div>
 			
 			<ul class="switcher h-list">
 				
-					<li class="s-search"><a href="javascript:void(0)"><span class="icon icon-search flat-box"></span></a></li>
+					<li class="s-search"><a href="javascript:void(0)"><span class="iconfont icon-search flat-box"></span></a></li>
 				
-				<li class="s-menu"><a href="javascript:void(0)"><span class="icon icon-menu flat-box"></span></a></li>
+				<li class="s-menu"><a href="javascript:void(0)"><span class="iconfont icon-menu flat-box"></span></a></li>
 			</ul>
 		</div>
 		
@@ -96,9 +96,9 @@
 			</a>
 
 			<ul class="switcher h-list">
-				<li class="s-comment"><a href="javascript:void(0)"><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
-				<li class="s-top"><a href="javascript:void(0)"><span class="icon icon-arrow_upward flat-box"></span></a></li>
-				<li class="s-toc"><a href="javascript:void(0)"><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+				<li class="s-comment"><a href="javascript:void(0)"><span class="iconfont icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class="s-top"><a href="javascript:void(0)"><span class="iconfont icon-arrow_upward flat-box"></span></a></li>
+				<li class="s-toc"><a href="javascript:void(0)"><span class="iconfont icon-format_list_numbered flat-box"></span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -139,198 +139,123 @@
 	
     <div class="post-wrapper">
       <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/custom-hexo-theme/">
-        custom-hexo-theme
-      </a>
-    </h2>
-    
-    <time>
-      10月 21, 2018
-    </time>
-		
-  </section>
   <section class="article typo">
-	  <h1 id="hexo主题-MaterialFlow-主题改造"><a href="#hexo主题-MaterialFlow-主题改造" class="headerlink" title="hexo主题 MaterialFlow 主题改造"></a>hexo主题 MaterialFlow 主题改造</h1><h2 id="更少的文件加载"><a href="#更少的文件加载" class="headerlink" title="更少的文件加载"></a>更少的文件加载</h2><ol>
+    <h1 id="hexo主题-MaterialFlow-主题改造"><a href="#hexo主题-MaterialFlow-主题改造" class="headerlink" title="hexo主题 MaterialFlow 主题改造"></a>hexo主题 MaterialFlow 主题改造</h1><h2 id="更少的文件加载"><a href="#更少的文件加载" class="headerlink" title="更少的文件加载"></a>更少的文件加载</h2><ol>
 <li>字体<br><a href="https://github.com/google/fonts/tree/master/apache/robotomono" target="_blank" rel="noopener">Roboto Mono</a><br>ali-icon 在线添加引入, 后期如果使用的图标不多的话考虑直接使用css 内嵌</li>
-<li><p>js<br>搜索目前采用<code>hexo-generator-search</code>生成的站内静态文件.<br>[x] 第一步优化: 不使用搜索框则不加载索引 js 以及索引文件<br>后期考虑把博客部署到自己的服务器后使用 <code>Elasticsearch</code>搜索</p>
-<p>去掉jquery</p>
-</li>
+<li>js<br>搜索目前采用<code>hexo-generator-search</code>生成的站内静态文件.<br>[x] 第一步优化: 不使用搜索框则不加载索引 js 以及索引文件<br>[ ] 后期考虑把博客部署到自己的服务器后使用 <code>Elasticsearch</code>搜索<br>[ ] 去掉jquery</li>
+<li>样式改写</li>
 </ol>
 
-
-    
-    
-    
+    <div class="time">
+      <time class="iconfont icon-clock">
+        10月 21, 2018
+      </time>
+    </div>
+    <a href="/custom-hexo-theme/" class="more iconfont icon-more" title="查看"></a>
   </section>
+  
 </article>
     </div>
   
     <div class="post-wrapper">
       <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/Promise-Generator/">
-        Promise-Generator
-      </a>
-    </h2>
-    
-    <time>
-      10月 18, 2018
-    </time>
-		
-    
-    <div class="cats">
-        <a href="/categories/front-end/">front-end</a>
-    </div>
-
-  </section>
   <section class="article typo">
-	  <h1 id="异步解决方案"><a href="#异步解决方案" class="headerlink" title="异步解决方案"></a>异步解决方案</h1><p>本文是为了解js的异步操作解决方案发展过程. 从原始的回调地狱到ES6的<code>Promise</code>和<code>Generator</code>再到ES7提案阶段的<code>async</code>.</p>
-
-    
-	  <div class="readmore">
-      <a href="/Promise-Generator/">Read More</a>
+    <h1 id="异步解决方案"><a href="#异步解决方案" class="headerlink" title="异步解决方案"></a>异步解决方案</h1><p>本文是为了解js的异步操作解决方案发展过程. 从原始的回调地狱到ES6的<code>Promise</code>和<code>Generator</code>再到ES7提案阶段的<code>async</code>.</p>
+    <div class="time">
+      <time class="iconfont icon-clock">
+        10月 18, 2018
+      </time>
     </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/Generator/">Generator</a>
-      
-        <a href="/tags/Promise/">Promise</a>
-      
-        <a href="/tags/async/">async</a>
-      
-	  </div>
-    
+    <a href="/Promise-Generator/" class="more iconfont icon-more" title="查看"></a>
   </section>
+  
+  <section class="article">
+    <div class="full-width auto-padding tags iconfont icon-tags ">
+      
+      <a href="/tags/Generator/">Generator</a>
+      
+      <a href="/tags/Promise/">Promise</a>
+      
+      <a href="/tags/async/">async</a>
+      
+    </div>
+  </section>
+  
 </article>
     </div>
   
     <div class="post-wrapper">
       <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/same-origin-and-CORS/">
-        same-origin-and-CORS
-      </a>
-    </h2>
-    
-    <time>
-      10月 16, 2018
-    </time>
-		
-    
-    <div class="cats">
-        <a href="/categories/前端/">前端</a>
-    </div>
-
-  </section>
   <section class="article typo">
-	  <h1 id="浏览器同源策略"><a href="#浏览器同源策略" class="headerlink" title="浏览器同源策略"></a>浏览器同源策略</h1><p>目前的 web 开发还相当的依赖 cookie , 而cookie的使用限制于浏览器的同源策略(same-origin policy), 同时这个策略也是保证我们网站信息安全的基础, 这篇文章主要了解一下浏览器同源策略具体的含义, 以及在实际开发中如何绕过这一限制来达到跨域请求数据的目的.</p>
-
-    
-	  <div class="readmore">
-      <a href="/same-origin-and-CORS/">Read More</a>
+    <h1 id="浏览器同源策略"><a href="#浏览器同源策略" class="headerlink" title="浏览器同源策略"></a>浏览器同源策略</h1><p>目前的 web 开发还相当的依赖 cookie , 而cookie的使用限制于浏览器的同源策略(same-origin policy), 同时这个策略也是保证我们网站信息安全的基础, 这篇文章主要了解一下浏览器同源策略具体的含义, 以及在实际开发中如何绕过这一限制来达到跨域请求数据的目的.</p>
+    <div class="time">
+      <time class="iconfont icon-clock">
+        10月 16, 2018
+      </time>
     </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/same-origin/">same-origin</a>
-      
-        <a href="/tags/CORS/">CORS</a>
-      
-        <a href="/tags/cookie/">cookie</a>
-      
-	  </div>
-    
+    <a href="/same-origin-and-CORS/" class="more iconfont icon-more" title="查看"></a>
   </section>
+  
+  <section class="article">
+    <div class="full-width auto-padding tags iconfont icon-tags ">
+      
+      <a href="/tags/same-origin/">same-origin</a>
+      
+      <a href="/tags/CORS/">CORS</a>
+      
+      <a href="/tags/cookie/">cookie</a>
+      
+    </div>
+  </section>
+  
 </article>
     </div>
   
     <div class="post-wrapper">
       <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/Content-Type/">
-        Content-Type
-      </a>
-    </h2>
-    
-    <time>
-      10月 12, 2018
-    </time>
-		
-    
-    <div class="cats">
-        <a href="/categories/通信/">通信</a>
-    </div>
-
-  </section>
   <section class="article typo">
-	  <p><code>HTTP/1.1</code>协议规定的<code>HTTP</code>请求方法有<code>OPTIONS</code>、<code>GET</code>、<code>HEAD</code>、<code>POST</code>、<code>PUT</code>、<code>DELETE</code>、<code>TRACE</code>、<code>CONNECT</code>这几种, 用的最多的是<code>GET</code>和<code>POST</code>, 这里主要说一下提交请求时的请求头中<code>Content-Type</code>字段<br>
-
-    
-	  <div class="readmore">
-      <a href="/Content-Type/">Read More</a>
+    <h1 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h1><p><code>HTTP/1.1</code>协议规定的<code>HTTP</code>请求方法有<code>OPTIONS</code>、<code>GET</code>、<code>HEAD</code>、<code>POST</code>、<code>PUT</code>、<code>DELETE</code>、<code>TRACE</code>、<code>CONNECT</code>这几种, 用的最多的是<code>GET</code>和<code>POST</code>, 这里主要说一下提交请求时的请求头中<code>Content-Type</code>字段<br>
+    <div class="time">
+      <time class="iconfont icon-clock">
+        10月 12, 2018
+      </time>
     </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/Content-Type/">Content-Type</a>
-      
-	  </div>
-    
+    <a href="/Content-Type/" class="more iconfont icon-more" title="查看"></a>
   </p></section>
+  
+  <section class="article">
+    <div class="full-width auto-padding tags iconfont icon-tag ">
+      
+      <a href="/tags/Content-Type/">Content-Type</a>
+      
+    </div>
+  </section>
+  
 </article>
     </div>
   
     <div class="post-wrapper">
       <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/http/">
-        http
-      </a>
-    </h2>
-    
-    <time>
-      10月 12, 2018
-    </time>
-		
-    
-    <div class="cats">
-        <a href="/categories/通信/">通信</a>
-    </div>
-
-  </section>
   <section class="article typo">
-	  <h1 id="http"><a href="#http" class="headerlink" title="http"></a>http</h1><p>http虽然内容简单, 容易理解, 但是内容十分庞大, 涉及到现在通信的方方面面, 我打算花点时间陆陆续续的把我接触到的http的相关部分整理出来, 这里作为一个入口页, 后续持续补充.</p>
+    <h1 id="http"><a href="#http" class="headerlink" title="http"></a>http</h1><p>http虽然内容简单, 容易理解, 但是内容十分庞大, 涉及到现在通信的方方面面, 我打算花点时间陆陆续续的把我接触到的http的相关部分整理出来, 这里作为一个入口页, 后续持续补充.</p>
 <h2 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h2><p><a href="">关于Content-Type</a></p>
 
-
-    
-    
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/http/">http</a>
-      
-	  </div>
-    
+    <div class="time">
+      <time class="iconfont icon-clock">
+        10月 12, 2018
+      </time>
+    </div>
+    <a href="/http/" class="more iconfont icon-more" title="查看"></a>
   </section>
+  
+  <section class="article">
+    <div class="full-width auto-padding tags iconfont icon-tag ">
+      
+      <a href="/tags/http/">http</a>
+      
+    </div>
+  </section>
+  
 </article>
     </div>
   
@@ -341,8 +266,8 @@
     
     
     <a class="next" rel="next" href="/archives/2018/page/2/">
-      <span class="text">Next</span>
-      <span class="icon icon-chevron-right"></span>
+      <span class="text">下一页</span>
+      <span class="iconfont icon-arrow-circle-right"></span>
     </a>
     
   </nav>

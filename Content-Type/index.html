@@ -12,18 +12,18 @@
   <link rel="shortcut icon" href="http://store.kricsleo.com/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HTTP/1.1协议规定的HTTP请求方法有OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT这几种, 用的最多的是GET和POST, 这里主要说一下提交请求时的请求头中Content-Type字段">
+  <meta name="description" content="Content-TypeHTTP/1.1协议规定的HTTP请求方法有OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT这几种, 用的最多的是GET和POST, 这里主要说一下提交请求时的请求头中Content-Type字段">
 <meta name="keywords" content="Content-Type">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Content-Type">
 <meta property="og:url" content="https://kricsleo.github.io/Content-Type/index.html">
 <meta property="og:site_name" content="kricsleo">
-<meta property="og:description" content="HTTP/1.1协议规定的HTTP请求方法有OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT这几种, 用的最多的是GET和POST, 这里主要说一下提交请求时的请求头中Content-Type字段">
+<meta property="og:description" content="Content-TypeHTTP/1.1协议规定的HTTP请求方法有OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT这几种, 用的最多的是GET和POST, 这里主要说一下提交请求时的请求头中Content-Type字段">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-12T06:44:59.193Z">
+<meta property="og:updated_time" content="2018-10-21T16:40:34.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Content-Type">
-<meta name="twitter:description" content="HTTP/1.1协议规定的HTTP请求方法有OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT这几种, 用的最多的是GET和POST, 这里主要说一下提交请求时的请求头中Content-Type字段">
+<meta name="twitter:description" content="Content-TypeHTTP/1.1协议规定的HTTP请求方法有OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT这几种, 用的最多的是GET和POST, 这里主要说一下提交请求时的请求头中Content-Type字段">
   <link rel="stylesheet" href="/style.css">
   <script>
     function setLoadingBarProgress(num) {
@@ -79,15 +79,15 @@
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
 						<input type="text" class="input u-search-input" placeholder="Search">
-						<span class="icon icon-search"></span>
+						<span class="iconfont icon-search"></span>
 					</form>
 				</div>
 			
 			<ul class="switcher h-list">
 				
-					<li class="s-search"><a href="javascript:void(0)"><span class="icon icon-search flat-box"></span></a></li>
+					<li class="s-search"><a href="javascript:void(0)"><span class="iconfont icon-search flat-box"></span></a></li>
 				
-				<li class="s-menu"><a href="javascript:void(0)"><span class="icon icon-menu flat-box"></span></a></li>
+				<li class="s-menu"><a href="javascript:void(0)"><span class="iconfont icon-menu flat-box"></span></a></li>
 			</ul>
 		</div>
 		
@@ -97,9 +97,9 @@
 			</a>
 
 			<ul class="switcher h-list">
-				<li class="s-comment"><a href="javascript:void(0)"><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
-				<li class="s-top"><a href="javascript:void(0)"><span class="icon icon-arrow_upward flat-box"></span></a></li>
-				<li class="s-toc"><a href="javascript:void(0)"><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+				<li class="s-comment"><a href="javascript:void(0)"><span class="iconfont icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class="s-top"><a href="javascript:void(0)"><span class="iconfont icon-arrow_upward flat-box"></span></a></li>
+				<li class="s-toc"><a href="javascript:void(0)"><span class="iconfont icon-format_list_numbered flat-box"></span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -131,31 +131,15 @@
     <div class='container clearfix'>
       <div class='l_main'>
         <article id="post-Content-Type" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
-	<section class="meta">
-	<h2 class="title">
-  	<a href="/Content-Type/">
-    	Content-Type
-    </a>
-  </h2>
-	<time>
-	  10月 12, 2018
-	</time>
 	
-    
-    <div class="cats">
-        <a href="/categories/通信/">通信</a>
-    </div>
-
-	</section>
-	
-		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#http请求结构"><span class="toc-number">1.</span> <span class="toc-text">http请求结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Content-Type"><span class="toc-number">2.</span> <span class="toc-text">Content-Type</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#application-x-www-urlencoded"><span class="toc-number">2.1.</span> <span class="toc-text">application/x-www-urlencoded</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#multipart-form-data"><span class="toc-number">2.2.</span> <span class="toc-text">multipart/form-data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#application-json"><span class="toc-number">2.3.</span> <span class="toc-text">application/json</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#text-xml"><span class="toc-number">2.4.</span> <span class="toc-text">text/xml</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考文章"><span class="toc-number">3.</span> <span class="toc-text">参考文章</span></a></li></ol></section>
+		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Content-Type"><span class="toc-number">1.</span> <span class="toc-text">Content-Type</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#http请求结构"><span class="toc-number">1.1.</span> <span class="toc-text">http请求结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Content-Type类型"><span class="toc-number">1.2.</span> <span class="toc-text">Content-Type类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#application-x-www-urlencoded"><span class="toc-number">1.2.1.</span> <span class="toc-text">application/x-www-urlencoded</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#multipart-form-data"><span class="toc-number">1.2.2.</span> <span class="toc-text">multipart/form-data</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#application-json"><span class="toc-number">1.2.3.</span> <span class="toc-text">application/json</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#text-xml"><span class="toc-number">1.2.4.</span> <span class="toc-text">text/xml</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文章"><span class="toc-number">1.3.</span> <span class="toc-text">参考文章</span></a></li></ol></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	<p><code>HTTP/1.1</code>协议规定的<code>HTTP</code>请求方法有<code>OPTIONS</code>、<code>GET</code>、<code>HEAD</code>、<code>POST</code>、<code>PUT</code>、<code>DELETE</code>、<code>TRACE</code>、<code>CONNECT</code>这几种, 用的最多的是<code>GET</code>和<code>POST</code>, 这里主要说一下提交请求时的请求头中<code>Content-Type</code>字段<br><a id="more"></a></p>
-<h1 id="http请求结构"><a href="#http请求结构" class="headerlink" title="http请求结构"></a><code>http</code>请求结构</h1><p><code>http</code>请求分为三个部分: 状态行, 请求头和消息主体, 结构如下:</p>
+    	<h1 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h1><p><code>HTTP/1.1</code>协议规定的<code>HTTP</code>请求方法有<code>OPTIONS</code>、<code>GET</code>、<code>HEAD</code>、<code>POST</code>、<code>PUT</code>、<code>DELETE</code>、<code>TRACE</code>、<code>CONNECT</code>这几种, 用的最多的是<code>GET</code>和<code>POST</code>, 这里主要说一下提交请求时的请求头中<code>Content-Type</code>字段<br><a id="more"></a></p>
+<h2 id="http请求结构"><a href="#http请求结构" class="headerlink" title="http请求结构"></a><code>http</code>请求结构</h2><p><code>http</code>请求分为三个部分: 状态行, 请求头和消息主体, 结构如下:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;method&gt; &lt;request url&gt; &lt;version&gt;</span><br><span class="line">&lt;headers&gt;</span><br><span class="line"></span><br><span class="line">&lt;entity-body&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h1><p><code>Content-Type</code>有如下常见的类型:</p>
+<h2 id="Content-Type类型"><a href="#Content-Type类型" class="headerlink" title="Content-Type类型"></a>Content-Type类型</h2><p><code>Content-Type</code>有如下常见的类型:</p>
 <ul>
 <li><code>text/plain</code>: 文本类型</li>
 <li><code>text/html</code>: html文件类型</li>
@@ -169,30 +153,30 @@
 <p>由于<code>GET</code>方式的数据实际上是以<code>QueryString</code>的方式放在<code>&lt;request url&gt;</code>中的(非ASCII字符会被转码), 例如’<a href="https://www.example.com?key1=value1&amp;key2=value2" target="_blank" rel="noopener">https://www.example.com?key1=value1&amp;key2=value2</a>‘, 所以对<code>GET</code>讨论<code>Content-Type</code>没有意义</p>
 <p><code>http</code>协议规定<code>POST</code>提交的数据必须放在消息主体（entity-body）中，但协议并没有规定数据必须使用什么编码方式。实际上，开发者完全可以自己决定消息主体的格式，只要最后发送的<code>HTTP</code>请求满足上面的格式就可以。</p>
 <p>服务端通常是根据请求头（headers）中的<code>Content-Type</code>字段来获知请求中的消息主体是用何种方式编码，再对主体进行解析。所以有必要了解<code>Content-Type</code>的内容. 目前在<code>POST</code>请求中所使用的<code>Content-Type</code>主要有如下四种类型: <code>application/x-www-urlencoded</code>, <code>multipart/form-data</code>, <code>application/json</code>, <code>text/xml</code>, 下面详细说一下这四种类型.</p>
-<h2 id="application-x-www-urlencoded"><a href="#application-x-www-urlencoded" class="headerlink" title="application/x-www-urlencoded"></a><code>application/x-www-urlencoded</code></h2><p>这应该是最常见的<code>POST</code>提交数据的方式了。浏览器的原生<code>&lt;form&gt;</code>表单，如果不设置<code>enctype</code>属性，那么默认就会以这种方式提交数据。这种方式会将表单中的数据按照<code>key1=value1&amp;key2=value2</code>的形式连接成字符串, 同时会将出现的非<code>ASCII</code>字符进行编码, 编码方式可以参考<code>encodeURIComponent()</code>函数, 例如下面这个表单提交时的数据结构:</p>
+<h3 id="application-x-www-urlencoded"><a href="#application-x-www-urlencoded" class="headerlink" title="application/x-www-urlencoded"></a><code>application/x-www-urlencoded</code></h3><p>这应该是最常见的<code>POST</code>提交数据的方式了。浏览器的原生<code>&lt;form&gt;</code>表单，如果不设置<code>enctype</code>属性，那么默认就会以这种方式提交数据。这种方式会将表单中的数据按照<code>key1=value1&amp;key2=value2</code>的形式连接成字符串, 同时会将出现的非<code>ASCII</code>字符进行编码, 编码方式可以参考<code>encodeURIComponent()</code>函数, 例如下面这个表单提交时的数据结构:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">POST http://www.example.com HTTP/1.1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded;charset=utf-8</span><br><span class="line"></span><br><span class="line">title=test&amp;sub%5B%5D=1&amp;sub%5B%5D=2&amp;sub%5B%5D=3</span><br></pre></td></tr></table></figure>
 <p>但是需要注意的是这是在<code>&lt;form&gt;</code>表单中没有<code>type=file</code>形内容的时候的提交方式, 如果表单中有二进制内容需要提交, 比如文件或者图片等, 那么就无法使用<code>application/x-www-urlencoded</code>方式, 需要转而使用下面会谈到的<code>multipart/form-data</code>方式.</p>
-<h2 id="multipart-form-data"><a href="#multipart-form-data" class="headerlink" title="multipart/form-data"></a><code>multipart/form-data</code></h2><p>当需要提交二进制数据如文件或者图片时就需要使用这种<code>multipart/form-data</code>, 一个常见的提交内容结构如下: </p>
+<h3 id="multipart-form-data"><a href="#multipart-form-data" class="headerlink" title="multipart/form-data"></a><code>multipart/form-data</code></h3><p>当需要提交二进制数据如文件或者图片时就需要使用这种<code>multipart/form-data</code>, 一个常见的提交内容结构如下: </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">POST http://www.example.com HTTP/1.1</span><br><span class="line">Content-Type:multipart/form-data; boundary=----WebKitFormBoundaryrGKCBY7qhFd3TrwA</span><br><span class="line"></span><br><span class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA</span><br><span class="line">Content-Disposition: form-data; name=&quot;text&quot;</span><br><span class="line"></span><br><span class="line">title</span><br><span class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA</span><br><span class="line">Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;chrome.png&quot;</span><br><span class="line">Content-Type: image/png</span><br><span class="line"></span><br><span class="line">PNG ... content of chrome.png ...</span><br><span class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA--</span><br></pre></td></tr></table></figure>
 <p>请求头中的<code>boundary</code>代表将使用后面这一长串的字符串来分隔不同的字段, 消息主体里按照字段个数又分为多个结构类似的部分，每部分都是以<code>--boundary</code>开始，紧接着是内容描述信息，然后是回车，最后是字段具体内容（文本或二进制）。如果传输的是文件，还要包含文件名和文件类型信息。消息主体最后以<code>--boundary--</code>标示结束, 关于<code>multipart/form-data</code>的详细定义，请前往<a href="http://www.ietf.org/rfc/rfc1867.txt" target="_blank" rel="noopener">rfc1867</a>查看。</p>
 <p><code>application/x-www-urlencoded</code>和<code>multipart/form-data</code>都是浏览器原生支持的，而且现阶段标准中原生<code>&lt;form&gt;</code>表单也只支持这两种方式（通过<code>&lt;form&gt;</code>元素的<code>enctype</code>属性指定，默认为 application/x-www-form-urlencoded。其实<code>enctype</code>还支持<code>text/plain</code>，不过用得非常少）。</p>
 <p>下面提到的<code>Content-Type</code>属于随着技术的发展, 我们自定义出来的新的数据提交方式, 更为便捷.</p>
-<h2 id="application-json"><a href="#application-json" class="headerlink" title="application/json"></a><code>application/json</code></h2><p>因为<code>json</code>格式数据的读写性非常好, 用的也极为广泛, 所以<code>application/json</code>这个请求头也用的越来越多, 这个请求头就是告诉服务器发送的数据是序列化后的<code>json</code>字符串, 现在在做的<code>Vue</code>项目中用到的<code>Axios</code>所使用的默认就是<code>application/json</code>, 这里有一个问题就是Axios全局设置<code>Content-Type</code>为<code>application/x-www-urlencoded</code>不生效, 需要在请求发出前拦截方法中修改配置才能生效, 不知道是不是bug, 如下:</p>
+<h3 id="application-json"><a href="#application-json" class="headerlink" title="application/json"></a><code>application/json</code></h3><p>因为<code>json</code>格式数据的读写性非常好, 用的也极为广泛, 所以<code>application/json</code>这个请求头也用的越来越多, 这个请求头就是告诉服务器发送的数据是序列化后的<code>json</code>字符串, 现在在做的<code>Vue</code>项目中用到的<code>Axios</code>所使用的默认就是<code>application/json</code>, 这里有一个问题就是Axios全局设置<code>Content-Type</code>为<code>application/x-www-urlencoded</code>不生效, 需要在请求发出前拦截方法中修改配置才能生效, 不知道是不是bug, 如下:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">_interceptorRequest</span>(<span class="params">config</span>) </span>&#123;</span><br><span class="line">  config.headers[<span class="string">'Content-Type'</span>] = <span class="string">'application/x-www-form-urlencoded; charset=utf-8'</span>;</span><br><span class="line">  <span class="keyword">return</span> config</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用<code>application/json</code>方式发送的数据结构类似下面这个: </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">POST http://www.example.com HTTP/1.1 </span><br><span class="line">Content-Type: application/json;charset=utf-8</span><br><span class="line"></span><br><span class="line">&#123;&quot;title&quot;:&quot;test&quot;,&quot;sub&quot;:[1,2,3]&#125;</span><br></pre></td></tr></table></figure>
 <p><code>json</code>格式可以提交结构复杂的数据,在抓包工具或者调试中查看起来也很方便, 尤其适合<code>RESEful</code>的接口, 需要注意的是不论我们使用<code>application/x-www-urlencoded</code>还是<code>application/json</code>都要注意和服务器相配合, 因为毕竟我们发送的数据是希望服务器来正确接收和处理的, 如果客户端设置的<code>Content-Type</code>与服务端期望接收的<code>Content-Type</code>不一致就很有可能导致服务器无妨正常处理这个请求.</p>
-<h2 id="text-xml"><a href="#text-xml" class="headerlink" title="text/xml"></a>text/xml</h2><p>这是一种使用<code>HTTP</code>作为传输协议，<code>XML</code>作为编码方式的远程调用规范, 典型的<code>XML-RPC</code>请求如下: </p>
+<h3 id="text-xml"><a href="#text-xml" class="headerlink" title="text/xml"></a>text/xml</h3><p>这是一种使用<code>HTTP</code>作为传输协议，<code>XML</code>作为编码方式的远程调用规范, 典型的<code>XML-RPC</code>请求如下: </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">POST http://www.example.com HTTP/1.1</span><br><span class="line">Content-Type: text/xml</span><br><span class="line"></span><br><span class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</span><br><span class="line">&lt;methodCall&gt;</span><br><span class="line">    &lt;methodName&gt;examples.getStateName&lt;/methodName&gt;</span><br><span class="line">    &lt;params&gt;</span><br><span class="line">        &lt;param&gt;</span><br><span class="line">            &lt;value&gt;&lt;i4&gt;41&lt;/i4&gt;&lt;/value&gt;</span><br><span class="line">        &lt;/param&gt;</span><br><span class="line">    &lt;/params&gt;</span><br><span class="line">&lt;/methodCall&gt;</span><br></pre></td></tr></table></figure>
 <p><code>XML-RPC</code>协议简单、功能够用，各种语言的实现都有。它的使用也很广泛，如<code>WordPress</code>的<code>XML-RPC</code>Api，搜索引擎的<code>ping</code>服务等等。<code>JavaScript</code>中，也有现成的库支持以这种方式进行数据交互，能很好的支持已有的 <code>XML-RPC</code>服务。</p>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><ul>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
 <li><a href="https://imququ.com/post/four-ways-to-post-data-in-http.html" target="_blank" rel="noopener">四种常见的POST提交数据方式</a></li>
 <li><a href="https://www.chenshaowen.com/blog/content-type-http-header.html" target="_blank" rel="noopener">HTTP Header之Content-Type</a></li>
 </ul>
 
   	</div>
 	  
-	  <div class="article-tags tags">
+	  <div class="article-tags tags iconfont icon-tag">
       
         <a href="/tags/Content-Type/">Content-Type</a>
       
@@ -202,14 +186,14 @@
 	
 		<div class="art-item-footer">
 				
-					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/same-origin-and-CORS/" rel="prev" title="same-origin-and-CORS">
+					<span class="art-item-left"><i class="iconfont icon-arrow-circle-left"></i>上一篇: <a href="/same-origin-and-CORS/" rel="prev" title="same-origin-and-CORS">
 						same-origin-and-CORS 
 					</a></span>
 				
 				
-					<span class="art-item-right">next：<a href="/http/" rel="next" title="http">
+					<span class="art-item-right">下一篇: <a href="/http/" rel="next" title="http">
 						http
-					</a><i class="icon icon-chevron-thin-right"></i></span>
+					</a><i class="iconfont icon-arrow-circle-right"></i></span>
 				
 		</div>
 	
@@ -219,6 +203,7 @@
 <script>
 	window.subData = {
 		title: 'Content-Type',
+		subtitle: '',
 		tools: true
 	}
 </script>

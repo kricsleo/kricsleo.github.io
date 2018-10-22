@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/</loc>
+    
+    <lastmod>2018-10-22T10:51:53.739Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/Content-Type/</loc>
+    
+    <lastmod>2018-10-21T16:40:34.964Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/custom-hexo-theme/</loc>
     
-    <lastmod>2018-10-21T11:27:42.011Z</lastmod>
+    <lastmod>2018-10-21T14:22:03.514Z</lastmod>
     
   </url>
   
@@ -37,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/Content-Type/</loc>
-    
-    <lastmod>2018-10-12T06:44:59.193Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/Mini-Program/</loc>
     
     <lastmod>2018-10-08T06:11:56.880Z</lastmod>
@@ -72,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/base64-md5/</loc>
+    <loc>https://kricsleo.github.io/docker/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/IIFE/</loc>
+    <loc>https://kricsleo.github.io/base64-md5/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
@@ -93,21 +100,21 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
+    <loc>https://kricsleo.github.io/IIFE/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
+    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
     
     <lastmod>2018-09-29T01:02:49.797Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
+    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
     
     <lastmod>2018-09-29T01:02:49.797Z</lastmod>
     
@@ -159,13 +166,6 @@
     <loc>https://kricsleo.github.io/categories/index.html</loc>
     
     <lastmod>2018-09-08T01:58:07.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/</loc>
-    
-    <lastmod>2018-09-05T06:43:46.000Z</lastmod>
     
   </url>
   
