@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/http/</loc>
+    
+    <lastmod>2018-10-23T05:17:32.026Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/custom-hexo-theme/</loc>
     
     <lastmod>2018-10-22T15:13:46.791Z</lastmod>
@@ -44,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/http/</loc>
-    
-    <lastmod>2018-10-12T06:45:49.163Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/Mini-Program/</loc>
     
     <lastmod>2018-10-08T06:11:56.880Z</lastmod>
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/base64-md5/</loc>
+    <loc>https://kricsleo.github.io/docker/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
+    <loc>https://kricsleo.github.io/base64-md5/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
@@ -100,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
+    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
@@ -121,14 +121,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/markdown/</loc>
+    <loc>https://kricsleo.github.io/git-workflow/</loc>
     
     <lastmod>2018-09-29T01:02:49.796Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/git-workflow/</loc>
+    <loc>https://kricsleo.github.io/markdown/</loc>
     
     <lastmod>2018-09-29T01:02:49.796Z</lastmod>
     
