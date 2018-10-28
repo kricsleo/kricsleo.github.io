@@ -13,58 +13,18 @@
     <script src="./vconsole.min.js"></script>
 
     <style>
-        .loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, .7);
-            z-index: 999;
+        .container {
+            display: flex;
+            flex-flow: row;
+            width: 300px;
         }
 
-        .loading img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 70px;
-            height: 70px;
-            margin-top: -35px;
-            margin-left: -35px;
-        }
-
-        .loading .spinning {
-            animation: spinning 2s infinite linear;
-            -ms-animation: spinning 2s infinite linear;
-            -webkit-animation: spinning 2s infinite linear;
-            -moz-animation: spinning 2s infinite linear;
-            -o-animation: spinning 2s infinite linear;
-        }
-
-        @keyframes spinning {
-            0% {
-                transform: rotate(0deg);
-                -ms-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-                -ms-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-            }
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 40px;
+        .left,
+        .right {
+            height: 300px;
+            border: 1px solid lightblue;
+            margin-right: 10px;
+            overflow: auto;
         }
 
     </style>
@@ -72,16 +32,34 @@
 
 <body>
 
-    <h1>hello</h1>
-    <div class="loading jiazai">
-        <img src="./resources/img/logo.png" alt="">
-        <img class="spinning" src="./resources/img/spinning.png" alt="">
+    <h1>vConsole page</h1>
+    <div class="container">
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at velit fugit dolor, iste dolorum necessitatibus repellendus animi est dolorem. Reprehenderit animi corporis, laborum a iste necessitatibus eum veniam voluptatibus inventore labore consequatur dolorum ipsa beatae atque? Repudiandae cumque aut a explicabo voluptatum voluptas eum nostrum autem voluptatem temporibus, qui adipisci minus eos vel ea exercitationem nobis recusandae deserunt fugiat iure? Eveniet reiciendis distinctio accusamus qui est laborum commodi fugiat cumque dolores voluptates quae dolorem deleniti expedita quisquam vero, fugit ducimus cum, ut sequi? Autem commodi, quam sint, velit sed nulla id cupiditate, et officia fugit quidem ratione. Culpa, obcaecati?</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam quasi voluptatem atque in ipsum eligendi, temporibus earum, unde ab consectetur possimus error dolorum rerum ducimus ad accusantium porro natus molestias sed? Earum, distinctio eaque! Officia esse, nam delectus, hic nostrum ut tempore minima praesentium ratione debitis a at adipisci maxime autem quos facere doloribus repudiandae velit. Maiores nostrum velit repellat a ipsa dolorem eos consectetur aut quod fugiat, eum voluptate reprehenderit nam quo cumque optio minima adipisci quasi labore alias incidunt mollitia! Quia odio at ipsa quam eligendi consequuntur, quod non perferendis iure eius mollitia qui! Earum vitae minus explicabo.</div>
     </div>
-    <div class="footer">hello</div>
     <script>
 
-        // var vConsole = new VConsole();
-        console.log('hello');
+        var vConsole = new VConsole();
+        
+        const l = document.getElementsByClassName('left')[0];
+        const r = document.getElementsByClassName('right')[0];
+
+        const master = l;
+
+        // [l, r].map(box => {
+        //     box.addEventListener('scroll', () => {
+
+        //     })
+        // })
+
+        l.addEventListener('scroll', () => {
+            r.scrollTop = l.scrollTop;
+        });
+
+        r.addEventListener('scroll', () => {
+                l.scrollTop = r.scrollTop;
+        });
+
 
     </script>
 </body>
