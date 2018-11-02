@@ -175,9 +175,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;关于-MV&quot;&gt;&lt;a href=&quot;#关于-MV&quot; class=&quot;headerlink&quot; title=&quot;关于 MV*&quot;&gt;&lt;/a&gt;关于 MV*&lt;/h1&gt;&lt;p&gt;为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文.&lt;/p&gt;
-&lt;p&gt;作者: livoras&lt;br&gt;原文: &lt;a href=&quot;https://github.com/livoras/blog/issues/11&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/livoras/blog/issues/11&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;另外可以看一下掘金上的这篇文章, 与前端开发结合起来更好理解: &lt;a href=&quot;https://juejin.im/post/593021272f301e0058273468&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;浅析前端开发中的 MVC/MVP/MVVM 模式&lt;/a&gt;&lt;br&gt;
+      &lt;h1 id=&quot;关于-MV&quot;&gt;&lt;a href=&quot;#关于-MV&quot; class=&quot;headerlink&quot; title=&quot;关于 MV*&quot;&gt;&lt;/a&gt;关于 MV*&lt;/h1&gt;&lt;p&gt;为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文.&lt;/p&gt;&lt;p&gt;作者: livoras&lt;br&gt;原文: &lt;a href=&quot;https://github.com/livoras/blog/issues/11&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/livoras/blog/issues/11&lt;/a&gt;&lt;/p&gt;&lt;p&gt;另外可以看一下掘金上的这篇文章, 与前端开发结合起来更好理解: &lt;a href=&quot;https://juejin.im/post/593021272f301e0058273468&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;浅析前端开发中的 MVC/MVP/MVVM 模式&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -221,11 +219,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;AST&quot;&gt;&lt;a href=&quot;#AST&quot; class=&quot;headerlink&quot; title=&quot;AST&quot;&gt;&lt;/a&gt;AST&lt;/h1&gt;&lt;h2 id=&quot;AST-简介&quot;&gt;&lt;a href=&quot;#AST-简介&quot; class=&quot;headerlink&quot; title=&quot;AST 简介&quot;&gt;&lt;/a&gt;AST 简介&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代码的结构，通过操纵这颗树，我们可以精准的定位到声明语句、赋值语句、运算语句等等，实现对代码的分析、优化、变更等操作. 然后浏览器会把 js 源码通过解析器转为抽象语法树，再进一步转化为字节码或直接生成机器码. – &lt;a href=&quot;https://www.jianshu.com/p/b9f14f384954&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书文章&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;关于 Vue 的语法树解析可以查看&lt;a href=&quot;https://github.com/answershuto/learnVue/blob/master/docs/%E8%81%8A%E8%81%8AVue%E7%9A%84template%E7%BC%96%E8%AF%91.MarkDown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;br&gt;
+      &lt;h1 id=&quot;AST&quot;&gt;&lt;a href=&quot;#AST&quot; class=&quot;headerlink&quot; title=&quot;AST&quot;&gt;&lt;/a&gt;AST&lt;/h1&gt;&lt;h2 id=&quot;AST-简介&quot;&gt;&lt;a href=&quot;#AST-简介&quot; class=&quot;headerlink&quot; title=&quot;AST 简介&quot;&gt;&lt;/a&gt;AST 简介&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代码的结构，通过操纵这颗树，我们可以精准的定位到声明语句、赋值语句、运算语句等等，实现对代码的分析、优化、变更等操作. 然后浏览器会把 js 源码通过解析器转为抽象语法树，再进一步转化为字节码或直接生成机器码. – &lt;a href=&quot;https://www.jianshu.com/p/b9f14f384954&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书文章&lt;/a&gt;&lt;/p&gt;&lt;p&gt;关于 Vue 的语法树解析可以查看&lt;a href=&quot;https://github.com/answershuto/learnVue/blob/master/docs/%E8%81%8A%E8%81%8AVue%E7%9A%84template%E7%BC%96%E8%AF%91.MarkDown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -245,8 +239,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;a href=&quot;#JavaScript的内存机制及按值传递&quot; class=&quot;headerlink&quot; title=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;/a&gt;JavaScript的内存机制及按值传递&lt;/h1&gt;&lt;p&gt;JavaScript是一门轻级的编程语言, 我之前也用过C++和Java, 相比起来JavaScript是一门年轻简约的编程语言, 但是我很看好这门语言, 我记得之前看过一个大牛说现在的前端开发是黎明前的黑暗, 在数年之内必定会清晰明朗起来. 自己深表赞同, JavaScript现在的确是有很多的缺陷, 相比较起来它的依赖库也不如java那般丰富, 但是它一个最大的优点(个人认为)就是它的轻量级, 你仅仅需要一个浏览器(或者Node环境, 但是Node其实也是基于Chrome的V8引擎), 他就能完成自己所有的工作, 我坚信随着各种标准的制定以及已经走在探索路上的前端开发师们能够很快为JavaScript带来它起飞的春天.&lt;/p&gt;
-&lt;p&gt;上面是我的个人希冀, 说到这篇文章, 主要是记录一下JavaScript的内存机制以及按值传递规则, 因为我在JavaScript的开发过程中会不由自主的把它和我也使用过的C++和Java进行比较, 我认为编程语言是互通的, 但是它们在某些细节上的处理有所不同, 则正是我们需要去注意的.&lt;/p&gt;
+      &lt;h1 id=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;a href=&quot;#JavaScript的内存机制及按值传递&quot; class=&quot;headerlink&quot; title=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;/a&gt;JavaScript的内存机制及按值传递&lt;/h1&gt;&lt;p&gt;JavaScript是一门轻级的编程语言, 我之前也用过C++和Java, 相比起来JavaScript是一门年轻简约的编程语言, 但是我很看好这门语言, 我记得之前看过一个大牛说现在的前端开发是黎明前的黑暗, 在数年之内必定会清晰明朗起来. 自己深表赞同, JavaScript现在的确是有很多的缺陷, 相比较起来它的依赖库也不如java那般丰富, 但是它一个最大的优点(个人认为)就是它的轻量级, 你仅仅需要一个浏览器(或者Node环境, 但是Node其实也是基于Chrome的V8引擎), 他就能完成自己所有的工作, 我坚信随着各种标准的制定以及已经走在探索路上的前端开发师们能够很快为JavaScript带来它起飞的春天.&lt;/p&gt;&lt;p&gt;上面是我的个人希冀, 说到这篇文章, 主要是记录一下JavaScript的内存机制以及按值传递规则, 因为我在JavaScript的开发过程中会不由自主的把它和我也使用过的C++和Java进行比较, 我认为编程语言是互通的, 但是它们在某些细节上的处理有所不同, 则正是我们需要去注意的.&lt;/p&gt;
     
     </summary>
     
@@ -308,8 +301,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Vue-学习笔记&quot;&gt;&lt;a href=&quot;#Vue-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue 学习笔记&quot;&gt;&lt;/a&gt;Vue 学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习 Vue 了, 在这里记录一下学习笔记.&lt;/p&gt;
-&lt;p&gt;最近像没头的苍蝇一样盯着 Vue, 感觉好些地方不甚了解, 博客也搁置了快五天没动过笔了…&lt;/p&gt;
+      &lt;h1 id=&quot;Vue-学习笔记&quot;&gt;&lt;a href=&quot;#Vue-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue 学习笔记&quot;&gt;&lt;/a&gt;Vue 学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习 Vue 了, 在这里记录一下学习笔记.&lt;/p&gt;&lt;p&gt;最近像没头的苍蝇一样盯着 Vue, 感觉好些地方不甚了解, 博客也搁置了快五天没动过笔了…&lt;/p&gt;
     
     </summary>
     
