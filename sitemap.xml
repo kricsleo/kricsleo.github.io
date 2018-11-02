@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/web-font/</loc>
+    
+    <lastmod>2018-11-02T06:28:36.113Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/optimize-my-blog/</loc>
     
-    <lastmod>2018-10-31T05:29:54.957Z</lastmod>
+    <lastmod>2018-10-31T15:05:33.842Z</lastmod>
     
   </url>
   
@@ -79,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
+    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
+    <loc>https://kricsleo.github.io/docker/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
@@ -107,13 +114,6 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
-    
-    <lastmod>2018-09-29T01:02:49.797Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
     
     <lastmod>2018-09-29T01:02:49.797Z</lastmod>
@@ -121,14 +121,21 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/git-workflow/</loc>
+    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
+    
+    <lastmod>2018-09-29T01:02:49.797Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/markdown/</loc>
     
     <lastmod>2018-09-29T01:02:49.796Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/markdown/</loc>
+    <loc>https://kricsleo.github.io/git-workflow/</loc>
     
     <lastmod>2018-09-29T01:02:49.796Z</lastmod>
     

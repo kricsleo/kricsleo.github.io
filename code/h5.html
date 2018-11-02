@@ -10,21 +10,20 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <script src="./vconsole.min.js"></script>
+    <!-- <script src="./vconsole.min.js"></script> -->
 
     <style>
-        .container {
-            display: flex;
-            flex-flow: row;
-            width: 300px;
+        @font-face {
+            font-family: "RobotoMono Iconfont";
+            src: url('https://store.kricsleo.com/blog/static/fonts/RobotoMono-Iconfont.ttf') format('truetype');
+            font-display: optional;
         }
 
-        .left,
-        .right {
-            height: 300px;
-            border: 1px solid lightblue;
-            margin-right: 10px;
-            overflow: auto;
+        h1 {
+            /* font-family: "RobotoMono-Iconfont","Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace; */
+            /* visibility: hidden; */
+            /* display: none; */
+            /* opacity: 0; */
         }
 
     </style>
@@ -32,36 +31,18 @@
 
 <body>
 
-    <h1>vConsole page</h1>
-    <div class="container">
-        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at velit fugit dolor, iste dolorum necessitatibus repellendus animi est dolorem. Reprehenderit animi corporis, laborum a iste necessitatibus eum veniam voluptatibus inventore labore consequatur dolorum ipsa beatae atque? Repudiandae cumque aut a explicabo voluptatum voluptas eum nostrum autem voluptatem temporibus, qui adipisci minus eos vel ea exercitationem nobis recusandae deserunt fugiat iure? Eveniet reiciendis distinctio accusamus qui est laborum commodi fugiat cumque dolores voluptates quae dolorem deleniti expedita quisquam vero, fugit ducimus cum, ut sequi? Autem commodi, quam sint, velit sed nulla id cupiditate, et officia fugit quidem ratione. Culpa, obcaecati?</div>
-        <div class="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam quasi voluptatem atque in ipsum eligendi, temporibus earum, unde ab consectetur possimus error dolorum rerum ducimus ad accusantium porro natus molestias sed? Earum, distinctio eaque! Officia esse, nam delectus, hic nostrum ut tempore minima praesentium ratione debitis a at adipisci maxime autem quos facere doloribus repudiandae velit. Maiores nostrum velit repellat a ipsa dolorem eos consectetur aut quod fugiat, eum voluptate reprehenderit nam quo cumque optio minima adipisci quasi labore alias incidunt mollitia! Quia odio at ipsa quam eligendi consequuntur, quod non perferendis iure eius mollitia qui! Earum vitae minus explicabo.</div>
-    </div>
+    <h1>demo page</h1>
+
     <script>
-
-        var vConsole = new VConsole();
-        
-        const l = document.getElementsByClassName('left')[0];
-        const r = document.getElementsByClassName('right')[0];
-
-        const master = l;
-
-        // [l, r].map(box => {
-        //     box.addEventListener('scroll', () => {
-
-        //     })
-        // })
-
-        l.addEventListener('scroll', () => {
-            r.scrollTop = l.scrollTop;
-        });
-
-        r.addEventListener('scroll', () => {
-                l.scrollTop = r.scrollTop;
-        });
-
-
-    </script>
+    //     function success(res) {
+    //         console.log(res);
+    //     }
+    //     function error(e) {
+    //         console.warn(e);
+    //     }
+    //     document.fonts.load('normal 14px RobotoMono2-Iconfont').then(success, error);
+    // </script>
+    
 </body>
 
 </html>

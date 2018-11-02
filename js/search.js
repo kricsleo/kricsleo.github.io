@@ -1,1 +1,423 @@
-var HexoSearch,SearchService="";function get(o,t){let{data:a={}}=t;return o.includes("?")||(o+="?"),Object.keys(a).forEach(e=>{o+=`&${encodeURIComponent(e)}=${encodeURIComponent(a[e])}`}),fetch(o).then(t=>{if(t.ok)return t.json();throw new Error(`fetching ${o} error: ${e.toString()}`)}).catch(t=>{throw new Error(`fetching ${o} error: ${e.toString()}`)})}function fadeOut(e,o=400){const t=e.style,a=getComputedStyle(e),n=t.cssText,r=a.transition;t.display="none"!==a.display?a.display:"block",t.transition=`opacity ${o}ms`,t.opacity=0,setTimeout(()=>{t.cssText=n,t.display="none",t.transition=r},o)}function fadeIn(e,o=400){const t=e.style,a=getComputedStyle(e),n=t.cssText,r="none"!==a.display?a.display:"block",s="0"!==a.opacity?a.opacity:1,i=a.transition;t.display=r,t.opacity=0,requestAnimationFrame(()=>{t.cssText=n,t.transition=`opacity ${o}ms`,t.opacity=s,t.display=r,setTimeout(()=>t.transition=i,o)})}!function(){SearchService=function(o){var t=this;t.config=Object.assign({},{per_page:10,selectors:{body:"body",form:".u-search-form",input:".u-search-input",container:"#u-search",modal:"#u-search .modal",modal_body:"#u-search .modal-body",modal_footer:"#u-search .modal-footer",modal_overlay:"#u-search .modal-overlay",modal_results:"#u-search .modal-results",modal_metadata:"#u-search .modal-metadata",modal_error:"#u-search .modal-error",modal_loading_bar:"#u-search .modal-loading-bar",modal_ajax_content:"#u-search .modal-ajax-content",modal_logo:"#u-search .modal-footer .logo",btn_close:"#u-search .btn-close",btn_next:"#u-search .btn-next",btn_prev:"#u-search .btn-prev"},brands:{hexo:{logo:"",url:""}},imagePath:"/img/"},o),t.dom={},t.percentLoaded=0,t.open=!1,t.queryText="",t.nav={next:-1,prev:-1,total:0,current:1},t.parseSelectors=function(){for(var e in t.config.selectors)t.dom[e]=document.querySelector(t.config.selectors[e]);t.dom.form=document.querySelectorAll(t.config.selectors.form),t.dom.input=document.querySelectorAll(t.config.selectors.input)},t.beforeQuery=function(){t.open||(fadeIn(t.dom.container),t.dom.body.classList.add("modal-active"),t.open=!0),[...t.dom.input].forEach(e=>e.value=t.queryText),document.activeElement.blur(),t.dom.modal_error.style.display="none",t.dom.modal_ajax_content.classList.remove("loaded"),t.startLoading()},t.afterQuery=function(){t.dom.modal_body.scrollTop=0,t.dom.modal_ajax_content.classList.add("loaded"),t.stopLoading()},t.search=function(e,o){t.beforeQuery(),t.search instanceof Function?t.query(t.queryText,e,function(){t.afterQuery()}):(console.log("query() does not exist."),t.onQueryError(t.queryText,""),t.afterQuery())},t.onQueryError=function(e,o){var a="";a="success"===o?'No result found for "'+e+'".':"timeout"===o?"Unfortunate timeout.":"error"===o?"Something goes wrong.":"empty"===o?"Empty result.":"Mysterious failure.",t.dom.modal_results.innerHTML="",t.dom.modal_error.innerHTML=a,t.dom.modal_error.style.display="block"},t.nextPage=function(){-1!==t.nav.next&&t.search(t.nav.next)},t.prevPage=function(){-1!==t.nav.prev&&t.search(t.nav.prev)},t.buildResult=function(e,o,t){var a="";return a="<li>",a+="<a class='result' href='"+e+"'>",a+="<span class='title'>"+o+"</span>",a+="<span class='digest'>"+t+"</span>",a+="<span class='result-icon iconfont icon-arrow-circle-right'></span>",a+="</a>",a+="</li>"},t.close=function(){t.open=!1,fadeOut(t.dom.container),t.dom.body.classList.remove("modal-active")},t.onSubmit=function(e){e.preventDefault(),t.queryText=e.currentTarget.getElementsByClassName("u-search-input")[0].value,t.queryText&&t.search(1)},t.startLoading=function(){fadeOut(t.dom.modal_loading_bar),t.loadingTimer=setInterval(function(){t.percentLoaded=Math.min(t.percentLoaded+5,95),t.dom.modal_loading_bar.style.width=`${t.percentLoaded}%`},100)},t.stopLoading=function(){clearInterval(t.loadingTimer),t.dom.modal_loading_bar.style.width="100%",t.dom.modal_loading_bar.style.opacity=0,setTimeout(function(){t.percentLoaded=0,t.dom.modal_loading_bar.style.width="0"},300)},t.addLogo=function(e){var o="";t.config.brands[e]&&t.config.brands[e].logo&&(o+="<a href='"+t.config.brands[e].url+"' class='"+e+"'>",o+='<img src="'+t.config.imagePath+t.config.brands[e].logo+'" />',o+="</a>",t.dom.modal_logo.innerHTML=o)},t.destroy=function(){[...t.dom.form].forEach(e=>e.removeEventListener("click")),t.dom.modal_overlay.removeEventListener("click"),t.dom.btn_close.removeEventListener("click"),t.dom.btn_next.removeEventListener("click"),t.dom.btn_prev.removeEventListener("click"),t.dom.container.parentNode.removeChild(t.dom.container)},t.init=function(){const o=document.createElement("div");o.innerHTML=e,document.body.appendChild(o),t.parseSelectors(),t.dom.modal_footer.style.display="none",[...t.dom.form].forEach(e=>e.onsubmit=t.onSubmit),t.dom.modal_overlay.addEventListener("click",t.close),t.dom.btn_close.addEventListener("click",t.close),t.dom.btn_next.addEventListener("click",t.nextPage),t.dom.btn_prev.addEventListener("click",t.prevPage)},t.init()};var e='<div id="u-search"><div class="modal"> <header class="modal-header" class="clearfix"><form id="u-search-modal-form" class="u-search-form" name="uSearchModalForm"> <input type="text" id="u-search-modal-input" class="u-search-input" /> <button type="submit" id="u-search-modal-btn-submit" class="u-search-btn-submit"> <span class="iconfont icon-search"></span> </button></form> <a class="btn-close"> <span class="iconfont icon-close"></span> </a><div class="modal-loading"><div class="modal-loading-bar"></div></div> </header> <main class="modal-body"><ul class="modal-results modal-ajax-content"></ul> </main> <footer class="modal-footer clearfix"><div class="modal-metadata modal-ajax-content"> <strong class="range"></strong> of <strong class="total"></strong></div><div class="modal-error"></div> <div class="logo"></div> <a class="nav btn-next modal-ajax-content"> <span class="text">NEXT</span> <span class="iconfont icon-chevron-right"></span> </a> <a class="nav btn-prev modal-ajax-content"> <span class="iconfont icon-chevron-left"></span> <span class="text">PREV</span> </a> </footer></div><div class="modal-overlay"></div></div>'}(),function(){"use strict";HexoSearch=function(e){SearchService.apply(this,arguments);var o=this;return o.config.endpoint=ROOT+((e||{}).endpoint||"content.json"),o.config.endpoint=o.config.endpoint.replace("//","/"),o.cache="",o.contentSearch=function(e,o){var t=e.title.trim().toLowerCase(),a=e.text.trim().toLowerCase(),n=o.trim().toLowerCase().split(" "),r=!1,s=-1,i=-1,c=-1;return""!==t&&""!==a&&n.forEach((o,l)=>{if(s=t.indexOf(o),i=a.indexOf(o),s<0&&i<0?r=!1:(r=!0,i<0&&(i=0),0===l&&(c=i)),r){a=e.text.trim();var d=0,m=0;if(c>=0){m=0===(d=Math.max(c-30,0))?Math.min(200,a.length):Math.min(c+170,a.length);var u=a.substring(d,m);n.forEach(function(e){var o=new RegExp(e,"gi");u=u.replace(o,"<b>"+e+"</b>")}),e.digest=u}else m=Math.min(200,a.length),e.digest=a.trim().substring(0,m)}}),r},o.buildResultList=function(e,t){var a="";return e.forEach((e,n)=>{o.contentSearch(e,t)&&(a+=o.buildResult(e.permalink,e.title,e.digest))}),a},o.buildMetadata=function(e){o.dom.modal_footer.style.display="none"},o.query=function(e,t,a){if(o.cache){let t="";t+=o.buildResultList(o.cache.pages,e),t=(t+=o.buildResultList(o.cache.posts,e))||"Empty results.",o.dom.modal_results.innerHTML=t,o.buildMetadata(),a&&a(o.cache)}else get(o.config.endpoint,{data:{key:o.config.apiKey,cx:o.config.engineId,q:e,start:t,num:o.config.per_page}}).then(t=>{o.cache=t;let n="";n+=o.buildResultList(t.pages,e),n=(n+=o.buildResultList(t.posts,e))||"Empty results.",o.dom.modal_results.innerHTML=n,o.buildMetadata(t),a&&a(t)}).catch(t=>{o.onQueryError(e,"error")})},o}}();
+/* eslint-disable */
+var SearchService = "";
+(function() {
+  /**
+   * A super class of common logics for all search services
+   * @param options : (object)
+   */
+  SearchService = function(options) {
+    var self = this;
+    
+    self.config = Object.assign({}, {
+      per_page: 10,
+      selectors: {
+        body: "body",
+        form: ".u-search-form",
+        input: ".u-search-input",
+        container: "#u-search",
+        modal: "#u-search .modal",
+        modal_body: "#u-search .modal-body",
+        modal_footer: "#u-search .modal-footer",
+        modal_overlay: "#u-search .modal-overlay",
+        modal_results: "#u-search .modal-results",
+        modal_metadata: "#u-search .modal-metadata",
+        modal_error: "#u-search .modal-error",
+        modal_loading_bar: "#u-search .modal-loading-bar",
+        modal_ajax_content: "#u-search .modal-ajax-content",
+        modal_logo: '#u-search .modal-footer .logo',
+        btn_close: "#u-search .btn-close",
+        btn_next: "#u-search .btn-next",
+        btn_prev: "#u-search .btn-prev"
+      },
+      brands: {
+        'hexo': { logo: '', url: '' },
+      },
+      imagePath: "/img/"
+    }, options);
+
+    self.dom = {};
+    self.percentLoaded = 0;
+    self.open = false;
+    self.queryText = "";
+    self.nav = {
+      next: -1,
+      prev: -1,
+      total: 0,
+      current: 1
+    };
+
+    self.parseSelectors = function() {
+      for (var key in self.config.selectors) {
+        self.dom[key] = document.querySelector(self.config.selectors[key]);
+      }
+      self.dom['form'] = document.querySelectorAll(self.config.selectors['form']);
+      self.dom['input'] = document.querySelectorAll(self.config.selectors['input']);
+    };
+
+    self.beforeQuery = function() {
+      if (!self.open) {
+        fadeIn(self.dom.container);
+        self.dom.body.classList.add('modal-active');
+        self.open = true;
+      }
+      [...self.dom.input].forEach(item => item.value = self.queryText);
+      document.activeElement.blur();
+      self.dom.modal_error.style.display = 'none';
+      self.dom.modal_ajax_content.classList.remove('loaded');
+      self.startLoading();
+    };
+    
+    self.afterQuery = function() {
+      self.dom.modal_body.scrollTop = 0;
+      self.dom.modal_ajax_content.classList.add('loaded');
+      self.stopLoading();
+    };
+
+    /**
+     * Perform a complete search operation including UI updates and query
+     * @param startIndex {int} start index or page number
+     */
+    self.search = function(startIndex, callback) {
+      self.beforeQuery();
+      if (self.search instanceof Function) {
+        self.query(self.queryText, startIndex, function() {
+          self.afterQuery();
+        });
+      }
+      else {
+        console.log("query() does not exist.");
+        self.onQueryError(self.queryText, '');
+        self.afterQuery();
+      }
+    };
+
+    /**
+     * Query error handler
+     * @param queryText: (string)
+     * @param status: (string)
+     */
+    self.onQueryError = function(queryText, status) {
+      var errMsg = "";
+      if (status === "success") errMsg = "No result found for \"" +queryText+ "\".";
+      else if (status === "timeout") errMsg = "Unfortunate timeout.";
+      else if (status === "error") errMsg = 'Something goes wrong.';
+      else if (status === "empty") errMsg = 'Empty result.';
+      else errMsg = "Mysterious failure.";
+      self.dom.modal_results.innerHTML = '';
+      self.dom.modal_error.innerHTML = errMsg;
+      self.dom.modal_error.style.display = 'block';
+    };
+    
+    self.nextPage = function() {
+      if (self.nav.next !== -1) {
+        self.search(self.nav.next);
+      }
+    };
+    
+    self.prevPage = function() {
+      if (self.nav.prev !== -1) {
+        self.search(self.nav.prev);
+      }
+    };
+    
+    /**
+     * Generate html for one result
+     * @param url : (string) url
+     * @param title : (string) title
+     * @param digest : (string) digest
+     */
+    self.buildResult = function(url, title, digest) {
+      var html = "";
+      html = "<li>";
+      html +=   "<a class='result' href='" +url+ "'>";
+      html +=     "<span class='title'>" +title+ "</span>";
+      html +=     "<span class='digest'>" +digest+ "</span>";
+      html +=     "<span class='result-icon iconfont icon-arrow-circle-right'></span>";
+      html +=   "</a>";
+      html += "</li>";
+      return html;
+    };
+    
+    /**
+     * Close the modal, resume body scrolling
+     * no param
+     */
+    self.close = function() {
+      self.open = false;
+      fadeOut(self.dom.container);
+      self.dom.body.classList.remove('modal-active');
+    };
+    
+    /**
+     * Searchform submit event handler
+     * @param queryText : (string) the query text
+     */
+    self.onSubmit = function(event) {
+      event.preventDefault();
+      self.queryText = event.currentTarget.getElementsByClassName('u-search-input')[0].value;
+      if (self.queryText) {
+        self.search(1);
+      }
+    };
+    
+    /**
+     * Start loading bar animation
+     * no param
+     */
+    self.startLoading = function() {
+      fadeOut(self.dom.modal_loading_bar);
+      self.loadingTimer = setInterval(function() { 
+        self.percentLoaded = Math.min(self.percentLoaded+5,95);
+        self.dom.modal_loading_bar.style.width = `${self.percentLoaded}%`;
+      }, 100);
+    };
+    
+    /**
+     * Stop loading bar animation
+     * no param
+     */
+    self.stopLoading = function() {
+      clearInterval(self.loadingTimer);
+      self.dom.modal_loading_bar.style.width = '100%';
+      self.dom.modal_loading_bar.style.opacity = 0;
+      setTimeout(function() {
+        self.percentLoaded = 0;
+        self.dom.modal_loading_bar.style.width = '0';
+      }, 300);
+    };
+
+    /**
+     * Add service branding
+     * @param service {String} service name
+     */
+    self.addLogo = function(service) {
+      var html = "";
+      if (self.config.brands[service] && self.config.brands[service].logo) {
+        html += "<a href='" +self.config.brands[service].url+ "' class='" +service+ "'>";
+        html +=    '<img src="' +self.config.imagePath+self.config.brands[service].logo+ '" />';
+        html += "</a>";
+        self.dom.modal_logo.innerHTML = html;
+      }
+    };
+
+    self.destroy = function() {
+      [...self.dom.form].forEach(item => item.removeEventListener('click'));
+      self.dom.modal_overlay.removeEventListener('click');
+      self.dom.btn_close.removeEventListener('click');
+      self.dom.btn_next.removeEventListener('click');
+      self.dom.btn_prev.removeEventListener('click');
+      self.dom.container.parentNode.removeChild(self.dom.container);
+    };
+    
+    /**
+     * Load template and register event handlers
+     * no param
+     */
+    self.init = function () {
+      const dDiv = document.createElement('div');
+      dDiv.innerHTML = template;
+      document.body.appendChild(dDiv);
+      self.parseSelectors();
+      self.dom.modal_footer.style.display = 'none';
+      [...self.dom.form].forEach(item => item.onsubmit = self.onSubmit);
+      self.dom.modal_overlay.addEventListener('click', self.close);
+      self.dom.btn_close.addEventListener('click', self.close);
+      self.dom.btn_next.addEventListener('click', self.nextPage);
+      self.dom.btn_prev.addEventListener('click', self.prevPage);
+    };
+
+    self.init();
+  };
+
+  var template = '<div id="u-search"><div class="modal"> <header class="modal-header" class="clearfix"><form id="u-search-modal-form" class="u-search-form" name="uSearchModalForm"> <input type="text" id="u-search-modal-input" class="u-search-input" /> <button type="submit" id="u-search-modal-btn-submit" class="u-search-btn-submit"> <span class="iconfont icon-search"></span> </button></form> <a class="btn-close"> <span class="iconfont icon-close"></span> </a><div class="modal-loading"><div class="modal-loading-bar"></div></div> </header> <main class="modal-body"><ul class="modal-results modal-ajax-content"></ul> </main> <footer class="modal-footer clearfix"><div class="modal-metadata modal-ajax-content"> <strong class="range"></strong> of <strong class="total"></strong></div><div class="modal-error"></div> <div class="logo"></div> <a class="nav btn-next modal-ajax-content"> <span class="text">NEXT</span> <span class="iconfont icon-chevron-right"></span> </a> <a class="nav btn-prev modal-ajax-content"> <span class="iconfont icon-chevron-left"></span> <span class="text">PREV</span> </a> </footer></div><div class="modal-overlay"></div></div>';
+})();
+
+var HexoSearch;
+(function() {
+  'use strict';
+  
+  /**
+  * Search by Hexo generator json content
+  * @param options : (object)
+  */
+  HexoSearch = function(options) {
+    SearchService.apply(this, arguments);
+    var self = this;
+    self.config.endpoint = '/' + ((options||{}).endpoint || "content.json");
+    self.config.endpoint = self.config.endpoint.replace("//","/"); //make sure the url is correct
+    self.cache = "";
+    
+    /**
+     * Search queryText in title and content of a post
+     * Credit to: http://hahack.com/codes/local-search-engine-for-hexo/
+     * @param post : the post object
+     * @param queryText : the search query
+     */
+    self.contentSearch = function(post, queryText) {
+      var post_title = post.title.trim().toLowerCase(),
+          post_content = post.text.trim().toLowerCase(),
+          keywords = queryText.trim().toLowerCase().split(" "),
+          foundMatch = false,
+          index_title = -1,
+          index_content = -1,
+          first_occur = -1;
+      if (post_title !== '' && post_content !== '') {
+        keywords.forEach((word, index) => {
+          index_title = post_title.indexOf(word);
+          index_content = post_content.indexOf(word);
+          if (index_title < 0 && index_content < 0) {
+            foundMatch = false;
+          }
+          else {
+            foundMatch = true;
+            if (index_content < 0) {
+              index_content = 0;
+            }
+            if (index === 0) {
+              first_occur = index_content;
+            }
+          }
+          if (foundMatch) {
+            post_content = post.text.trim();
+            var start = 0, end = 0;
+            if (first_occur >= 0) {
+              start = Math.max(first_occur - 30, 0);
+              end = (start === 0) ? Math.min(200, post_content.length) : Math.min(first_occur + 170, post_content.length);
+              var match_content = post_content.substring(start, end);
+              keywords.forEach(function (keyword) {
+                var regS = new RegExp(keyword, "gi");
+                match_content = match_content.replace(regS, "<b>" + keyword + "</b>");
+              });
+              post.digest = match_content;
+            }
+            else {
+              end = Math.min(200, post_content.length);
+              post.digest = post_content.trim().substring(0, end);
+            }
+          }
+        });
+      }
+      return foundMatch;
+    };
+    
+    /**
+     * Generate result list html
+     * @param data : (array) result items
+     */
+    self.buildResultList = function(data, queryText) {
+      var results = [],
+        html = "";
+      data.forEach((post, index) => {
+        if (self.contentSearch(post, queryText))
+          html += self.buildResult(post.permalink, post.title, post.digest);
+      });
+      return html;
+    };
+    
+    /**
+     * Generate metadata after a successful query
+     * @param data : (object) the raw google custom search response data
+     */
+    self.buildMetadata = function(data) {
+      self.dom.modal_footer.style.display = 'none';
+    };
+    
+    /**
+     * Send a GET request
+     * @param queryText : (string) the query text
+     * @param startIndex : (int) the index of first item (start from 1)
+     * @param callback : (function)
+     */
+    self.query = function(queryText, startIndex, callback) {
+      if (!self.cache) {
+        get(self.config.endpoint, {
+          data: {
+            key: self.config.apiKey,
+            cx: self.config.engineId,
+            q: queryText,
+            start: startIndex,
+            num: self.config.per_page
+          }
+        }).then(data => {
+          self.cache = data;
+          let results = "";
+          results += self.buildResultList(data.pages, queryText);
+          results += self.buildResultList(data.posts, queryText);
+          results = results || 'Empty results.';
+          self.dom.modal_results.innerHTML = results;
+          self.buildMetadata(data);
+          if (callback) {
+            callback(data);
+          }
+        }).catch(err => {
+          self.onQueryError(queryText, 'error');
+        });
+      } else {
+        let results = ""; 
+        results += self.buildResultList(self.cache.pages, queryText);
+        results += self.buildResultList(self.cache.posts, queryText);
+        results = results || 'Empty results.'
+        self.dom.modal_results.innerHTML = results;
+        self.buildMetadata();
+        if (callback) {
+          callback(self.cache);
+        }
+      }
+    };
+    return self;
+  };
+
+})();
+
+function get(url, options) {
+  let { data = {}} = options;
+  if (!url.includes('?')) {
+    url += '?'
+  }
+  Object.keys(data).forEach(key => {
+    url += `&${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+  });
+  return fetch(url).then(res => {
+    if (!res.ok) {
+      throw new Error(`fetching ${url} error: ${e.toString()}`);
+    } else {
+      return res.json();
+    }
+  }).catch(err => {
+    throw new Error(`fetching ${url} error: ${e.toString()}`);
+  });
+}
+
+function fadeOut(elem, timing = 400) {
+  const style = elem.style;
+  const curStyle = getComputedStyle(elem);
+  const cssText = style.cssText;
+  const oriTransition = curStyle.transition;
+  style.display = curStyle.display !== 'none' ? curStyle.display : 'block';;
+  style.transition = `opacity ${timing}ms`;
+  style.opacity = 0;
+  setTimeout(() => {
+    style.cssText = cssText;
+    style.display = 'none';
+    style.transition = oriTransition;
+  }, timing);
+}
+
+// visibility can be added here
+function fadeIn(elem, timing = 400) {
+  const style = elem.style;
+  const curStyle = getComputedStyle(elem);
+  const cssText = style.cssText;
+  const finDisplay = curStyle.display !== 'none' ? curStyle.display : 'block';
+  const finOpacity = curStyle.opacity !== '0' ? curStyle.opacity : 1;
+  const oriTransition = curStyle.transition;
+  style.display = finDisplay;
+  style.opacity = 0;
+  requestAnimationFrame(() => { 
+    style.cssText = cssText;
+    style.transition = `opacity ${timing}ms`;
+    style.opacity = finOpacity;
+    style.display = finDisplay;
+    setTimeout(() => style.transition = oriTransition, timing);
+  });
+}
