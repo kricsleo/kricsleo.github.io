@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-11-02T06:28:36.113Z</updated>
+  <updated>2018-11-15T08:25:02.351Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -17,19 +17,102 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>yahoo-best-practices-for-speeding-up-your-Web-Site</title>
+    <link href="https://kricsleo.github.io/yahoo-best-practices-for-speeding-up-your-Web-Site/"/>
+    <id>https://kricsleo.github.io/yahoo-best-practices-for-speeding-up-your-Web-Site/</id>
+    <published>2018-11-15T08:01:33.000Z</published>
+    <updated>2018-11-15T08:25:02.351Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;yahoo-的网站优化实践军规&quot;&gt;&lt;a href=&quot;#yahoo-的网站优化实践军规&quot; class=&quot;headerlink&quot; title=&quot;yahoo 的网站优化实践军规&quot;&gt;&lt;/a&gt;yahoo 的网站优化实践军规&lt;/h1&gt;&lt;p&gt;yahoo 的网站优化军规已经出来很多年了, 我是最近才看到, 然后做一下笔记, 也比对一下自己现在做的怎么样.&lt;/p&gt;
+&lt;p&gt;原文地址: &lt;a href=&quot;https://developer.yahoo.com/performance/rules.html?guccounter=1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Best Practices for Speeding Up Your Web Site&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="yahoo" scheme="https://kricsleo.github.io/tags/yahoo/"/>
+    
+      <category term="speed" scheme="https://kricsleo.github.io/tags/speed/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx</title>
+    <link href="https://kricsleo.github.io/nginx/"/>
+    <id>https://kricsleo.github.io/nginx/</id>
+    <published>2018-11-08T02:29:02.000Z</published>
+    <updated>2018-11-12T09:18:47.392Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;nginx-的部署与配置笔记&quot;&gt;&lt;a href=&quot;#nginx-的部署与配置笔记&quot; class=&quot;headerlink&quot; title=&quot;nginx 的部署与配置笔记&quot;&gt;&lt;/a&gt;nginx 的部署与配置笔记&lt;/h1&gt;&lt;p&gt;现在很多网站用的都是 nginx 作为代理服务器, 所以为了进行 web 性能的优化, 自然也要折腾一下 nginx 的配置的.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="nginx" scheme="https://kricsleo.github.io/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>length-of-url</title>
+    <link href="https://kricsleo.github.io/length-of-url/"/>
+    <id>https://kricsleo.github.io/length-of-url/</id>
+    <published>2018-11-07T08:42:49.000Z</published>
+    <updated>2018-11-07T08:52:40.023Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;关于URL长度的笔记&quot;&gt;&lt;a href=&quot;#关于URL长度的笔记&quot; class=&quot;headerlink&quot; title=&quot;关于URL长度的笔记&quot;&gt;&lt;/a&gt;关于URL长度的笔记&lt;/h1&gt;&lt;p&gt;在了解 cookie 的大小限制的时候看到了一片记录关于 URL 长度的博客, 所以收藏了下来.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="HTTP" scheme="https://kricsleo.github.io/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>service-worker</title>
+    <link href="https://kricsleo.github.io/service-worker/"/>
+    <id>https://kricsleo.github.io/service-worker/</id>
+    <published>2018-11-04T13:32:46.000Z</published>
+    <updated>2018-11-13T02:10:16.733Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;service-worker&quot;&gt;&lt;a href=&quot;#service-worker&quot; class=&quot;headerlink&quot; title=&quot;service-worker&quot;&gt;&lt;/a&gt;service-worker&lt;/h1&gt;&lt;p&gt;service worker (服务工作线程)可以为网页提供离线访问的功能, 除此之外当然也有&lt;strong&gt;推送通知&lt;/strong&gt;和&lt;strong&gt;后台同步&lt;/strong&gt;的功能, 它是一种 JavaScript 线程, 可以独立在主线程外独立运行, 但是无法直接访问和操作 DOM , 服务工作线程通过响应 postMessage 接口发送的消息来与其控制的页面通信, 页面可在必要时对 DOM 执行操作.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="service-worker" scheme="https://kricsleo.github.io/tags/service-worker/"/>
+    
+  </entry>
+  
+  <entry>
     <title>web-font</title>
     <link href="https://kricsleo.github.io/web-font/"/>
     <id>https://kricsleo.github.io/web-font/</id>
     <published>2018-11-01T02:11:36.000Z</published>
-    <updated>2018-11-02T06:28:36.113Z</updated>
+    <updated>2018-11-12T11:46:35.237Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;现在很多网站为了视觉效果都在使用在线字体, 系统自带的字体可以直接使用, 但是自定义的在线字体需要通过&lt;code&gt;@font-face&lt;/code&gt;来加载. 这里主要结合我自己的博客的实践来记录一下网页字体的加载过程及优化.&lt;br&gt;
+      &lt;h1 id=&quot;网页字体加载过程及优化&quot;&gt;&lt;a href=&quot;#网页字体加载过程及优化&quot; class=&quot;headerlink&quot; title=&quot;网页字体加载过程及优化&quot;&gt;&lt;/a&gt;网页字体加载过程及优化&lt;/h1&gt;&lt;p&gt;现在很多网站为了视觉效果都在使用在线字体, 系统自带的字体可以直接使用, 但是自定义的在线字体需要通过&lt;code&gt;@font-face&lt;/code&gt;来加载. 这里主要结合我自己的博客的实践来记录一下网页字体的加载过程及优化.&lt;br&gt;
     
     </summary>
     
-      <category term="font-end" scheme="https://kricsleo.github.io/categories/font-end/"/>
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
     
     
       <category term="css" scheme="https://kricsleo.github.io/tags/css/"/>
@@ -63,7 +146,7 @@
     <link href="https://kricsleo.github.io/Promise-Generator/"/>
     <id>https://kricsleo.github.io/Promise-Generator/</id>
     <published>2018-10-18T02:33:04.000Z</published>
-    <updated>2018-10-18T03:05:33.711Z</updated>
+    <updated>2018-11-14T08:42:19.611Z</updated>
     
     <summary type="html">
     
@@ -171,11 +254,13 @@
     <link href="https://kricsleo.github.io/MVC-MVP-MVVM/"/>
     <id>https://kricsleo.github.io/MVC-MVP-MVVM/</id>
     <published>2018-09-28T11:51:24.000Z</published>
-    <updated>2018-09-29T01:02:49.797Z</updated>
+    <updated>2018-11-06T03:25:00.564Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;关于-MV&quot;&gt;&lt;a href=&quot;#关于-MV&quot; class=&quot;headerlink&quot; title=&quot;关于 MV*&quot;&gt;&lt;/a&gt;关于 MV*&lt;/h1&gt;&lt;p&gt;为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文.&lt;/p&gt;&lt;p&gt;作者: livoras&lt;br&gt;原文: &lt;a href=&quot;https://github.com/livoras/blog/issues/11&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/livoras/blog/issues/11&lt;/a&gt;&lt;/p&gt;&lt;p&gt;另外可以看一下掘金上的这篇文章, 与前端开发结合起来更好理解: &lt;a href=&quot;https://juejin.im/post/593021272f301e0058273468&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;浅析前端开发中的 MVC/MVP/MVVM 模式&lt;/a&gt;&lt;br&gt;
+      &lt;h1 id=&quot;关于-MV&quot;&gt;&lt;a href=&quot;#关于-MV&quot; class=&quot;headerlink&quot; title=&quot;关于 MV*&quot;&gt;&lt;/a&gt;关于 MV*&lt;/h1&gt;&lt;p&gt;为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文.&lt;/p&gt;
+&lt;p&gt;作者: livoras&lt;br&gt;原文: &lt;a href=&quot;https://github.com/livoras/blog/issues/11&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/livoras/blog/issues/11&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外可以看一下掘金上的这篇文章, 与前端开发结合起来更好理解: &lt;a href=&quot;https://juejin.im/post/593021272f301e0058273468&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;浅析前端开发中的 MVC/MVP/MVVM 模式&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -219,7 +304,11 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;AST&quot;&gt;&lt;a href=&quot;#AST&quot; class=&quot;headerlink&quot; title=&quot;AST&quot;&gt;&lt;/a&gt;AST&lt;/h1&gt;&lt;h2 id=&quot;AST-简介&quot;&gt;&lt;a href=&quot;#AST-简介&quot; class=&quot;headerlink&quot; title=&quot;AST 简介&quot;&gt;&lt;/a&gt;AST 简介&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代码的结构，通过操纵这颗树，我们可以精准的定位到声明语句、赋值语句、运算语句等等，实现对代码的分析、优化、变更等操作. 然后浏览器会把 js 源码通过解析器转为抽象语法树，再进一步转化为字节码或直接生成机器码. – &lt;a href=&quot;https://www.jianshu.com/p/b9f14f384954&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书文章&lt;/a&gt;&lt;/p&gt;&lt;p&gt;关于 Vue 的语法树解析可以查看&lt;a href=&quot;https://github.com/answershuto/learnVue/blob/master/docs/%E8%81%8A%E8%81%8AVue%E7%9A%84template%E7%BC%96%E8%AF%91.MarkDown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;br&gt;
+      &lt;h1 id=&quot;AST&quot;&gt;&lt;a href=&quot;#AST&quot; class=&quot;headerlink&quot; title=&quot;AST&quot;&gt;&lt;/a&gt;AST&lt;/h1&gt;&lt;h2 id=&quot;AST-简介&quot;&gt;&lt;a href=&quot;#AST-简介&quot; class=&quot;headerlink&quot; title=&quot;AST 简介&quot;&gt;&lt;/a&gt;AST 简介&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代码的结构，通过操纵这颗树，我们可以精准的定位到声明语句、赋值语句、运算语句等等，实现对代码的分析、优化、变更等操作. 然后浏览器会把 js 源码通过解析器转为抽象语法树，再进一步转化为字节码或直接生成机器码. – &lt;a href=&quot;https://www.jianshu.com/p/b9f14f384954&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书文章&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于 Vue 的语法树解析可以查看&lt;a href=&quot;https://github.com/answershuto/learnVue/blob/master/docs/%E8%81%8A%E8%81%8AVue%E7%9A%84template%E7%BC%96%E8%AF%91.MarkDown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -239,7 +328,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;a href=&quot;#JavaScript的内存机制及按值传递&quot; class=&quot;headerlink&quot; title=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;/a&gt;JavaScript的内存机制及按值传递&lt;/h1&gt;&lt;p&gt;JavaScript是一门轻级的编程语言, 我之前也用过C++和Java, 相比起来JavaScript是一门年轻简约的编程语言, 但是我很看好这门语言, 我记得之前看过一个大牛说现在的前端开发是黎明前的黑暗, 在数年之内必定会清晰明朗起来. 自己深表赞同, JavaScript现在的确是有很多的缺陷, 相比较起来它的依赖库也不如java那般丰富, 但是它一个最大的优点(个人认为)就是它的轻量级, 你仅仅需要一个浏览器(或者Node环境, 但是Node其实也是基于Chrome的V8引擎), 他就能完成自己所有的工作, 我坚信随着各种标准的制定以及已经走在探索路上的前端开发师们能够很快为JavaScript带来它起飞的春天.&lt;/p&gt;&lt;p&gt;上面是我的个人希冀, 说到这篇文章, 主要是记录一下JavaScript的内存机制以及按值传递规则, 因为我在JavaScript的开发过程中会不由自主的把它和我也使用过的C++和Java进行比较, 我认为编程语言是互通的, 但是它们在某些细节上的处理有所不同, 则正是我们需要去注意的.&lt;/p&gt;
+      &lt;h1 id=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;a href=&quot;#JavaScript的内存机制及按值传递&quot; class=&quot;headerlink&quot; title=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;/a&gt;JavaScript的内存机制及按值传递&lt;/h1&gt;&lt;p&gt;JavaScript是一门轻级的编程语言, 我之前也用过C++和Java, 相比起来JavaScript是一门年轻简约的编程语言, 但是我很看好这门语言, 我记得之前看过一个大牛说现在的前端开发是黎明前的黑暗, 在数年之内必定会清晰明朗起来. 自己深表赞同, JavaScript现在的确是有很多的缺陷, 相比较起来它的依赖库也不如java那般丰富, 但是它一个最大的优点(个人认为)就是它的轻量级, 你仅仅需要一个浏览器(或者Node环境, 但是Node其实也是基于Chrome的V8引擎), 他就能完成自己所有的工作, 我坚信随着各种标准的制定以及已经走在探索路上的前端开发师们能够很快为JavaScript带来它起飞的春天.&lt;/p&gt;
+&lt;p&gt;上面是我的个人希冀, 说到这篇文章, 主要是记录一下JavaScript的内存机制以及按值传递规则, 因为我在JavaScript的开发过程中会不由自主的把它和我也使用过的C++和Java进行比较, 我认为编程语言是互通的, 但是它们在某些细节上的处理有所不同, 则正是我们需要去注意的.&lt;/p&gt;
     
     </summary>
     
@@ -255,7 +345,7 @@
     <link href="https://kricsleo.github.io/bash/"/>
     <id>https://kricsleo.github.io/bash/</id>
     <published>2018-09-13T04:41:22.000Z</published>
-    <updated>2018-09-29T05:55:18.395Z</updated>
+    <updated>2018-11-08T08:29:01.501Z</updated>
     
     <summary type="html">
     
@@ -301,7 +391,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Vue-学习笔记&quot;&gt;&lt;a href=&quot;#Vue-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue 学习笔记&quot;&gt;&lt;/a&gt;Vue 学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习 Vue 了, 在这里记录一下学习笔记.&lt;/p&gt;&lt;p&gt;最近像没头的苍蝇一样盯着 Vue, 感觉好些地方不甚了解, 博客也搁置了快五天没动过笔了…&lt;/p&gt;
+      &lt;h1 id=&quot;Vue-学习笔记&quot;&gt;&lt;a href=&quot;#Vue-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue 学习笔记&quot;&gt;&lt;/a&gt;Vue 学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习 Vue 了, 在这里记录一下学习笔记.&lt;/p&gt;
+&lt;p&gt;最近像没头的苍蝇一样盯着 Vue, 感觉好些地方不甚了解, 博客也搁置了快五天没动过笔了…&lt;/p&gt;
     
     </summary>
     
@@ -339,7 +430,7 @@
     <link href="https://kricsleo.github.io/practical-function-in-javascript/"/>
     <id>https://kricsleo.github.io/practical-function-in-javascript/</id>
     <published>2018-09-07T01:07:17.000Z</published>
-    <updated>2018-10-08T06:09:13.837Z</updated>
+    <updated>2018-11-07T06:45:21.058Z</updated>
     
     <summary type="html">
     
@@ -351,80 +442,6 @@
     
     
       <category term="function" scheme="https://kricsleo.github.io/tags/function/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mini-Program</title>
-    <link href="https://kricsleo.github.io/Mini-Program/"/>
-    <id>https://kricsleo.github.io/Mini-Program/</id>
-    <published>2018-09-06T07:10:23.000Z</published>
-    <updated>2018-10-08T06:11:56.880Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;微信小程序跳坑记录&quot;&gt;&lt;a href=&quot;#微信小程序跳坑记录&quot; class=&quot;headerlink&quot; title=&quot;微信小程序跳坑记录&quot;&gt;&lt;/a&gt;微信小程序跳坑记录&lt;/h1&gt;&lt;p&gt;开发微信小程序还是踩了不少坑的, 官方的文档并不详细, 更新也不及时, 碰到问题还是多 google 吧.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="Mini-Program" scheme="https://kricsleo.github.io/tags/Mini-Program/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ASCII-Unicode-UTF8</title>
-    <link href="https://kricsleo.github.io/unicode-utf8/"/>
-    <id>https://kricsleo.github.io/unicode-utf8/</id>
-    <published>2018-09-05T09:33:51.000Z</published>
-    <updated>2018-09-29T01:02:49.799Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;ASCII-Unicode和UTF8之间的关系&quot;&gt;&lt;a href=&quot;#ASCII-Unicode和UTF8之间的关系&quot; class=&quot;headerlink&quot; title=&quot;ASCII, Unicode和UTF8之间的关系&quot;&gt;&lt;/a&gt;ASCII, Unicode和UTF8之间的关系&lt;/h1&gt;&lt;p&gt;本文主要了解一下ASCII码、Unicode码和UTF-8码的来源和相互之间的关系, 顺便也理了一下中文编码GB2312, GBK, GB18030的关系。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="encrypt" scheme="https://kricsleo.github.io/tags/encrypt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Airbnb-JavaScript-Style-Guide</title>
-    <link href="https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/"/>
-    <id>https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/</id>
-    <published>2018-09-05T01:55:28.000Z</published>
-    <updated>2018-10-22T10:51:53.739Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Airbnb-JavaScript-Style-Guide-阅读笔记&quot;&gt;&lt;a href=&quot;#Airbnb-JavaScript-Style-Guide-阅读笔记&quot; class=&quot;headerlink&quot; title=&quot;Airbnb JavaScript Style Guide 阅读笔记&quot;&gt;&lt;/a&gt;Airbnb JavaScript Style Guide 阅读笔记&lt;/h1&gt;&lt;p&gt;Airbnb的JavaScript代码风格是世界上最流行的JavaScript代码风格之一, 在阅读的时候结合我自己的使用经验记录如下重点, 日后多次阅读应该会持续更新.&lt;br&gt;在线阅读地址: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/airbnb/javascript&lt;/a&gt;&lt;br&gt;(中文翻译版: &lt;a href=&quot;https://github.com/yuche/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/yuche/javascript&lt;/a&gt;)&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="codeStyle" scheme="https://kricsleo.github.io/tags/codeStyle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Base64-md5</title>
-    <link href="https://kricsleo.github.io/base64-md5/"/>
-    <id>https://kricsleo.github.io/base64-md5/</id>
-    <published>2018-09-04T01:11:03.000Z</published>
-    <updated>2018-09-29T01:02:49.799Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Base64编码与md5摘要算法探究及日常应用&quot;&gt;&lt;a href=&quot;#Base64编码与md5摘要算法探究及日常应用&quot; class=&quot;headerlink&quot; title=&quot;Base64编码与md5摘要算法探究及日常应用&quot;&gt;&lt;/a&gt;Base64编码与md5摘要算法探究及日常应用&lt;/h1&gt;&lt;p&gt;Base64编码和md5摘要算法我们经常听到,本文主要对着两者算法做一个简单的了解探究&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="encrypt" scheme="https://kricsleo.github.io/tags/encrypt/"/>
     
   </entry>
   

@@ -19,30 +19,59 @@
             font-display: optional;
         }
 
-        h1 {
-            /* font-family: "RobotoMono-Iconfont","Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace; */
-            /* visibility: hidden; */
-            /* display: none; */
-            /* opacity: 0; */
+        .box {
+            width: 800px;
+            height: 500px;
+            margin: 20px;
+            background-color: aqua;
+            transition: all .4s;
+        }
+
+        .box-container {
+            width: 140%;
+            height: 500px;
+        }
+
+        .box-container .box-inline {
+            display: inline-block;
+            width: 33%;
+            height: 100%;
+            background-color: lightcoral;
+        }
+
+        img:after {
+            content: 'loading';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
         }
 
     </style>
+    <!-- <script src='index.js'></script> -->
+    <script>
+        const img = new Image();
+        const s = document.createElement('script');
+        s.src = 'https://ssl.google-analytics.com/ga.js';
+        for(let i = 0; i < 10; i++) {
+            setTimeout(() => {
+                img.src = `https://lorempixel.com/1080/760/${i}`;
+            }, 500);
+        }
+        document.body.appendChild(img);
+    </script>
 </head>
 
 <body>
 
     <h1>demo page</h1>
-
-    <script>
-    //     function success(res) {
-    //         console.log(res);
-    //     }
-    //     function error(e) {
-    //         console.warn(e);
-    //     }
-    //     document.fonts.load('normal 14px RobotoMono2-Iconfont').then(success, error);
-    // </script>
-    
+    <div class="box box-1">box-1</div>
+    <div class="box box-2">box-2</div>
+    <div class="box box-3">box-3</div>
+    <div class="box-container">
+        <div class="box-inline">inline-1</div>
+        <div class="box-inline">inline-2</div>
+        <div class="box-inline">inline-3</div>
+    </div>
 </body>
 
 </html>
