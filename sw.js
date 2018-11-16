@@ -1,1 +1,43 @@
-const cacheVer="kricsleo-cache-v2",cacheFileList=["/","/style.css","/js/index.js","/js/search.js"];self.addEventListener("install",e=>{self.skipWaiting(),e.waitUntil(caches.open(cacheVer).then(e=>e.addAll(cacheFileList)))}),self.addEventListener("activate",e=>{e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(e=>Promise.all(e.map(e=>e!==cacheVer?caches.delete(e):void 0)))]))}),self.addEventListener("fetch",e=>{e.respondWith(caches.match(e.request).then(c=>{if(c)return c;const s=e.request.clone();return fetch(s).then(e=>{if(!e||200!==e.status)return e;e.clone();return caches.open("kricsleo-cache-v1").then(e=>{}),e})}))});
+const cacheVer = 'kricsleo-cache-v2'
+const cacheFileList = [
+  '/',
+  '/style.css',
+  '/js/index.js',
+  '/js/search.js',
+];
+
+self.addEventListener('install', evt => {
+  self.skipWaiting();
+  evt.waitUntil(caches.open(cacheVer).then(cache => {
+    return cache.addAll(cacheFileList);
+  }));
+});
+
+self.addEventListener('activate', evt => {
+  evt.waitUntil(Promise.all([
+    self.clients.claim(),
+    caches.keys().then(cacheList => Promise.all(
+      cacheList.map(cacheName => cacheName !== cacheVer ? caches.delete(cacheName) : undefined)
+    ))
+  ]));
+})
+
+self.addEventListener('fetch', evt => {
+  evt.respondWith(
+    caches.match(evt.request).then(res => {
+      if (res) {
+        return res;
+      }
+      const req = evt.request.clone();
+      return fetch(req).then(res => {
+        if (!res || res.status !== 200) {
+          return res;
+        }
+        const resClone = res.clone();
+        caches.open('kricsleo-cache-v1').then(cache => {
+        });
+        return res;
+      });
+    })
+  );
+})
