@@ -242,7 +242,7 @@ let customSearch;
 	win.addEventListener('scroll', () => throttleLazyLoading());
 	win.addEventListener('load', () => {
 		lazyLoadImg();
-		registerSW();
+		// registerSW();
 	});
 
 })();
