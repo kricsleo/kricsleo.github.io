@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2018-11-15T08:25:02.351Z</updated>
+  <updated>2019-01-17T12:22:59.726Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,94 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Proxy</title>
+    <link href="https://kricsleo.github.io/Proxy/"/>
+    <id>https://kricsleo.github.io/Proxy/</id>
+    <published>2019-01-17T10:50:49.000Z</published>
+    <updated>2019-01-17T12:22:59.726Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;拥抱ES6中的新API–Proxy&quot;&gt;&lt;a href=&quot;#拥抱ES6中的新API–Proxy&quot; class=&quot;headerlink&quot; title=&quot;拥抱ES6中的新API–Proxy&quot;&gt;&lt;/a&gt;拥抱ES6中的新API–Proxy&lt;/h1&gt;&lt;p&gt;ES6带来了很多新的方便易用的API, Proxy(代理)就是其中之一, 意思可以理解为对象的代理, 实际上是一个构造函数, 通过这个构造函数我们可以对某个对象进行包装, 然后返回一个新的对象, 然后我们所有对原对象的操作都可以转移到这个新的对象上, 并且我们的操作过程是可以被拦截和过滤的, 这就类似于你请的律师一样, 他会为你处理你的事情, 并在处理的过程中进行一些你设定好的操作, 称为代理.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="ES6" scheme="https://kricsleo.github.io/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>todo</title>
+    <link href="https://kricsleo.github.io/todo/"/>
+    <id>https://kricsleo.github.io/todo/</id>
+    <published>2019-01-16T08:22:30.000Z</published>
+    <updated>2019-01-16T08:23:17.251Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;TODO&quot;&gt;&lt;a href=&quot;#TODO&quot; class=&quot;headerlink&quot; title=&quot;TODO&quot;&gt;&lt;/a&gt;TODO&lt;/h1&gt;&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="todo" scheme="https://kricsleo.github.io/tags/todo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SASS</title>
+    <link href="https://kricsleo.github.io/SASS/"/>
+    <id>https://kricsleo.github.io/SASS/</id>
+    <published>2018-11-28T05:36:01.000Z</published>
+    <updated>2018-11-28T05:45:31.969Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;SASS-笔记&quot;&gt;&lt;a href=&quot;#SASS-笔记&quot; class=&quot;headerlink&quot; title=&quot;SASS 笔记&quot;&gt;&lt;/a&gt;SASS 笔记&lt;/h1&gt;&lt;p&gt;以前使用 SASS 都比较浅显, 正好最近写的多了, 所以记录一下笔记.&lt;/p&gt;
+&lt;h2 id=&quot;何
+      
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="SASS" scheme="https://kricsleo.github.io/tags/SASS/"/>
+    
+      <category term="CSS" scheme="https://kricsleo.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http-2.0</title>
+    <link href="https://kricsleo.github.io/http-2-0/"/>
+    <id>https://kricsleo.github.io/http-2-0/</id>
+    <published>2018-11-16T09:00:58.000Z</published>
+    <updated>2018-11-19T01:05:01.665Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;关于-HTTP-2-0&quot;&gt;&lt;a href=&quot;#关于-HTTP-2-0&quot; class=&quot;headerlink&quot; title=&quot;关于 HTTP/2.0&quot;&gt;&lt;/a&gt;关于 HTTP/2.0&lt;/h1&gt;&lt;p&gt;最近折腾了一段时间的 HTTP/2.0, 目前来说国内外很多大厂都已经用上了 HTTP/2.0, 部署起来也很容易, 这里关于协议的一些细节及部署过程做一个记录.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="HTTP/2.0" scheme="https://kricsleo.github.io/tags/HTTP-2-0/"/>
+    
+  </entry>
   
   <entry>
     <title>yahoo-best-practices-for-speeding-up-your-Web-Site</title>
@@ -230,11 +318,11 @@
   </entry>
   
   <entry>
-    <title>object-get-set</title>
-    <link href="https://kricsleo.github.io/object-get-set/"/>
-    <id>https://kricsleo.github.io/object-get-set/</id>
+    <title>object-defineProperty</title>
+    <link href="https://kricsleo.github.io/object-defineProperty/"/>
+    <id>https://kricsleo.github.io/object-defineProperty/</id>
     <published>2018-10-07T16:06:51.000Z</published>
-    <updated>2018-10-08T06:02:23.483Z</updated>
+    <updated>2019-01-17T06:06:28.811Z</updated>
     
     <summary type="html">
     
@@ -345,7 +433,7 @@
     <link href="https://kricsleo.github.io/bash/"/>
     <id>https://kricsleo.github.io/bash/</id>
     <published>2018-09-13T04:41:22.000Z</published>
-    <updated>2018-11-08T08:29:01.501Z</updated>
+    <updated>2018-12-14T06:13:46.925Z</updated>
     
     <summary type="html">
     
@@ -357,91 +445,6 @@
     
     
       <category term="bash" scheme="https://kricsleo.github.io/tags/bash/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>flex</title>
-    <link href="https://kricsleo.github.io/flex/"/>
-    <id>https://kricsleo.github.io/flex/</id>
-    <published>2018-09-13T04:36:29.000Z</published>
-    <updated>2018-09-13T04:45:32.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;flex布局&quot;&gt;&lt;a href=&quot;#flex布局&quot; class=&quot;headerlink&quot; title=&quot;flex布局&quot;&gt;&lt;/a&gt;flex布局&lt;/h1&gt;&lt;p&gt;关于flex布局的笔记&lt;br&gt;&lt;img src=&quot;https://lc-gold-cdn.xitu.io/0dd26d8e99257ff36443.png?imageslim&quot; alt=&quot;flex&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="css" scheme="https://kricsleo.github.io/tags/css/"/>
-    
-      <category term="flex" scheme="https://kricsleo.github.io/tags/flex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue</title>
-    <link href="https://kricsleo.github.io/vue/"/>
-    <id>https://kricsleo.github.io/vue/</id>
-    <published>2018-09-13T01:42:12.000Z</published>
-    <updated>2018-09-24T09:05:33.991Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Vue-学习笔记&quot;&gt;&lt;a href=&quot;#Vue-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue 学习笔记&quot;&gt;&lt;/a&gt;Vue 学习笔记&lt;/h1&gt;&lt;p&gt;最近开始学习 Vue 了, 在这里记录一下学习笔记.&lt;/p&gt;
-&lt;p&gt;最近像没头的苍蝇一样盯着 Vue, 感觉好些地方不甚了解, 博客也搁置了快五天没动过笔了…&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="框架" scheme="https://kricsleo.github.io/categories/%E6%A1%86%E6%9E%B6/"/>
-    
-    
-      <category term="vue" scheme="https://kricsleo.github.io/tags/vue/"/>
-    
-      <category term="ast" scheme="https://kricsleo.github.io/tags/ast/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker</title>
-    <link href="https://kricsleo.github.io/docker/"/>
-    <id>https://kricsleo.github.io/docker/</id>
-    <published>2018-09-10T05:19:34.000Z</published>
-    <updated>2018-09-29T01:02:49.799Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;docker学习笔记&quot;&gt;&lt;a href=&quot;#docker学习笔记&quot; class=&quot;headerlink&quot; title=&quot;docker学习笔记&quot;&gt;&lt;/a&gt;docker学习笔记&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https//www.docker.org.cn/book/docker/what-is-docker-16.html&quot;&gt;参考文档&lt;/a&gt;&lt;br&gt;Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="docker" scheme="https://kricsleo.github.io/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Practical-Function-In-Javascript</title>
-    <link href="https://kricsleo.github.io/practical-function-in-javascript/"/>
-    <id>https://kricsleo.github.io/practical-function-in-javascript/</id>
-    <published>2018-09-07T01:07:17.000Z</published>
-    <updated>2018-11-07T06:45:21.058Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;JavaScript中的常用函数&quot;&gt;&lt;a href=&quot;#JavaScript中的常用函数&quot; class=&quot;headerlink&quot; title=&quot;JavaScript中的常用函数&quot;&gt;&lt;/a&gt;JavaScript中的常用函数&lt;/h1&gt;&lt;p&gt;本文主要整理了平时JavaScript中常用的函数, 持续更新.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="function" scheme="https://kricsleo.github.io/tags/function/"/>
     
   </entry>
   

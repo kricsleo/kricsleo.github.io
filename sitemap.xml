@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/Proxy/</loc>
+    
+    <lastmod>2019-01-17T12:22:59.726Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/object-defineProperty/</loc>
+    
+    <lastmod>2019-01-17T06:06:28.811Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/todo/</loc>
+    
+    <lastmod>2019-01-16T08:23:17.251Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/bash/</loc>
+    
+    <lastmod>2018-12-14T06:13:46.925Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/SASS/</loc>
+    
+    <lastmod>2018-11-28T05:45:31.969Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/http-2-0/</loc>
+    
+    <lastmod>2018-11-19T01:05:01.665Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/yahoo-best-practices-for-speeding-up-your-Web-Site/</loc>
     
     <lastmod>2018-11-15T08:25:02.351Z</lastmod>
@@ -33,13 +75,6 @@
     <loc>https://kricsleo.github.io/nginx/</loc>
     
     <lastmod>2018-11-12T09:18:47.392Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/bash/</loc>
-    
-    <lastmod>2018-11-08T08:29:01.501Z</lastmod>
     
   </url>
   
@@ -114,28 +149,7 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/object-get-set/</loc>
-    
-    <lastmod>2018-10-08T06:02:23.483Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/IIFE/</loc>
-    
-    <lastmod>2018-09-29T01:02:49.799Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/unicode-utf8/</loc>
-    
-    <lastmod>2018-09-29T01:02:49.799Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
@@ -149,6 +163,20 @@
   </url>
   
   <url>
+    <loc>https://kricsleo.github.io/docker/</loc>
+    
+    <lastmod>2018-09-29T01:02:49.799Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/IIFE/</loc>
+    
+    <lastmod>2018-09-29T01:02:49.799Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
     
     <lastmod>2018-09-29T01:02:49.797Z</lastmod>
@@ -156,14 +184,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/git-workflow/</loc>
+    <loc>https://kricsleo.github.io/markdown/</loc>
     
     <lastmod>2018-09-29T01:02:49.796Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/markdown/</loc>
+    <loc>https://kricsleo.github.io/git-workflow/</loc>
     
     <lastmod>2018-09-29T01:02:49.796Z</lastmod>
     
