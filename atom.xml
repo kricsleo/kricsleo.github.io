@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2019-01-17T12:22:59.726Z</updated>
+  <updated>2019-02-25T05:09:58.439Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -17,11 +17,71 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>constraint-validation</title>
+    <link href="https://kricsleo.github.io/constraint-validation/"/>
+    <id>https://kricsleo.github.io/constraint-validation/</id>
+    <published>2019-02-25T03:38:04.000Z</published>
+    <updated>2019-02-25T05:09:58.439Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;h5-原生表单校验api&quot;&gt;&lt;a href=&quot;#h5-原生表单校验api&quot; class=&quot;headerlink&quot; title=&quot;h5 原生表单校验api&quot;&gt;&lt;/a&gt;h5 原生表单校验api&lt;/h1&gt;&lt;p&gt;我们通常会对表单的 input 的做各种各样的校验, 比如长度, 大小, 格式等等, 其实在h5中为了方便这些校验原生就有不少的校验类型和方式, 只不过错误提示的样式由于各个浏览器不太一样, 而且无法自定义, 产品和设计一般都不会认可这样的表现, 所以目前还是比较少用到浏览器原生的校验, 不过了解一下还有没有坏处的.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="h5" scheme="https://kricsleo.github.io/tags/h5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BFC</title>
+    <link href="https://kricsleo.github.io/BFC/"/>
+    <id>https://kricsleo.github.io/BFC/</id>
+    <published>2019-02-25T00:50:03.000Z</published>
+    <updated>2019-02-25T03:25:33.886Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;BFC-BLOCK-FORMATTING-CONTEXT&quot;&gt;&lt;a href=&quot;#BFC-BLOCK-FORMATTING-CONTEXT&quot; class=&quot;headerlink&quot; title=&quot;BFC (BLOCK FORMATTING CONTEXT)&quot;&gt;&lt;/a&gt;BFC (BLOCK FORMATTING CONTEXT)&lt;/h1&gt;&lt;p&gt;关于 BFC (BLOCK FORMATTING CONTEXT: 块格式化上下文)这个专有名词可能听得不多, 但是在实际的页面布局中实际上却是会经常碰到的, 只是没有特意去注意这个现象而已, 这里记录一下它是如何影响我们的布局的.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="css" scheme="https://kricsleo.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6-map-set-symbol</title>
+    <link href="https://kricsleo.github.io/ES6-map-set-symbol/"/>
+    <id>https://kricsleo.github.io/ES6-map-set-symbol/</id>
+    <published>2019-01-18T02:23:08.000Z</published>
+    <updated>2019-01-18T05:48:11.499Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;ES6中新的数据类型&quot;&gt;&lt;a href=&quot;#ES6中新的数据类型&quot; class=&quot;headerlink&quot; title=&quot;ES6中新的数据类型&quot;&gt;&lt;/a&gt;ES6中新的数据类型&lt;/h1&gt;&lt;p&gt;在ES6里面引入了一些新的数据类型, 包括 &lt;code&gt;Map&lt;/code&gt; / &lt;code&gt;Set&lt;/code&gt; / &lt;code&gt;Symbol&lt;/code&gt; 等等, 这里了解一下他们的用法和使用场景.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Front-end" scheme="https://kricsleo.github.io/categories/Front-end/"/>
+    
+    
+      <category term="ES6" scheme="https://kricsleo.github.io/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Proxy</title>
     <link href="https://kricsleo.github.io/Proxy/"/>
     <id>https://kricsleo.github.io/Proxy/</id>
     <published>2019-01-17T10:50:49.000Z</published>
-    <updated>2019-01-17T12:22:59.726Z</updated>
+    <updated>2019-01-21T01:17:25.980Z</updated>
     
     <summary type="html">
     
@@ -41,17 +101,15 @@
     <link href="https://kricsleo.github.io/todo/"/>
     <id>https://kricsleo.github.io/todo/</id>
     <published>2019-01-16T08:22:30.000Z</published>
-    <updated>2019-01-16T08:23:17.251Z</updated>
+    <updated>2019-02-25T05:10:49.689Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;TODO&quot;&gt;&lt;a href=&quot;#TODO&quot; class=&quot;headerlink&quot; title=&quot;TODO&quot;&gt;&lt;/a&gt;TODO&lt;/h1&gt;&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;
-      
+      &lt;h1 id=&quot;TODO&quot;&gt;&lt;a href=&quot;#TODO&quot; class=&quot;headerlink&quot; title=&quot;TODO&quot;&gt;&lt;/a&gt;TODO&lt;/h1&gt;&lt;p&gt;日常TODO&lt;br&gt;
     
     </summary>
+    
+      <category term="daily" scheme="https://kricsleo.github.io/categories/daily/"/>
     
     
       <category term="todo" scheme="https://kricsleo.github.io/tags/todo/"/>
@@ -258,7 +316,7 @@
     <link href="https://kricsleo.github.io/same-origin-and-CORS/"/>
     <id>https://kricsleo.github.io/same-origin-and-CORS/</id>
     <published>2018-10-16T03:06:36.000Z</published>
-    <updated>2018-10-21T05:40:45.991Z</updated>
+    <updated>2019-01-17T12:27:29.564Z</updated>
     
     <summary type="html">
     
@@ -266,7 +324,7 @@
     
     </summary>
     
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="Front-end" scheme="https://kricsleo.github.io/categories/Front-end/"/>
     
     
       <category term="same-origin" scheme="https://kricsleo.github.io/tags/same-origin/"/>
@@ -342,7 +400,7 @@
     <link href="https://kricsleo.github.io/MVC-MVP-MVVM/"/>
     <id>https://kricsleo.github.io/MVC-MVP-MVVM/</id>
     <published>2018-09-28T11:51:24.000Z</published>
-    <updated>2018-11-06T03:25:00.564Z</updated>
+    <updated>2019-01-17T12:27:29.564Z</updated>
     
     <summary type="html">
     
@@ -352,7 +410,7 @@
     
     </summary>
     
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="Front-end" scheme="https://kricsleo.github.io/categories/Front-end/"/>
     
     
       <category term="MVC" scheme="https://kricsleo.github.io/tags/MVC/"/>
@@ -368,7 +426,7 @@
     <link href="https://kricsleo.github.io/CommonJS-AMD-CMD/"/>
     <id>https://kricsleo.github.io/CommonJS-AMD-CMD/</id>
     <published>2018-09-25T08:49:17.000Z</published>
-    <updated>2018-09-29T01:02:49.797Z</updated>
+    <updated>2019-01-17T12:27:29.579Z</updated>
     
     <summary type="html">
     
@@ -376,75 +434,10 @@
     
     </summary>
     
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="Front-end" scheme="https://kricsleo.github.io/categories/Front-end/"/>
     
     
       <category term="前端模块化" scheme="https://kricsleo.github.io/tags/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AST</title>
-    <link href="https://kricsleo.github.io/AST/"/>
-    <id>https://kricsleo.github.io/AST/</id>
-    <published>2018-09-24T08:33:49.000Z</published>
-    <updated>2018-09-29T00:59:43.006Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;AST&quot;&gt;&lt;a href=&quot;#AST&quot; class=&quot;headerlink&quot; title=&quot;AST&quot;&gt;&lt;/a&gt;AST&lt;/h1&gt;&lt;h2 id=&quot;AST-简介&quot;&gt;&lt;a href=&quot;#AST-简介&quot; class=&quot;headerlink&quot; title=&quot;AST 简介&quot;&gt;&lt;/a&gt;AST 简介&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代码的结构，通过操纵这颗树，我们可以精准的定位到声明语句、赋值语句、运算语句等等，实现对代码的分析、优化、变更等操作. 然后浏览器会把 js 源码通过解析器转为抽象语法树，再进一步转化为字节码或直接生成机器码. – &lt;a href=&quot;https://www.jianshu.com/p/b9f14f384954&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书文章&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;关于 Vue 的语法树解析可以查看&lt;a href=&quot;https://github.com/answershuto/learnVue/blob/master/docs/%E8%81%8A%E8%81%8AVue%E7%9A%84template%E7%BC%96%E8%AF%91.MarkDown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="AST" scheme="https://kricsleo.github.io/tags/AST/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js-object</title>
-    <link href="https://kricsleo.github.io/js-object/"/>
-    <id>https://kricsleo.github.io/js-object/</id>
-    <published>2018-09-22T15:44:52.000Z</published>
-    <updated>2018-09-23T03:48:03.664Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;a href=&quot;#JavaScript的内存机制及按值传递&quot; class=&quot;headerlink&quot; title=&quot;JavaScript的内存机制及按值传递&quot;&gt;&lt;/a&gt;JavaScript的内存机制及按值传递&lt;/h1&gt;&lt;p&gt;JavaScript是一门轻级的编程语言, 我之前也用过C++和Java, 相比起来JavaScript是一门年轻简约的编程语言, 但是我很看好这门语言, 我记得之前看过一个大牛说现在的前端开发是黎明前的黑暗, 在数年之内必定会清晰明朗起来. 自己深表赞同, JavaScript现在的确是有很多的缺陷, 相比较起来它的依赖库也不如java那般丰富, 但是它一个最大的优点(个人认为)就是它的轻量级, 你仅仅需要一个浏览器(或者Node环境, 但是Node其实也是基于Chrome的V8引擎), 他就能完成自己所有的工作, 我坚信随着各种标准的制定以及已经走在探索路上的前端开发师们能够很快为JavaScript带来它起飞的春天.&lt;/p&gt;
-&lt;p&gt;上面是我的个人希冀, 说到这篇文章, 主要是记录一下JavaScript的内存机制以及按值传递规则, 因为我在JavaScript的开发过程中会不由自主的把它和我也使用过的C++和Java进行比较, 我认为编程语言是互通的, 但是它们在某些细节上的处理有所不同, 则正是我们需要去注意的.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="https://kricsleo.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="JavaScript" scheme="https://kricsleo.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>bash</title>
-    <link href="https://kricsleo.github.io/bash/"/>
-    <id>https://kricsleo.github.io/bash/</id>
-    <published>2018-09-13T04:41:22.000Z</published>
-    <updated>2018-12-14T06:13:46.925Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;常用的bash命令&quot;&gt;&lt;a href=&quot;#常用的bash命令&quot; class=&quot;headerlink&quot; title=&quot;常用的bash命令&quot;&gt;&lt;/a&gt;常用的bash命令&lt;/h1&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://kricsleo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="bash" scheme="https://kricsleo.github.io/tags/bash/"/>
     
   </entry>
   

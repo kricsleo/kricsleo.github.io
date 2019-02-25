@@ -5,8 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>richedit</title>
+  <style>
+    img {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+    }
+    img.error {
+      background-image: url(https://b-gold-cdn.xitu.io/v3/static/img/image-error.3338abe.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
 </head>
 <body>
+  <img src="https://source.unsplash.com/70x70" alt="">
+  <img src="https://source.unsplash.com/70x70" alt="">
+  <img src="https://source.ukknsplash.com/70x70" alt="">
+  <img src="https://source.unsplas99h.com/70x70" alt="">
 
+  <script>
+    const imgs = document.getElementsByTagName('img');
+    function error(e) {
+      const { target } = e;
+      target.classList.add('error');
+    }
+    Array.from(imgs).forEach(img => {
+      img.onerror = error
+    });
+  </script>
 </body>
 </html>

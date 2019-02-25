@@ -9,7 +9,7 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Category: front-end | kricsleo</title>
+  <title>Category: Front-end | kricsleo</title>
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <style>
@@ -154,7 +154,7 @@
       <div class='l_main'>
         
   <script>
-    window.subData= { title:'Category : front-end'}
+    window.subData= { title:'Category : Front-end'}
   </script>
 
 <section class="post-list">
@@ -162,13 +162,13 @@
     <div class="post-wrapper">
       <article class="post reveal">
   <section class="article typo">
-    <h1 id="拥抱ES6中的新API–Proxy"><a href="#拥抱ES6中的新API–Proxy" class="headerlink" title="拥抱ES6中的新API–Proxy"></a>拥抱ES6中的新API–Proxy</h1><p>ES6带来了很多新的方便易用的API, Proxy(代理)就是其中之一, 意思可以理解为对象的代理, 实际上是一个构造函数, 通过这个构造函数我们可以对某个对象进行包装, 然后返回一个新的对象, 然后我们所有对原对象的操作都可以转移到这个新的对象上, 并且我们的操作过程是可以被拦截和过滤的, 这就类似于你请的律师一样, 他会为你处理你的事情, 并在处理的过程中进行一些你设定好的操作, 称为代理.<br>
+    <h1 id="ES6中新的数据类型"><a href="#ES6中新的数据类型" class="headerlink" title="ES6中新的数据类型"></a>ES6中新的数据类型</h1><p>在ES6里面引入了一些新的数据类型, 包括 <code>Map</code> / <code>Set</code> / <code>Symbol</code> 等等, 这里了解一下他们的用法和使用场景.<br>
     <div class="time">
       <time class="iconfont icon-clock">
-        1月 17, 2019
+        1月 18, 2019
       </time>
     </div>
-    <a href="/Proxy/" class="more iconfont icon-more" title="查看"></a>
+    <a href="/ES6-map-set-symbol/" class="more iconfont icon-more" title="查看"></a>
   </p></section>
   
   <section class="article">
@@ -185,45 +185,23 @@
     <div class="post-wrapper">
       <article class="post reveal">
   <section class="article typo">
-    <h1 id="SASS-笔记"><a href="#SASS-笔记" class="headerlink" title="SASS 笔记"></a>SASS 笔记</h1><p>以前使用 SASS 都比较浅显, 正好最近写的多了, 所以记录一下笔记.</p>
-<h2 id="何为-SASS"><a href="#何为-SASS" class="headerlink" title="何为 SASS"></a>何为 SASS</h2>
+    <h1 id="浏览器同源策略"><a href="#浏览器同源策略" class="headerlink" title="浏览器同源策略"></a>浏览器同源策略</h1><p>目前的 web 开发还相当的依赖 cookie , 而cookie的使用限制于浏览器的同源策略(same-origin policy), 同时这个策略也是保证我们网站信息安全的基础, 这篇文章主要了解一下浏览器同源策略具体的含义, 以及在实际开发中如何绕过这一限制来达到跨域请求数据的目的.</p>
     <div class="time">
       <time class="iconfont icon-clock">
-        11月 28, 2018
+        10月 16, 2018
       </time>
     </div>
-    <a href="/SASS/" class="more iconfont icon-more" title="查看"></a>
+    <a href="/same-origin-and-CORS/" class="more iconfont icon-more" title="查看"></a>
   </section>
   
   <section class="article">
     <div class="full-width auto-padding tags iconfont icon-tags ">
       
-      <a href="/tags/SASS/">SASS</a>
+      <a href="/tags/same-origin/">same-origin</a>
       
-      <a href="/tags/CSS/">CSS</a>
+      <a href="/tags/CORS/">CORS</a>
       
-    </div>
-  </section>
-  
-</article>
-    </div>
-  
-    <div class="post-wrapper">
-      <article class="post reveal">
-  <section class="article typo">
-    <h1 id="关于-HTTP-2-0"><a href="#关于-HTTP-2-0" class="headerlink" title="关于 HTTP/2.0"></a>关于 HTTP/2.0</h1><p>最近折腾了一段时间的 HTTP/2.0, 目前来说国内外很多大厂都已经用上了 HTTP/2.0, 部署起来也很容易, 这里关于协议的一些细节及部署过程做一个记录.<br>
-    <div class="time">
-      <time class="iconfont icon-clock">
-        11月 16, 2018
-      </time>
-    </div>
-    <a href="/http-2-0/" class="more iconfont icon-more" title="查看"></a>
-  </p></section>
-  
-  <section class="article">
-    <div class="full-width auto-padding tags iconfont icon-tag ">
-      
-      <a href="/tags/HTTP-2-0/">HTTP/2.0</a>
+      <a href="/tags/cookie/">cookie</a>
       
     </div>
   </section>
@@ -234,22 +212,25 @@
     <div class="post-wrapper">
       <article class="post reveal">
   <section class="article typo">
-    <h1 id="yahoo-的网站优化实践军规"><a href="#yahoo-的网站优化实践军规" class="headerlink" title="yahoo 的网站优化实践军规"></a>yahoo 的网站优化实践军规</h1><p>yahoo 的网站优化军规已经出来很多年了, 我是最近才看到, 然后做一下笔记, 也比对一下自己现在做的怎么样.</p>
-<p>原文地址: <a href="https://developer.yahoo.com/performance/rules.html?guccounter=1" target="_blank" rel="noopener">Best Practices for Speeding Up Your Web Site</a><br>
+    <h1 id="关于-MV"><a href="#关于-MV" class="headerlink" title="关于 MV*"></a>关于 MV*</h1><p>为了管理有图形界面的应用程序, 先后提出了 MVC, MVP 和 MVVM 等应用架构模式, 我们也许常常听到这几个词, 尤其对我这个前后端都做过的人来说更是时常接触, 但是对于他们之间的区别却不甚了解, 这几天看了不少文章讲这一块, 在看到 Github 上 livoras 写的文章以后才终在心里有所区分, 这里转载一下 livoras 的原文.</p>
+<p>作者: livoras<br>原文: <a href="https://github.com/livoras/blog/issues/11" target="_blank" rel="noopener">https://github.com/livoras/blog/issues/11</a></p>
+<p>另外可以看一下掘金上的这篇文章, 与前端开发结合起来更好理解: <a href="https://juejin.im/post/593021272f301e0058273468" target="_blank" rel="noopener">浅析前端开发中的 MVC/MVP/MVVM 模式</a><br>
     <div class="time">
       <time class="iconfont icon-clock">
-        11月 15, 2018
+        9月 28, 2018
       </time>
     </div>
-    <a href="/yahoo-best-practices-for-speeding-up-your-Web-Site/" class="more iconfont icon-more" title="查看"></a>
+    <a href="/MVC-MVP-MVVM/" class="more iconfont icon-more" title="查看"></a>
   </p></section>
   
   <section class="article">
     <div class="full-width auto-padding tags iconfont icon-tags ">
       
-      <a href="/tags/yahoo/">yahoo</a>
+      <a href="/tags/MVC/">MVC</a>
       
-      <a href="/tags/speed/">speed</a>
+      <a href="/tags/MVP/">MVP</a>
+      
+      <a href="/tags/MVVM/">MVVM</a>
       
     </div>
   </section>
@@ -260,19 +241,46 @@
     <div class="post-wrapper">
       <article class="post reveal">
   <section class="article typo">
-    <h1 id="nginx-的部署与配置笔记"><a href="#nginx-的部署与配置笔记" class="headerlink" title="nginx 的部署与配置笔记"></a>nginx 的部署与配置笔记</h1><p>现在很多网站用的都是 nginx 作为代理服务器, 所以为了进行 web 性能的优化, 自然也要折腾一下 nginx 的配置的.<br>
+    <h1 id="JavaScript-模块化"><a href="#JavaScript-模块化" class="headerlink" title="JavaScript 模块化"></a>JavaScript 模块化</h1><p>远古时期, 我们写的 js 都是都是通过 script 标签进行管理, 这使得项目一旦复杂, 页面内便会写上成堆的 script 标签来引入各种外部 js 文件, 而且我们还需要保证 js 的顺序, 因为一个 js 文件内的方法往往依赖另外的 js 来实现, 我们通过确保书写顺序来确保 js 的加载顺序, 这当然是极不方便的, 后来前端工程师们就开始了尝试 js 模块化的探索之旅.<br>
     <div class="time">
       <time class="iconfont icon-clock">
-        11月 8, 2018
+        9月 25, 2018
       </time>
     </div>
-    <a href="/nginx/" class="more iconfont icon-more" title="查看"></a>
+    <a href="/CommonJS-AMD-CMD/" class="more iconfont icon-more" title="查看"></a>
   </p></section>
   
   <section class="article">
     <div class="full-width auto-padding tags iconfont icon-tag ">
       
-      <a href="/tags/nginx/">nginx</a>
+      <a href="/tags/前端模块化/">前端模块化</a>
+      
+    </div>
+  </section>
+  
+</article>
+    </div>
+  
+    <div class="post-wrapper">
+      <article class="post reveal">
+  <section class="article typo">
+    <h1 id="AST"><a href="#AST" class="headerlink" title="AST"></a>AST</h1><h2 id="AST-简介"><a href="#AST-简介" class="headerlink" title="AST 简介"></a>AST 简介</h2><blockquote>
+<p>在计算机科学中, 抽象语法树(Abstract Syntax Tree, AST)或者简称语法树(Syntax Tree)是源代码语法解构的一种抽象表现, 它以树状的形式表现编程语言的语法结构，树上的每个节点都表示源代码中的一种结构. – <a href="https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9" target="_blank" rel="noopener">维基百科</a></p>
+</blockquote>
+<p>而在 JavaScript 中我们通过 JavaScript Parser 把代码转化为一颗抽象语法树（AST），这颗树定义了代码的结构，通过操纵这颗树，我们可以精准的定位到声明语句、赋值语句、运算语句等等，实现对代码的分析、优化、变更等操作. 然后浏览器会把 js 源码通过解析器转为抽象语法树，再进一步转化为字节码或直接生成机器码. – <a href="https://www.jianshu.com/p/b9f14f384954" target="_blank" rel="noopener">简书文章</a></p>
+<p>关于 Vue 的语法树解析可以查看<a href="https://github.com/answershuto/learnVue/blob/master/docs/%E8%81%8A%E8%81%8AVue%E7%9A%84template%E7%BC%96%E8%AF%91.MarkDown" target="_blank" rel="noopener">这里</a><br>
+    <div class="time">
+      <time class="iconfont icon-clock">
+        9月 24, 2018
+      </time>
+    </div>
+    <a href="/AST/" class="more iconfont icon-more" title="查看"></a>
+  </p></section>
+  
+  <section class="article">
+    <div class="full-width auto-padding tags iconfont icon-tag ">
+      
+      <a href="/tags/AST/">AST</a>
       
     </div>
   </section>
@@ -286,7 +294,7 @@
   <nav id="page-nav">
     
     
-    <a class="next" rel="next" href="/categories/front-end/page/2/">
+    <a class="next" rel="next" href="/categories/Front-end/page/2/">
       <span class="text">下一页</span>
       <span class="iconfont icon-arrow-circle-right"></span>
     </a>
@@ -313,9 +321,11 @@
     
     <ul class="entry">
     
-        <li><a class="flat-box" href="/categories/front-end/"><div class="name">front-end</div><div class="badget">11</div></a></li>
+        <li><a class="flat-box" href="/categories/Front-end/"><div class="name">Front-end</div><div class="badget">10</div></a></li>
     
-        <li><a class="flat-box" href="/categories/前端/"><div class="name">前端</div><div class="badget">9</div></a></li>
+        <li><a class="flat-box" href="/categories/daily/"><div class="name">daily</div><div class="badget">1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/front-end/"><div class="name">front-end</div><div class="badget">13</div></a></li>
     
         <li><a class="flat-box" href="/categories/工具/"><div class="name">工具</div><div class="badget">5</div></a></li>
     
@@ -332,7 +342,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class="content">
-        <a href="/tags/AST/" style="font-size: 14px; color: #808080">AST</a> <a href="/tags/CORS/" style="font-size: 14px; color: #808080">CORS</a> <a href="/tags/CSS/" style="font-size: 14px; color: #808080">CSS</a> <a href="/tags/Content-Type/" style="font-size: 14px; color: #808080">Content-Type</a> <a href="/tags/ES6/" style="font-size: 14px; color: #808080">ES6</a> <a href="/tags/Generator/" style="font-size: 14px; color: #808080">Generator</a> <a href="/tags/HTTP/" style="font-size: 14px; color: #808080">HTTP</a> <a href="/tags/HTTP-2-0/" style="font-size: 14px; color: #808080">HTTP/2.0</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #808080">JavaScript</a> <a href="/tags/MVC/" style="font-size: 14px; color: #808080">MVC</a> <a href="/tags/MVP/" style="font-size: 14px; color: #808080">MVP</a> <a href="/tags/MVVM/" style="font-size: 14px; color: #808080">MVVM</a> <a href="/tags/Mini-Program/" style="font-size: 14px; color: #808080">Mini-Program</a> <a href="/tags/Promise/" style="font-size: 14px; color: #808080">Promise</a> <a href="/tags/SASS/" style="font-size: 14px; color: #808080">SASS</a> <a href="/tags/ast/" style="font-size: 14px; color: #808080">ast</a> <a href="/tags/async/" style="font-size: 14px; color: #808080">async</a> <a href="/tags/bash/" style="font-size: 14px; color: #808080">bash</a> <a href="/tags/codeStyle/" style="font-size: 14px; color: #808080">codeStyle</a> <a href="/tags/cookie/" style="font-size: 14px; color: #808080">cookie</a> <a href="/tags/css/" style="font-size: 20px; color: #000">css</a> <a href="/tags/docker/" style="font-size: 14px; color: #808080">docker</a> <a href="/tags/encrypt/" style="font-size: 20px; color: #000">encrypt</a> <a href="/tags/flex/" style="font-size: 14px; color: #808080">flex</a> <a href="/tags/function/" style="font-size: 14px; color: #808080">function</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/github/" style="font-size: 14px; color: #808080">github</a> <a href="/tags/http/" style="font-size: 14px; color: #808080">http</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/markdown/" style="font-size: 14px; color: #808080">markdown</a> <a href="/tags/nginx/" style="font-size: 14px; color: #808080">nginx</a> <a href="/tags/object/" style="font-size: 14px; color: #808080">object</a> <a href="/tags/same-origin/" style="font-size: 14px; color: #808080">same-origin</a> <a href="/tags/service-worker/" style="font-size: 14px; color: #808080">service-worker</a> <a href="/tags/speed/" style="font-size: 14px; color: #808080">speed</a> <a href="/tags/ssh/" style="font-size: 14px; color: #808080">ssh</a> <a href="/tags/todo/" style="font-size: 14px; color: #808080">todo</a> <a href="/tags/vue/" style="font-size: 14px; color: #808080">vue</a> <a href="/tags/web-font/" style="font-size: 14px; color: #808080">web-font</a> <a href="/tags/web优化/" style="font-size: 14px; color: #808080">web优化</a> <a href="/tags/yahoo/" style="font-size: 14px; color: #808080">yahoo</a> <a href="/tags/前端模块化/" style="font-size: 14px; color: #808080">前端模块化</a>
+        <a href="/tags/AST/" style="font-size: 14px; color: #808080">AST</a> <a href="/tags/CORS/" style="font-size: 14px; color: #808080">CORS</a> <a href="/tags/CSS/" style="font-size: 14px; color: #808080">CSS</a> <a href="/tags/Content-Type/" style="font-size: 14px; color: #808080">Content-Type</a> <a href="/tags/ES6/" style="font-size: 17px; color: #404040">ES6</a> <a href="/tags/Generator/" style="font-size: 14px; color: #808080">Generator</a> <a href="/tags/HTTP/" style="font-size: 14px; color: #808080">HTTP</a> <a href="/tags/HTTP-2-0/" style="font-size: 14px; color: #808080">HTTP/2.0</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #808080">JavaScript</a> <a href="/tags/MVC/" style="font-size: 14px; color: #808080">MVC</a> <a href="/tags/MVP/" style="font-size: 14px; color: #808080">MVP</a> <a href="/tags/MVVM/" style="font-size: 14px; color: #808080">MVVM</a> <a href="/tags/Mini-Program/" style="font-size: 14px; color: #808080">Mini-Program</a> <a href="/tags/Promise/" style="font-size: 14px; color: #808080">Promise</a> <a href="/tags/SASS/" style="font-size: 14px; color: #808080">SASS</a> <a href="/tags/ast/" style="font-size: 14px; color: #808080">ast</a> <a href="/tags/async/" style="font-size: 14px; color: #808080">async</a> <a href="/tags/bash/" style="font-size: 14px; color: #808080">bash</a> <a href="/tags/codeStyle/" style="font-size: 14px; color: #808080">codeStyle</a> <a href="/tags/cookie/" style="font-size: 14px; color: #808080">cookie</a> <a href="/tags/css/" style="font-size: 20px; color: #000">css</a> <a href="/tags/docker/" style="font-size: 14px; color: #808080">docker</a> <a href="/tags/encrypt/" style="font-size: 17px; color: #404040">encrypt</a> <a href="/tags/flex/" style="font-size: 14px; color: #808080">flex</a> <a href="/tags/function/" style="font-size: 14px; color: #808080">function</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/github/" style="font-size: 14px; color: #808080">github</a> <a href="/tags/h5/" style="font-size: 14px; color: #808080">h5</a> <a href="/tags/http/" style="font-size: 14px; color: #808080">http</a> <a href="/tags/javascript/" style="font-size: 14px; color: #808080">javascript</a> <a href="/tags/markdown/" style="font-size: 14px; color: #808080">markdown</a> <a href="/tags/nginx/" style="font-size: 14px; color: #808080">nginx</a> <a href="/tags/object/" style="font-size: 14px; color: #808080">object</a> <a href="/tags/same-origin/" style="font-size: 14px; color: #808080">same-origin</a> <a href="/tags/service-worker/" style="font-size: 14px; color: #808080">service-worker</a> <a href="/tags/speed/" style="font-size: 14px; color: #808080">speed</a> <a href="/tags/ssh/" style="font-size: 14px; color: #808080">ssh</a> <a href="/tags/todo/" style="font-size: 14px; color: #808080">todo</a> <a href="/tags/vue/" style="font-size: 14px; color: #808080">vue</a> <a href="/tags/web-font/" style="font-size: 14px; color: #808080">web-font</a> <a href="/tags/web优化/" style="font-size: 14px; color: #808080">web优化</a> <a href="/tags/yahoo/" style="font-size: 14px; color: #808080">yahoo</a> <a href="/tags/前端模块化/" style="font-size: 14px; color: #808080">前端模块化</a>
     </div>
 </div>
 

@@ -12,66 +12,76 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <!-- <script src="./vconsole.min.js"></script> -->
 
-    <style>
-        @font-face {
-            font-family: "RobotoMono Iconfont";
-            src: url('https://store.kricsleo.com/blog/static/fonts/RobotoMono-Iconfont.ttf') format('truetype');
-            font-display: optional;
-        }
-
-        .box {
-            width: 800px;
-            height: 500px;
-            margin: 20px;
-            background-color: aqua;
-            transition: all .4s;
-        }
-
-        .box-container {
-            width: 140%;
-            height: 500px;
-        }
-
-        .box-container .box-inline {
-            display: inline-block;
-            width: 33%;
-            height: 100%;
-            background-color: lightcoral;
-        }
-
-        img:after {
-            content: 'loading';
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-
-    </style>
-    <!-- <script src='index.js'></script> -->
-    <script>
-        const img = new Image();
-        const s = document.createElement('script');
-        s.src = 'https://ssl.google-analytics.com/ga.js';
-        for(let i = 0; i < 10; i++) {
-            setTimeout(() => {
-                img.src = `https://lorempixel.com/1080/760/${i}`;
-            }, 500);
-        }
-        document.body.appendChild(img);
-    </script>
 </head>
 
 <body>
+    <input id="input" type="file" multiple />
+    <img id="img" src="" alt="">
+    <div id="content"></div>
+    <input type="text" class="input" />
+    <p class="text"></p>
 
-    <h1>demo page</h1>
-    <div class="box box-1">box-1</div>
-    <div class="box box-2">box-2</div>
-    <div class="box box-3">box-3</div>
-    <div class="box-container">
-        <div class="box-inline">inline-1</div>
-        <div class="box-inline">inline-2</div>
-        <div class="box-inline">inline-3</div>
-    </div>
+    <script>
+        // variables start
+        const doc = document;
+        // variables end
+
+        // FileReader
+        const Input = doc.getElementById('input');
+        const Img = doc.getElementById('img');
+        const Content = doc.getElementById('content');
+
+        let fileType;
+
+        Input.addEventListener('change', e => {
+            const { target: { files } } = e;
+            console.log(files);
+            Array.from(files).forEach(file => {
+                const fileReader = new FileReader();
+                const fileType = file.type;
+                fileReader.addEventListener('load', res => {
+                    console.log(res);
+                    const { target: { result } } = res;
+                    if (fileType.startsWith('image')) {
+                        Img.src = result;
+                    } else if (fileType.startsWith('text')) {
+                        Content.innerHTML = result;
+                    }
+                });
+                if(fileType.startsWith('image')) {
+                    fileReader.readAsDataURL(file);
+                } else if(fileType.startsWith('text')) {
+                    fileReader.readAsText(file);
+                }
+            });
+        });
+
+        // Proxy
+        const Text = doc.getElementsByClassName('text')[0];
+        const Input2 = doc.getElementsByClassName('input')[0];
+        Input2.addEventListener('input', e => {
+            const { target: { value } } = e;
+            p.text = value;
+        });
+
+        const p = new Proxy({}, {
+            set(target, prop, value) {
+                Text.innerHTML = value;
+                target[prop] = value;
+            }
+        });
+
+        const info = {
+            gender: 'male'
+        }
+
+        const ori = {
+            name: 'ori',
+            info: info
+        }
+        const a = Object.create(ori);
+        const b = Object.create(ori);
+    </script>
 </body>
 
 </html>
