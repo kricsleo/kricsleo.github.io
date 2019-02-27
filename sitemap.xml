@@ -4,7 +4,77 @@
   <url>
     <loc>https://kricsleo.github.io/todo/</loc>
     
-    <lastmod>2019-02-25T05:10:49.689Z</lastmod>
+    <lastmod>2019-02-26T05:49:29.585Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/ES6-map-set-symbol/</loc>
+    
+    <lastmod>2019-02-26T05:39:51.450Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/js-object/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.730Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/Mini-Program/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.715Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/practical-function-in-javascript/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.715Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/IIFE/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/flex/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.713Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/AST/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/same-origin-and-CORS/</loc>
+    
+    <lastmod>2019-02-25T05:16:45.669Z</lastmod>
     
   </url>
   
@@ -40,76 +110,6 @@
     <loc>https://kricsleo.github.io/Proxy/</loc>
     
     <lastmod>2019-01-21T01:17:25.980Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/ES6-map-set-symbol/</loc>
-    
-    <lastmod>2019-01-18T05:48:11.499Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/flex/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.579Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.579Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/IIFE/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/js-object/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/Mini-Program/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/same-origin-and-CORS/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/practical-function-in-javascript/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.564Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/AST/</loc>
-    
-    <lastmod>2019-01-17T12:27:29.563Z</lastmod>
     
   </url>
   
@@ -212,13 +212,6 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
-    
-    <lastmod>2018-09-29T01:02:49.799Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/unicode-utf8/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
@@ -227,6 +220,13 @@
   
   <url>
     <loc>https://kricsleo.github.io/base64-md5/</loc>
+    
+    <lastmod>2018-09-29T01:02:49.799Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/docker/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     

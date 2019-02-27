@@ -99,12 +99,6 @@
 						</li>
 					
 						<li>
-							<a class="flat-box nav-categories" href="/categories">
-								Categories
-							</a>
-						</li>
-					
-						<li>
 							<a class="flat-box nav-archives" href="/archives">
 								Archives
 							</a>
@@ -154,7 +148,7 @@
       <div class='l_main'>
         <article id="post-ES6-map-set-symbol" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
 	
-		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ES6中新的数据类型"><span class="toc-number">1.</span> <span class="toc-text">ES6中新的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Map"><span class="toc-number">1.1.</span> <span class="toc-text">Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Map相关API"><span class="toc-number">1.1.1.</span> <span class="toc-text">Map相关API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Map与其他数据类型的转换"><span class="toc-number">1.1.2.</span> <span class="toc-text">Map与其他数据类型的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#弱化的WeakMap"><span class="toc-number">1.1.3.</span> <span class="toc-text">弱化的WeakMap</span></a></li></ol></li></ol></li></ol></section>
+		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ES6中新的数据类型"><span class="toc-number">1.</span> <span class="toc-text">ES6中新的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Map"><span class="toc-number">1.1.</span> <span class="toc-text">Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Map相关API"><span class="toc-number">1.1.1.</span> <span class="toc-text">Map相关API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Map与其他数据类型的转换"><span class="toc-number">1.1.2.</span> <span class="toc-text">Map与其他数据类型的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#弱化的WeakMap"><span class="toc-number">1.1.3.</span> <span class="toc-text">弱化的WeakMap</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Set"><span class="toc-number">1.2.</span> <span class="toc-text">Set</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Set相关API"><span class="toc-number">1.2.1.</span> <span class="toc-text">Set相关API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WeakSet"><span class="toc-number">1.2.2.</span> <span class="toc-text">WeakSet</span></a></li></ol></li></ol></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
@@ -196,6 +190,17 @@
 <p>之所以特意设计<code>WeakMap</code>这个类型, 实际是为了解决浏览器的内存释放问题, 浏览器内存的垃圾回收机制中其中一种叫<code>引用计数法</code>, 当一个对象的被引用次数大于等于1的时候, 浏览器是不会去清除回收这个对象的, 在老旧的IE中经常出现代码中引用了某个<code>DOM</code>元素, 但是由于当时的底层机制, 这个引用无法被清除, 导致<code>DOM</code>对象一直留存在内存中, 最后可能就会拖垮浏览器(现代的浏览器不会这样了), 所以考虑到有时候我们并不需要一个对象一直被引用导致内存空间无法被回收, 然后设计了<code>WeakMap</code>这个类型.</p>
 <p><code>WeakMap</code>中的键名所引用的对象是不会被<code>引用计数法</code>算作是引用的, 也就是说在内存回收的时候, 如果别的地方都没有使用这个对象了, 即使在<code>WeakMap</code>中有键名是在引用这个对象的, 那么浏览器也还是会回收这个对象, 释放掉它占用的内存. 需要注意的是这个弱化的过程只是弱化了键名的引用, 键值如果引用了某个对象, 那个对象是会被算做引用<code>+1</code>的.</p>
 <p>一旦键名引用的对象被回收掉了, 那么<code>WeakMap</code>中对应的这一项也会被自动清除, 不需要我们手动<code>delete()</code>删除这一项. 一个典型应用场景是，在网页的<code>DOM</code>元素上添加数据，就可以使用<code>WeakMap</code>结构。当该<code>DOM</code>元素被清除，其所对应的<code>WeakMap</code>记录就会自动被移除. 更详细的例子可以查看<a href="http://es6.ruanyifeng.com/#docs/set-map" target="_blank" rel="noopener">这里</a>.</p>
+<h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a><code>Set</code></h2><p>ES6 为了改善之前一直使用<code>{}</code>来创建键值对形式的数据而新增了<code>Map</code>, 同样为了改善数组形式数据的使用而新增了<code>Set</code>, <code>Set</code>类似于数组, 但是其中的值都是唯一的, 不存在重复.(不会重复这一点可以用来去重或者交集并集等等)</p>
+<h3 id="Set相关API"><a href="#Set相关API" class="headerlink" title="Set相关API"></a><code>Set</code>相关API</h3><ol>
+<li><code>Set</code>本身是一个构造函数, 参数可以是数组或者其它有<code>iterable</code>接口的数据. 例如:</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="keyword">new</span> <span class="built_in">Set</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> b = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>]); <span class="comment">// a =&gt; 1, 2, 3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> c = <span class="keyword">new</span> <span class="built_in">Set</span>(<span class="string">'aabaa'</span>); <span class="comment">// c =&gt; a, b</span></span><br></pre></td></tr></table></figure>
+<p><code>Array.from()</code>可以把<code>Set</code>转为普通数据.</p>
+<ol start="2">
+<li>其它api</li>
+</ol>
+<p>2.1 <code>add()</code>: 添加数据<br>2.2 <code>delete()</code>: 删除数据<br>2.3 <code>clear()</code>: 删除所有数据<br>2.4 <code>has()</code>: 判断是否有某个数据<br>2.5 <code>size</code>: 返回数据数目<br>2.6 <code>keys()</code>: 遍历键(与值实际相等)<br>2.7 <code>values()</code>: 遍历值<br>2.8 <code>entries()</code> 遍历键值对(键与值相等)<br>2.9 <code>forEach()</code>: 遍历值</p>
+<h3 id="WeakSet"><a href="#WeakSet" class="headerlink" title="WeakSet"></a><code>WeakSet</code></h3><p>ES6 同样也为<code>Set</code>提供了<code>WeakSet</code>类型, 与<code>WeakMap</code>十分相似, <code>WeakSet</code>中的值只能是对象, 不能是其他类型的值, 同样也是不计算引用次数的. 使用时可以用<code>new WeakSet()</code>来构建, 其他api与<code>Set</code>一致, 不过出于跟<code>WeakMap</code>相同的原因, 也是不能遍历的.</p>
 
   	</div>
 	  
@@ -250,11 +255,9 @@
     
     <ul class="entry">
     
-        <li><a class="flat-box" href="/categories/Front-end/"><div class="name">Front-end</div><div class="badget">10</div></a></li>
-    
         <li><a class="flat-box" href="/categories/daily/"><div class="name">daily</div><div class="badget">1</div></a></li>
     
-        <li><a class="flat-box" href="/categories/front-end/"><div class="name">front-end</div><div class="badget">13</div></a></li>
+        <li><a class="flat-box" href="/categories/front-end/"><div class="name">front-end</div><div class="badget">23</div></a></li>
     
         <li><a class="flat-box" href="/categories/工具/"><div class="name">工具</div><div class="badget">5</div></a></li>
     
