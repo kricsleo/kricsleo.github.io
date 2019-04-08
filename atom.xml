@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2019-02-25T05:09:58.439Z</updated>
+  <updated>2019-03-15T05:18:32.846Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>toFixed</title>
+    <link href="https://kricsleo.github.io/toFixed/"/>
+    <id>https://kricsleo.github.io/toFixed/</id>
+    <published>2019-03-15T02:41:44.000Z</published>
+    <updated>2019-03-15T05:18:32.846Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;JS-中的-toFixed精度问题&quot;&gt;&lt;a href=&quot;#JS-中的-toFixed精度问题&quot; class=&quot;headerlink&quot; title=&quot;JS 中的 toFixed精度问题&quot;&gt;&lt;/a&gt;JS 中的 &lt;code&gt;toFixed&lt;/code&gt;精度问题&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+    
+      <category term="js怪异事件录" scheme="https://kricsleo.github.io/tags/js%E6%80%AA%E5%BC%82%E4%BA%8B%E4%BB%B6%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>constraint-validation</title>
@@ -101,7 +124,7 @@
     <link href="https://kricsleo.github.io/todo/"/>
     <id>https://kricsleo.github.io/todo/</id>
     <published>2019-01-16T08:22:30.000Z</published>
-    <updated>2019-02-26T05:49:29.585Z</updated>
+    <updated>2019-03-12T02:29:59.461Z</updated>
     
     <summary type="html">
     
@@ -418,26 +441,6 @@
       <category term="MVP" scheme="https://kricsleo.github.io/tags/MVP/"/>
     
       <category term="MVVM" scheme="https://kricsleo.github.io/tags/MVVM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CommonJS-AMD-CMD-ES6</title>
-    <link href="https://kricsleo.github.io/CommonJS-AMD-CMD/"/>
-    <id>https://kricsleo.github.io/CommonJS-AMD-CMD/</id>
-    <published>2018-09-25T08:49:17.000Z</published>
-    <updated>2019-02-25T05:16:45.714Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;JavaScript-模块化&quot;&gt;&lt;a href=&quot;#JavaScript-模块化&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 模块化&quot;&gt;&lt;/a&gt;JavaScript 模块化&lt;/h1&gt;&lt;p&gt;远古时期, 我们写的 js 都是都是通过 script 标签进行管理, 这使得项目一旦复杂, 页面内便会写上成堆的 script 标签来引入各种外部 js 文件, 而且我们还需要保证 js 的顺序, 因为一个 js 文件内的方法往往依赖另外的 js 来实现, 我们通过确保书写顺序来确保 js 的加载顺序, 这当然是极不方便的, 后来前端工程师们就开始了尝试 js 模块化的探索之旅.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
-    
-    
-      <category term="前端模块化" scheme="https://kricsleo.github.io/tags/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
     
   </entry>
   
