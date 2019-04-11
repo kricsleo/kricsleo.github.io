@@ -238,6 +238,8 @@
 </li>
 <li><p>text<br><code>text</code>组件内只支持嵌套<code>text</code></p>
 </li>
+<li><p>cover-view<br> 在ios中如果<code>cover-view</code>内的文字使用了<code>rotate</code>旋转, 那么文字将会显示不全, 只能显示一个文字, 官方bug没有修复, 见<a href="https://developers.weixin.qq.com/community/develop/doc/00088a24548420b41d47a08f158400" target="_blank" rel="noopener">cover-view使用transform rotate后内容会被裁剪</a>, 目前的做法最简单的是把文字做成图片, 另一种很麻烦的做法是一个<code>cover-view</code>一个文字, 计算每个<code>cover-view</code>的文字, 最后拼成整行的文字.</p>
+</li>
 </ol>
 <h2 id="request"><a href="#request" class="headerlink" title="request"></a>request</h2><p><code>GET</code>一般都正常, 但是<code>POST</code>请求真可谓是’一千个读者有一千个哈姆雷特’, 各种失败的情况都有, 可尝试如下方法:</p>
 <ol>

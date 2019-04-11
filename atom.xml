@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2019-03-15T05:18:32.846Z</updated>
+  <updated>2019-04-11T06:07:18.822Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -21,14 +21,12 @@
     <link href="https://kricsleo.github.io/toFixed/"/>
     <id>https://kricsleo.github.io/toFixed/</id>
     <published>2019-03-15T02:41:44.000Z</published>
-    <updated>2019-03-15T05:18:32.846Z</updated>
+    <updated>2019-04-11T06:07:18.822Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;JS-中的-toFixed精度问题&quot;&gt;&lt;a href=&quot;#JS-中的-toFixed精度问题&quot; class=&quot;headerlink&quot; title=&quot;JS 中的 toFixed精度问题&quot;&gt;&lt;/a&gt;JS 中的 &lt;code&gt;toFixed&lt;/code&gt;精度问题&lt;/h1&gt;
-      
+      &lt;h1 id=&quot;JS-中的-toFixed精度问题&quot;&gt;&lt;a href=&quot;#JS-中的-toFixed精度问题&quot; class=&quot;headerlink&quot; title=&quot;JS 中的 toFixed精度问题&quot;&gt;&lt;/a&gt;JS 中的 &lt;code&gt;toFixed&lt;/code&gt;精度问题&lt;/h1&gt;&lt;p&gt;在关于金额的计算中经常会出现精确到两位小数的情况, 然后如果直接使用js的&lt;code&gt;number.toFixed()&lt;/code&gt;方法其实会导致意想不到的问题, 比如你可以猜一下下面表达式的执行结果&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;0.1&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;0.2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;number&quot;&gt;1.555&lt;/span&gt;).toFixed(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
