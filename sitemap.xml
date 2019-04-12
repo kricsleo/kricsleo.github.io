@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/web-load-performance/</loc>
+    
+    <lastmod>2019-04-12T06:16:12.245Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/toFixed/</loc>
     
     <lastmod>2019-04-11T06:07:18.822Z</lastmod>
