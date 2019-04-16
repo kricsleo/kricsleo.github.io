@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2019-04-16T01:53:48.980Z</updated>
+  <updated>2019-04-16T01:58:10.073Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://kricsleo.github.io/translate-you-might-not-need-redux/"/>
     <id>https://kricsleo.github.io/translate-you-might-not-need-redux/</id>
     <published>2019-04-15T08:06:39.000Z</published>
-    <updated>2019-04-16T01:53:48.980Z</updated>
+    <updated>2019-04-16T01:58:10.073Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;翻译-lt-gt&quot;&gt;&lt;a href=&quot;#翻译-lt-gt&quot; class=&quot;headerlink&quot; title=&quot;翻译&amp;lt;&amp;gt;&quot;&gt;&lt;/a&gt;翻译&amp;lt;&lt;you might=&quot;&quot; not=&quot;&quot; need=&quot;&quot; redux=&quot;&quot;&gt;&amp;gt;&lt;/you&gt;&lt;/h1&gt;&lt;p&gt;闲来无事, 翻译下我挺喜欢的一个程序员 Dan Abromov 的一篇文章&lt;a href=&quot;https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;lt;&lt;you might=&quot;&quot; not=&quot;&quot; need=&quot;&quot; redux=&quot;&quot;&gt;&amp;gt;&lt;/you&gt;&lt;/a&gt;, 因为我对于 redux 的用法也还很浅显, 里面也还存在着错误的用法, 多看看别人的一些优秀的工程, 慢慢会有更好的体会吧.&lt;/p&gt;
+      &lt;h1 id=&quot;翻译《You-Might-Not-Need-Redux》&quot;&gt;&lt;a href=&quot;#翻译《You-Might-Not-Need-Redux》&quot; class=&quot;headerlink&quot; title=&quot;翻译《You Might Not Need Redux》&quot;&gt;&lt;/a&gt;翻译《You Might Not Need Redux》&lt;/h1&gt;&lt;p&gt;闲来无事, 翻译下我挺喜欢的一个程序员 Dan Abromov 的一篇文章&lt;a href=&quot;https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《You Might Not Need Redux》&lt;/a&gt;, 因为我对于 redux 的用法也还很浅显, 里面也还存在着错误的用法, 多看看别人的一些优秀的工程, 慢慢会有更好的体会吧.&lt;/p&gt;
 &lt;p&gt;以下为翻译.&lt;/p&gt;
     
     </summary>
