@@ -4,35 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>richedit</title>
+  <title>demo</title>
   <style>
-    img {
-      display: inline-block;
-      width: 70px;
-      height: 70px;
+    .container {
+      position: relative;
     }
-    img.error {
-      background-image: url(https://b-gold-cdn.xitu.io/v3/static/img/image-error.3338abe.png);
-      background-repeat: no-repeat;
-      background-position: center;
+    .input,
+    .image {
+      position: absolute;
+    }
+    .input {
+      top: 20px;
+      left: 20px;
     }
   </style>
 </head>
 <body>
-  <img src="https://source.unsplash.com/70x70" alt="">
-  <img src="https://source.unsplash.com/70x70" alt="">
-  <img src="https://source.ukknsplash.com/70x70" alt="">
-  <img src="https://source.unsplas99h.com/70x70" alt="">
+  <div class="container">
+    <input class="input" id='code' type="text" autofocus='autofocus'>
+    <image class="image" src='https://source.unsplash.com/200x200' alt='pic' />
+  </div>
+  
 
   <script>
-    const imgs = document.getElementsByTagName('img');
-    function error(e) {
-      const { target } = e;
-      target.classList.add('error');
-    }
-    Array.from(imgs).forEach(img => {
-      img.onerror = error
+    var doc = document;
+    var _input = doc.getElementById('code');
+    _input.addEventListener('blur', function() {
+      _input.focus();
     });
+    _input.addEventListener('input', function() {
+      console.log(_input.value);
+    })
   </script>
 </body>
 </html>

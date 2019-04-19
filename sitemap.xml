@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/docker/</loc>
+    
+    <lastmod>2019-04-19T08:13:36.805Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/todo/</loc>
+    
+    <lastmod>2019-04-17T10:13:38.620Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/translate-you-might-not-need-redux/</loc>
     
-    <lastmod>2019-04-16T02:02:13.804Z</lastmod>
+    <lastmod>2019-04-16T02:11:41.906Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>https://kricsleo.github.io/Mini-Program/</loc>
     
     <lastmod>2019-04-08T11:30:22.476Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/todo/</loc>
-    
-    <lastmod>2019-03-12T02:29:59.461Z</lastmod>
     
   </url>
   
@@ -234,13 +241,6 @@
   
   <url>
     <loc>https://kricsleo.github.io/unicode-utf8/</loc>
-    
-    <lastmod>2018-09-29T01:02:49.799Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
