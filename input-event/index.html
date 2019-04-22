@@ -9,7 +9,7 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Tag: speed | kricsleo</title>
+  <title>input-event | kricsleo</title>
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="kricsleo">
   <style>
@@ -146,41 +146,53 @@
   <div class="l_body" style="display: none;">
     <div class='container clearfix'>
       <div class='l_main'>
-        
-  <script>
-    window.subData= { title:'Tag : speed'}
-  </script>
-
-<section class="post-list">
+        <article id="post-input-event" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
 	
-    <div class="post-wrapper">
-      <article class="post reveal">
-  <section class="article typo">
-    <h1 id="yahoo-的网站优化实践军规"><a href="#yahoo-的网站优化实践军规" class="headerlink" title="yahoo 的网站优化实践军规"></a>yahoo 的网站优化实践军规</h1><p>yahoo 的网站优化军规已经出来很多年了, 我是最近才看到, 然后做一下笔记, 也比对一下自己现在做的怎么样.</p>
-<p>原文地址: <a href="https://developer.yahoo.com/performance/rules.html?guccounter=1" target="_blank" rel="noopener">Best Practices for Speeding Up Your Web Site</a><br>
-    <div class="time">
-      <time class="iconfont icon-clock">
-        11月 15, 2018
-      </time>
-    </div>
-    <a href="/yahoo-best-practices-for-speeding-up-your-Web-Site/" class="more iconfont icon-more" title="查看"></a>
-  </p></section>
-  
-  <section class="article">
-    <div class="full-width auto-padding tags iconfont icon-tags ">
-      
-      <a href="/tags/yahoo/">yahoo</a>
-      
-      <a href="/tags/speed/">speed</a>
-      
-    </div>
-  </section>
-  
-</article>
-    </div>
-  
-</section>
+		<section class="toc-wrapper active"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#input-元素的事件顺序"><span class="toc-number">1.</span> <span class="toc-text">input 元素的事件顺序</span></a></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<h1 id="input-元素的事件顺序"><a href="#input-元素的事件顺序" class="headerlink" title="input 元素的事件顺序"></a>input 元素的事件顺序</h1><p>h5 的<code>&lt;input /&gt;</code>组件上有很多的事件, 这次来详细的探究一下它们的触发顺序和使用场景</p>
+<a id="more"></a>
+<p>我的测试是在 chrome 版本 73.0.3683.75（正式版本）（64 位）环境, 其它的浏览器可能有不同, 有时间再补充其它浏览器吧.</p>
+<p>目前来说比较常用的有<code>focus</code>/<code>keydown</code>/<code>input</code>/<code>keyup</code>/<code>compositionstart</code>/<code>compositionupdate</code>/<code>compositionend</code>/<code>change</code> </p>
+<p>点击一个输入框开始输入触发的事件顺序依次是: </p>
+<p><code>focus</code>=&gt;<code>keydown</code>(=&gt;<code>compositionstart</code>=&gt;<code>compositionupdate</code>)=&gt;<code>input</code>(=&gt;<code>compositionend</code>)=&gt;<code>keyup</code>  </p>
+<p> 如果是组合输入(比如中文日文等)输入的话就会出现括号中组合输入事件, 详细来说是当开始输入中文的时候就会触发<code>compositionstart</code>事件, 此时<code>input</code>事件和<code>keyup</code>事件拿到的输入框的值是不完整的(一般包含你输入的拼音和拼音之间的分号), 当中文输入结束的时候会触发<code>compositionend</code>事件, 此时可以取到该输入框的完整的输入中文后的值(一般而言这个值是我们所需要的)</p>
+<p> (额外的一点是从<code>input</code>事件开始可以拿到最新输入的值, 前面的事件拿到的值都要落后一次, 少了最后一次输入的字符)</p>
+<p><code>change</code>事件的触发需要<strong>两个条件</strong>, 一是<code>input</code>元素即将失焦, 事件顺序是<code>change</code>=&gt;<code>blur</code>, 二是本次失焦后的内容与前一次失焦后的内容不同(如果相同是不会触发该事件的),</p>
+<p>最常用的场景之一是<code>input</code>用来搜索的时候, 我们的需求是输入变化的时候就去查询(当然有节流), 但是在中文输入的时候就不要查询, 直到中文输入结束之后再查询, 这样可以避免用一些明显无效的关键词如<code>文章n&#39;r</code>去查询, 等到完整中文输入后变成<code>文章内容</code>再去查询</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">throttle</span>(<span class="params">fn, minDelay, maxDelay</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> timer;</span><br><span class="line">  <span class="keyword">let</span> startTime = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> context = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">const</span> args = <span class="built_in">arguments</span>;</span><br><span class="line">    <span class="keyword">let</span> curTime = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    clearTimeout(timer);</span><br><span class="line">    <span class="keyword">if</span> (curTime - startTime &gt;= maxDelay) &#123;</span><br><span class="line">      fn.apply(context, args);</span><br><span class="line">      startTime = curTime;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      timer = setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        fn.apply(context, args);</span><br><span class="line">      &#125;, minDelay);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">listenInput</span>(<span class="params">selector, cb, delay = <span class="number">150</span>, maxDelay = <span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> el = <span class="built_in">document</span>.querySelector(selector);</span><br><span class="line">  <span class="keyword">if</span>(!el || !cb || <span class="keyword">typeof</span> cb !== <span class="string">'function'</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> throttleCB = throttle(cb, delay, maxDelay);</span><br><span class="line">  <span class="keyword">let</span> isComposition = <span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">const</span> compositionstart = <span class="function"><span class="params">()</span> =&gt;</span> isComposition = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">const</span> compositionend = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    isComposition = <span class="literal">false</span>;</span><br><span class="line">    throttleCB(el.value);</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">const</span> input = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(isComposition) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    throttleCB(el.value);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  el.addEventListener(<span class="string">'compositionstart'</span>, compositionstart);</span><br><span class="line">  el.addEventListener(<span class="string">'compositionend'</span>, compositionend);</span><br><span class="line">  el.addEventListener(<span class="string">'input'</span>, input);</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    el.removeEventListener(<span class="string">'compositionstart'</span>, compositionstart);</span><br><span class="line">    el.removeEventListener(<span class="string">'compositionend'</span>, compositionend);</span><br><span class="line">    el.removeEventListener(<span class="string">'input'</span>, input);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用示例</span></span><br><span class="line"><span class="comment">// 开始监听, 默认最小间隔时间是150ms, 最大间隔时间是1000ms</span></span><br><span class="line"><span class="keyword">const</span> removeListener = listenInput(<span class="string">'#inputId'</span>, value =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;, <span class="number">100</span>, <span class="number">1500</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 取消监听</span></span><br><span class="line">removeListener();</span><br></pre></td></tr></table></figure>
 
+  	</div>
+	  
+	  <div class="article-tags tags iconfont icon-tag">
+      
+        <a href="/tags/h5/">h5</a>
+      
+	  </div>
+    
+		
+	
+		<div class="art-item-footer">
+				
+				
+					<span class="art-item-right">下一篇: <a href="/translate-you-might-not-need-redux/" rel="next" title="翻译&lt;&lt;You Might Not Need Redux&gt;&gt;">
+						翻译&lt;&lt;You Might Not Need Redux&gt;&gt;
+					</a><i class="iconfont icon-arrow-circle-right"></i></span>
+				
+		</div>
+	
+	</section>
+	
+</article>
+<script>
+	window.subData = {
+		title: 'input-event',
+		subtitle: 'input 元素的事件顺序',
+		tools: true
+	}
+</script>
 
       </div>
       <aside class='l_side'>
