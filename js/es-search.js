@@ -373,8 +373,8 @@ function get(url, options) {
   if (!url.includes('?')) {
     url += '?'
   }
-  Object.keys(data).forEach(key => {
-    url += `&${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+  Object.keys(data).forEach((key, index) => {
+    url += `${index === 0 ? '' : '&'}${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
   });
   return fetch(url).then(res => {
     if (!res.ok) {
