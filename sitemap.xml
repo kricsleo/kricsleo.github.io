@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/docker/</loc>
+    
+    <lastmod>2019-04-24T02:38:27.891Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/todo/</loc>
     
-    <lastmod>2019-04-22T06:44:34.557Z</lastmod>
+    <lastmod>2019-04-22T06:45:28.209Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>https://kricsleo.github.io/input-event/</loc>
     
     <lastmod>2019-04-22T06:44:09.036Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
-    
-    <lastmod>2019-04-22T02:34:22.942Z</lastmod>
     
   </url>
   
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
+    <loc>https://kricsleo.github.io/AST/</loc>
     
     <lastmod>2019-02-25T05:16:45.670Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/AST/</loc>
+    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
     
     <lastmod>2019-02-25T05:16:45.670Z</lastmod>
     

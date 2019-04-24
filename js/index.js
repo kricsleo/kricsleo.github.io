@@ -1,5 +1,3 @@
-/* eslint-disable */
-let customSearch;
 (function () {
 
 	"use strict";
@@ -104,7 +102,6 @@ let customSearch;
 
 	function setHeaderSearch() {
 		const dSearch = dHeader.getElementsByClassName('m_search')[0];
-		const dSwitcher = dHeader.getElementsByClassName('s-search')[0];
 
 		// load search dynamically
 		dSearch.onclick = () => {
@@ -115,7 +112,8 @@ let customSearch;
 				s.src = '/js/search.js';
 				s.onload = function () {
 					customSearch = new HexoSearch({
-						imagePath: "/images/"
+						imagePath: "/images/",
+						endpoint: '/query?q='
 					});
 				}
 				doc.body.appendChild(s);
@@ -242,7 +240,7 @@ let customSearch;
 	win.addEventListener('scroll', () => throttleLazyLoading());
 	win.addEventListener('load', () => {
 		lazyLoadImg();
-		// registerSW();
+		registerSW();
 	});
 
 })();

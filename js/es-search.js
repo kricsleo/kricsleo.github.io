@@ -1,13 +1,13 @@
 /* eslint-disable */
 var SearchService = "";
-(function() {
+(function () {
   /**
    * A super class of common logics for all search services
    * @param options : (object)
    */
-  SearchService = function(options) {
+  SearchService = function (options) {
     var self = this;
-    
+
     self.config = Object.assign({}, {
       per_page: 10,
       selectors: {
@@ -46,7 +46,7 @@ var SearchService = "";
       current: 1
     };
 
-    self.parseSelectors = function() {
+    self.parseSelectors = function () {
       for (var key in self.config.selectors) {
         self.dom[key] = document.querySelector(self.config.selectors[key]);
       }
@@ -54,7 +54,7 @@ var SearchService = "";
       self.dom['input'] = document.querySelectorAll(self.config.selectors['input']);
     };
 
-    self.beforeQuery = function() {
+    self.beforeQuery = function () {
       if (!self.open) {
         fadeIn(self.dom.container);
         self.dom.body.classList.add('modal-active');
@@ -66,8 +66,8 @@ var SearchService = "";
       self.dom.modal_ajax_content.classList.remove('loaded');
       self.startLoading();
     };
-    
-    self.afterQuery = function() {
+
+    self.afterQuery = function () {
       self.dom.modal_body.scrollTop = 0;
       self.dom.modal_ajax_content.classList.add('loaded');
       self.stopLoading();
@@ -77,10 +77,10 @@ var SearchService = "";
      * Perform a complete search operation including UI updates and query
      * @param startIndex {int} start index or page number
      */
-    self.search = function(startIndex, callback) {
+    self.search = function (startIndex, callback) {
       self.beforeQuery();
       if (self.search instanceof Function) {
-        self.query(self.queryText, startIndex, function() {
+        self.query(self.queryText, startIndex, function () {
           self.afterQuery();
         });
       }
@@ -96,9 +96,9 @@ var SearchService = "";
      * @param queryText: (string)
      * @param status: (string)
      */
-    self.onQueryError = function(queryText, status) {
+    self.onQueryError = function (queryText, status) {
       var errMsg = "";
-      if (status === "success") errMsg = "No result found for \"" +queryText+ "\".";
+      if (status === "success") errMsg = "No result found for \"" + queryText + "\".";
       else if (status === "timeout") errMsg = "Unfortunate timeout.";
       else if (status === "error") errMsg = 'Something goes wrong.';
       else if (status === "empty") errMsg = 'Empty result.';
@@ -107,80 +107,80 @@ var SearchService = "";
       self.dom.modal_error.innerHTML = errMsg;
       self.dom.modal_error.style.display = 'block';
     };
-    
-    self.nextPage = function() {
+
+    self.nextPage = function () {
       if (self.nav.next !== -1) {
         self.search(self.nav.next);
       }
     };
-    
-    self.prevPage = function() {
+
+    self.prevPage = function () {
       if (self.nav.prev !== -1) {
         self.search(self.nav.prev);
       }
     };
-    
+
     /**
      * Generate html for one result
      * @param url : (string) url
      * @param title : (string) title
      * @param digest : (string) digest
      */
-    self.buildResult = function(url, title, digest) {
+    self.buildResult = function (url, title, digest) {
       var html = "";
       html = "<li>";
-      html +=   "<a class='result' href='" +url+ "'>";
-      html +=     "<span class='title'>" +title+ "</span>";
-      html +=     "<span class='digest'>" +digest+ "</span>";
-      html +=     "<span class='result-icon iconfont icon-arrow-circle-right'></span>";
-      html +=   "</a>";
+      html += "<a class='result' href='" + url + "'>";
+      html += "<span class='title'>" + title + "</span>";
+      html += "<span class='digest'>" + digest + "</span>";
+      html += "<span class='result-icon iconfont icon-arrow-circle-right'></span>";
+      html += "</a>";
       html += "</li>";
       return html;
     };
-    
+
     /**
      * Close the modal, resume body scrolling
      * no param
      */
-    self.close = function() {
+    self.close = function () {
       self.open = false;
       fadeOut(self.dom.container);
       self.dom.body.classList.remove('modal-active');
     };
-    
+
     /**
      * Searchform submit event handler
      * @param queryText : (string) the query text
      */
-    self.onSubmit = function(event) {
+    self.onSubmit = function (event) {
       event.preventDefault();
       self.queryText = event.currentTarget.getElementsByClassName('u-search-input')[0].value;
       if (self.queryText) {
         self.search(1);
       }
     };
-    
+
     /**
      * Start loading bar animation
      * no param
      */
-    self.startLoading = function() {
+    self.startLoading = function () {
       fadeOut(self.dom.modal_loading_bar);
-      self.loadingTimer = setInterval(function() { 
-        self.percentLoaded = Math.min(self.percentLoaded+5,95);
+      self.loadingTimer = setInterval(function () {
+        self.percentLoaded = Math.min(self.percentLoaded + 5, 95);
         self.dom.modal_loading_bar.style.width = `${self.percentLoaded}%`;
       }, 100);
     };
-    
+
     /**
      * Stop loading bar animation
      * no param
      */
-    self.stopLoading = function() {
+    self.stopLoading = function () {
       clearInterval(self.loadingTimer);
       self.dom.modal_loading_bar.style.width = '100%';
       self.dom.modal_loading_bar.style.opacity = 0;
-      setTimeout(function() {
+      setTimeout(function () {
         self.percentLoaded = 0;
         self.dom.modal_loading_bar.style.width = '0';
       }, 300);
@@ -190,17 +190,17 @@ var SearchService = "";
      * Add service branding
      * @param service {String} service name
      */
-    self.addLogo = function(service) {
+    self.addLogo = function (service) {
       var html = "";
       if (self.config.brands[service] && self.config.brands[service].logo) {
-        html += "<a href='" +self.config.brands[service].url+ "' class='" +service+ "'>";
-        html +=    '<img src="' +self.config.imagePath+self.config.brands[service].logo+ '" />';
+        html += "<a href='" + self.config.brands[service].url + "' class='" + service + "'>";
+        html += '<img src="' + self.config.imagePath + self.config.brands[service].logo + '" />';
         html += "</a>";
         self.dom.modal_logo.innerHTML = html;
       }
     };
 
-    self.destroy = function() {
+    self.destroy = function () {
       [...self.dom.form].forEach(item => item.removeEventListener('click'));
       self.dom.modal_overlay.removeEventListener('click');
       self.dom.btn_close.removeEventListener('click');
@@ -208,7 +208,7 @@ var SearchService = "";
       self.dom.btn_prev.removeEventListener('click');
       self.dom.container.parentNode.removeChild(self.dom.container);
     };
-    
+
     /**
      * Load template and register event handlers
      * no param
@@ -233,34 +233,33 @@ var SearchService = "";
 })();
 
 var HexoSearch;
-(function() {
+(function () {
   'use strict';
-  
+
   /**
   * Search by Hexo generator json content
   * @param options : (object)
   */
-  HexoSearch = function(options) {
+  HexoSearch = function (options) {
     SearchService.apply(this, arguments);
     var self = this;
-    self.config.endpoint = '/' + ((options||{}).endpoint || "content.json");
-    self.config.endpoint = self.config.endpoint.replace("//","/"); //make sure the url is correct
+    self.config.endpoint = '/' + ((options || {}).endpoint || "content.json");
+    self.config.endpoint = self.config.endpoint.replace("//", "/"); //make sure the url is correct
     self.cache = "";
-    
     /**
      * Search queryText in title and content of a post
      * Credit to: http://hahack.com/codes/local-search-engine-for-hexo/
      * @param post : the post object
      * @param queryText : the search query
      */
-    self.contentSearch = function(post, queryText) {
+    self.contentSearch = function (post, queryText) {
       var post_title = post.title.trim().toLowerCase(),
-          post_content = post.text.trim().toLowerCase(),
-          keywords = queryText.trim().toLowerCase().split(" "),
-          foundMatch = false,
-          index_title = -1,
-          index_content = -1,
-          first_occur = -1;
+        post_content = post.text.trim().toLowerCase(),
+        keywords = queryText.trim().toLowerCase().split(" "),
+        foundMatch = false,
+        index_title = -1,
+        index_content = -1,
+        first_occur = -1;
       if (post_title !== '' && post_content !== '') {
         keywords.forEach((word, index) => {
           index_title = post_title.indexOf(word);
@@ -299,51 +298,70 @@ var HexoSearch;
       }
       return foundMatch;
     };
-    
+
     /**
      * Generate result list html
      * @param data : (array) result items
      */
-    self.buildResultList = function(data, queryText) {
+    self.buildResultList = function (data, queryText) {
       var results = [],
         html = "";
-      data.forEach(article => html += self.buildResult(post.link, post.title, post.content));
+      data.forEach(post => {
+        if (self.contentSearch(post, queryText))
+          html += self.buildResult(post.permalink, post.title, post.digest);
+      });
       return html;
     };
-    
+
     /**
      * Generate metadata after a successful query
      * @param data : (object) the raw google custom search response data
      */
-    self.buildMetadata = function(data) {
+    self.buildMetadata = function (data) {
       self.dom.modal_footer.style.display = 'none';
     };
-    
+
     /**
      * Send a GET request
      * @param queryText : (string) the query text
      * @param startIndex : (int) the index of first item (start from 1)
      * @param callback : (function)
      */
-    self.query = function(queryText, startIndex, callback) {
-      get(self.config.endpoint, {
-        data: {
-          q: queryText,
-          start: startIndex,
-          size: self.config.per_page
-        }
-      }).then(data => {
+    self.query = function (queryText, startIndex, callback) {
+      if (!self.cache) {
+        get(self.config.endpoint, {
+          data: {
+            key: self.config.apiKey,
+            cx: self.config.engineId,
+            q: queryText,
+            start: startIndex,
+            num: self.config.per_page
+          }
+        }).then(data => {
+          self.cache = data;
+          let results = "";
+          results += self.buildResultList(data.pages, queryText);
+          results += self.buildResultList(data.posts, queryText);
+          results = results || 'Empty results.';
+          self.dom.modal_results.innerHTML = results;
+          self.buildMetadata(data);
+          if (callback) {
+            callback(data);
+          }
+        }).catch(err => {
+          self.onQueryError(queryText, 'error');
+        });
+      } else {
         let results = "";
-        results += self.buildResultList(data, queryText);
-        results = results || 'Empty results.';
+        results += self.buildResultList(self.cache.pages, queryText);
+        results += self.buildResultList(self.cache.posts, queryText);
+        results = results || 'Empty results.'
         self.dom.modal_results.innerHTML = results;
-        self.buildMetadata(data);
+        self.buildMetadata();
         if (callback) {
-          callback(data);
+          callback(self.cache);
         }
-      }).catch(err => {
-        self.onQueryError(queryText, 'error');
-      });
+      }
     };
     return self;
   };
@@ -351,7 +369,7 @@ var HexoSearch;
 })();
 
 function get(url, options) {
-  let { data = {}} = options;
+  let { data = {} } = options;
   if (!url.includes('?')) {
     url += '?'
   }
@@ -394,7 +412,7 @@ function fadeIn(elem, timing = 400) {
   const oriTransition = curStyle.transition;
   style.display = finDisplay;
   style.opacity = 0;
-  requestAnimationFrame(() => { 
+  requestAnimationFrame(() => {
     style.cssText = cssText;
     style.transition = `opacity ${timing}ms`;
     style.opacity = finOpacity;
