@@ -1,3 +1,5 @@
+/* eslint-disable */
+let customSearch;
 (function () {
 
 	"use strict";
@@ -102,6 +104,7 @@
 
 	function setHeaderSearch() {
 		const dSearch = dHeader.getElementsByClassName('m_search')[0];
+		const dSwitcher = dHeader.getElementsByClassName('s-search')[0];
 
 		// load search dynamically
 		dSearch.onclick = () => {
