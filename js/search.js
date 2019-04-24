@@ -307,7 +307,7 @@ var HexoSearch;
     self.buildResultList = function(data, queryText) {
       var results = [],
         html = "";
-      data.forEach(article => html += self.buildResult(post.link, post.title, post.content));
+      data.forEach(post => html += self.buildResult(post.link, post.title, post.content[0]));
       return html;
     };
     
