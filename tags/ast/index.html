@@ -280,3 +280,48 @@
 
 </body>
 </html>
+/li>
+    
+    </ul>
+</div>
+</section>
+
+      </aside>
+    </div>
+  </div>
+  <footer class="l_footer clearfix" style="display: none;">
+  <div class="copyright">©2018 By 
+    <a href="https://github.com/kricsleo">kricsleo</a>
+  </div>
+  <div class="framework-info">
+    Diven - 
+    <a href="https://hexo.io/zh-cn/">Hexo</a>
+  </div>
+</footer>
+
+
+  
+
+<script>
+  function loadCSS() {
+    const doc = document;
+    const link = doc.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/style.css';
+    // link.href = 'https://store.kricsleo.com/blog/static/css/style.css';
+    link.onload = () => {
+      const dLoader = doc.getElementsByClassName('loader')[0];
+      dLoader.style.opacity = 0;
+      setTimeout(() => {
+        dLoader.parentNode.removeChild(dLoader);
+      }, 400);
+    }
+    doc.head.appendChild(link);
+  }
+  loadCSS();
+</script>
+<!-- <script src="https://store.kricsleo.com/blog/static/js/index.js"></script> -->
+<script src="/js/index.js"></script>
+
+</body>
+</html>
