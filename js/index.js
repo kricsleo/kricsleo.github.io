@@ -116,7 +116,7 @@ let customSearch;
 				s.onload = function () {
 					customSearch = new HexoSearch({
 						imagePath: "/images/",
-						endpoint: '/query?q='
+						endpoint: '/query?'
 					});
 				}
 				doc.body.appendChild(s);
