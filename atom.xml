@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2019-04-22T06:44:09.036Z</updated>
+  <updated>2019-04-25T03:18:10.626Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>toLocaleString</title>
+    <link href="https://kricsleo.github.io/toLocalString/"/>
+    <id>https://kricsleo.github.io/toLocalString/</id>
+    <published>2019-04-25T02:04:25.000Z</published>
+    <updated>2019-04-25T03:18:10.626Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;冷门的toLocaleSring&quot;&gt;&lt;a href=&quot;#冷门的toLocaleSring&quot; class=&quot;headerlink&quot; title=&quot;冷门的toLocaleSring&quot;&gt;&lt;/a&gt;冷门的&lt;code&gt;toLocaleSring&lt;/code&gt;&lt;/h1&gt;&lt;p&gt;js 里面除了我们日常使用的api以外, 其实还是有不少大多数人都不知道的很好用的api的, &lt;code&gt;toLocaleString&lt;/code&gt;算一个, 也许你在面试题中看到过用正则来实现数字千位用逗号分隔的做法, 但是如果你能直接说出&lt;code&gt;toLocaleString&lt;/code&gt;, 应该是出乎面试官的意料的, 而它的用法可不止于此.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;toLocaleString&lt;/code&gt;方法在&lt;code&gt;Numnber&lt;/code&gt;和&lt;code&gt;Date&lt;/code&gt;类型上都有部署, 实现的作用都是格式化数字或者日期, 返回格式化后的字符串.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
+    
+      <category term="js" scheme="https://kricsleo.github.io/categories/front-end/js/"/>
+    
+    
+      <category term="toLocaleString" scheme="https://kricsleo.github.io/tags/toLocaleString/"/>
+    
+      <category term="国际化" scheme="https://kricsleo.github.io/tags/%E5%9B%BD%E9%99%85%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>input-event</title>
@@ -185,7 +210,7 @@
     <link href="https://kricsleo.github.io/todo/"/>
     <id>https://kricsleo.github.io/todo/</id>
     <published>2019-01-16T08:22:30.000Z</published>
-    <updated>2019-04-22T06:45:28.209Z</updated>
+    <updated>2019-04-24T09:36:01.618Z</updated>
     
     <summary type="html">
     
@@ -356,7 +381,7 @@
     <link href="https://kricsleo.github.io/optimize-my-blog/"/>
     <id>https://kricsleo.github.io/optimize-my-blog/</id>
     <published>2018-10-21T06:58:11.000Z</published>
-    <updated>2018-10-31T15:05:33.842Z</updated>
+    <updated>2019-04-24T08:36:30.446Z</updated>
     
     <summary type="html">
     
@@ -416,26 +441,6 @@
       <category term="CORS" scheme="https://kricsleo.github.io/tags/CORS/"/>
     
       <category term="cookie" scheme="https://kricsleo.github.io/tags/cookie/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Content-Type</title>
-    <link href="https://kricsleo.github.io/Content-Type/"/>
-    <id>https://kricsleo.github.io/Content-Type/</id>
-    <published>2018-10-12T02:32:51.000Z</published>
-    <updated>2018-10-21T16:40:34.964Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Content-Type&quot;&gt;&lt;a href=&quot;#Content-Type&quot; class=&quot;headerlink&quot; title=&quot;Content-Type&quot;&gt;&lt;/a&gt;Content-Type&lt;/h1&gt;&lt;p&gt;&lt;code&gt;HTTP/1.1&lt;/code&gt;协议规定的&lt;code&gt;HTTP&lt;/code&gt;请求方法有&lt;code&gt;OPTIONS&lt;/code&gt;、&lt;code&gt;GET&lt;/code&gt;、&lt;code&gt;HEAD&lt;/code&gt;、&lt;code&gt;POST&lt;/code&gt;、&lt;code&gt;PUT&lt;/code&gt;、&lt;code&gt;DELETE&lt;/code&gt;、&lt;code&gt;TRACE&lt;/code&gt;、&lt;code&gt;CONNECT&lt;/code&gt;这几种, 用的最多的是&lt;code&gt;GET&lt;/code&gt;和&lt;code&gt;POST&lt;/code&gt;, 这里主要说一下提交请求时的请求头中&lt;code&gt;Content-Type&lt;/code&gt;字段&lt;br&gt;
-    
-    </summary>
-    
-      <category term="通信" scheme="https://kricsleo.github.io/categories/%E9%80%9A%E4%BF%A1/"/>
-    
-    
-      <category term="Content-Type" scheme="https://kricsleo.github.io/tags/Content-Type/"/>
     
   </entry>
   

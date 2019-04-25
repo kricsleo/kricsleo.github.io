@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
+    <loc>https://kricsleo.github.io/toLocalString/</loc>
     
-    <lastmod>2019-04-24T02:38:27.891Z</lastmod>
+    <lastmod>2019-04-25T03:18:10.626Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://kricsleo.github.io/todo/</loc>
     
-    <lastmod>2019-04-22T06:45:28.209Z</lastmod>
+    <lastmod>2019-04-24T09:36:01.618Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/docker/</loc>
+    
+    <lastmod>2019-04-24T09:31:30.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/optimize-my-blog/</loc>
+    
+    <lastmod>2019-04-24T08:36:30.446Z</lastmod>
     
   </url>
   
@@ -208,13 +222,6 @@
     <loc>https://kricsleo.github.io/length-of-url/</loc>
     
     <lastmod>2018-11-07T08:52:40.023Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/optimize-my-blog/</loc>
-    
-    <lastmod>2018-10-31T15:05:33.842Z</lastmod>
     
   </url>
   
