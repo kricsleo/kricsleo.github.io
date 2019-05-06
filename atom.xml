@@ -401,22 +401,18 @@
     <link href="https://kricsleo.github.io/Promise-Generator/"/>
     <id>https://kricsleo.github.io/Promise-Generator/</id>
     <published>2018-10-18T02:33:04.000Z</published>
-    <updated>2018-11-14T08:42:19.611Z</updated>
+    <updated>2019-05-06T06:22:27.043Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;异步解决方案&quot;&gt;&lt;a href=&quot;#异步解决方案&quot; class=&quot;headerlink&quot; title=&quot;异步解决方案&quot;&gt;&lt;/a&gt;异步解决方案&lt;/h1&gt;&lt;p&gt;本文是为了解js的异步操作解决方案发展过程. 从原始的回调地狱到ES6的&lt;code&gt;Promise&lt;/code&gt;和&lt;code&gt;Generator&lt;/code&gt;再到ES7提案阶段的&lt;code&gt;async&lt;/code&gt;.&lt;/p&gt;
+      &lt;h1 id=&quot;异步解决方案&quot;&gt;&lt;a href=&quot;#异步解决方案&quot; class=&quot;headerlink&quot; title=&quot;异步解决方案&quot;&gt;&lt;/a&gt;异步解决方案&lt;/h1&gt;&lt;p&gt;本文是为了解js的异步操作解决方案发展过程. 从原始的回调地狱到ES6的&lt;code&gt;Promise&lt;/code&gt;和&lt;code&gt;Generator&lt;/code&gt;再到ES7提案阶段的&lt;code&gt;async&lt;/code&gt;.&lt;br&gt;这篇笔记也拖了好久了, 该是时候丰富一下了.&lt;/p&gt;
     
     </summary>
     
       <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
     
     
-      <category term="Generator" scheme="https://kricsleo.github.io/tags/Generator/"/>
-    
-      <category term="Promise" scheme="https://kricsleo.github.io/tags/Promise/"/>
-    
-      <category term="async" scheme="https://kricsleo.github.io/tags/async/"/>
+      <category term="回调地狱" scheme="https://kricsleo.github.io/tags/%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1/"/>
     
   </entry>
   

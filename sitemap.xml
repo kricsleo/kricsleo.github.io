@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/Promise-Generator/</loc>
+    
+    <lastmod>2019-05-06T06:22:27.043Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/toLocalString/</loc>
     
     <lastmod>2019-04-25T03:18:10.626Z</lastmod>
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/AST/</loc>
+    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
     
     <lastmod>2019-02-25T05:16:45.670Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
+    <loc>https://kricsleo.github.io/AST/</loc>
     
     <lastmod>2019-02-25T05:16:45.670Z</lastmod>
     
@@ -191,13 +198,6 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/Promise-Generator/</loc>
-    
-    <lastmod>2018-11-14T08:42:19.611Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/service-worker/</loc>
     
     <lastmod>2018-11-13T02:10:16.733Z</lastmod>
@@ -254,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
+    <loc>https://kricsleo.github.io/base64-md5/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/base64-md5/</loc>
+    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     

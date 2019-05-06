@@ -99,6 +99,19 @@
     _input.addEventListener('blur', function () {
       console.log('blur', _input.value);
     });
+
+    function HardwarePay() {
+      var billData = 90;
+
+      this.setBillData = function(data) {
+        billData = data;
+        return this;
+      }
+
+      this.getBillData = function() {
+        return billData;
+      }
+    }
   </script>
 </body>
 </html>
