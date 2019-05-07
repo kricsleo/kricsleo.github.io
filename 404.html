@@ -1,7 +1,3 @@
----
-permalink: /404.html
-layout: false
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +39,6 @@ layout: false
             background-color: #2d323a;
             color: #ced3d8;
         }
-
 
         .upper,
         .lower {
@@ -178,12 +173,12 @@ layout: false
                 createLine(count) {
                     for (let i = 0; i < count; i++) {
                         let randomWidth = Math.random() * (maxWidth - minWidth) + minWidth;
-                        let randomHeith = Math.random() * (maxHeight - minHeight) + minHeight;
+                        let randomHeight = Math.random() * (maxHeight - minHeight) + minHeight;
                         let randomLeft = Math.random() * (maxWidth - randomWidth);
                         let dSpan = document.createElement('span');
                         dSpan.className = 'cover__line';
                         dSpan.id = index;
-                        dSpan.style.cssText = `width: ${randomWidth}%; height: ${randomHeith}px; margin-left: ${randomLeft}%;`;
+                        dSpan.style.cssText = `width: ${randomWidth}%; height: ${randomHeight}px; margin-left: ${randomLeft}%;`;
                         document.getElementsByClassName('cover')[0].append(dSpan);
                         index++;
                     }
@@ -198,8 +193,8 @@ layout: false
                     return index;
                 },
                 showRandomLine(min, max) {
-                    let ramdamCount = Math.random() * (max - min) + min;
-                    for (let i = 0; i < ramdamCount; i++) {
+                    let randomCount = Math.random() * (max - min) + min;
+                    for (let i = 0; i < randomCount; i++) {
                         const random = Math.random() * (this.getLineCount() - 1);
                         let randomIndex = Math.round(random);
                         const dSpan = this.getLine(randomIndex);
