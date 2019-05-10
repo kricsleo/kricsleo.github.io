@@ -45,3 +45,12 @@ function isVisible(elem) {
   );
 }
 win.onscroll = throttle(lazyLoadImg, 100, 150);
+
+Promise.resolve(() => console.log('level 1'))
+  .then(() => {
+    console.log('level 2');
+    return Promise.reject();
+  })
+  .then(() => console.log('level 3'))
+  .catch(() => console.log('level 3 catch'))
+  .then(() => console.log('level 4'))

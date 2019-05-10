@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/elasticsearch/</loc>
+    
+    <lastmod>2019-05-09T09:00:50.235Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/Promise-Generator/</loc>
     
     <lastmod>2019-05-06T06:32:13.278Z</lastmod>
@@ -93,14 +100,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/IIFE/</loc>
+    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
     
     <lastmod>2019-02-25T05:16:45.714Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
+    <loc>https://kricsleo.github.io/IIFE/</loc>
     
     <lastmod>2019-02-25T05:16:45.714Z</lastmod>
     
@@ -254,14 +261,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/base64-md5/</loc>
+    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/unicode-utf8/</loc>
+    <loc>https://kricsleo.github.io/base64-md5/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
     
