@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kricsleo.github.io/"/>
-  <updated>2019-05-09T09:00:50.235Z</updated>
+  <updated>2019-05-15T07:55:53.407Z</updated>
   <id>https://kricsleo.github.io/</id>
   
   <author>
@@ -17,15 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>git-hooks</title>
+    <link href="https://kricsleo.github.io/git-hooks/"/>
+    <id>https://kricsleo.github.io/git-hooks/</id>
+    <published>2019-05-15T03:16:57.000Z</published>
+    <updated>2019-05-15T07:55:53.407Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;git-hooks&quot;&gt;&lt;a href=&quot;#git-hooks&quot; class=&quot;headerlink&quot; title=&quot;git hooks&quot;&gt;&lt;/a&gt;git hooks&lt;/h1&gt;&lt;p&gt;现在代码一般都会使用git来进行管理, 其中git hooks(git钩子)是git提供的在代码管理的生命周期中会被触发的一个阶段, 如同react里面组件的生命周期一样, 随着组件的状态的改变, 一些生命周期函数会被触发, 然后可以在触发的时候进行自定义的操作, git 也是如此, 例如我们可以在代码被提交(&lt;code&gt;git commit&lt;/code&gt;)前进行代码的自动检查, 通过了检查才允许提交, 否则提交失败, 然后还有常见的自动化部署也是利用了 git hooks, 当新代码被提交到服务端(&lt;code&gt;git push&lt;/code&gt;)的时候触发git hooks, 然后服务器自动进行重新部署.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tools" scheme="https://kricsleo.github.io/categories/tools/"/>
+    
+    
+      <category term="git" scheme="https://kricsleo.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>elasticsearch</title>
     <link href="https://kricsleo.github.io/elasticsearch/"/>
     <id>https://kricsleo.github.io/elasticsearch/</id>
     <published>2019-05-08T02:53:26.000Z</published>
-    <updated>2019-05-09T09:00:50.235Z</updated>
+    <updated>2019-05-10T03:45:33.354Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;elasticsearch&quot;&gt;&lt;a href=&quot;#elasticsearch&quot; class=&quot;headerlink&quot; title=&quot;elasticsearch&quot;&gt;&lt;/a&gt;elasticsearch&lt;/h1&gt;&lt;p&gt;我的博客之前的搜索都是使用的&lt;a href=&quot;https://github.com/alexbruno/hexo-generator-json-content&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;hexo-generator-json-content&lt;/code&gt;&lt;/a&gt;这个插件来生成的静态json文件, 在搜索的时候会去请求这个json文件, 里面是整个博客站点的文章数据, 随着博客的数量变多, 这个文件也越来越大, 导致第一次搜索的时候下载这个文件的时间就会出现很长时间的等待, 所以也一直想要优化博客的搜索.&lt;/p&gt;&lt;p&gt;之前做爬虫的时候使用过&lt;a href=&quot;https://www.elastic.co/cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;elasticsearch&lt;/code&gt;&lt;/a&gt;这个全文检索库, 感觉检索非常方便和快速, 所以这次有时间了就把博客的搜索完全迁移到了es上&lt;/p&gt;
+      &lt;h1 id=&quot;elasticsearch&quot;&gt;&lt;a href=&quot;#elasticsearch&quot; class=&quot;headerlink&quot; title=&quot;elasticsearch&quot;&gt;&lt;/a&gt;elasticsearch&lt;/h1&gt;&lt;p&gt;我的博客之前的搜索都是使用的&lt;a href=&quot;https://github.com/alexbruno/hexo-generator-json-content&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;hexo-generator-json-content&lt;/code&gt;&lt;/a&gt;这个插件来生成的静态json文件, 在搜索的时候会去请求这个json文件, 里面是整个博客站点的文章数据, 随着博客的数量变多, 这个文件也越来越大, 导致第一次搜索的时候下载这个文件就会出现很长时间的等待, 所以也一直想要优化博客的搜索.&lt;/p&gt;&lt;p&gt;之前做爬虫的时候使用过&lt;a href=&quot;https://www.elastic.co/cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;elasticsearch&lt;/code&gt;&lt;/a&gt;这个全文检索库, 感觉检索非常方便和快速, 所以这次有时间了就把博客的搜索完全迁移到了es上, 另外还顺带写了一个自动同步 hexo 博客数据到 es 里面的插件&lt;a href=&quot;https://www.npmjs.com/package/hexo-elasticsearch&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;hexo-elasticsearch&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -229,7 +249,7 @@
     <link href="https://kricsleo.github.io/todo/"/>
     <id>https://kricsleo.github.io/todo/</id>
     <published>2019-01-16T08:22:30.000Z</published>
-    <updated>2019-04-24T09:36:01.618Z</updated>
+    <updated>2019-05-15T03:16:39.673Z</updated>
     
     <summary type="html">
     
@@ -239,8 +259,6 @@
     
       <category term="daily" scheme="https://kricsleo.github.io/categories/daily/"/>
     
-    
-      <category term="todo" scheme="https://kricsleo.github.io/tags/todo/"/>
     
   </entry>
   
@@ -410,26 +428,6 @@
     
     
       <category term="web优化" scheme="https://kricsleo.github.io/tags/web%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Promise-Generator</title>
-    <link href="https://kricsleo.github.io/Promise-Generator/"/>
-    <id>https://kricsleo.github.io/Promise-Generator/</id>
-    <published>2018-10-18T02:33:04.000Z</published>
-    <updated>2019-05-06T06:32:13.278Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;异步解决方案&quot;&gt;&lt;a href=&quot;#异步解决方案&quot; class=&quot;headerlink&quot; title=&quot;异步解决方案&quot;&gt;&lt;/a&gt;异步解决方案&lt;/h1&gt;&lt;p&gt;本文是为了解js的异步操作解决方案发展过程. 从原始的回调地狱到ES6的&lt;code&gt;Promise&lt;/code&gt;和&lt;code&gt;Generator&lt;/code&gt;再到ES7提案阶段的&lt;code&gt;async&lt;/code&gt;.&lt;br&gt;这篇笔记也拖了好久了, 该是时候丰富一下了.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="front-end" scheme="https://kricsleo.github.io/categories/front-end/"/>
-    
-    
-      <category term="回调地狱" scheme="https://kricsleo.github.io/tags/%E5%9B%9E%E8%B0%83%E5%9C%B0%E7%8B%B1/"/>
     
   </entry>
   

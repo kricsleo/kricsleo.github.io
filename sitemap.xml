@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kricsleo.github.io/git-hooks/</loc>
+    
+    <lastmod>2019-05-15T07:55:53.407Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/todo/</loc>
+    
+    <lastmod>2019-05-15T03:16:39.673Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kricsleo.github.io/elasticsearch/</loc>
     
-    <lastmod>2019-05-09T09:00:50.235Z</lastmod>
+    <lastmod>2019-05-10T03:45:33.354Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://kricsleo.github.io/Promise-Generator/</loc>
     
-    <lastmod>2019-05-06T06:32:13.278Z</lastmod>
+    <lastmod>2019-05-10T03:42:32.536Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>https://kricsleo.github.io/toLocalString/</loc>
     
     <lastmod>2019-04-25T03:18:10.626Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/todo/</loc>
-    
-    <lastmod>2019-04-24T09:36:01.618Z</lastmod>
     
   </url>
   
