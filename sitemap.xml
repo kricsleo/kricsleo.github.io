@@ -2,16 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/</loc>
+    <loc>https://kricsleo.github.io/Content-Type/</loc>
     
-    <lastmod>2019-05-15T09:41:23.912Z</lastmod>
+    <lastmod>2019-05-16T07:01:50.991Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/http/</loc>
+    
+    <lastmod>2019-05-16T07:01:50.990Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/translate-you-might-not-need-redux/</loc>
+    
+    <lastmod>2019-05-16T07:01:13.030Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/git-workflow/</loc>
+    
+    <lastmod>2019-05-16T07:01:13.005Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/docker/</loc>
+    
+    <lastmod>2019-05-16T07:01:13.005Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/ssh-git/</loc>
+    
+    <lastmod>2019-05-16T07:01:13.005Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/markdown/</loc>
+    
+    <lastmod>2019-05-16T07:01:13.005Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://kricsleo.github.io/git-hooks/</loc>
     
-    <lastmod>2019-05-15T07:55:53.407Z</lastmod>
+    <lastmod>2019-05-16T07:01:13.005Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/bash/</loc>
+    
+    <lastmod>2019-05-16T07:01:13.004Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/vue/</loc>
+    
+    <lastmod>2019-05-16T06:59:37.310Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/toLocalString/</loc>
+    
+    <lastmod>2019-05-16T06:57:33.861Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kricsleo.github.io/Airbnb-JavaScript-Style-Guide/</loc>
+    
+    <lastmod>2019-05-15T09:41:23.912Z</lastmod>
     
   </url>
   
@@ -37,20 +107,6 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/toLocalString/</loc>
-    
-    <lastmod>2019-04-25T03:18:10.626Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/docker/</loc>
-    
-    <lastmod>2019-04-24T09:31:30.546Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/optimize-my-blog/</loc>
     
     <lastmod>2019-04-24T08:36:30.446Z</lastmod>
@@ -61,13 +117,6 @@
     <loc>https://kricsleo.github.io/input-event/</loc>
     
     <lastmod>2019-04-22T06:44:09.036Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/translate-you-might-not-need-redux/</loc>
-    
-    <lastmod>2019-04-16T02:11:41.906Z</lastmod>
     
   </url>
   
@@ -114,14 +163,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
+    <loc>https://kricsleo.github.io/IIFE/</loc>
     
     <lastmod>2019-02-25T05:16:45.714Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/IIFE/</loc>
+    <loc>https://kricsleo.github.io/CommonJS-AMD-CMD/</loc>
     
     <lastmod>2019-02-25T05:16:45.714Z</lastmod>
     
@@ -135,14 +184,14 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/AST/</loc>
+    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
     
     <lastmod>2019-02-25T05:16:45.670Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/MVC-MVP-MVVM/</loc>
+    <loc>https://kricsleo.github.io/AST/</loc>
     
     <lastmod>2019-02-25T05:16:45.670Z</lastmod>
     
@@ -166,20 +215,6 @@
     <loc>https://kricsleo.github.io/BFC/</loc>
     
     <lastmod>2019-02-25T03:25:33.886Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/git-workflow/</loc>
-    
-    <lastmod>2019-02-25T02:07:30.161Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/bash/</loc>
-    
-    <lastmod>2019-02-14T07:08:28.487Z</lastmod>
     
   </url>
   
@@ -247,27 +282,6 @@
   </url>
   
   <url>
-    <loc>https://kricsleo.github.io/http/</loc>
-    
-    <lastmod>2018-10-23T05:17:32.026Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/Content-Type/</loc>
-    
-    <lastmod>2018-10-21T16:40:34.964Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/ssh-git/</loc>
-    
-    <lastmod>2018-10-16T03:03:29.791Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kricsleo.github.io/unicode-utf8/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
@@ -278,20 +292,6 @@
     <loc>https://kricsleo.github.io/base64-md5/</loc>
     
     <lastmod>2018-09-29T01:02:49.799Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/markdown/</loc>
-    
-    <lastmod>2018-09-29T01:02:49.796Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kricsleo.github.io/vue/</loc>
-    
-    <lastmod>2018-09-24T09:05:33.991Z</lastmod>
     
   </url>
   

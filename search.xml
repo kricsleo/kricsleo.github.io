@@ -12,7 +12,7 @@
       
       <categories>
           
-          <category> tools </category>
+          <category> tool </category>
           
       </categories>
       
@@ -62,8 +62,6 @@
           
           <category> front-end </category>
           
-          <category> js </category>
-          
       </categories>
       
       
@@ -110,7 +108,7 @@
       
       <categories>
           
-          <category> 翻译 </category>
+          <category> translation </category>
           
       </categories>
       
@@ -534,7 +532,7 @@
       
       <categories>
           
-          <category> 通信 </category>
+          <category> http </category>
           
       </categories>
       
@@ -557,7 +555,7 @@
       
       <categories>
           
-          <category> 通信 </category>
+          <category> http </category>
           
       </categories>
       
@@ -694,19 +692,19 @@
       <link href="/bash/"/>
       <url>/bash/</url>
       
-        <content type="html"><![CDATA[<h1 id="常用的bash命令"><a href="#常用的bash命令" class="headerlink" title="常用的bash命令"></a>常用的bash命令</h1><a id="more"></a><h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -f &lt;file&gt;</span><br><span class="line"></span><br><span class="line">rm -rf &lt;folder&gt;</span><br><span class="line"><span class="comment"># 参数说明:</span></span><br><span class="line"><span class="comment"># -r: 删除目录下所有文件, 包括目录本身</span></span><br><span class="line"><span class="comment"># -f: 强制删除, 不确认</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动文件</span></span><br><span class="line">mv &lt;originFile&gt; &lt;destDir&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 scp 从本地拷贝文件到远程服务器, 参数调换即可反向拷贝</span></span><br><span class="line"><span class="comment"># 参数: 添加 -r 代表文件目录拷贝</span></span><br><span class="line">scp &lt;localFile&gt; username@hostname:&lt;remoteDir&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># linux查询系统版本</span></span><br><span class="line">lsb_release -a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看网络端口占用</span></span><br><span class="line">netstat -antp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开启 nginx 在 nginx 目录下</span></span><br><span class="line">./sbin/nginx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭 nginx</span></span><br><span class="line">./sbin/nginx -s stop</span><br></pre></td></tr></table></figure><h2 id="mac"><a href="#mac" class="headerlink" title="mac"></a>mac</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除 dns 缓存</span></span><br><span class="line">sudo killall mDNSResponder</span><br><span class="line"></span><br><span class="line"><span class="comment"># Finder是否显示隐藏文件, No 为隐藏, Yes 为显示</span></span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm (批量更新包及相关依赖)[https://ask.helplib.com/javascript/post_134443]</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line">npm-check-updates -u</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="常用的shell命令"><a href="#常用的shell命令" class="headerlink" title="常用的shell命令"></a>常用的shell命令</h1><a id="more"></a><h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -f &lt;file&gt;</span><br><span class="line"></span><br><span class="line">rm -rf &lt;folder&gt;</span><br><span class="line"><span class="comment"># 参数说明:</span></span><br><span class="line"><span class="comment"># -r: 删除目录下所有文件, 包括目录本身</span></span><br><span class="line"><span class="comment"># -f: 强制删除, 不确认</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动文件</span></span><br><span class="line">mv &lt;originFile&gt; &lt;destDir&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 scp 从本地拷贝文件到远程服务器, 参数调换即可反向拷贝</span></span><br><span class="line"><span class="comment"># 参数: 添加 -r 代表文件目录拷贝</span></span><br><span class="line">scp &lt;localFile&gt; username@hostname:&lt;remoteDir&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># linux查询系统版本</span></span><br><span class="line">lsb_release -a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看网络端口占用</span></span><br><span class="line">netstat -antp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开启 nginx 在 nginx 目录下</span></span><br><span class="line">./sbin/nginx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭 nginx</span></span><br><span class="line">./sbin/nginx -s stop</span><br></pre></td></tr></table></figure><h2 id="mac"><a href="#mac" class="headerlink" title="mac"></a>mac</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除 dns 缓存</span></span><br><span class="line">sudo killall mDNSResponder</span><br><span class="line"></span><br><span class="line"><span class="comment"># Finder是否显示隐藏文件, No 为隐藏, Yes 为显示</span></span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm (批量更新包及相关依赖)[https://ask.helplib.com/javascript/post_134443]</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line">npm-check-updates -u</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
           
-          <category> 工具 </category>
+          <category> tool </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> bash </tag>
+            <tag> shell </tag>
             
         </tags>
       
@@ -747,7 +745,7 @@
       
       <categories>
           
-          <category> 框架 </category>
+          <category> framework </category>
           
       </categories>
       
@@ -772,7 +770,7 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> tool </category>
           
       </categories>
       
@@ -915,16 +913,16 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> tool </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> ssh </tag>
+            <tag> git </tag>
             
-            <tag> github </tag>
+            <tag> ssh </tag>
             
         </tags>
       
@@ -940,7 +938,7 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> tool </category>
           
       </categories>
       
@@ -963,7 +961,7 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> tool </category>
           
       </categories>
       
